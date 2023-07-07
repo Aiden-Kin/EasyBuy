@@ -31,109 +31,113 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation1 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
-            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation2 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions4 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject13 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions5 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject17 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject18 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject19 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject20 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions6 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject21 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject22 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject23 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject24 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions7 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject25 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject26 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject27 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject28 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions8 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject29 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject30 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject31 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject32 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions9 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject33 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject34 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject35 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject36 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions10 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject37 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject38 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject39 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject40 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions11 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject41 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject42 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject43 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject44 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions12 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject45 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject46 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject47 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject48 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions13 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject49 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject50 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject51 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject52 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions14 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject53 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject54 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject55 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject56 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions15 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject57 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject58 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject59 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject60 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions16 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject61 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject62 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject63 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject64 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions17 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject65 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject66 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject67 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject68 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions18 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject69 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject70 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject71 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject72 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation3 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
+            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation4 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions19 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject73 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject74 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject75 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject76 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions20 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject77 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject78 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject79 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject80 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions21 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject81 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject82 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject83 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject84 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions22 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject85 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject86 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject87 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject88 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions23 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject89 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject90 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject91 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject92 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions24 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject93 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject94 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject95 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject96 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions25 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject97 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject98 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject99 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject100 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions26 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject101 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject102 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject103 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject104 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions27 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject105 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject106 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject107 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject108 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions28 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject109 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject110 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject111 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject112 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions29 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject113 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject114 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject115 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject116 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions30 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject117 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject118 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject119 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject120 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions31 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject121 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject122 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject123 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject124 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions32 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject125 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject126 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject127 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject128 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions33 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject129 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject130 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject131 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject132 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions34 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject133 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject134 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject135 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject136 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions35 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject137 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject138 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject139 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject140 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions36 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject141 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject142 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject143 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject144 = new DevExpress.Utils.SerializableAppearanceObject();
             this.ribbonReportDesigner4 = new DevExpress.XtraReports.UserDesigner.Native.RibbonReportDesigner();
             this.ribbonReportDesigner5 = new DevExpress.XtraReports.UserDesigner.Native.RibbonReportDesigner();
             this.ribbonReportDesigner6 = new DevExpress.XtraReports.UserDesigner.Native.RibbonReportDesigner();
             this.ribbonReportDesigner7 = new DevExpress.XtraReports.UserDesigner.Native.RibbonReportDesigner();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
-            this.accordionControlSeparator1 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
-            this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ace_GoodsClass = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ace_GoodsInformation = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ace_GoodsStock = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlSeparator5 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement8 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement9 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ace_StafInformation = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ace_StafMoney = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ace_SupplierInformation = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator2 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement10 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -142,25 +146,25 @@
             this.accordionControlElement13 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator3 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement14 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement15 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement16 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ace_SuperUser = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ace_StaffUser = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ace_Customer = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ribbonReportDesigner1 = new DevExpress.XtraReports.UserDesigner.Native.RibbonReportDesigner();
             this.ribbonReportDesigner2 = new DevExpress.XtraReports.UserDesigner.Native.RibbonReportDesigner();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtn_GoodsStock = new DevExpress.XtraBars.BarButtonItem();
             this.barSubItem2 = new DevExpress.XtraBars.BarSubItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
-            this.bbtnGoodsClass = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
-            this.bbtnGoodsInform = new DevExpress.XtraBars.BarButtonItem();
-            this.barSell = new DevExpress.XtraBars.BarButtonItem();
-            this.bbiSuperManage = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtn_EmploerMoney = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtn_GoodsClass = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtn_EmploerInfomation = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtn_Supplyer = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtn_GoodsInform = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtn_SellChart = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtn_SuperUser = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtn_StafUser = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtn_CustomerUser = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageCategory1 = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
@@ -194,14 +198,16 @@
             this.repositoryItemRibbonSearchEdit6 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             this.xtb_ControlPanel = new DevExpress.XtraTab.XtraTabControl();
-            this.xtpGoodsClass = new DevExpress.XtraTab.XtraTabPage();
+            this.xtp_GoodsClass = new DevExpress.XtraTab.XtraTabPage();
+            this.treeList1 = new DevExpress.XtraTreeList.TreeList();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.remark = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.xtpSupplier = new DevExpress.XtraTab.XtraTabPage();
+            this.xtp_Supplier = new DevExpress.XtraTab.XtraTabPage();
             this.dgvSupplier = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -211,7 +217,7 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.xtpSuperUserControl = new DevExpress.XtraTab.XtraTabPage();
+            this.xtp_SuperUserControl = new DevExpress.XtraTab.XtraTabPage();
             this.dgvSuperUserControl = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -221,9 +227,9 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.xtpGoodsInfom = new DevExpress.XtraTab.XtraTabPage();
-            this.xtpGoods = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage7 = new DevExpress.XtraTab.XtraTabPage();
+            this.xtp_GoodsInfom = new DevExpress.XtraTab.XtraTabPage();
+            this.xtp_GoodsStock = new DevExpress.XtraTab.XtraTabPage();
+            this.xtp_StaffInformation = new DevExpress.XtraTab.XtraTabPage();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -231,8 +237,8 @@
             this.age = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewButtonColumn3 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.xtraTabPage8 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage9 = new DevExpress.XtraTab.XtraTabPage();
+            this.xtp_StafMoney = new DevExpress.XtraTab.XtraTabPage();
+            this.xtp_SupplierInformation = new DevExpress.XtraTab.XtraTabPage();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -287,6 +293,8 @@
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemRibbonSearchEdit8 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
             this.repositoryItemRibbonSearchEdit9 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
@@ -299,15 +307,16 @@
             this.sidePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtb_ControlPanel)).BeginInit();
             this.xtb_ControlPanel.SuspendLayout();
-            this.xtpGoodsClass.SuspendLayout();
+            this.xtp_GoodsClass.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.treeList1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.xtpSupplier.SuspendLayout();
+            this.xtp_Supplier.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSupplier)).BeginInit();
-            this.xtpSuperUserControl.SuspendLayout();
+            this.xtp_SuperUserControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSuperUserControl)).BeginInit();
-            this.xtraTabPage7.SuspendLayout();
+            this.xtp_StaffInformation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            this.xtraTabPage9.SuspendLayout();
+            this.xtp_SupplierInformation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.xtp_ControlUserSuper.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbs_tbSearch.Properties)).BeginInit();
@@ -326,11 +335,46 @@
             // accordionControl1
             // 
             this.accordionControl1.Appearance.AccordionControl.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.accordionControl1.Appearance.AccordionControl.Font = new System.Drawing.Font("小米兰亭", 11F);
             this.accordionControl1.Appearance.AccordionControl.Options.UseBackColor = true;
+            this.accordionControl1.Appearance.AccordionControl.Options.UseFont = true;
+            this.accordionControl1.Appearance.Group.Default.Font = new System.Drawing.Font("小米兰亭", 11F);
+            this.accordionControl1.Appearance.Group.Default.Options.UseFont = true;
+            this.accordionControl1.Appearance.Group.Disabled.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.accordionControl1.Appearance.Group.Disabled.Options.UseFont = true;
+            this.accordionControl1.Appearance.Group.Hovered.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.accordionControl1.Appearance.Group.Hovered.Options.UseFont = true;
+            this.accordionControl1.Appearance.Group.Normal.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.accordionControl1.Appearance.Group.Normal.Options.UseFont = true;
+            this.accordionControl1.Appearance.Group.Pressed.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.accordionControl1.Appearance.Group.Pressed.Options.UseFont = true;
+            this.accordionControl1.Appearance.Hint.Font = new System.Drawing.Font("小米兰亭", 11F);
+            this.accordionControl1.Appearance.Hint.Options.UseFont = true;
+            this.accordionControl1.Appearance.Item.Default.Font = new System.Drawing.Font("小米兰亭", 11F);
+            this.accordionControl1.Appearance.Item.Default.Options.UseFont = true;
+            this.accordionControl1.Appearance.Item.Disabled.Font = new System.Drawing.Font("小米兰亭", 11F);
+            this.accordionControl1.Appearance.Item.Disabled.Options.UseFont = true;
+            this.accordionControl1.Appearance.Item.Hovered.Font = new System.Drawing.Font("小米兰亭", 11F);
+            this.accordionControl1.Appearance.Item.Hovered.Options.UseFont = true;
+            this.accordionControl1.Appearance.Item.Normal.Font = new System.Drawing.Font("小米兰亭", 11F);
+            this.accordionControl1.Appearance.Item.Normal.Options.UseFont = true;
+            this.accordionControl1.Appearance.Item.Pressed.Font = new System.Drawing.Font("小米兰亭", 11F);
+            this.accordionControl1.Appearance.Item.Pressed.Options.UseFont = true;
+            this.accordionControl1.Appearance.ItemWithContainer.Default.Font = new System.Drawing.Font("小米兰亭", 11F);
+            this.accordionControl1.Appearance.ItemWithContainer.Default.Options.UseFont = true;
+            this.accordionControl1.Appearance.ItemWithContainer.Disabled.Font = new System.Drawing.Font("小米兰亭", 11F);
+            this.accordionControl1.Appearance.ItemWithContainer.Disabled.Options.UseFont = true;
+            this.accordionControl1.Appearance.ItemWithContainer.Hovered.Font = new System.Drawing.Font("小米兰亭", 11F);
+            this.accordionControl1.Appearance.ItemWithContainer.Hovered.Options.UseFont = true;
+            this.accordionControl1.Appearance.ItemWithContainer.Normal.Font = new System.Drawing.Font("小米兰亭", 11F);
+            this.accordionControl1.Appearance.ItemWithContainer.Normal.Options.UseFont = true;
+            this.accordionControl1.Appearance.ItemWithContainer.Pressed.Font = new System.Drawing.Font("小米兰亭", 11F);
+            this.accordionControl1.Appearance.ItemWithContainer.Pressed.Options.UseFont = true;
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlSeparator1,
-            this.accordionControlElement2,
+            this.accordionControlElement5,
+            this.accordionControlElement6,
+            this.accordionControlSeparator5,
             this.accordionControlElement3,
             this.accordionControlSeparator2,
             this.accordionControlElement1,
@@ -339,47 +383,83 @@
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
             this.accordionControl1.Margin = new System.Windows.Forms.Padding(4);
             this.accordionControl1.Name = "accordionControl1";
-            this.accordionControl1.Size = new System.Drawing.Size(250, 556);
+            this.accordionControl1.OptionsMinimizing.State = DevExpress.XtraBars.Navigation.AccordionControlState.Minimized;
+            this.accordionControl1.Size = new System.Drawing.Size(42, 556);
             this.accordionControl1.TabIndex = 6;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
-            // accordionControlSeparator1
+            // accordionControlElement5
             // 
-            this.accordionControlSeparator1.Name = "accordionControlSeparator1";
+            this.accordionControlElement5.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.商品_类别管理;
+            this.accordionControlElement5.Name = "accordionControlElement5";
+            this.accordionControlElement5.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             // 
-            // accordionControlElement2
+            // accordionControlElement6
             // 
-            this.accordionControlElement2.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.商品_类别管理;
-            this.accordionControlElement2.Name = "accordionControlElement2";
-            this.accordionControlElement2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement6.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.ace_GoodsClass,
+            this.ace_GoodsInformation,
+            this.ace_GoodsStock});
+            this.accordionControlElement6.Expanded = true;
+            this.accordionControlElement6.Name = "accordionControlElement6";
+            this.accordionControlElement6.Text = "商品信息管理";
+            this.accordionControlElement6.Click += new System.EventHandler(this.accordionControlElement6_Click);
+            // 
+            // ace_GoodsClass
+            // 
+            this.ace_GoodsClass.Name = "ace_GoodsClass";
+            this.ace_GoodsClass.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ace_GoodsClass.Text = "商品类别";
+            this.ace_GoodsClass.Click += new System.EventHandler(this.ace_GoodsClass_Click);
+            // 
+            // ace_GoodsInformation
+            // 
+            this.ace_GoodsInformation.Name = "ace_GoodsInformation";
+            this.ace_GoodsInformation.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ace_GoodsInformation.Text = "商品信息";
+            this.ace_GoodsInformation.Click += new System.EventHandler(this.ace_GoodsInformation_Click);
+            // 
+            // ace_GoodsStock
+            // 
+            this.ace_GoodsStock.Name = "ace_GoodsStock";
+            this.ace_GoodsStock.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ace_GoodsStock.Text = "商品库存";
+            this.ace_GoodsStock.Click += new System.EventHandler(this.ace_GoodsStock_Click);
+            // 
+            // accordionControlSeparator5
+            // 
+            this.accordionControlSeparator5.Name = "accordionControlSeparator5";
             // 
             // accordionControlElement3
             // 
             this.accordionControlElement3.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement7,
-            this.accordionControlElement8,
-            this.accordionControlElement9});
+            this.ace_StafInformation,
+            this.ace_StafMoney,
+            this.ace_SupplierInformation});
             this.accordionControlElement3.Expanded = true;
             this.accordionControlElement3.Name = "accordionControlElement3";
             this.accordionControlElement3.Text = "人员信息管理";
             // 
-            // accordionControlElement7
+            // ace_StafInformation
             // 
-            this.accordionControlElement7.Name = "accordionControlElement7";
-            this.accordionControlElement7.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement7.Text = "员工信息";
+            this.ace_StafInformation.Name = "ace_StafInformation";
+            this.ace_StafInformation.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ace_StafInformation.Text = "员工信息";
+            this.ace_StafInformation.Click += new System.EventHandler(this.ace_StafInformation_Click);
             // 
-            // accordionControlElement8
+            // ace_StafMoney
             // 
-            this.accordionControlElement8.Name = "accordionControlElement8";
-            this.accordionControlElement8.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement8.Text = "人员工资绩效";
+            this.ace_StafMoney.Name = "ace_StafMoney";
+            this.ace_StafMoney.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ace_StafMoney.Text = "人员工资绩效";
+            this.ace_StafMoney.Click += new System.EventHandler(this.ace_StafMoney_Click);
             // 
-            // accordionControlElement9
+            // ace_SupplierInformation
             // 
-            this.accordionControlElement9.Name = "accordionControlElement9";
-            this.accordionControlElement9.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement9.Text = "供货商信息";
+            this.ace_SupplierInformation.Name = "ace_SupplierInformation";
+            this.ace_SupplierInformation.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ace_SupplierInformation.Text = "供货商信息";
+            this.ace_SupplierInformation.Click += new System.EventHandler(this.ace_SupplierInformation_Click);
             // 
             // accordionControlSeparator2
             // 
@@ -392,7 +472,6 @@
             this.accordionControlElement11,
             this.accordionControlElement12,
             this.accordionControlElement13});
-            this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Text = "统计图表";
             // 
@@ -427,49 +506,52 @@
             // accordionControlElement4
             // 
             this.accordionControlElement4.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement14,
-            this.accordionControlElement15,
-            this.accordionControlElement16});
+            this.ace_SuperUser,
+            this.ace_StaffUser,
+            this.ace_Customer});
             this.accordionControlElement4.Expanded = true;
             this.accordionControlElement4.Name = "accordionControlElement4";
             this.accordionControlElement4.Text = "账户管理";
             // 
-            // accordionControlElement14
+            // ace_SuperUser
             // 
-            this.accordionControlElement14.Name = "accordionControlElement14";
-            this.accordionControlElement14.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement14.Text = "管理员账户";
+            this.ace_SuperUser.Name = "ace_SuperUser";
+            this.ace_SuperUser.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ace_SuperUser.Text = "管理员账户";
+            this.ace_SuperUser.Click += new System.EventHandler(this.ace_SuperUser_Click);
             // 
-            // accordionControlElement15
+            // ace_StaffUser
             // 
-            this.accordionControlElement15.Name = "accordionControlElement15";
-            this.accordionControlElement15.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement15.Text = "员工账户";
+            this.ace_StaffUser.Name = "ace_StaffUser";
+            this.ace_StaffUser.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ace_StaffUser.Text = "员工账户";
+            this.ace_StaffUser.Click += new System.EventHandler(this.ace_StaffUser_Click);
             // 
-            // accordionControlElement16
+            // ace_Customer
             // 
-            this.accordionControlElement16.Name = "accordionControlElement16";
-            this.accordionControlElement16.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement16.Text = "顾客账户";
+            this.ace_Customer.Name = "ace_Customer";
+            this.ace_Customer.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ace_Customer.Text = "顾客账户";
+            this.ace_Customer.Click += new System.EventHandler(this.ace_Customer_Click);
             // 
             // ribbonControl1
             // 
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
-            this.barButtonItem4,
+            this.bbtn_GoodsStock,
             this.barSubItem2,
-            this.barButtonItem5,
-            this.bbtnGoodsClass,
-            this.barButtonItem8,
-            this.barButtonItem9,
-            this.bbtnGoodsInform,
-            this.barSell,
-            this.bbiSuperManage,
+            this.bbtn_EmploerMoney,
+            this.bbtn_GoodsClass,
+            this.bbtn_EmploerInfomation,
+            this.bbtn_Supplyer,
+            this.bbtn_GoodsInform,
+            this.bbtn_SellChart,
+            this.bbtn_SuperUser,
             this.barButtonItem11,
             this.barButtonItem13,
-            this.barButtonItem15,
-            this.barButtonItem12,
+            this.bbtn_StafUser,
+            this.bbtn_CustomerUser,
             this.barButtonItem14,
             this.barButtonItem16});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
@@ -485,12 +567,13 @@
             this.PageGoods});
             this.ribbonControl1.Size = new System.Drawing.Size(1229, 171);
             // 
-            // barButtonItem4
+            // bbtn_GoodsStock
             // 
-            this.barButtonItem4.Caption = "商品库存";
-            this.barButtonItem4.Id = 8;
-            this.barButtonItem4.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.商品_库存管理;
-            this.barButtonItem4.Name = "barButtonItem4";
+            this.bbtn_GoodsStock.Caption = "商品库存";
+            this.bbtn_GoodsStock.Id = 8;
+            this.bbtn_GoodsStock.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.商品_库存管理;
+            this.bbtn_GoodsStock.Name = "bbtn_GoodsStock";
+            this.bbtn_GoodsStock.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbtn_GoodsStock_ItemClick);
             // 
             // barSubItem2
             // 
@@ -498,54 +581,58 @@
             this.barSubItem2.Id = 10;
             this.barSubItem2.Name = "barSubItem2";
             // 
-            // barButtonItem5
+            // bbtn_EmploerMoney
             // 
-            this.barButtonItem5.Caption = "人员工资绩效";
-            this.barButtonItem5.Id = 11;
-            this.barButtonItem5.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.菜单_工资绩效;
-            this.barButtonItem5.Name = "barButtonItem5";
+            this.bbtn_EmploerMoney.Caption = "人员工资绩效";
+            this.bbtn_EmploerMoney.Id = 11;
+            this.bbtn_EmploerMoney.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.菜单_工资绩效;
+            this.bbtn_EmploerMoney.Name = "bbtn_EmploerMoney";
+            this.bbtn_EmploerMoney.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbtn_EmploerMoney_ItemClick);
             // 
-            // bbtnGoodsClass
+            // bbtn_GoodsClass
             // 
-            this.bbtnGoodsClass.Caption = "商品类别";
-            this.bbtnGoodsClass.Id = 12;
-            this.bbtnGoodsClass.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.商品_类别管理;
-            this.bbtnGoodsClass.Name = "bbtnGoodsClass";
-            this.bbtnGoodsClass.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
+            this.bbtn_GoodsClass.Caption = "商品类别";
+            this.bbtn_GoodsClass.Id = 12;
+            this.bbtn_GoodsClass.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.商品_类别管理;
+            this.bbtn_GoodsClass.Name = "bbtn_GoodsClass";
+            this.bbtn_GoodsClass.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
             // 
-            // barButtonItem8
+            // bbtn_EmploerInfomation
             // 
-            this.barButtonItem8.Caption = "员工信息";
-            this.barButtonItem8.Id = 13;
-            this.barButtonItem8.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.员工信息__2_;
-            this.barButtonItem8.Name = "barButtonItem8";
+            this.bbtn_EmploerInfomation.Caption = "员工信息";
+            this.bbtn_EmploerInfomation.Id = 13;
+            this.bbtn_EmploerInfomation.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.员工信息__2_;
+            this.bbtn_EmploerInfomation.Name = "bbtn_EmploerInfomation";
+            this.bbtn_EmploerInfomation.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbtn_EmploerInfomation_ItemClick);
             // 
-            // barButtonItem9
+            // bbtn_Supplyer
             // 
-            this.barButtonItem9.Caption = "供货人员信息";
-            this.barButtonItem9.Id = 14;
-            this.barButtonItem9.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.人员信息;
-            this.barButtonItem9.Name = "barButtonItem9";
+            this.bbtn_Supplyer.Caption = "供货人员信息";
+            this.bbtn_Supplyer.Id = 14;
+            this.bbtn_Supplyer.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.人员信息;
+            this.bbtn_Supplyer.Name = "bbtn_Supplyer";
+            this.bbtn_Supplyer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbtn_Supplyer_ItemClick);
             // 
-            // bbtnGoodsInform
+            // bbtn_GoodsInform
             // 
-            this.bbtnGoodsInform.Caption = "商品信息";
-            this.bbtnGoodsInform.Id = 15;
-            this.bbtnGoodsInform.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.商品信息;
-            this.bbtnGoodsInform.Name = "bbtnGoodsInform";
-            this.bbtnGoodsInform.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbtnGoodsInform_ItemClick);
+            this.bbtn_GoodsInform.Caption = "商品信息";
+            this.bbtn_GoodsInform.Id = 15;
+            this.bbtn_GoodsInform.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.商品信息;
+            this.bbtn_GoodsInform.Name = "bbtn_GoodsInform";
+            this.bbtn_GoodsInform.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbtnGoodsInform_ItemClick);
             // 
-            // barSell
+            // bbtn_SellChart
             // 
-            this.barSell.Caption = "销售统计图表";
-            this.barSell.Id = 16;
-            this.barSell.Name = "barSell";
+            this.bbtn_SellChart.Caption = "销售统计图表";
+            this.bbtn_SellChart.Id = 16;
+            this.bbtn_SellChart.Name = "bbtn_SellChart";
             // 
-            // bbiSuperManage
+            // bbtn_SuperUser
             // 
-            this.bbiSuperManage.Caption = "管理员账户";
-            this.bbiSuperManage.Id = 17;
-            this.bbiSuperManage.Name = "bbiSuperManage";
+            this.bbtn_SuperUser.Caption = "管理员账户";
+            this.bbtn_SuperUser.Id = 17;
+            this.bbtn_SuperUser.Name = "bbtn_SuperUser";
+            this.bbtn_SuperUser.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbtn_SuperUser_ItemClick);
             // 
             // barButtonItem11
             // 
@@ -559,17 +646,19 @@
             this.barButtonItem13.Id = 21;
             this.barButtonItem13.Name = "barButtonItem13";
             // 
-            // barButtonItem15
+            // bbtn_StafUser
             // 
-            this.barButtonItem15.Caption = "员工账户";
-            this.barButtonItem15.Id = 24;
-            this.barButtonItem15.Name = "barButtonItem15";
+            this.bbtn_StafUser.Caption = "员工账户";
+            this.bbtn_StafUser.Id = 24;
+            this.bbtn_StafUser.Name = "bbtn_StafUser";
+            this.bbtn_StafUser.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbtn_StafUser_ItemClick);
             // 
-            // barButtonItem12
+            // bbtn_CustomerUser
             // 
-            this.barButtonItem12.Caption = "顾客账户";
-            this.barButtonItem12.Id = 26;
-            this.barButtonItem12.Name = "barButtonItem12";
+            this.bbtn_CustomerUser.Caption = "顾客账户";
+            this.bbtn_CustomerUser.Id = 26;
+            this.bbtn_CustomerUser.Name = "bbtn_CustomerUser";
+            this.bbtn_CustomerUser.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbtn_CustomerUser_ItemClick);
             // 
             // barButtonItem14
             // 
@@ -602,19 +691,19 @@
             // 
             // ribbonPageGroup2
             // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem8);
+            this.ribbonPageGroup2.ItemLinks.Add(this.bbtn_EmploerInfomation);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "ribbonPageGroup2";
             // 
             // ribbonPageGroup4
             // 
-            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem5);
+            this.ribbonPageGroup4.ItemLinks.Add(this.bbtn_EmploerMoney);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.Text = "ribbonPageGroup4";
             // 
             // ribbonPageGroup5
             // 
-            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem9);
+            this.ribbonPageGroup5.ItemLinks.Add(this.bbtn_Supplyer);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.Text = "ribbonPageGroup5";
             // 
@@ -642,7 +731,7 @@
             // 
             // ribbonPageGroup9
             // 
-            this.ribbonPageGroup9.ItemLinks.Add(this.barSell);
+            this.ribbonPageGroup9.ItemLinks.Add(this.bbtn_SellChart);
             this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem11, true);
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
             this.ribbonPageGroup9.Text = "ribbonPageGroup9";
@@ -682,19 +771,19 @@
             // 
             // rpgManage
             // 
-            this.rpgManage.ItemLinks.Add(this.bbiSuperManage);
+            this.rpgManage.ItemLinks.Add(this.bbtn_SuperUser);
             this.rpgManage.ItemsLayout = DevExpress.XtraBars.Ribbon.RibbonPageGroupItemsLayout.OneRow;
             this.rpgManage.Name = "rpgManage";
             // 
             // ribbonPageGroup11
             // 
-            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem15);
+            this.ribbonPageGroup11.ItemLinks.Add(this.bbtn_StafUser);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
             this.ribbonPageGroup11.Text = "ribbonPageGroup11";
             // 
             // ribbonPageGroup12
             // 
-            this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem12);
+            this.ribbonPageGroup12.ItemLinks.Add(this.bbtn_CustomerUser);
             this.ribbonPageGroup12.Name = "ribbonPageGroup12";
             this.ribbonPageGroup12.Text = "ribbonPageGroup12";
             // 
@@ -706,35 +795,35 @@
             this.ribbonPageGroup8,
             this.ribbonPageGroup13});
             this.PageGoods.Name = "PageGoods";
-            reduceOperation1.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
-            reduceOperation1.GroupName = null;
-            reduceOperation1.ItemLinkIndex = 0;
-            reduceOperation1.ItemLinksCount = 0;
-            reduceOperation1.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
-            reduceOperation2.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
-            reduceOperation2.GroupName = null;
-            reduceOperation2.ItemLinkIndex = 0;
-            reduceOperation2.ItemLinksCount = 0;
-            reduceOperation2.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.Gallery;
-            this.PageGoods.ReduceOperations.Add(reduceOperation1);
-            this.PageGoods.ReduceOperations.Add(reduceOperation2);
+            reduceOperation3.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
+            reduceOperation3.GroupName = null;
+            reduceOperation3.ItemLinkIndex = 0;
+            reduceOperation3.ItemLinksCount = 0;
+            reduceOperation3.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
+            reduceOperation4.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
+            reduceOperation4.GroupName = null;
+            reduceOperation4.ItemLinkIndex = 0;
+            reduceOperation4.ItemLinksCount = 0;
+            reduceOperation4.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.Gallery;
+            this.PageGoods.ReduceOperations.Add(reduceOperation3);
+            this.PageGoods.ReduceOperations.Add(reduceOperation4);
             this.PageGoods.Text = "商品管理";
             // 
             // ribbonPageGroup1
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.bbtnGoodsClass);
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbtn_GoodsClass);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "商品类别";
             // 
             // ribbonPageGroup3
             // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.bbtnGoodsInform);
+            this.ribbonPageGroup3.ItemLinks.Add(this.bbtn_GoodsInform);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "用户管理";
             // 
             // ribbonPageGroup8
             // 
-            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem4);
+            this.ribbonPageGroup8.ItemLinks.Add(this.bbtn_GoodsStock);
             this.ribbonPageGroup8.Name = "ribbonPageGroup8";
             // 
             // ribbonPageGroup13
@@ -752,10 +841,10 @@
             this.repositoryItemRibbonSearchEdit1.AllowFocused = false;
             this.repositoryItemRibbonSearchEdit1.AutoHeight = false;
             this.repositoryItemRibbonSearchEdit1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            editorButtonImageOptions1.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            editorButtonImageOptions19.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.repositoryItemRibbonSearchEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions19, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject73, serializableAppearanceObject74, serializableAppearanceObject75, serializableAppearanceObject76, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions20, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject77, serializableAppearanceObject78, serializableAppearanceObject79, serializableAppearanceObject80, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemRibbonSearchEdit1.Name = "repositoryItemRibbonSearchEdit1";
             this.repositoryItemRibbonSearchEdit1.NullText = "Search";
             // 
@@ -764,10 +853,10 @@
             this.repositoryItemRibbonSearchEdit2.AllowFocused = false;
             this.repositoryItemRibbonSearchEdit2.AutoHeight = false;
             this.repositoryItemRibbonSearchEdit2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            editorButtonImageOptions3.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            editorButtonImageOptions21.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.repositoryItemRibbonSearchEdit2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions21, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject81, serializableAppearanceObject82, serializableAppearanceObject83, serializableAppearanceObject84, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions22, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject85, serializableAppearanceObject86, serializableAppearanceObject87, serializableAppearanceObject88, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemRibbonSearchEdit2.Name = "repositoryItemRibbonSearchEdit2";
             this.repositoryItemRibbonSearchEdit2.NullText = "Search";
             // 
@@ -776,10 +865,10 @@
             this.repositoryItemRibbonSearchEdit3.AllowFocused = false;
             this.repositoryItemRibbonSearchEdit3.AutoHeight = false;
             this.repositoryItemRibbonSearchEdit3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            editorButtonImageOptions5.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            editorButtonImageOptions23.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.repositoryItemRibbonSearchEdit3.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions5, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions6, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject21, serializableAppearanceObject22, serializableAppearanceObject23, serializableAppearanceObject24, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions23, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject89, serializableAppearanceObject90, serializableAppearanceObject91, serializableAppearanceObject92, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions24, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject93, serializableAppearanceObject94, serializableAppearanceObject95, serializableAppearanceObject96, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemRibbonSearchEdit3.Name = "repositoryItemRibbonSearchEdit3";
             this.repositoryItemRibbonSearchEdit3.NullText = "Search";
             // 
@@ -788,10 +877,10 @@
             this.repositoryItemRibbonSearchEdit4.AllowFocused = false;
             this.repositoryItemRibbonSearchEdit4.AutoHeight = false;
             this.repositoryItemRibbonSearchEdit4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            editorButtonImageOptions7.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            editorButtonImageOptions25.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.repositoryItemRibbonSearchEdit4.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions7, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject25, serializableAppearanceObject26, serializableAppearanceObject27, serializableAppearanceObject28, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions8, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject29, serializableAppearanceObject30, serializableAppearanceObject31, serializableAppearanceObject32, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions25, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject97, serializableAppearanceObject98, serializableAppearanceObject99, serializableAppearanceObject100, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions26, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject101, serializableAppearanceObject102, serializableAppearanceObject103, serializableAppearanceObject104, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemRibbonSearchEdit4.Name = "repositoryItemRibbonSearchEdit4";
             this.repositoryItemRibbonSearchEdit4.NullText = "Search";
             // 
@@ -800,10 +889,10 @@
             this.repositoryItemRibbonSearchEdit5.AllowFocused = false;
             this.repositoryItemRibbonSearchEdit5.AutoHeight = false;
             this.repositoryItemRibbonSearchEdit5.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            editorButtonImageOptions9.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            editorButtonImageOptions27.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.repositoryItemRibbonSearchEdit5.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions9, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject33, serializableAppearanceObject34, serializableAppearanceObject35, serializableAppearanceObject36, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions10, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject37, serializableAppearanceObject38, serializableAppearanceObject39, serializableAppearanceObject40, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions27, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject105, serializableAppearanceObject106, serializableAppearanceObject107, serializableAppearanceObject108, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions28, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject109, serializableAppearanceObject110, serializableAppearanceObject111, serializableAppearanceObject112, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemRibbonSearchEdit5.Name = "repositoryItemRibbonSearchEdit5";
             this.repositoryItemRibbonSearchEdit5.NullText = "Search";
             // 
@@ -812,10 +901,10 @@
             this.repositoryItemRibbonSearchEdit6.AllowFocused = false;
             this.repositoryItemRibbonSearchEdit6.AutoHeight = false;
             this.repositoryItemRibbonSearchEdit6.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            editorButtonImageOptions11.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            editorButtonImageOptions29.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.repositoryItemRibbonSearchEdit6.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions11, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject41, serializableAppearanceObject42, serializableAppearanceObject43, serializableAppearanceObject44, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions12, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject45, serializableAppearanceObject46, serializableAppearanceObject47, serializableAppearanceObject48, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions29, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject113, serializableAppearanceObject114, serializableAppearanceObject115, serializableAppearanceObject116, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions30, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject117, serializableAppearanceObject118, serializableAppearanceObject119, serializableAppearanceObject120, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemRibbonSearchEdit6.Name = "repositoryItemRibbonSearchEdit6";
             this.repositoryItemRibbonSearchEdit6.NullText = "Search";
             // 
@@ -834,34 +923,43 @@
             // xtb_ControlPanel
             // 
             this.xtb_ControlPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtb_ControlPanel.Location = new System.Drawing.Point(250, 0);
+            this.xtb_ControlPanel.Location = new System.Drawing.Point(42, 0);
             this.xtb_ControlPanel.Margin = new System.Windows.Forms.Padding(4);
             this.xtb_ControlPanel.MultiLine = DevExpress.Utils.DefaultBoolean.True;
             this.xtb_ControlPanel.Name = "xtb_ControlPanel";
-            this.xtb_ControlPanel.SelectedTabPage = this.xtpGoodsClass;
-            this.xtb_ControlPanel.Size = new System.Drawing.Size(979, 556);
+            this.xtb_ControlPanel.SelectedTabPage = this.xtp_GoodsClass;
+            this.xtb_ControlPanel.Size = new System.Drawing.Size(1187, 556);
             this.xtb_ControlPanel.TabIndex = 0;
             this.xtb_ControlPanel.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.xtpGoodsClass,
-            this.xtpSupplier,
-            this.xtpSuperUserControl,
-            this.xtpGoodsInfom,
-            this.xtpGoods,
-            this.xtraTabPage7,
-            this.xtraTabPage8,
-            this.xtraTabPage9,
+            this.xtp_GoodsClass,
+            this.xtp_Supplier,
+            this.xtp_SuperUserControl,
+            this.xtp_GoodsInfom,
+            this.xtp_GoodsStock,
+            this.xtp_StaffInformation,
+            this.xtp_StafMoney,
+            this.xtp_SupplierInformation,
             this.xtp_ControlUserSuper,
             this.xtp_ControlUserStaff,
             this.xtp_ControlUserCustmer,
             this.xtraTabPage14});
             // 
-            // xtpGoodsClass
+            // xtp_GoodsClass
             // 
-            this.xtpGoodsClass.Controls.Add(this.dataGridView1);
-            this.xtpGoodsClass.Margin = new System.Windows.Forms.Padding(4);
-            this.xtpGoodsClass.Name = "xtpGoodsClass";
-            this.xtpGoodsClass.Size = new System.Drawing.Size(977, 532);
-            this.xtpGoodsClass.Text = "商品类别";
+            this.xtp_GoodsClass.Controls.Add(this.treeList1);
+            this.xtp_GoodsClass.Controls.Add(this.dataGridView1);
+            this.xtp_GoodsClass.Margin = new System.Windows.Forms.Padding(4);
+            this.xtp_GoodsClass.Name = "xtp_GoodsClass";
+            this.xtp_GoodsClass.Size = new System.Drawing.Size(1185, 532);
+            this.xtp_GoodsClass.Text = "商品类别";
+            // 
+            // treeList1
+            // 
+            this.treeList1.Location = new System.Drawing.Point(25, 135);
+            this.treeList1.MenuManager = this.ribbonControl1;
+            this.treeList1.Name = "treeList1";
+            this.treeList1.Size = new System.Drawing.Size(245, 365);
+            this.treeList1.TabIndex = 6;
             // 
             // dataGridView1
             // 
@@ -876,17 +974,18 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewTextBoxColumn10,
+            this.Column9,
             this.dataGridViewTextBoxColumn11,
             this.dataGridViewTextBoxColumn12,
             this.remark});
-            this.dataGridView1.Location = new System.Drawing.Point(25, 69);
+            this.dataGridView1.Location = new System.Drawing.Point(290, 135);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(920, 425);
+            this.dataGridView1.Size = new System.Drawing.Size(860, 365);
             this.dataGridView1.TabIndex = 5;
             // 
             // dataGridViewTextBoxColumn9
@@ -902,6 +1001,12 @@
             this.dataGridViewTextBoxColumn10.HeaderText = "商品类别名称";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "父类别";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn11
             // 
@@ -923,13 +1028,13 @@
             this.remark.Name = "remark";
             this.remark.ReadOnly = true;
             // 
-            // xtpSupplier
+            // xtp_Supplier
             // 
-            this.xtpSupplier.Controls.Add(this.dgvSupplier);
-            this.xtpSupplier.Margin = new System.Windows.Forms.Padding(4);
-            this.xtpSupplier.Name = "xtpSupplier";
-            this.xtpSupplier.Size = new System.Drawing.Size(1185, 532);
-            this.xtpSupplier.Text = "供货商信息";
+            this.xtp_Supplier.Controls.Add(this.dgvSupplier);
+            this.xtp_Supplier.Margin = new System.Windows.Forms.Padding(4);
+            this.xtp_Supplier.Name = "xtp_Supplier";
+            this.xtp_Supplier.Size = new System.Drawing.Size(977, 532);
+            this.xtp_Supplier.Text = "供货商信息";
             // 
             // dgvSupplier
             // 
@@ -1016,13 +1121,13 @@
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
             // 
-            // xtpSuperUserControl
+            // xtp_SuperUserControl
             // 
-            this.xtpSuperUserControl.Controls.Add(this.dgvSuperUserControl);
-            this.xtpSuperUserControl.Margin = new System.Windows.Forms.Padding(4);
-            this.xtpSuperUserControl.Name = "xtpSuperUserControl";
-            this.xtpSuperUserControl.Size = new System.Drawing.Size(1185, 532);
-            this.xtpSuperUserControl.Text = "管理员账户";
+            this.xtp_SuperUserControl.Controls.Add(this.dgvSuperUserControl);
+            this.xtp_SuperUserControl.Margin = new System.Windows.Forms.Padding(4);
+            this.xtp_SuperUserControl.Name = "xtp_SuperUserControl";
+            this.xtp_SuperUserControl.Size = new System.Drawing.Size(977, 532);
+            this.xtp_SuperUserControl.Text = "管理员账户";
             // 
             // dgvSuperUserControl
             // 
@@ -1109,26 +1214,26 @@
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
-            // xtpGoodsInfom
+            // xtp_GoodsInfom
             // 
-            this.xtpGoodsInfom.Margin = new System.Windows.Forms.Padding(4);
-            this.xtpGoodsInfom.Name = "xtpGoodsInfom";
-            this.xtpGoodsInfom.Size = new System.Drawing.Size(1185, 532);
-            this.xtpGoodsInfom.Text = "商品信息";
-            this.xtpGoodsInfom.Paint += new System.Windows.Forms.PaintEventHandler(this.xtraTabPage4_Paint);
+            this.xtp_GoodsInfom.Margin = new System.Windows.Forms.Padding(4);
+            this.xtp_GoodsInfom.Name = "xtp_GoodsInfom";
+            this.xtp_GoodsInfom.Size = new System.Drawing.Size(977, 532);
+            this.xtp_GoodsInfom.Text = "商品信息";
+            this.xtp_GoodsInfom.Paint += new System.Windows.Forms.PaintEventHandler(this.xtraTabPage4_Paint);
             // 
-            // xtpGoods
+            // xtp_GoodsStock
             // 
-            this.xtpGoods.Name = "xtpGoods";
-            this.xtpGoods.Size = new System.Drawing.Size(1185, 532);
-            this.xtpGoods.Text = "商品库存";
+            this.xtp_GoodsStock.Name = "xtp_GoodsStock";
+            this.xtp_GoodsStock.Size = new System.Drawing.Size(977, 532);
+            this.xtp_GoodsStock.Text = "商品库存";
             // 
-            // xtraTabPage7
+            // xtp_StaffInformation
             // 
-            this.xtraTabPage7.Controls.Add(this.dataGridView4);
-            this.xtraTabPage7.Name = "xtraTabPage7";
-            this.xtraTabPage7.Size = new System.Drawing.Size(1185, 532);
-            this.xtraTabPage7.Text = "员工信息";
+            this.xtp_StaffInformation.Controls.Add(this.dataGridView4);
+            this.xtp_StaffInformation.Name = "xtp_StaffInformation";
+            this.xtp_StaffInformation.Size = new System.Drawing.Size(977, 532);
+            this.xtp_StaffInformation.Text = "员工信息";
             // 
             // dataGridView4
             // 
@@ -1199,18 +1304,18 @@
             this.dataGridViewButtonColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewButtonColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
-            // xtraTabPage8
+            // xtp_StafMoney
             // 
-            this.xtraTabPage8.Name = "xtraTabPage8";
-            this.xtraTabPage8.Size = new System.Drawing.Size(1185, 532);
-            this.xtraTabPage8.Text = "员工工资绩效";
+            this.xtp_StafMoney.Name = "xtp_StafMoney";
+            this.xtp_StafMoney.Size = new System.Drawing.Size(977, 532);
+            this.xtp_StafMoney.Text = "员工工资绩效";
             // 
-            // xtraTabPage9
+            // xtp_SupplierInformation
             // 
-            this.xtraTabPage9.Controls.Add(this.dataGridView5);
-            this.xtraTabPage9.Name = "xtraTabPage9";
-            this.xtraTabPage9.Size = new System.Drawing.Size(1185, 532);
-            this.xtraTabPage9.Text = "供货商信息";
+            this.xtp_SupplierInformation.Controls.Add(this.dataGridView5);
+            this.xtp_SupplierInformation.Name = "xtp_SupplierInformation";
+            this.xtp_SupplierInformation.Size = new System.Drawing.Size(977, 532);
+            this.xtp_SupplierInformation.Text = "供货商人员信息";
             // 
             // dataGridView5
             // 
@@ -1297,7 +1402,7 @@
             this.xtp_ControlUserSuper.Controls.Add(this.cbs_btnAddUser);
             this.xtp_ControlUserSuper.Controls.Add(this.cbs_DataGrid);
             this.xtp_ControlUserSuper.Name = "xtp_ControlUserSuper";
-            this.xtp_ControlUserSuper.Size = new System.Drawing.Size(1185, 532);
+            this.xtp_ControlUserSuper.Size = new System.Drawing.Size(977, 532);
             this.xtp_ControlUserSuper.Text = "管理员账户";
             // 
             // cbs_tbSearch
@@ -1426,7 +1531,7 @@
             this.xtp_ControlUserStaff.Controls.Add(this.simpleButton5);
             this.xtp_ControlUserStaff.Controls.Add(this.dataGridView2);
             this.xtp_ControlUserStaff.Name = "xtp_ControlUserStaff";
-            this.xtp_ControlUserStaff.Size = new System.Drawing.Size(1185, 532);
+            this.xtp_ControlUserStaff.Size = new System.Drawing.Size(977, 532);
             this.xtp_ControlUserStaff.Text = "员工账户";
             // 
             // textEdit2
@@ -1553,7 +1658,7 @@
             this.xtp_ControlUserCustmer.Controls.Add(this.simpleButton9);
             this.xtp_ControlUserCustmer.Controls.Add(this.dataGridView3);
             this.xtp_ControlUserCustmer.Name = "xtp_ControlUserCustmer";
-            this.xtp_ControlUserCustmer.Size = new System.Drawing.Size(1185, 532);
+            this.xtp_ControlUserCustmer.Size = new System.Drawing.Size(977, 532);
             this.xtp_ControlUserCustmer.Text = "顾客账户";
             // 
             // textEdit3
@@ -1674,7 +1779,7 @@
             // xtraTabPage14
             // 
             this.xtraTabPage14.Name = "xtraTabPage14";
-            this.xtraTabPage14.Size = new System.Drawing.Size(1185, 532);
+            this.xtraTabPage14.Size = new System.Drawing.Size(977, 532);
             this.xtraTabPage14.Text = "xtraTabPage14";
             // 
             // repositoryItemRibbonSearchEdit7
@@ -1682,10 +1787,10 @@
             this.repositoryItemRibbonSearchEdit7.AllowFocused = false;
             this.repositoryItemRibbonSearchEdit7.AutoHeight = false;
             this.repositoryItemRibbonSearchEdit7.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            editorButtonImageOptions13.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            editorButtonImageOptions31.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.repositoryItemRibbonSearchEdit7.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions13, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject49, serializableAppearanceObject50, serializableAppearanceObject51, serializableAppearanceObject52, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions14, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject53, serializableAppearanceObject54, serializableAppearanceObject55, serializableAppearanceObject56, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions31, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject121, serializableAppearanceObject122, serializableAppearanceObject123, serializableAppearanceObject124, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions32, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject125, serializableAppearanceObject126, serializableAppearanceObject127, serializableAppearanceObject128, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemRibbonSearchEdit7.Name = "repositoryItemRibbonSearchEdit7";
             this.repositoryItemRibbonSearchEdit7.NullText = "Search";
             // 
@@ -1744,10 +1849,10 @@
             this.repositoryItemRibbonSearchEdit8.AllowFocused = false;
             this.repositoryItemRibbonSearchEdit8.AutoHeight = false;
             this.repositoryItemRibbonSearchEdit8.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            editorButtonImageOptions15.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            editorButtonImageOptions33.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.repositoryItemRibbonSearchEdit8.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions15, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject57, serializableAppearanceObject58, serializableAppearanceObject59, serializableAppearanceObject60, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions16, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject61, serializableAppearanceObject62, serializableAppearanceObject63, serializableAppearanceObject64, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions33, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject129, serializableAppearanceObject130, serializableAppearanceObject131, serializableAppearanceObject132, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions34, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject133, serializableAppearanceObject134, serializableAppearanceObject135, serializableAppearanceObject136, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemRibbonSearchEdit8.Name = "repositoryItemRibbonSearchEdit8";
             this.repositoryItemRibbonSearchEdit8.NullText = "Search";
             // 
@@ -1756,12 +1861,21 @@
             this.repositoryItemRibbonSearchEdit9.AllowFocused = false;
             this.repositoryItemRibbonSearchEdit9.AutoHeight = false;
             this.repositoryItemRibbonSearchEdit9.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            editorButtonImageOptions17.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            editorButtonImageOptions35.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.repositoryItemRibbonSearchEdit9.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions17, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject65, serializableAppearanceObject66, serializableAppearanceObject67, serializableAppearanceObject68, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions18, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject69, serializableAppearanceObject70, serializableAppearanceObject71, serializableAppearanceObject72, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions35, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject137, serializableAppearanceObject138, serializableAppearanceObject139, serializableAppearanceObject140, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions36, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject141, serializableAppearanceObject142, serializableAppearanceObject143, serializableAppearanceObject144, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemRibbonSearchEdit9.Name = "repositoryItemRibbonSearchEdit9";
             this.repositoryItemRibbonSearchEdit9.NullText = "Search";
+            // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            // 
+            // accordionControlElement2
+            // 
+            this.accordionControlElement2.Name = "accordionControlElement2";
+            this.accordionControlElement2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             // 
             // Control
             // 
@@ -1793,15 +1907,16 @@
             this.sidePanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xtb_ControlPanel)).EndInit();
             this.xtb_ControlPanel.ResumeLayout(false);
-            this.xtpGoodsClass.ResumeLayout(false);
+            this.xtp_GoodsClass.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.treeList1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.xtpSupplier.ResumeLayout(false);
+            this.xtp_Supplier.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSupplier)).EndInit();
-            this.xtpSuperUserControl.ResumeLayout(false);
+            this.xtp_SuperUserControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSuperUserControl)).EndInit();
-            this.xtraTabPage7.ResumeLayout(false);
+            this.xtp_StaffInformation.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            this.xtraTabPage9.ResumeLayout(false);
+            this.xtp_SupplierInformation.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.xtp_ControlUserSuper.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cbs_tbSearch.Properties)).EndInit();
@@ -1840,7 +1955,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem bbtn_GoodsStock;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
         private DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit repositoryItemRibbonSearchEdit4;
         private DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit repositoryItemRibbonSearchEdit5;
@@ -1849,16 +1964,16 @@
         private DevExpress.XtraBars.PopupMenu popupMenu1;
         private DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit repositoryItemRibbonSearchEdit7;
         private DevExpress.XtraBars.BarSubItem barSubItem2;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem bbtn_EmploerMoney;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
-        private DevExpress.XtraBars.BarButtonItem bbtnGoodsClass;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
-        private DevExpress.XtraBars.BarButtonItem bbtnGoodsInform;
-        private DevExpress.XtraBars.BarButtonItem barSell;
+        private DevExpress.XtraBars.BarButtonItem bbtn_GoodsClass;
+        private DevExpress.XtraBars.BarButtonItem bbtn_EmploerInfomation;
+        private DevExpress.XtraBars.BarButtonItem bbtn_Supplyer;
+        private DevExpress.XtraBars.BarButtonItem bbtn_GoodsInform;
+        private DevExpress.XtraBars.BarButtonItem bbtn_SellChart;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
@@ -1868,19 +1983,19 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage rbpManage;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpgManage;
         private DevExpress.XtraBars.Ribbon.RibbonPageCategory rbcStatistics;
-        private DevExpress.XtraBars.BarButtonItem bbiSuperManage;
+        private DevExpress.XtraBars.BarButtonItem bbtn_SuperUser;
         private DevExpress.XtraBars.BarButtonItem barButtonItem11;
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem15;
+        private DevExpress.XtraBars.BarButtonItem bbtn_StafUser;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
         private DevExpress.XtraBars.Ribbon.RibbonPageCategory ribbonPageCategory1;
         private DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit repositoryItemRibbonSearchEdit8;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
+        private DevExpress.XtraBars.BarButtonItem bbtn_CustomerUser;
         private DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit repositoryItemRibbonSearchEdit9;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
         private DevExpress.XtraTab.XtraTabControl xtb_ControlPanel;
-        private DevExpress.XtraTab.XtraTabPage xtpSupplier;
+        private DevExpress.XtraTab.XtraTabPage xtp_Supplier;
         private System.Windows.Forms.DataGridView dgvSupplier;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -1890,8 +2005,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private DevExpress.XtraTab.XtraTabPage xtpGoodsClass;
-        private DevExpress.XtraTab.XtraTabPage xtpSuperUserControl;
+        private DevExpress.XtraTab.XtraTabPage xtp_GoodsClass;
+        private DevExpress.XtraTab.XtraTabPage xtp_SuperUserControl;
         private System.Windows.Forms.DataGridView dgvSuperUserControl;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -1901,11 +2016,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private DevExpress.XtraTab.XtraTabPage xtpGoodsInfom;
-        private DevExpress.XtraTab.XtraTabPage xtpGoods;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage7;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage8;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage9;
+        private DevExpress.XtraTab.XtraTabPage xtp_GoodsInfom;
+        private DevExpress.XtraTab.XtraTabPage xtp_GoodsStock;
+        private DevExpress.XtraTab.XtraTabPage xtp_StaffInformation;
+        private DevExpress.XtraTab.XtraTabPage xtp_StafMoney;
+        private DevExpress.XtraTab.XtraTabPage xtp_SupplierInformation;
         private DevExpress.XtraTab.XtraTabPage xtp_ControlUserSuper;
         private DevExpress.XtraTab.XtraTabPage xtp_ControlUserStaff;
         private DevExpress.XtraTab.XtraTabPage xtp_ControlUserCustmer;
@@ -1916,16 +2031,15 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup15;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup16;
         private System.Windows.Forms.DataGridView cbs_DataGrid;
-        private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
         private System.Windows.Forms.DataGridViewButtonColumn dataGridViewTextBoxColumn17;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement7;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement8;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement9;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ace_StafInformation;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ace_StafMoney;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ace_SupplierInformation;
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator2;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement10;
@@ -1934,14 +2048,13 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement13;
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator3;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement14;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement15;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement16;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ace_SuperUser;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ace_StaffUser;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ace_Customer;
         private DevExpress.XtraEditors.SimpleButton cbs_btnSearchAll;
         private DevExpress.XtraEditors.SimpleButton cbs_btnAddUser;
         private DevExpress.XtraEditors.TextEdit cbs_tbSearch;
         private DevExpress.XtraEditors.SimpleButton cus_btSearch;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
         private DevExpress.XtraEditors.SimpleButton cbs_btnDleteUser;
         private DevExpress.XtraEditors.TextEdit textEdit2;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
@@ -1966,11 +2079,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
         private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn remark;
         private System.Windows.Forms.DataGridView dataGridView4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
@@ -1986,5 +2094,20 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn34;
         private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn ContactInformation;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
+        private DevExpress.XtraTreeList.TreeList treeList1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn remark;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement6;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ace_GoodsClass;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ace_GoodsInformation;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ace_GoodsStock;
+        private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator5;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;
     }
 }

@@ -52,7 +52,7 @@ namespace EasyBuy
 
         private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            xtb_ControlPanel.SelectedTabPage = xtpGoodsClass; 
+            xtb_ControlPanel.SelectedTabPage = xtp_GoodsClass; 
         }
 
         private void pcbtnSearchAll_Click(object sender, EventArgs e)
@@ -62,8 +62,7 @@ namespace EasyBuy
 
         private void bbtnGoodsInform_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            xtb_ControlPanel.SelectedTabPage = xtpGoodsClass;
-
+            xtb_ControlPanel.SelectedTabPage = xtp_GoodsInfom;
         }
 
 
@@ -95,6 +94,91 @@ namespace EasyBuy
                 cbs_tbSearch.Text = "";
                 cbs_tbSearch.ForeColor = Color.Black;
             }
+        }
+
+        private void bbtn_GoodsStock_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtp_GoodsStock;
+        }
+
+        private void bbtn_EmploerInfomation_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtp_StaffInformation;
+        }
+
+        private void bbtn_EmploerMoney_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtp_StafMoney;
+        }
+
+        private void bbtn_Supplyer_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtp_SupplierInformation;
+        }
+
+        private void bbtn_SuperUser_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtp_SuperUserControl;
+        }
+
+        private void bbtn_StafUser_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtp_StafMoney;
+        }
+
+        private void bbtn_CustomerUser_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtp_ControlUserCustmer; ;
+        }
+
+        private void ace_GoodsClass_Click(object sender, EventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtp_GoodsClass;
+        }
+
+        private void ace_GoodsInformation_Click(object sender, EventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtp_GoodsInfom;
+        }
+
+        private void ace_GoodsStock_Click(object sender, EventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtp_GoodsStock;
+        }
+
+        private void ace_StafInformation_Click(object sender, EventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtp_StaffInformation;
+        }
+
+        private void ace_StafMoney_Click(object sender, EventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtp_StafMoney;
+        }
+
+        private void ace_SupplierInformation_Click(object sender, EventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtp_SupplierInformation;
+        }
+
+        private void ace_SuperUser_Click(object sender, EventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtp_SuperUserControl;
+        }
+
+        private void ace_StaffUser_Click(object sender, EventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtp_StafMoney;
+        }
+
+        private void ace_Customer_Click(object sender, EventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtp_ControlUserCustmer; ;
+        }
+
+        private void accordionControlElement6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
