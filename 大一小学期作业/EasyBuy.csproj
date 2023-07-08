@@ -132,6 +132,12 @@
     <Compile Include="Control.Designer.cs">
       <DependentUpon>Control.cs</DependentUpon>
     </Compile>
+    <Compile Include="SecondPage\csu_AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondPage\DirectXForm1.Designer.cs">
+      <DependentUpon>csu_AddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Test.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +163,9 @@
     </Compile>
     <EmbeddedResource Include="Control.resx">
       <DependentUpon>Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecondPage\csu_AddUser.resx">
+      <DependentUpon>csu_AddUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Test.resx">
       <DependentUpon>Test.cs</DependentUpon>

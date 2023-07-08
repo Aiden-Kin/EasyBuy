@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using EasyBuy.SecondPage;
 using EasyBuy_BLL;
 using EasyBuy_Model;
 using System;
@@ -194,7 +195,14 @@ namespace EasyBuy
             {
                 MessageBox.Show(ex.Message);
             }
+            cbs_SuperUserDataGrid.AutoGenerateColumns = false;
             cbs_SuperUserDataGrid.DataSource = superUser;
+        }
+
+        private void cbs_btnAddUser_Click(object sender, EventArgs e)
+        {
+            csu_AddUser addUser = new csu_AddUser();
+            addUser.Show();
         }
     }
 }

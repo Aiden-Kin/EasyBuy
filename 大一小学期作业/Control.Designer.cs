@@ -152,51 +152,6 @@
             this.ribbonReportDesigner1 = new DevExpress.XtraReports.UserDesigner.Native.RibbonReportDesigner();
             this.ribbonReportDesigner2 = new DevExpress.XtraReports.UserDesigner.Native.RibbonReportDesigner();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.bbtn_GoodsStock = new DevExpress.XtraBars.BarButtonItem();
-            this.barSubItem2 = new DevExpress.XtraBars.BarSubItem();
-            this.bbtn_EmploerMoney = new DevExpress.XtraBars.BarButtonItem();
-            this.bbtn_GoodsClass = new DevExpress.XtraBars.BarButtonItem();
-            this.bbtn_EmploerInfomation = new DevExpress.XtraBars.BarButtonItem();
-            this.bbtn_Supplyer = new DevExpress.XtraBars.BarButtonItem();
-            this.bbtn_GoodsInform = new DevExpress.XtraBars.BarButtonItem();
-            this.bbtn_SellChart = new DevExpress.XtraBars.BarButtonItem();
-            this.bbtn_SuperUser = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
-            this.bbtn_StafUser = new DevExpress.XtraBars.BarButtonItem();
-            this.bbtn_CustomerUser = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageCategory1 = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
-            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rbcStatistics = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rbcControl = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
-            this.rbpManage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.rpgManage = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.PageGoods = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.repositoryItemRibbonSearchEdit1 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
-            this.repositoryItemRibbonSearchEdit2 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
-            this.repositoryItemRibbonSearchEdit3 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
-            this.repositoryItemRibbonSearchEdit4 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
-            this.repositoryItemRibbonSearchEdit5 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
-            this.repositoryItemRibbonSearchEdit6 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
-            this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             this.xtb_ControlPanel = new DevExpress.XtraTab.XtraTabControl();
             this.xtp_GoodsClass = new DevExpress.XtraTab.XtraTabPage();
             this.treeList1 = new DevExpress.XtraTreeList.TreeList();
@@ -258,7 +213,7 @@
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.actionColum = new System.Windows.Forms.DataGridViewLinkColumn();
             this.xtp_ControlUserStaff = new DevExpress.XtraTab.XtraTabPage();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
@@ -284,6 +239,51 @@
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.xtraTabPage14 = new DevExpress.XtraTab.XtraTabPage();
+            this.bbtn_GoodsStock = new DevExpress.XtraBars.BarButtonItem();
+            this.barSubItem2 = new DevExpress.XtraBars.BarSubItem();
+            this.bbtn_EmploerMoney = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtn_GoodsClass = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtn_EmploerInfomation = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtn_Supplyer = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtn_GoodsInform = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtn_SellChart = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtn_SuperUser = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtn_StafUser = new DevExpress.XtraBars.BarButtonItem();
+            this.bbtn_CustomerUser = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
+            this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemTimeEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit();
+            this.ribbonPageCategory1 = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
+            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rbcStatistics = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rbcControl = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
+            this.rbpManage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.rpgManage = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.PageGoods = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.repositoryItemDateTimeOffsetEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemDateTimeOffsetEdit();
+            this.repositoryItemRibbonSearchEdit1 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
+            this.repositoryItemRibbonSearchEdit2 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
+            this.repositoryItemRibbonSearchEdit3 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
+            this.repositoryItemRibbonSearchEdit4 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
+            this.repositoryItemRibbonSearchEdit5 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
+            this.repositoryItemRibbonSearchEdit6 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
+            this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
             this.repositoryItemRibbonSearchEdit7 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
@@ -295,16 +295,9 @@
             this.repositoryItemRibbonSearchEdit9 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit6)).BeginInit();
-            this.sidePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtb_ControlPanel)).BeginInit();
             this.xtb_ControlPanel.SuspendLayout();
             this.xtp_GoodsClass.SuspendLayout();
@@ -327,6 +320,15 @@
             this.xtp_ControlUserCustmer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTimeEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateTimeOffsetEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit6)).BeginInit();
+            this.sidePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit9)).BeginInit();
@@ -383,7 +385,8 @@
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
             this.accordionControl1.Margin = new System.Windows.Forms.Padding(4);
             this.accordionControl1.Name = "accordionControl1";
-            this.accordionControl1.Size = new System.Drawing.Size(250, 559);
+            this.accordionControl1.OptionsMinimizing.State = DevExpress.XtraBars.Navigation.AccordionControlState.Minimized;
+            this.accordionControl1.Size = new System.Drawing.Size(42, 561);
             this.accordionControl1.TabIndex = 6;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -552,19 +555,907 @@
             this.bbtn_StafUser,
             this.bbtn_CustomerUser,
             this.barButtonItem14,
-            this.barButtonItem16});
+            this.barButtonItem16,
+            this.barButtonItem3,
+            this.barButtonItem4,
+            this.barSubItem1,
+            this.barEditItem1});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.ribbonControl1.MaxItemId = 29;
+            this.ribbonControl1.MaxItemId = 36;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.OptionsMenuMinWidth = 320;
             this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
             this.ribbonPageCategory1,
             this.rbcStatistics,
             this.rbcControl});
+            this.ribbonControl1.PageHeaderItemLinks.Add(this.barSubItem1);
+            this.ribbonControl1.PageHeaderItemLinks.Add(this.barEditItem1);
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.PageGoods});
-            this.ribbonControl1.Size = new System.Drawing.Size(1297, 171);
+            this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemDateTimeOffsetEdit1,
+            this.repositoryItemTimeEdit1});
+            this.ribbonControl1.Size = new System.Drawing.Size(1214, 171);
+            // 
+            // xtb_ControlPanel
+            // 
+            this.xtb_ControlPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xtb_ControlPanel.Location = new System.Drawing.Point(42, 0);
+            this.xtb_ControlPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.xtb_ControlPanel.MultiLine = DevExpress.Utils.DefaultBoolean.True;
+            this.xtb_ControlPanel.Name = "xtb_ControlPanel";
+            this.xtb_ControlPanel.SelectedTabPage = this.xtp_GoodsClass;
+            this.xtb_ControlPanel.Size = new System.Drawing.Size(1172, 561);
+            this.xtb_ControlPanel.TabIndex = 0;
+            this.xtb_ControlPanel.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtp_GoodsClass,
+            this.xtp_Supplier,
+            this.xtp_SuperUserControl,
+            this.xtp_GoodsInfom,
+            this.xtp_GoodsStock,
+            this.xtp_StaffInformation,
+            this.xtp_StafMoney,
+            this.xtp_SupplierInformation,
+            this.xtp_ControlUserSuper,
+            this.xtp_ControlUserStaff,
+            this.xtp_ControlUserCustmer,
+            this.xtraTabPage14});
+            // 
+            // xtp_GoodsClass
+            // 
+            this.xtp_GoodsClass.Controls.Add(this.treeList1);
+            this.xtp_GoodsClass.Controls.Add(this.dataGridView1);
+            this.xtp_GoodsClass.Margin = new System.Windows.Forms.Padding(4);
+            this.xtp_GoodsClass.Name = "xtp_GoodsClass";
+            this.xtp_GoodsClass.Size = new System.Drawing.Size(1170, 537);
+            this.xtp_GoodsClass.Text = "商品类别";
+            // 
+            // treeList1
+            // 
+            this.treeList1.Location = new System.Drawing.Point(25, 135);
+            this.treeList1.MenuManager = this.ribbonControl1;
+            this.treeList1.Name = "treeList1";
+            this.treeList1.Size = new System.Drawing.Size(245, 365);
+            this.treeList1.TabIndex = 6;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.Column9,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.remark});
+            this.dataGridView1.Location = new System.Drawing.Point(308, 135);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowTemplate.Height = 23;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(841, 359);
+            this.dataGridView1.TabIndex = 5;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "pcID";
+            this.dataGridViewTextBoxColumn9.HeaderText = "商品类别编号";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "pcName";
+            this.dataGridViewTextBoxColumn10.HeaderText = "商品类别名称";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "父类别";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "pcDescription";
+            this.dataGridViewTextBoxColumn11.HeaderText = "类别描述";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "pcAddedTime";
+            this.dataGridViewTextBoxColumn12.HeaderText = "添加时间";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            // 
+            // remark
+            // 
+            this.remark.HeaderText = "备注";
+            this.remark.Name = "remark";
+            this.remark.ReadOnly = true;
+            // 
+            // xtp_Supplier
+            // 
+            this.xtp_Supplier.Controls.Add(this.dgvSupplier);
+            this.xtp_Supplier.Margin = new System.Windows.Forms.Padding(4);
+            this.xtp_Supplier.Name = "xtp_Supplier";
+            this.xtp_Supplier.Size = new System.Drawing.Size(1170, 537);
+            this.xtp_Supplier.Text = "供货商信息";
+            // 
+            // dgvSupplier
+            // 
+            this.dgvSupplier.AllowUserToAddRows = false;
+            this.dgvSupplier.AllowUserToDeleteRows = false;
+            this.dgvSupplier.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvSupplier.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvSupplier.BackgroundColor = System.Drawing.Color.White;
+            this.dgvSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSupplier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8});
+            this.dgvSupplier.Location = new System.Drawing.Point(64, 96);
+            this.dgvSupplier.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvSupplier.Name = "dgvSupplier";
+            this.dgvSupplier.ReadOnly = true;
+            this.dgvSupplier.RowHeadersVisible = false;
+            this.dgvSupplier.RowTemplate.Height = 23;
+            this.dgvSupplier.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvSupplier.Size = new System.Drawing.Size(1252, 408);
+            this.dgvSupplier.TabIndex = 3;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "SupplierID";
+            this.Column1.HeaderText = "供货商号";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Name";
+            this.Column2.HeaderText = "名称";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Linkman";
+            this.Column3.HeaderText = "联系人";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Phone";
+            this.Column4.HeaderText = "联系电话";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "ContactAddress";
+            this.Column5.HeaderText = "联系地址";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "CardDoorBank";
+            this.Column6.HeaderText = "开户银行";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "BankAccount";
+            this.Column7.HeaderText = "银行账号";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "Remark";
+            this.Column8.HeaderText = "备注";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // xtp_SuperUserControl
+            // 
+            this.xtp_SuperUserControl.Controls.Add(this.dgvSuperUserControl);
+            this.xtp_SuperUserControl.Margin = new System.Windows.Forms.Padding(4);
+            this.xtp_SuperUserControl.Name = "xtp_SuperUserControl";
+            this.xtp_SuperUserControl.Size = new System.Drawing.Size(1170, 537);
+            this.xtp_SuperUserControl.Text = "管理员账户";
+            // 
+            // dgvSuperUserControl
+            // 
+            this.dgvSuperUserControl.AllowUserToAddRows = false;
+            this.dgvSuperUserControl.AllowUserToDeleteRows = false;
+            this.dgvSuperUserControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvSuperUserControl.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvSuperUserControl.BackgroundColor = System.Drawing.Color.White;
+            this.dgvSuperUserControl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSuperUserControl.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8});
+            this.dgvSuperUserControl.Location = new System.Drawing.Point(50, 98);
+            this.dgvSuperUserControl.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvSuperUserControl.Name = "dgvSuperUserControl";
+            this.dgvSuperUserControl.ReadOnly = true;
+            this.dgvSuperUserControl.RowHeadersVisible = false;
+            this.dgvSuperUserControl.RowTemplate.Height = 23;
+            this.dgvSuperUserControl.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvSuperUserControl.Size = new System.Drawing.Size(1277, 418);
+            this.dgvSuperUserControl.TabIndex = 4;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "SupplierID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "供货商号";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "名称";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Linkman";
+            this.dataGridViewTextBoxColumn3.HeaderText = "联系人";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Phone";
+            this.dataGridViewTextBoxColumn4.HeaderText = "联系电话";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "ContactAddress";
+            this.dataGridViewTextBoxColumn5.HeaderText = "联系地址";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "CardDoorBank";
+            this.dataGridViewTextBoxColumn6.HeaderText = "开户银行";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "BankAccount";
+            this.dataGridViewTextBoxColumn7.HeaderText = "银行账号";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Remark";
+            this.dataGridViewTextBoxColumn8.HeaderText = "备注";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // xtp_GoodsInfom
+            // 
+            this.xtp_GoodsInfom.Margin = new System.Windows.Forms.Padding(4);
+            this.xtp_GoodsInfom.Name = "xtp_GoodsInfom";
+            this.xtp_GoodsInfom.Size = new System.Drawing.Size(1170, 537);
+            this.xtp_GoodsInfom.Text = "商品信息";
+            this.xtp_GoodsInfom.Paint += new System.Windows.Forms.PaintEventHandler(this.xtraTabPage4_Paint);
+            // 
+            // xtp_GoodsStock
+            // 
+            this.xtp_GoodsStock.Name = "xtp_GoodsStock";
+            this.xtp_GoodsStock.Size = new System.Drawing.Size(1170, 537);
+            this.xtp_GoodsStock.Text = "商品库存";
+            // 
+            // xtp_StaffInformation
+            // 
+            this.xtp_StaffInformation.Controls.Add(this.dataGridView4);
+            this.xtp_StaffInformation.Name = "xtp_StaffInformation";
+            this.xtp_StaffInformation.Size = new System.Drawing.Size(1170, 537);
+            this.xtp_StaffInformation.Text = "员工信息";
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.AllowUserToAddRows = false;
+            this.dataGridView4.AllowUserToDeleteRows = false;
+            this.dataGridView4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView4.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn26,
+            this.dataGridViewTextBoxColumn27,
+            this.dataGridViewTextBoxColumn28,
+            this.age,
+            this.dataGridViewTextBoxColumn29,
+            this.dataGridViewButtonColumn3});
+            this.dataGridView4.Location = new System.Drawing.Point(63, 120);
+            this.dataGridView4.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.ReadOnly = true;
+            this.dataGridView4.RowHeadersVisible = false;
+            this.dataGridView4.RowTemplate.Height = 23;
+            this.dataGridView4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView4.Size = new System.Drawing.Size(1273, 405);
+            this.dataGridView4.TabIndex = 6;
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.DataPropertyName = "pcID";
+            this.dataGridViewTextBoxColumn26.HeaderText = "工号";
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            this.dataGridViewTextBoxColumn26.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "pcName";
+            this.dataGridViewTextBoxColumn27.HeaderText = "姓名";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            this.dataGridViewTextBoxColumn27.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn28
+            // 
+            this.dataGridViewTextBoxColumn28.DataPropertyName = "pcDescription";
+            this.dataGridViewTextBoxColumn28.HeaderText = "性别";
+            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            this.dataGridViewTextBoxColumn28.ReadOnly = true;
+            // 
+            // age
+            // 
+            this.age.HeaderText = "年龄";
+            this.age.Name = "age";
+            this.age.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn29
+            // 
+            this.dataGridViewTextBoxColumn29.DataPropertyName = "pcAddedTime";
+            this.dataGridViewTextBoxColumn29.HeaderText = "状态";
+            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
+            this.dataGridViewTextBoxColumn29.ReadOnly = true;
+            // 
+            // dataGridViewButtonColumn3
+            // 
+            this.dataGridViewButtonColumn3.HeaderText = "岗位";
+            this.dataGridViewButtonColumn3.Name = "dataGridViewButtonColumn3";
+            this.dataGridViewButtonColumn3.ReadOnly = true;
+            this.dataGridViewButtonColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // xtp_StafMoney
+            // 
+            this.xtp_StafMoney.Name = "xtp_StafMoney";
+            this.xtp_StafMoney.Size = new System.Drawing.Size(1170, 537);
+            this.xtp_StafMoney.Text = "员工工资绩效";
+            // 
+            // xtp_SupplierInformation
+            // 
+            this.xtp_SupplierInformation.Controls.Add(this.dataGridView5);
+            this.xtp_SupplierInformation.Name = "xtp_SupplierInformation";
+            this.xtp_SupplierInformation.Size = new System.Drawing.Size(1170, 537);
+            this.xtp_SupplierInformation.Text = "供货商人员信息";
+            // 
+            // dataGridView5
+            // 
+            this.dataGridView5.AllowUserToAddRows = false;
+            this.dataGridView5.AllowUserToDeleteRows = false;
+            this.dataGridView5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView5.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView5.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn30,
+            this.dataGridViewTextBoxColumn31,
+            this.dataGridViewTextBoxColumn32,
+            this.dataGridViewTextBoxColumn33,
+            this.dataGridViewTextBoxColumn34,
+            this.dataGridViewButtonColumn4,
+            this.ContactInformation});
+            this.dataGridView5.Location = new System.Drawing.Point(41, 85);
+            this.dataGridView5.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.ReadOnly = true;
+            this.dataGridView5.RowHeadersVisible = false;
+            this.dataGridView5.RowTemplate.Height = 23;
+            this.dataGridView5.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView5.Size = new System.Drawing.Size(1306, 429);
+            this.dataGridView5.TabIndex = 7;
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "pcID";
+            this.dataGridViewTextBoxColumn30.HeaderText = "供货商编号";
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            this.dataGridViewTextBoxColumn30.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn31
+            // 
+            this.dataGridViewTextBoxColumn31.DataPropertyName = "pcName";
+            this.dataGridViewTextBoxColumn31.HeaderText = "名称";
+            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
+            this.dataGridViewTextBoxColumn31.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn32
+            // 
+            this.dataGridViewTextBoxColumn32.DataPropertyName = "pcDescription";
+            this.dataGridViewTextBoxColumn32.HeaderText = "地址";
+            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
+            this.dataGridViewTextBoxColumn32.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn33
+            // 
+            this.dataGridViewTextBoxColumn33.HeaderText = "法人";
+            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
+            this.dataGridViewTextBoxColumn33.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn34
+            // 
+            this.dataGridViewTextBoxColumn34.DataPropertyName = "pcAddedTime";
+            this.dataGridViewTextBoxColumn34.HeaderText = "注册日期";
+            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
+            this.dataGridViewTextBoxColumn34.ReadOnly = true;
+            // 
+            // dataGridViewButtonColumn4
+            // 
+            this.dataGridViewButtonColumn4.HeaderText = "联系人";
+            this.dataGridViewButtonColumn4.Name = "dataGridViewButtonColumn4";
+            this.dataGridViewButtonColumn4.ReadOnly = true;
+            this.dataGridViewButtonColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // ContactInformation
+            // 
+            this.ContactInformation.HeaderText = "联系方式";
+            this.ContactInformation.Name = "ContactInformation";
+            this.ContactInformation.ReadOnly = true;
+            // 
+            // xtp_ControlUserSuper
+            // 
+            this.xtp_ControlUserSuper.Controls.Add(this.cbs_tbSearch);
+            this.xtp_ControlUserSuper.Controls.Add(this.cus_btSearch);
+            this.xtp_ControlUserSuper.Controls.Add(this.cbs_btnDleteUser);
+            this.xtp_ControlUserSuper.Controls.Add(this.cbs_btnSearchAll);
+            this.xtp_ControlUserSuper.Controls.Add(this.cbs_btnAddUser);
+            this.xtp_ControlUserSuper.Controls.Add(this.cbs_SuperUserDataGrid);
+            this.xtp_ControlUserSuper.Name = "xtp_ControlUserSuper";
+            this.xtp_ControlUserSuper.Size = new System.Drawing.Size(1170, 537);
+            this.xtp_ControlUserSuper.Text = "管理员账户";
+            // 
+            // cbs_tbSearch
+            // 
+            this.cbs_tbSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbs_tbSearch.EditValue = "搜索用户";
+            this.cbs_tbSearch.Location = new System.Drawing.Point(814, 30);
+            this.cbs_tbSearch.MenuManager = this.ribbonControl1;
+            this.cbs_tbSearch.Name = "cbs_tbSearch";
+            this.cbs_tbSearch.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.cbs_tbSearch.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.cbs_tbSearch.Properties.Appearance.Options.UseFont = true;
+            this.cbs_tbSearch.Properties.Appearance.Options.UseForeColor = true;
+            this.cbs_tbSearch.Size = new System.Drawing.Size(197, 30);
+            this.cbs_tbSearch.TabIndex = 13;
+            this.cbs_tbSearch.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cbs_tbSearch_MouseClick);
+            this.cbs_tbSearch.MouseLeave += new System.EventHandler(this.cbs_tbSearch_MouseLeave);
+            // 
+            // cus_btSearch
+            // 
+            this.cus_btSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cus_btSearch.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.cus_btSearch.Appearance.Options.UseFont = true;
+            this.cus_btSearch.Location = new System.Drawing.Point(1017, 27);
+            this.cus_btSearch.Name = "cus_btSearch";
+            this.cus_btSearch.Size = new System.Drawing.Size(102, 35);
+            this.cus_btSearch.TabIndex = 8;
+            this.cus_btSearch.Text = "搜索";
+            // 
+            // cbs_btnDleteUser
+            // 
+            this.cbs_btnDleteUser.Appearance.BackColor = System.Drawing.Color.Brown;
+            this.cbs_btnDleteUser.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.cbs_btnDleteUser.Appearance.Options.UseBackColor = true;
+            this.cbs_btnDleteUser.Appearance.Options.UseFont = true;
+            this.cbs_btnDleteUser.Location = new System.Drawing.Point(341, 27);
+            this.cbs_btnDleteUser.Name = "cbs_btnDleteUser";
+            this.cbs_btnDleteUser.Size = new System.Drawing.Size(103, 35);
+            this.cbs_btnDleteUser.TabIndex = 8;
+            this.cbs_btnDleteUser.Text = "删除用户";
+            // 
+            // cbs_btnSearchAll
+            // 
+            this.cbs_btnSearchAll.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.cbs_btnSearchAll.Appearance.Options.UseFont = true;
+            this.cbs_btnSearchAll.Location = new System.Drawing.Point(68, 25);
+            this.cbs_btnSearchAll.Name = "cbs_btnSearchAll";
+            this.cbs_btnSearchAll.Size = new System.Drawing.Size(103, 35);
+            this.cbs_btnSearchAll.TabIndex = 8;
+            this.cbs_btnSearchAll.Text = "查询全部";
+            this.cbs_btnSearchAll.Click += new System.EventHandler(this.cbs_btnSearchAll_Click);
+            // 
+            // cbs_btnAddUser
+            // 
+            this.cbs_btnAddUser.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.cbs_btnAddUser.Appearance.Options.UseFont = true;
+            this.cbs_btnAddUser.Location = new System.Drawing.Point(198, 25);
+            this.cbs_btnAddUser.Name = "cbs_btnAddUser";
+            this.cbs_btnAddUser.Size = new System.Drawing.Size(110, 35);
+            this.cbs_btnAddUser.TabIndex = 9;
+            this.cbs_btnAddUser.Text = "添加用户";
+            this.cbs_btnAddUser.Click += new System.EventHandler(this.cbs_btnAddUser_Click);
+            // 
+            // cbs_SuperUserDataGrid
+            // 
+            this.cbs_SuperUserDataGrid.AllowUserToAddRows = false;
+            this.cbs_SuperUserDataGrid.AllowUserToDeleteRows = false;
+            this.cbs_SuperUserDataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbs_SuperUserDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.cbs_SuperUserDataGrid.BackgroundColor = System.Drawing.Color.White;
+            this.cbs_SuperUserDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.cbs_SuperUserDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16,
+            this.actionColum});
+            this.cbs_SuperUserDataGrid.Location = new System.Drawing.Point(27, 86);
+            this.cbs_SuperUserDataGrid.Margin = new System.Windows.Forms.Padding(4);
+            this.cbs_SuperUserDataGrid.Name = "cbs_SuperUserDataGrid";
+            this.cbs_SuperUserDataGrid.ReadOnly = true;
+            this.cbs_SuperUserDataGrid.RowHeadersVisible = false;
+            this.cbs_SuperUserDataGrid.RowTemplate.Height = 23;
+            this.cbs_SuperUserDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.cbs_SuperUserDataGrid.Size = new System.Drawing.Size(1116, 439);
+            this.cbs_SuperUserDataGrid.TabIndex = 5;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "UserName";
+            this.dataGridViewTextBoxColumn13.HeaderText = "用户名";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "UserGroup";
+            this.dataGridViewTextBoxColumn14.HeaderText = "用户组";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "UserDescribe";
+            this.dataGridViewTextBoxColumn15.HeaderText = "用户描述";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "UserRemark";
+            this.dataGridViewTextBoxColumn16.HeaderText = "添加时间";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.ReadOnly = true;
+            // 
+            // actionColum
+            // 
+            this.actionColum.HeaderText = "操作";
+            this.actionColum.Name = "actionColum";
+            this.actionColum.ReadOnly = true;
+            this.actionColum.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.actionColum.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.actionColum.Text = "修改";
+            // 
+            // xtp_ControlUserStaff
+            // 
+            this.xtp_ControlUserStaff.Controls.Add(this.textEdit2);
+            this.xtp_ControlUserStaff.Controls.Add(this.simpleButton2);
+            this.xtp_ControlUserStaff.Controls.Add(this.simpleButton3);
+            this.xtp_ControlUserStaff.Controls.Add(this.simpleButton4);
+            this.xtp_ControlUserStaff.Controls.Add(this.simpleButton5);
+            this.xtp_ControlUserStaff.Controls.Add(this.dataGridView2);
+            this.xtp_ControlUserStaff.Name = "xtp_ControlUserStaff";
+            this.xtp_ControlUserStaff.Size = new System.Drawing.Size(1170, 537);
+            this.xtp_ControlUserStaff.Text = "员工账户";
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textEdit2.EditValue = "搜索用户";
+            this.textEdit2.Location = new System.Drawing.Point(807, 32);
+            this.textEdit2.MenuManager = this.ribbonControl1;
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.textEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.textEdit2.Properties.Appearance.Options.UseFont = true;
+            this.textEdit2.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit2.Size = new System.Drawing.Size(197, 30);
+            this.textEdit2.TabIndex = 19;
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.simpleButton2.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.simpleButton2.Appearance.Options.UseFont = true;
+            this.simpleButton2.Location = new System.Drawing.Point(1010, 29);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(102, 35);
+            this.simpleButton2.TabIndex = 15;
+            this.simpleButton2.Text = "搜索";
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Appearance.BackColor = System.Drawing.Color.Brown;
+            this.simpleButton3.Appearance.BorderColor = System.Drawing.Color.MintCream;
+            this.simpleButton3.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.simpleButton3.Appearance.Options.UseBackColor = true;
+            this.simpleButton3.Appearance.Options.UseBorderColor = true;
+            this.simpleButton3.Appearance.Options.UseFont = true;
+            this.simpleButton3.Location = new System.Drawing.Point(347, 29);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(103, 35);
+            this.simpleButton3.TabIndex = 16;
+            this.simpleButton3.Text = "删除用户";
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.simpleButton4.Appearance.Options.UseFont = true;
+            this.simpleButton4.Location = new System.Drawing.Point(68, 25);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(103, 35);
+            this.simpleButton4.TabIndex = 17;
+            this.simpleButton4.Text = "查询全部";
+            // 
+            // simpleButton5
+            // 
+            this.simpleButton5.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.simpleButton5.Appearance.Options.UseFont = true;
+            this.simpleButton5.Location = new System.Drawing.Point(204, 27);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.Size = new System.Drawing.Size(110, 35);
+            this.simpleButton5.TabIndex = 18;
+            this.simpleButton5.Text = "添加用户";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn22,
+            this.dataGridViewTextBoxColumn23,
+            this.dataGridViewTextBoxColumn24,
+            this.dataGridViewTextBoxColumn25,
+            this.dataGridViewButtonColumn2});
+            this.dataGridView2.Location = new System.Drawing.Point(27, 86);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowHeadersVisible = false;
+            this.dataGridView2.RowTemplate.Height = 23;
+            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView2.Size = new System.Drawing.Size(1116, 439);
+            this.dataGridView2.TabIndex = 14;
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.DataPropertyName = "pcID";
+            this.dataGridViewTextBoxColumn22.HeaderText = "用户名";
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            this.dataGridViewTextBoxColumn22.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.DataPropertyName = "pcName";
+            this.dataGridViewTextBoxColumn23.HeaderText = "用户组";
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            this.dataGridViewTextBoxColumn23.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "pcDescription";
+            this.dataGridViewTextBoxColumn24.HeaderText = "用户描述";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            this.dataGridViewTextBoxColumn24.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.DataPropertyName = "pcAddedTime";
+            this.dataGridViewTextBoxColumn25.HeaderText = "备注";
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            this.dataGridViewTextBoxColumn25.ReadOnly = true;
+            // 
+            // dataGridViewButtonColumn2
+            // 
+            this.dataGridViewButtonColumn2.HeaderText = "修改密码";
+            this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
+            this.dataGridViewButtonColumn2.ReadOnly = true;
+            this.dataGridViewButtonColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // xtp_ControlUserCustmer
+            // 
+            this.xtp_ControlUserCustmer.Controls.Add(this.textEdit3);
+            this.xtp_ControlUserCustmer.Controls.Add(this.simpleButton6);
+            this.xtp_ControlUserCustmer.Controls.Add(this.simpleButton7);
+            this.xtp_ControlUserCustmer.Controls.Add(this.simpleButton8);
+            this.xtp_ControlUserCustmer.Controls.Add(this.simpleButton9);
+            this.xtp_ControlUserCustmer.Controls.Add(this.dataGridView3);
+            this.xtp_ControlUserCustmer.Name = "xtp_ControlUserCustmer";
+            this.xtp_ControlUserCustmer.Size = new System.Drawing.Size(1170, 537);
+            this.xtp_ControlUserCustmer.Text = "顾客账户";
+            // 
+            // textEdit3
+            // 
+            this.textEdit3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textEdit3.EditValue = "搜索用户";
+            this.textEdit3.Location = new System.Drawing.Point(805, 31);
+            this.textEdit3.MenuManager = this.ribbonControl1;
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.textEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.textEdit3.Properties.Appearance.Options.UseFont = true;
+            this.textEdit3.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit3.Size = new System.Drawing.Size(197, 30);
+            this.textEdit3.TabIndex = 19;
+            // 
+            // simpleButton6
+            // 
+            this.simpleButton6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.simpleButton6.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.simpleButton6.Appearance.Options.UseFont = true;
+            this.simpleButton6.Location = new System.Drawing.Point(1008, 28);
+            this.simpleButton6.Name = "simpleButton6";
+            this.simpleButton6.Size = new System.Drawing.Size(102, 35);
+            this.simpleButton6.TabIndex = 15;
+            this.simpleButton6.Text = "搜索";
+            // 
+            // simpleButton7
+            // 
+            this.simpleButton7.Appearance.BackColor = System.Drawing.Color.Brown;
+            this.simpleButton7.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.simpleButton7.Appearance.Options.UseBackColor = true;
+            this.simpleButton7.Appearance.Options.UseFont = true;
+            this.simpleButton7.Location = new System.Drawing.Point(330, 28);
+            this.simpleButton7.Name = "simpleButton7";
+            this.simpleButton7.Size = new System.Drawing.Size(103, 35);
+            this.simpleButton7.TabIndex = 16;
+            this.simpleButton7.Text = "删除用户";
+            // 
+            // simpleButton8
+            // 
+            this.simpleButton8.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.simpleButton8.Appearance.Options.UseFont = true;
+            this.simpleButton8.Location = new System.Drawing.Point(57, 26);
+            this.simpleButton8.Name = "simpleButton8";
+            this.simpleButton8.Size = new System.Drawing.Size(103, 35);
+            this.simpleButton8.TabIndex = 17;
+            this.simpleButton8.Text = "查询全部";
+            // 
+            // simpleButton9
+            // 
+            this.simpleButton9.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.simpleButton9.Appearance.Options.UseFont = true;
+            this.simpleButton9.Location = new System.Drawing.Point(187, 26);
+            this.simpleButton9.Name = "simpleButton9";
+            this.simpleButton9.Size = new System.Drawing.Size(110, 35);
+            this.simpleButton9.TabIndex = 18;
+            this.simpleButton9.Text = "添加用户";
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.AllowUserToDeleteRows = false;
+            this.dataGridView3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView3.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn18,
+            this.dataGridViewTextBoxColumn19,
+            this.dataGridViewTextBoxColumn20,
+            this.dataGridViewTextBoxColumn21,
+            this.dataGridViewButtonColumn1});
+            this.dataGridView3.Location = new System.Drawing.Point(27, 86);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.RowHeadersVisible = false;
+            this.dataGridView3.RowTemplate.Height = 23;
+            this.dataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView3.Size = new System.Drawing.Size(1116, 439);
+            this.dataGridView3.TabIndex = 14;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "pcID";
+            this.dataGridViewTextBoxColumn18.HeaderText = "用户名";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "pcName";
+            this.dataGridViewTextBoxColumn19.HeaderText = "用户组";
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            this.dataGridViewTextBoxColumn19.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "pcDescription";
+            this.dataGridViewTextBoxColumn20.HeaderText = "用户描述";
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            this.dataGridViewTextBoxColumn20.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "pcAddedTime";
+            this.dataGridViewTextBoxColumn21.HeaderText = "备注";
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            this.dataGridViewTextBoxColumn21.ReadOnly = true;
+            // 
+            // dataGridViewButtonColumn1
+            // 
+            this.dataGridViewButtonColumn1.HeaderText = "修改密码";
+            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
+            this.dataGridViewButtonColumn1.ReadOnly = true;
+            this.dataGridViewButtonColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewButtonColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // xtraTabPage14
+            // 
+            this.xtraTabPage14.Name = "xtraTabPage14";
+            this.xtraTabPage14.Size = new System.Drawing.Size(1170, 537);
+            this.xtraTabPage14.Text = "xtraTabPage14";
             // 
             // bbtn_GoodsStock
             // 
@@ -671,6 +1562,39 @@
             this.barButtonItem16.Id = 28;
             this.barButtonItem16.Name = "barButtonItem16";
             // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "barButtonItem3";
+            this.barButtonItem3.Id = 29;
+            this.barButtonItem3.Name = "barButtonItem3";
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "barButtonItem4";
+            this.barButtonItem4.Id = 30;
+            this.barButtonItem4.Name = "barButtonItem4";
+            // 
+            // barSubItem1
+            // 
+            this.barSubItem1.Caption = "barSubItem1";
+            this.barSubItem1.Id = 31;
+            this.barSubItem1.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.商品_类别管理;
+            this.barSubItem1.Name = "barSubItem1";
+            // 
+            // barEditItem1
+            // 
+            this.barEditItem1.Caption = "现在时间：";
+            this.barEditItem1.Edit = this.repositoryItemTimeEdit1;
+            this.barEditItem1.Id = 33;
+            this.barEditItem1.Name = "barEditItem1";
+            // 
+            // repositoryItemTimeEdit1
+            // 
+            this.repositoryItemTimeEdit1.AutoHeight = false;
+            this.repositoryItemTimeEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemTimeEdit1.Name = "repositoryItemTimeEdit1";
+            // 
             // ribbonPageCategory1
             // 
             this.ribbonPageCategory1.Name = "ribbonPageCategory1";
@@ -681,28 +1605,13 @@
             // ribbonPage2
             // 
             this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup2,
-            this.ribbonPageGroup4,
             this.ribbonPageGroup5,
             this.ribbonPageGroup10});
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "人员信息管理";
             // 
-            // ribbonPageGroup2
-            // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.bbtn_EmploerInfomation);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
-            // 
-            // ribbonPageGroup4
-            // 
-            this.ribbonPageGroup4.ItemLinks.Add(this.bbtn_EmploerMoney);
-            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.Text = "ribbonPageGroup4";
-            // 
             // ribbonPageGroup5
             // 
-            this.ribbonPageGroup5.ItemLinks.Add(this.bbtn_Supplyer);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.Text = "ribbonPageGroup5";
             // 
@@ -721,31 +1630,9 @@
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup9,
-            this.ribbonPageGroup14,
-            this.ribbonPageGroup15,
             this.ribbonPageGroup16});
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "统计图表";
-            // 
-            // ribbonPageGroup9
-            // 
-            this.ribbonPageGroup9.ItemLinks.Add(this.bbtn_SellChart);
-            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem11, true);
-            this.ribbonPageGroup9.Name = "ribbonPageGroup9";
-            this.ribbonPageGroup9.Text = "ribbonPageGroup9";
-            // 
-            // ribbonPageGroup14
-            // 
-            this.ribbonPageGroup14.ItemLinks.Add(this.barButtonItem14);
-            this.ribbonPageGroup14.Name = "ribbonPageGroup14";
-            this.ribbonPageGroup14.Text = "订单信息统计";
-            // 
-            // ribbonPageGroup15
-            // 
-            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem16);
-            this.ribbonPageGroup15.Name = "ribbonPageGroup15";
-            this.ribbonPageGroup15.Text = "ribbonPageGroup15";
             // 
             // ribbonPageGroup16
             // 
@@ -790,9 +1677,9 @@
             // 
             this.PageGoods.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1,
-            this.ribbonPageGroup3,
-            this.ribbonPageGroup8,
-            this.ribbonPageGroup13});
+            this.ribbonPageGroup2,
+            this.ribbonPageGroup9,
+            this.ribbonPageGroup14});
             this.PageGoods.Name = "PageGoods";
             reduceOperation5.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
             reduceOperation5.GroupName = null;
@@ -806,34 +1693,44 @@
             reduceOperation6.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.Gallery;
             this.PageGoods.ReduceOperations.Add(reduceOperation5);
             this.PageGoods.ReduceOperations.Add(reduceOperation6);
-            this.PageGoods.Text = "商品管理";
+            this.PageGoods.Text = "信息管理";
             // 
             // ribbonPageGroup1
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.bbtn_GoodsClass);
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbtn_GoodsInform, true);
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbtn_GoodsStock, true);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "商品类别";
+            this.ribbonPageGroup1.Text = "商品信息";
             // 
-            // ribbonPageGroup3
+            // ribbonPageGroup2
             // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.bbtn_GoodsInform);
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.Text = "用户管理";
+            this.ribbonPageGroup2.ItemLinks.Add(this.bbtn_EmploerInfomation);
+            this.ribbonPageGroup2.ItemLinks.Add(this.bbtn_EmploerMoney, true);
+            this.ribbonPageGroup2.ItemLinks.Add(this.bbtn_Supplyer, true);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "人员信息";
             // 
-            // ribbonPageGroup8
+            // ribbonPageGroup9
             // 
-            this.ribbonPageGroup8.ItemLinks.Add(this.bbtn_GoodsStock);
-            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
+            this.ribbonPageGroup9.ItemLinks.Add(this.bbtn_SellChart);
+            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem11, true);
+            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem16, true);
+            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem14, true);
+            this.ribbonPageGroup9.Name = "ribbonPageGroup9";
+            this.ribbonPageGroup9.Text = "图表统计";
             // 
-            // ribbonPageGroup13
+            // ribbonPageGroup14
             // 
-            this.ribbonPageGroup13.Name = "ribbonPageGroup13";
-            this.ribbonPageGroup13.Text = "test";
+            this.ribbonPageGroup14.Name = "ribbonPageGroup14";
+            this.ribbonPageGroup14.Text = "订单信息统计";
             // 
-            // popupMenu1
+            // repositoryItemDateTimeOffsetEdit1
             // 
-            this.popupMenu1.Name = "popupMenu1";
-            this.popupMenu1.Ribbon = this.ribbonControl1;
+            this.repositoryItemDateTimeOffsetEdit1.AutoHeight = false;
+            this.repositoryItemDateTimeOffsetEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemDateTimeOffsetEdit1.Name = "repositoryItemDateTimeOffsetEdit1";
             // 
             // repositoryItemRibbonSearchEdit1
             // 
@@ -915,872 +1812,9 @@
             this.sidePanel1.Location = new System.Drawing.Point(0, 171);
             this.sidePanel1.Margin = new System.Windows.Forms.Padding(4);
             this.sidePanel1.Name = "sidePanel1";
-            this.sidePanel1.Size = new System.Drawing.Size(1297, 559);
+            this.sidePanel1.Size = new System.Drawing.Size(1214, 561);
             this.sidePanel1.TabIndex = 19;
             this.sidePanel1.Text = "sidePanel1";
-            // 
-            // xtb_ControlPanel
-            // 
-            this.xtb_ControlPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtb_ControlPanel.Location = new System.Drawing.Point(250, 0);
-            this.xtb_ControlPanel.Margin = new System.Windows.Forms.Padding(4);
-            this.xtb_ControlPanel.MultiLine = DevExpress.Utils.DefaultBoolean.True;
-            this.xtb_ControlPanel.Name = "xtb_ControlPanel";
-            this.xtb_ControlPanel.SelectedTabPage = this.xtp_GoodsClass;
-            this.xtb_ControlPanel.Size = new System.Drawing.Size(1047, 559);
-            this.xtb_ControlPanel.TabIndex = 0;
-            this.xtb_ControlPanel.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.xtp_GoodsClass,
-            this.xtp_Supplier,
-            this.xtp_SuperUserControl,
-            this.xtp_GoodsInfom,
-            this.xtp_GoodsStock,
-            this.xtp_StaffInformation,
-            this.xtp_StafMoney,
-            this.xtp_SupplierInformation,
-            this.xtp_ControlUserSuper,
-            this.xtp_ControlUserStaff,
-            this.xtp_ControlUserCustmer,
-            this.xtraTabPage14});
-            // 
-            // xtp_GoodsClass
-            // 
-            this.xtp_GoodsClass.Controls.Add(this.treeList1);
-            this.xtp_GoodsClass.Controls.Add(this.dataGridView1);
-            this.xtp_GoodsClass.Margin = new System.Windows.Forms.Padding(4);
-            this.xtp_GoodsClass.Name = "xtp_GoodsClass";
-            this.xtp_GoodsClass.Size = new System.Drawing.Size(1253, 535);
-            this.xtp_GoodsClass.Text = "商品类别";
-            // 
-            // treeList1
-            // 
-            this.treeList1.Location = new System.Drawing.Point(25, 135);
-            this.treeList1.MenuManager = this.ribbonControl1;
-            this.treeList1.Name = "treeList1";
-            this.treeList1.Size = new System.Drawing.Size(245, 365);
-            this.treeList1.TabIndex = 6;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.Column9,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.remark});
-            this.dataGridView1.Location = new System.Drawing.Point(290, 135);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(928, 368);
-            this.dataGridView1.TabIndex = 5;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "pcID";
-            this.dataGridViewTextBoxColumn9.HeaderText = "商品类别编号";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "pcName";
-            this.dataGridViewTextBoxColumn10.HeaderText = "商品类别名称";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "父类别";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "pcDescription";
-            this.dataGridViewTextBoxColumn11.HeaderText = "类别描述";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "pcAddedTime";
-            this.dataGridViewTextBoxColumn12.HeaderText = "添加时间";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            // 
-            // remark
-            // 
-            this.remark.HeaderText = "备注";
-            this.remark.Name = "remark";
-            this.remark.ReadOnly = true;
-            // 
-            // xtp_Supplier
-            // 
-            this.xtp_Supplier.Controls.Add(this.dgvSupplier);
-            this.xtp_Supplier.Margin = new System.Windows.Forms.Padding(4);
-            this.xtp_Supplier.Name = "xtp_Supplier";
-            this.xtp_Supplier.Size = new System.Drawing.Size(1253, 535);
-            this.xtp_Supplier.Text = "供货商信息";
-            // 
-            // dgvSupplier
-            // 
-            this.dgvSupplier.AllowUserToAddRows = false;
-            this.dgvSupplier.AllowUserToDeleteRows = false;
-            this.dgvSupplier.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvSupplier.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvSupplier.BackgroundColor = System.Drawing.Color.White;
-            this.dgvSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSupplier.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8});
-            this.dgvSupplier.Location = new System.Drawing.Point(27, 138);
-            this.dgvSupplier.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvSupplier.Name = "dgvSupplier";
-            this.dgvSupplier.ReadOnly = true;
-            this.dgvSupplier.RowHeadersVisible = false;
-            this.dgvSupplier.RowTemplate.Height = 23;
-            this.dgvSupplier.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSupplier.Size = new System.Drawing.Size(1201, 372);
-            this.dgvSupplier.TabIndex = 3;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "SupplierID";
-            this.Column1.HeaderText = "供货商号";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Name";
-            this.Column2.HeaderText = "名称";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Linkman";
-            this.Column3.HeaderText = "联系人";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "Phone";
-            this.Column4.HeaderText = "联系电话";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "ContactAddress";
-            this.Column5.HeaderText = "联系地址";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "CardDoorBank";
-            this.Column6.HeaderText = "开户银行";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "BankAccount";
-            this.Column7.HeaderText = "银行账号";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "Remark";
-            this.Column8.HeaderText = "备注";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            // 
-            // xtp_SuperUserControl
-            // 
-            this.xtp_SuperUserControl.Controls.Add(this.dgvSuperUserControl);
-            this.xtp_SuperUserControl.Margin = new System.Windows.Forms.Padding(4);
-            this.xtp_SuperUserControl.Name = "xtp_SuperUserControl";
-            this.xtp_SuperUserControl.Size = new System.Drawing.Size(1253, 535);
-            this.xtp_SuperUserControl.Text = "管理员账户";
-            // 
-            // dgvSuperUserControl
-            // 
-            this.dgvSuperUserControl.AllowUserToAddRows = false;
-            this.dgvSuperUserControl.AllowUserToDeleteRows = false;
-            this.dgvSuperUserControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvSuperUserControl.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvSuperUserControl.BackgroundColor = System.Drawing.Color.White;
-            this.dgvSuperUserControl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSuperUserControl.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8});
-            this.dgvSuperUserControl.Location = new System.Drawing.Point(50, 111);
-            this.dgvSuperUserControl.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvSuperUserControl.Name = "dgvSuperUserControl";
-            this.dgvSuperUserControl.ReadOnly = true;
-            this.dgvSuperUserControl.RowHeadersVisible = false;
-            this.dgvSuperUserControl.RowTemplate.Height = 23;
-            this.dgvSuperUserControl.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSuperUserControl.Size = new System.Drawing.Size(1176, 412);
-            this.dgvSuperUserControl.TabIndex = 4;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "SupplierID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "供货商号";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn2.HeaderText = "名称";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Linkman";
-            this.dataGridViewTextBoxColumn3.HeaderText = "联系人";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Phone";
-            this.dataGridViewTextBoxColumn4.HeaderText = "联系电话";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "ContactAddress";
-            this.dataGridViewTextBoxColumn5.HeaderText = "联系地址";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "CardDoorBank";
-            this.dataGridViewTextBoxColumn6.HeaderText = "开户银行";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "BankAccount";
-            this.dataGridViewTextBoxColumn7.HeaderText = "银行账号";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Remark";
-            this.dataGridViewTextBoxColumn8.HeaderText = "备注";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            // 
-            // xtp_GoodsInfom
-            // 
-            this.xtp_GoodsInfom.Margin = new System.Windows.Forms.Padding(4);
-            this.xtp_GoodsInfom.Name = "xtp_GoodsInfom";
-            this.xtp_GoodsInfom.Size = new System.Drawing.Size(1253, 535);
-            this.xtp_GoodsInfom.Text = "商品信息";
-            this.xtp_GoodsInfom.Paint += new System.Windows.Forms.PaintEventHandler(this.xtraTabPage4_Paint);
-            // 
-            // xtp_GoodsStock
-            // 
-            this.xtp_GoodsStock.Name = "xtp_GoodsStock";
-            this.xtp_GoodsStock.Size = new System.Drawing.Size(1253, 535);
-            this.xtp_GoodsStock.Text = "商品库存";
-            // 
-            // xtp_StaffInformation
-            // 
-            this.xtp_StaffInformation.Controls.Add(this.dataGridView4);
-            this.xtp_StaffInformation.Name = "xtp_StaffInformation";
-            this.xtp_StaffInformation.Size = new System.Drawing.Size(1253, 535);
-            this.xtp_StaffInformation.Text = "员工信息";
-            // 
-            // dataGridView4
-            // 
-            this.dataGridView4.AllowUserToAddRows = false;
-            this.dataGridView4.AllowUserToDeleteRows = false;
-            this.dataGridView4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView4.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn26,
-            this.dataGridViewTextBoxColumn27,
-            this.dataGridViewTextBoxColumn28,
-            this.age,
-            this.dataGridViewTextBoxColumn29,
-            this.dataGridViewButtonColumn3});
-            this.dataGridView4.Location = new System.Drawing.Point(63, 120);
-            this.dataGridView4.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.ReadOnly = true;
-            this.dataGridView4.RowHeadersVisible = false;
-            this.dataGridView4.RowTemplate.Height = 23;
-            this.dataGridView4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView4.Size = new System.Drawing.Size(1148, 403);
-            this.dataGridView4.TabIndex = 6;
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.DataPropertyName = "pcID";
-            this.dataGridViewTextBoxColumn26.HeaderText = "工号";
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            this.dataGridViewTextBoxColumn26.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.DataPropertyName = "pcName";
-            this.dataGridViewTextBoxColumn27.HeaderText = "姓名";
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            this.dataGridViewTextBoxColumn27.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.DataPropertyName = "pcDescription";
-            this.dataGridViewTextBoxColumn28.HeaderText = "性别";
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            this.dataGridViewTextBoxColumn28.ReadOnly = true;
-            // 
-            // age
-            // 
-            this.age.HeaderText = "年龄";
-            this.age.Name = "age";
-            this.age.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn29
-            // 
-            this.dataGridViewTextBoxColumn29.DataPropertyName = "pcAddedTime";
-            this.dataGridViewTextBoxColumn29.HeaderText = "状态";
-            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            this.dataGridViewTextBoxColumn29.ReadOnly = true;
-            // 
-            // dataGridViewButtonColumn3
-            // 
-            this.dataGridViewButtonColumn3.HeaderText = "岗位";
-            this.dataGridViewButtonColumn3.Name = "dataGridViewButtonColumn3";
-            this.dataGridViewButtonColumn3.ReadOnly = true;
-            this.dataGridViewButtonColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewButtonColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // xtp_StafMoney
-            // 
-            this.xtp_StafMoney.Name = "xtp_StafMoney";
-            this.xtp_StafMoney.Size = new System.Drawing.Size(1253, 535);
-            this.xtp_StafMoney.Text = "员工工资绩效";
-            // 
-            // xtp_SupplierInformation
-            // 
-            this.xtp_SupplierInformation.Controls.Add(this.dataGridView5);
-            this.xtp_SupplierInformation.Name = "xtp_SupplierInformation";
-            this.xtp_SupplierInformation.Size = new System.Drawing.Size(1253, 535);
-            this.xtp_SupplierInformation.Text = "供货商人员信息";
-            // 
-            // dataGridView5
-            // 
-            this.dataGridView5.AllowUserToAddRows = false;
-            this.dataGridView5.AllowUserToDeleteRows = false;
-            this.dataGridView5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView5.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView5.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn30,
-            this.dataGridViewTextBoxColumn31,
-            this.dataGridViewTextBoxColumn32,
-            this.dataGridViewTextBoxColumn33,
-            this.dataGridViewTextBoxColumn34,
-            this.dataGridViewButtonColumn4,
-            this.ContactInformation});
-            this.dataGridView5.Location = new System.Drawing.Point(39, 88);
-            this.dataGridView5.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.ReadOnly = true;
-            this.dataGridView5.RowHeadersVisible = false;
-            this.dataGridView5.RowTemplate.Height = 23;
-            this.dataGridView5.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView5.Size = new System.Drawing.Size(1351, 417);
-            this.dataGridView5.TabIndex = 7;
-            // 
-            // dataGridViewTextBoxColumn30
-            // 
-            this.dataGridViewTextBoxColumn30.DataPropertyName = "pcID";
-            this.dataGridViewTextBoxColumn30.HeaderText = "供货商编号";
-            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            this.dataGridViewTextBoxColumn30.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn31
-            // 
-            this.dataGridViewTextBoxColumn31.DataPropertyName = "pcName";
-            this.dataGridViewTextBoxColumn31.HeaderText = "名称";
-            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
-            this.dataGridViewTextBoxColumn31.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn32
-            // 
-            this.dataGridViewTextBoxColumn32.DataPropertyName = "pcDescription";
-            this.dataGridViewTextBoxColumn32.HeaderText = "地址";
-            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
-            this.dataGridViewTextBoxColumn32.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn33
-            // 
-            this.dataGridViewTextBoxColumn33.HeaderText = "法人";
-            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            this.dataGridViewTextBoxColumn33.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn34
-            // 
-            this.dataGridViewTextBoxColumn34.DataPropertyName = "pcAddedTime";
-            this.dataGridViewTextBoxColumn34.HeaderText = "注册日期";
-            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
-            this.dataGridViewTextBoxColumn34.ReadOnly = true;
-            // 
-            // dataGridViewButtonColumn4
-            // 
-            this.dataGridViewButtonColumn4.HeaderText = "联系人";
-            this.dataGridViewButtonColumn4.Name = "dataGridViewButtonColumn4";
-            this.dataGridViewButtonColumn4.ReadOnly = true;
-            this.dataGridViewButtonColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewButtonColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // ContactInformation
-            // 
-            this.ContactInformation.HeaderText = "联系方式";
-            this.ContactInformation.Name = "ContactInformation";
-            this.ContactInformation.ReadOnly = true;
-            // 
-            // xtp_ControlUserSuper
-            // 
-            this.xtp_ControlUserSuper.Controls.Add(this.cbs_tbSearch);
-            this.xtp_ControlUserSuper.Controls.Add(this.cus_btSearch);
-            this.xtp_ControlUserSuper.Controls.Add(this.cbs_btnDleteUser);
-            this.xtp_ControlUserSuper.Controls.Add(this.cbs_btnSearchAll);
-            this.xtp_ControlUserSuper.Controls.Add(this.cbs_btnAddUser);
-            this.xtp_ControlUserSuper.Controls.Add(this.cbs_SuperUserDataGrid);
-            this.xtp_ControlUserSuper.Name = "xtp_ControlUserSuper";
-            this.xtp_ControlUserSuper.Size = new System.Drawing.Size(1045, 535);
-            this.xtp_ControlUserSuper.Text = "管理员账户";
-            // 
-            // cbs_tbSearch
-            // 
-            this.cbs_tbSearch.EditValue = "搜索用户";
-            this.cbs_tbSearch.Location = new System.Drawing.Point(834, 23);
-            this.cbs_tbSearch.MenuManager = this.ribbonControl1;
-            this.cbs_tbSearch.Name = "cbs_tbSearch";
-            this.cbs_tbSearch.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
-            this.cbs_tbSearch.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.cbs_tbSearch.Properties.Appearance.Options.UseFont = true;
-            this.cbs_tbSearch.Properties.Appearance.Options.UseForeColor = true;
-            this.cbs_tbSearch.Size = new System.Drawing.Size(197, 30);
-            this.cbs_tbSearch.TabIndex = 13;
-            this.cbs_tbSearch.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cbs_tbSearch_MouseClick);
-            this.cbs_tbSearch.MouseLeave += new System.EventHandler(this.cbs_tbSearch_MouseLeave);
-            // 
-            // cus_btSearch
-            // 
-            this.cus_btSearch.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
-            this.cus_btSearch.Appearance.Options.UseFont = true;
-            this.cus_btSearch.Location = new System.Drawing.Point(1037, 20);
-            this.cus_btSearch.Name = "cus_btSearch";
-            this.cus_btSearch.Size = new System.Drawing.Size(102, 35);
-            this.cus_btSearch.TabIndex = 8;
-            this.cus_btSearch.Text = "搜索";
-            // 
-            // cbs_btnDleteUser
-            // 
-            this.cbs_btnDleteUser.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
-            this.cbs_btnDleteUser.Appearance.Options.UseFont = true;
-            this.cbs_btnDleteUser.Location = new System.Drawing.Point(356, 20);
-            this.cbs_btnDleteUser.Name = "cbs_btnDleteUser";
-            this.cbs_btnDleteUser.Size = new System.Drawing.Size(103, 35);
-            this.cbs_btnDleteUser.TabIndex = 8;
-            this.cbs_btnDleteUser.Text = "删除用户";
-            // 
-            // cbs_btnSearchAll
-            // 
-            this.cbs_btnSearchAll.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
-            this.cbs_btnSearchAll.Appearance.Options.UseFont = true;
-            this.cbs_btnSearchAll.Location = new System.Drawing.Point(83, 18);
-            this.cbs_btnSearchAll.Name = "cbs_btnSearchAll";
-            this.cbs_btnSearchAll.Size = new System.Drawing.Size(103, 35);
-            this.cbs_btnSearchAll.TabIndex = 8;
-            this.cbs_btnSearchAll.Text = "查询全部";
-            this.cbs_btnSearchAll.Click += new System.EventHandler(this.cbs_btnSearchAll_Click);
-            // 
-            // cbs_btnAddUser
-            // 
-            this.cbs_btnAddUser.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
-            this.cbs_btnAddUser.Appearance.Options.UseFont = true;
-            this.cbs_btnAddUser.Location = new System.Drawing.Point(213, 18);
-            this.cbs_btnAddUser.Name = "cbs_btnAddUser";
-            this.cbs_btnAddUser.Size = new System.Drawing.Size(110, 35);
-            this.cbs_btnAddUser.TabIndex = 9;
-            this.cbs_btnAddUser.Text = "添加用户";
-            // 
-            // cbs_SuperUserDataGrid
-            // 
-            this.cbs_SuperUserDataGrid.AllowUserToAddRows = false;
-            this.cbs_SuperUserDataGrid.AllowUserToDeleteRows = false;
-            this.cbs_SuperUserDataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbs_SuperUserDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.cbs_SuperUserDataGrid.BackgroundColor = System.Drawing.Color.White;
-            this.cbs_SuperUserDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.cbs_SuperUserDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14,
-            this.dataGridViewTextBoxColumn15,
-            this.dataGridViewTextBoxColumn16,
-            this.dataGridViewTextBoxColumn17});
-            this.cbs_SuperUserDataGrid.Location = new System.Drawing.Point(27, 86);
-            this.cbs_SuperUserDataGrid.Margin = new System.Windows.Forms.Padding(4);
-            this.cbs_SuperUserDataGrid.Name = "cbs_SuperUserDataGrid";
-            this.cbs_SuperUserDataGrid.ReadOnly = true;
-            this.cbs_SuperUserDataGrid.RowHeadersVisible = false;
-            this.cbs_SuperUserDataGrid.RowTemplate.Height = 23;
-            this.cbs_SuperUserDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.cbs_SuperUserDataGrid.Size = new System.Drawing.Size(991, 437);
-            this.cbs_SuperUserDataGrid.TabIndex = 5;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "pcID";
-            this.dataGridViewTextBoxColumn13.HeaderText = "用户名";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "pcName";
-            this.dataGridViewTextBoxColumn14.HeaderText = "用户组";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "pcDescription";
-            this.dataGridViewTextBoxColumn15.HeaderText = "用户描述";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "pcAddedTime";
-            this.dataGridViewTextBoxColumn16.HeaderText = "备注";
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.HeaderText = "修改密码";
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.ReadOnly = true;
-            this.dataGridViewTextBoxColumn17.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn17.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // xtp_ControlUserStaff
-            // 
-            this.xtp_ControlUserStaff.Controls.Add(this.textEdit2);
-            this.xtp_ControlUserStaff.Controls.Add(this.simpleButton2);
-            this.xtp_ControlUserStaff.Controls.Add(this.simpleButton3);
-            this.xtp_ControlUserStaff.Controls.Add(this.simpleButton4);
-            this.xtp_ControlUserStaff.Controls.Add(this.simpleButton5);
-            this.xtp_ControlUserStaff.Controls.Add(this.dataGridView2);
-            this.xtp_ControlUserStaff.Name = "xtp_ControlUserStaff";
-            this.xtp_ControlUserStaff.Size = new System.Drawing.Size(1253, 535);
-            this.xtp_ControlUserStaff.Text = "员工账户";
-            // 
-            // textEdit2
-            // 
-            this.textEdit2.EditValue = "搜索用户";
-            this.textEdit2.Location = new System.Drawing.Point(828, 28);
-            this.textEdit2.MenuManager = this.ribbonControl1;
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
-            this.textEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit2.Size = new System.Drawing.Size(197, 30);
-            this.textEdit2.TabIndex = 19;
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.Location = new System.Drawing.Point(1031, 25);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(102, 35);
-            this.simpleButton2.TabIndex = 15;
-            this.simpleButton2.Text = "搜索";
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.Location = new System.Drawing.Point(350, 25);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(103, 35);
-            this.simpleButton3.TabIndex = 16;
-            this.simpleButton3.Text = "删除用户";
-            // 
-            // simpleButton4
-            // 
-            this.simpleButton4.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
-            this.simpleButton4.Appearance.Options.UseFont = true;
-            this.simpleButton4.Location = new System.Drawing.Point(77, 23);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(103, 35);
-            this.simpleButton4.TabIndex = 17;
-            this.simpleButton4.Text = "查询全部";
-            // 
-            // simpleButton5
-            // 
-            this.simpleButton5.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
-            this.simpleButton5.Appearance.Options.UseFont = true;
-            this.simpleButton5.Location = new System.Drawing.Point(207, 23);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(110, 35);
-            this.simpleButton5.TabIndex = 18;
-            this.simpleButton5.Text = "添加用户";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn22,
-            this.dataGridViewTextBoxColumn23,
-            this.dataGridViewTextBoxColumn24,
-            this.dataGridViewTextBoxColumn25,
-            this.dataGridViewButtonColumn2});
-            this.dataGridView2.Location = new System.Drawing.Point(25, 89);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowHeadersVisible = false;
-            this.dataGridView2.RowTemplate.Height = 23;
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(1205, 422);
-            this.dataGridView2.TabIndex = 14;
-            // 
-            // dataGridViewTextBoxColumn22
-            // 
-            this.dataGridViewTextBoxColumn22.DataPropertyName = "pcID";
-            this.dataGridViewTextBoxColumn22.HeaderText = "用户名";
-            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            this.dataGridViewTextBoxColumn22.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.DataPropertyName = "pcName";
-            this.dataGridViewTextBoxColumn23.HeaderText = "用户组";
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            this.dataGridViewTextBoxColumn23.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.DataPropertyName = "pcDescription";
-            this.dataGridViewTextBoxColumn24.HeaderText = "用户描述";
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            this.dataGridViewTextBoxColumn24.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.DataPropertyName = "pcAddedTime";
-            this.dataGridViewTextBoxColumn25.HeaderText = "备注";
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            this.dataGridViewTextBoxColumn25.ReadOnly = true;
-            // 
-            // dataGridViewButtonColumn2
-            // 
-            this.dataGridViewButtonColumn2.HeaderText = "修改密码";
-            this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
-            this.dataGridViewButtonColumn2.ReadOnly = true;
-            this.dataGridViewButtonColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewButtonColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // xtp_ControlUserCustmer
-            // 
-            this.xtp_ControlUserCustmer.Controls.Add(this.textEdit3);
-            this.xtp_ControlUserCustmer.Controls.Add(this.simpleButton6);
-            this.xtp_ControlUserCustmer.Controls.Add(this.simpleButton7);
-            this.xtp_ControlUserCustmer.Controls.Add(this.simpleButton8);
-            this.xtp_ControlUserCustmer.Controls.Add(this.simpleButton9);
-            this.xtp_ControlUserCustmer.Controls.Add(this.dataGridView3);
-            this.xtp_ControlUserCustmer.Name = "xtp_ControlUserCustmer";
-            this.xtp_ControlUserCustmer.Size = new System.Drawing.Size(1253, 535);
-            this.xtp_ControlUserCustmer.Text = "顾客账户";
-            // 
-            // textEdit3
-            // 
-            this.textEdit3.EditValue = "搜索用户";
-            this.textEdit3.Location = new System.Drawing.Point(831, 26);
-            this.textEdit3.MenuManager = this.ribbonControl1;
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
-            this.textEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
-            this.textEdit3.Properties.Appearance.Options.UseFont = true;
-            this.textEdit3.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit3.Size = new System.Drawing.Size(197, 30);
-            this.textEdit3.TabIndex = 19;
-            // 
-            // simpleButton6
-            // 
-            this.simpleButton6.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
-            this.simpleButton6.Appearance.Options.UseFont = true;
-            this.simpleButton6.Location = new System.Drawing.Point(1034, 23);
-            this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.Size = new System.Drawing.Size(102, 35);
-            this.simpleButton6.TabIndex = 15;
-            this.simpleButton6.Text = "搜索";
-            // 
-            // simpleButton7
-            // 
-            this.simpleButton7.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
-            this.simpleButton7.Appearance.Options.UseFont = true;
-            this.simpleButton7.Location = new System.Drawing.Point(353, 23);
-            this.simpleButton7.Name = "simpleButton7";
-            this.simpleButton7.Size = new System.Drawing.Size(103, 35);
-            this.simpleButton7.TabIndex = 16;
-            this.simpleButton7.Text = "删除用户";
-            // 
-            // simpleButton8
-            // 
-            this.simpleButton8.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
-            this.simpleButton8.Appearance.Options.UseFont = true;
-            this.simpleButton8.Location = new System.Drawing.Point(80, 21);
-            this.simpleButton8.Name = "simpleButton8";
-            this.simpleButton8.Size = new System.Drawing.Size(103, 35);
-            this.simpleButton8.TabIndex = 17;
-            this.simpleButton8.Text = "查询全部";
-            // 
-            // simpleButton9
-            // 
-            this.simpleButton9.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
-            this.simpleButton9.Appearance.Options.UseFont = true;
-            this.simpleButton9.Location = new System.Drawing.Point(210, 21);
-            this.simpleButton9.Name = "simpleButton9";
-            this.simpleButton9.Size = new System.Drawing.Size(110, 35);
-            this.simpleButton9.TabIndex = 18;
-            this.simpleButton9.Text = "添加用户";
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.AllowUserToAddRows = false;
-            this.dataGridView3.AllowUserToDeleteRows = false;
-            this.dataGridView3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView3.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn18,
-            this.dataGridViewTextBoxColumn19,
-            this.dataGridViewTextBoxColumn20,
-            this.dataGridViewTextBoxColumn21,
-            this.dataGridViewButtonColumn1});
-            this.dataGridView3.Location = new System.Drawing.Point(20, 85);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.RowHeadersVisible = false;
-            this.dataGridView3.RowTemplate.Height = 23;
-            this.dataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView3.Size = new System.Drawing.Size(1208, 438);
-            this.dataGridView3.TabIndex = 14;
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "pcID";
-            this.dataGridViewTextBoxColumn18.HeaderText = "用户名";
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn19
-            // 
-            this.dataGridViewTextBoxColumn19.DataPropertyName = "pcName";
-            this.dataGridViewTextBoxColumn19.HeaderText = "用户组";
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            this.dataGridViewTextBoxColumn19.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn20
-            // 
-            this.dataGridViewTextBoxColumn20.DataPropertyName = "pcDescription";
-            this.dataGridViewTextBoxColumn20.HeaderText = "用户描述";
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            this.dataGridViewTextBoxColumn20.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn21
-            // 
-            this.dataGridViewTextBoxColumn21.DataPropertyName = "pcAddedTime";
-            this.dataGridViewTextBoxColumn21.HeaderText = "备注";
-            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            this.dataGridViewTextBoxColumn21.ReadOnly = true;
-            // 
-            // dataGridViewButtonColumn1
-            // 
-            this.dataGridViewButtonColumn1.HeaderText = "修改密码";
-            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
-            this.dataGridViewButtonColumn1.ReadOnly = true;
-            this.dataGridViewButtonColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewButtonColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // xtraTabPage14
-            // 
-            this.xtraTabPage14.Name = "xtraTabPage14";
-            this.xtraTabPage14.Size = new System.Drawing.Size(1253, 535);
-            this.xtraTabPage14.Text = "xtraTabPage14";
             // 
             // repositoryItemRibbonSearchEdit7
             // 
@@ -1799,7 +1833,6 @@
             this.barButtonItem1.ActAsDropDown = true;
             this.barButtonItem1.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.barButtonItem1.Caption = "用户管理";
-            this.barButtonItem1.DropDownControl = this.popupMenu1;
             this.barButtonItem1.Id = 7;
             this.barButtonItem1.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.登陆;
             this.barButtonItem1.Name = "barButtonItem1";
@@ -1809,7 +1842,6 @@
             this.barButtonItem2.ActAsDropDown = true;
             this.barButtonItem2.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.barButtonItem2.Caption = "用户管理";
-            this.barButtonItem2.DropDownControl = this.popupMenu1;
             this.barButtonItem2.Id = 7;
             this.barButtonItem2.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.登陆;
             this.barButtonItem2.Name = "barButtonItem2";
@@ -1819,7 +1851,6 @@
             this.barButtonItem6.ActAsDropDown = true;
             this.barButtonItem6.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.barButtonItem6.Caption = "用户管理";
-            this.barButtonItem6.DropDownControl = this.popupMenu1;
             this.barButtonItem6.Id = 7;
             this.barButtonItem6.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.登陆;
             this.barButtonItem6.Name = "barButtonItem6";
@@ -1829,7 +1860,6 @@
             this.barButtonItem7.ActAsDropDown = true;
             this.barButtonItem7.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.barButtonItem7.Caption = "用户管理";
-            this.barButtonItem7.DropDownControl = this.popupMenu1;
             this.barButtonItem7.Id = 7;
             this.barButtonItem7.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.登陆;
             this.barButtonItem7.Name = "barButtonItem7";
@@ -1877,12 +1907,18 @@
             this.accordionControlElement2.Name = "accordionControlElement2";
             this.accordionControlElement2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "barButtonItem5";
+            this.barButtonItem5.Id = 35;
+            this.barButtonItem5.Name = "barButtonItem5";
+            // 
             // Control
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.True;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1297, 730);
+            this.ClientSize = new System.Drawing.Size(1214, 732);
             this.Controls.Add(this.sidePanel1);
             this.Controls.Add(this.ribbonControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1897,14 +1933,6 @@
             this.Load += new System.EventHandler(this.Control_Load);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit6)).EndInit();
-            this.sidePanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xtb_ControlPanel)).EndInit();
             this.xtb_ControlPanel.ResumeLayout(false);
             this.xtp_GoodsClass.ResumeLayout(false);
@@ -1927,6 +1955,15 @@
             this.xtp_ControlUserCustmer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTimeEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateTimeOffsetEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit6)).EndInit();
+            this.sidePanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit9)).EndInit();
@@ -1950,18 +1987,13 @@
         private DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit repositoryItemRibbonSearchEdit1;
         private DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit repositoryItemRibbonSearchEdit2;
         private DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit repositoryItemRibbonSearchEdit3;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.BarButtonItem bbtn_GoodsStock;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
         private DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit repositoryItemRibbonSearchEdit4;
         private DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit repositoryItemRibbonSearchEdit5;
         private DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit repositoryItemRibbonSearchEdit6;
         private DevExpress.XtraEditors.SidePanel sidePanel1;
-        private DevExpress.XtraBars.PopupMenu popupMenu1;
         private DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit repositoryItemRibbonSearchEdit7;
         private DevExpress.XtraBars.BarSubItem barSubItem2;
         private DevExpress.XtraBars.BarButtonItem bbtn_EmploerMoney;
@@ -1993,7 +2025,6 @@
         private DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit repositoryItemRibbonSearchEdit8;
         private DevExpress.XtraBars.BarButtonItem bbtn_CustomerUser;
         private DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit repositoryItemRibbonSearchEdit9;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
         private DevExpress.XtraTab.XtraTabControl xtb_ControlPanel;
         private DevExpress.XtraTab.XtraTabPage xtp_Supplier;
         private System.Windows.Forms.DataGridView dgvSupplier;
@@ -2021,21 +2052,12 @@
         private DevExpress.XtraTab.XtraTabPage xtp_StaffInformation;
         private DevExpress.XtraTab.XtraTabPage xtp_StafMoney;
         private DevExpress.XtraTab.XtraTabPage xtp_SupplierInformation;
-        private DevExpress.XtraTab.XtraTabPage xtp_ControlUserSuper;
-        private DevExpress.XtraTab.XtraTabPage xtp_ControlUserStaff;
         private DevExpress.XtraTab.XtraTabPage xtp_ControlUserCustmer;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage14;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup14;
         private DevExpress.XtraBars.BarButtonItem barButtonItem14;
         private DevExpress.XtraBars.BarButtonItem barButtonItem16;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup15;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup16;
-        private System.Windows.Forms.DataGridView cbs_SuperUserDataGrid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
-        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewTextBoxColumn17;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ace_StafInformation;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ace_StafMoney;
@@ -2051,22 +2073,6 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement ace_SuperUser;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ace_StaffUser;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ace_Customer;
-        private DevExpress.XtraEditors.SimpleButton cbs_btnSearchAll;
-        private DevExpress.XtraEditors.SimpleButton cbs_btnAddUser;
-        private DevExpress.XtraEditors.TextEdit cbs_tbSearch;
-        private DevExpress.XtraEditors.SimpleButton cus_btSearch;
-        private DevExpress.XtraEditors.SimpleButton cbs_btnDleteUser;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
-        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn2;
         private DevExpress.XtraEditors.TextEdit textEdit3;
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
         private DevExpress.XtraEditors.SimpleButton simpleButton7;
@@ -2109,5 +2115,37 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement ace_GoodsStock;
         private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator5;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;
+        private DevExpress.XtraTab.XtraTabPage xtp_ControlUserSuper;
+        private DevExpress.XtraEditors.TextEdit cbs_tbSearch;
+        private DevExpress.XtraEditors.SimpleButton cus_btSearch;
+        private DevExpress.XtraEditors.SimpleButton cbs_btnDleteUser;
+        private DevExpress.XtraEditors.SimpleButton cbs_btnSearchAll;
+        private DevExpress.XtraEditors.SimpleButton cbs_btnAddUser;
+        private System.Windows.Forms.DataGridView cbs_SuperUserDataGrid;
+        private DevExpress.XtraTab.XtraTabPage xtp_ControlUserStaff;
+        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
+        private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewLinkColumn actionColum;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarSubItem barSubItem1;
+        private DevExpress.XtraBars.BarEditItem barEditItem1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit repositoryItemTimeEdit1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemDateTimeOffsetEdit repositoryItemDateTimeOffsetEdit1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
     }
 }

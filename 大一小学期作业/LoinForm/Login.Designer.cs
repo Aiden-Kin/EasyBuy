@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.DoubleBuffered = true;
-
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
