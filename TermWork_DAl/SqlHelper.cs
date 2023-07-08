@@ -83,7 +83,7 @@ namespace EasyBuy_DAL
         }
         #endregion
 
-        #region 执行SQL查询语句，返回DataTable
+        #region 执行SQL查询语句，返回DataTable 返回第一个表格
         public static DataTable ExecuteDataTable(string sqlstr)
         {
             using (SqlConnection sqlCon = new SqlConnection(constr))

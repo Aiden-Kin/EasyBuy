@@ -17,7 +17,7 @@ namespace EasyBuy_Model
         public string UserGroup { get { return userGroup; } set { userGroup = value; } }
         public string UserName { get { return userName; } set { userName = value; } }
         public string UserPassword { get {  return userPassword; } set {userPassword = value; } }
-        public string UserGroupRemark { get { return userDescribe; } set { userDescribe = value; } }
+        public string UserDescribe { get { return userDescribe; } set { userDescribe = value; } }
         public string UserRemark { get { return userRemark; } set { userRemark = value; } }
     }
 }

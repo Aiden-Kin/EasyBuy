@@ -71,6 +71,7 @@ namespace EasyBuy
 
             if (UserInform.UserGroup == "SuperUser")
             {
+                UserInform.UserPassword = null;
                 this.Hide();
                 Control controlform = new Control(UserInform);
                 controlform.Show();

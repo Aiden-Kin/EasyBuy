@@ -13,7 +13,14 @@ namespace EasyBuy_BLL
     {
         public User GetUser(string userName,string userPassword)
         {
-            return new UserListServer().GetUser(userName, userPassword);
+            return new UserListServer().GetSingleUser(userName, userPassword);
+        }
+        public List<User> GetUserList(string userGroup, string condition = null, string searchData = null)
+        {
+            List<User> userlist = new List<User>();
+            userlist = new UserListServer().GetUserList(userGroup,condition,searchData);
+
+            return userlist;
         }
     }
 }

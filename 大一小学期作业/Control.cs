@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using EasyBuy_BLL;
 using EasyBuy_Model;
 using System;
 using System.Collections.Generic;
@@ -118,7 +119,7 @@ namespace EasyBuy
 
         private void bbtn_SuperUser_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            xtb_ControlPanel.SelectedTabPage = xtp_SuperUserControl;
+            xtb_ControlPanel.SelectedTabPage = xtp_ControlUserSuper;
         }
 
         private void bbtn_StafUser_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -163,7 +164,7 @@ namespace EasyBuy
 
         private void ace_SuperUser_Click(object sender, EventArgs e)
         {
-            xtb_ControlPanel.SelectedTabPage = xtp_SuperUserControl;
+            xtb_ControlPanel.SelectedTabPage = xtp_ControlUserSuper;
         }
 
         private void ace_StaffUser_Click(object sender, EventArgs e)
@@ -179,6 +180,21 @@ namespace EasyBuy
         private void accordionControlElement6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cbs_btnSearchAll_Click(object sender, EventArgs e)
+        {
+            List<User> superUser = new List<User>();
+            try
+            {
+                superUser = new UserListManager().GetUserList("SuperUser");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            cbs_SuperUserDataGrid.DataSource = superUser;
         }
     }
 }
