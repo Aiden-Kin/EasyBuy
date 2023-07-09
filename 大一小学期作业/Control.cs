@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using DevExpress.Persistent.Base;
+using DevExpress.XtraEditors;
 using EasyBuy.SecondPage;
 using EasyBuy_BLL;
 using EasyBuy_Model;
@@ -31,7 +32,8 @@ namespace EasyBuy
 
         private void Control_Load(object sender, EventArgs e)
         {
-
+           Nowtimer.Start();
+          
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -203,6 +205,41 @@ namespace EasyBuy
         {
             csu_AddUser addUser = new csu_AddUser();
             addUser.Show();
+        }
+
+        private void cbs_btnDleteUser_Click(object sender, EventArgs e)
+        {
+            int deleteNum = 0;
+            //提取选中用户
+            string deletUserName = cbs_SuperUserDataGrid.SelectedCells[0].Value.ToString();
+            string deletinfom = string.Format("是否确认要删除用户【{0}】", deletUserName);
+
+            DialogResult confirmResult = MessageBox.Show(deletinfom, "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            try
+            {
+                if (confirmResult == DialogResult.OK)
+                {
+                    deleteNum = new UserListManager().DeleteUser(deletUserName);
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            if(deleteNum >0)
+            {
+                MessageBox.Show("删除成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
+
+        }
+
+        private void Nowtimer_Tick(object sender, EventArgs e)
+        {
+            TimeSpan currentTime = DateTime.Now.TimeOfDay;
+            currentTime = new TimeSpan(currentTime.Hours,currentTime.Minutes,currentTime.Seconds);
+            NowTime.EditValue = currentTime;
         }
     }
 }

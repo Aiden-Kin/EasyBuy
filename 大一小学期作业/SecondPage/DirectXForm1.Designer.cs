@@ -28,46 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(csu_AddUser));
             this.directXFormContainerControl1 = new DevExpress.XtraEditors.DirectXFormContainerControl();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.csu_AddConfirm = new DevExpress.XtraEditors.SimpleButton();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.MemoEdit();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAddConfirm = new DevExpress.XtraEditors.SimpleButton();
+            this.tbConfirmPasswd = new DevExpress.XtraEditors.TextEdit();
+            this.tbUserName = new DevExpress.XtraEditors.TextEdit();
+            this.tbpasswd = new DevExpress.XtraEditors.TextEdit();
+            this.tbUserDescribe = new DevExpress.XtraEditors.MemoEdit();
+            this.Exit = new DevExpress.XtraEditors.SimpleButton();
+            this.txtPasswdError = new DevExpress.XtraEditors.LabelControl();
             this.directXFormContainerControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbConfirmPasswd.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbUserName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbpasswd.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbUserDescribe.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // directXFormContainerControl1
             // 
             this.directXFormContainerControl1.BackColor = System.Drawing.Color.White;
+            this.directXFormContainerControl1.Controls.Add(this.txtPasswdError);
             this.directXFormContainerControl1.Controls.Add(this.panelControl1);
             this.directXFormContainerControl1.Controls.Add(this.labelControl3);
             this.directXFormContainerControl1.Controls.Add(this.labelControl4);
             this.directXFormContainerControl1.Controls.Add(this.labelControl2);
             this.directXFormContainerControl1.Controls.Add(this.labelControl1);
-            this.directXFormContainerControl1.Controls.Add(this.simpleButton1);
-            this.directXFormContainerControl1.Controls.Add(this.csu_AddConfirm);
-            this.directXFormContainerControl1.Controls.Add(this.textEdit4);
-            this.directXFormContainerControl1.Controls.Add(this.textEdit2);
-            this.directXFormContainerControl1.Controls.Add(this.textEdit1);
-            this.directXFormContainerControl1.Controls.Add(this.textEdit3);
+            this.directXFormContainerControl1.Controls.Add(this.btnCancel);
+            this.directXFormContainerControl1.Controls.Add(this.btnAddConfirm);
+            this.directXFormContainerControl1.Controls.Add(this.tbConfirmPasswd);
+            this.directXFormContainerControl1.Controls.Add(this.tbUserName);
+            this.directXFormContainerControl1.Controls.Add(this.tbpasswd);
+            this.directXFormContainerControl1.Controls.Add(this.tbUserDescribe);
             this.directXFormContainerControl1.Location = new System.Drawing.Point(0, 0);
             this.directXFormContainerControl1.Name = "directXFormContainerControl1";
-            this.directXFormContainerControl1.Size = new System.Drawing.Size(514, 634);
+            this.directXFormContainerControl1.Size = new System.Drawing.Size(504, 650);
             this.directXFormContainerControl1.TabIndex = 0;
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(178)))), ((int)(((byte)(201)))));
+            this.panelControl1.Appearance.BorderColor = System.Drawing.Color.White;
+            this.panelControl1.Appearance.Options.UseBackColor = true;
+            this.panelControl1.Appearance.Options.UseBorderColor = true;
+            this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.panelControl1.Controls.Add(this.Exit);
+            this.panelControl1.Controls.Add(this.labelControl5);
+            this.panelControl1.Location = new System.Drawing.Point(6, 6);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(490, 63);
+            this.panelControl1.TabIndex = 15;
             // 
             // labelControl5
             // 
@@ -119,94 +137,111 @@
             this.labelControl1.TabIndex = 11;
             this.labelControl1.Text = "用户名";
             // 
-            // simpleButton1
+            // btnCancel
             // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Location = new System.Drawing.Point(290, 570);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(131, 42);
-            this.simpleButton1.TabIndex = 10;
-            this.simpleButton1.Text = "取消";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.btnCancel.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
+            this.btnCancel.Appearance.Options.UseFont = true;
+            this.btnCancel.Location = new System.Drawing.Point(290, 570);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(131, 42);
+            this.btnCancel.TabIndex = 10;
+            this.btnCancel.Text = "取消";
+            this.btnCancel.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
-            // csu_AddConfirm
+            // btnAddConfirm
             // 
-            this.csu_AddConfirm.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(178)))), ((int)(((byte)(201)))));
-            this.csu_AddConfirm.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
-            this.csu_AddConfirm.Appearance.Options.UseBackColor = true;
-            this.csu_AddConfirm.Appearance.Options.UseFont = true;
-            this.csu_AddConfirm.Location = new System.Drawing.Point(79, 570);
-            this.csu_AddConfirm.Name = "csu_AddConfirm";
-            this.csu_AddConfirm.Size = new System.Drawing.Size(123, 42);
-            this.csu_AddConfirm.TabIndex = 10;
-            this.csu_AddConfirm.Text = "添加";
+            this.btnAddConfirm.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(178)))), ((int)(((byte)(201)))));
+            this.btnAddConfirm.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
+            this.btnAddConfirm.Appearance.Options.UseBackColor = true;
+            this.btnAddConfirm.Appearance.Options.UseFont = true;
+            this.btnAddConfirm.Location = new System.Drawing.Point(79, 570);
+            this.btnAddConfirm.Name = "btnAddConfirm";
+            this.btnAddConfirm.Size = new System.Drawing.Size(123, 42);
+            this.btnAddConfirm.TabIndex = 10;
+            this.btnAddConfirm.Text = "添加";
+            this.btnAddConfirm.Click += new System.EventHandler(this.btnAddConfirm_Click);
             // 
-            // textEdit4
+            // tbConfirmPasswd
             // 
-            this.textEdit4.Location = new System.Drawing.Point(210, 252);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.textEdit4.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
-            this.textEdit4.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit4.Properties.Appearance.Options.UseFont = true;
-            this.textEdit4.Properties.PasswordChar = '*';
-            this.textEdit4.Size = new System.Drawing.Size(219, 26);
-            this.textEdit4.TabIndex = 8;
+            this.tbConfirmPasswd.Location = new System.Drawing.Point(210, 252);
+            this.tbConfirmPasswd.Name = "tbConfirmPasswd";
+            this.tbConfirmPasswd.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.tbConfirmPasswd.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
+            this.tbConfirmPasswd.Properties.Appearance.Options.UseBackColor = true;
+            this.tbConfirmPasswd.Properties.Appearance.Options.UseFont = true;
+            this.tbConfirmPasswd.Properties.PasswordChar = '*';
+            this.tbConfirmPasswd.Size = new System.Drawing.Size(219, 26);
+            this.tbConfirmPasswd.TabIndex = 8;
+            this.tbConfirmPasswd.EditValueChanged += new System.EventHandler(this.tbConfirmPasswd_EditValueChanged);
             // 
-            // textEdit2
+            // tbUserName
             // 
-            this.textEdit2.Location = new System.Drawing.Point(210, 133);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
-            this.textEdit2.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Size = new System.Drawing.Size(219, 26);
-            this.textEdit2.TabIndex = 9;
+            this.tbUserName.Location = new System.Drawing.Point(210, 133);
+            this.tbUserName.Name = "tbUserName";
+            this.tbUserName.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.tbUserName.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
+            this.tbUserName.Properties.Appearance.Options.UseBackColor = true;
+            this.tbUserName.Properties.Appearance.Options.UseFont = true;
+            this.tbUserName.Size = new System.Drawing.Size(219, 26);
+            this.tbUserName.TabIndex = 9;
             // 
-            // textEdit1
+            // tbpasswd
             // 
-            this.textEdit1.Location = new System.Drawing.Point(210, 190);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
-            this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Properties.PasswordChar = '*';
-            this.textEdit1.Size = new System.Drawing.Size(219, 26);
-            this.textEdit1.TabIndex = 8;
+            this.tbpasswd.Location = new System.Drawing.Point(210, 190);
+            this.tbpasswd.Name = "tbpasswd";
+            this.tbpasswd.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.tbpasswd.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
+            this.tbpasswd.Properties.Appearance.Options.UseBackColor = true;
+            this.tbpasswd.Properties.Appearance.Options.UseFont = true;
+            this.tbpasswd.Properties.PasswordChar = '*';
+            this.tbpasswd.Size = new System.Drawing.Size(219, 26);
+            this.tbpasswd.TabIndex = 8;
+            this.tbpasswd.EditValueChanged += new System.EventHandler(this.tbpasswd_EditValueChanged);
             // 
-            // textEdit3
+            // tbUserDescribe
             // 
-            this.textEdit3.EditValue = "";
-            this.textEdit3.Location = new System.Drawing.Point(156, 358);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
-            this.textEdit3.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit3.Properties.Appearance.Options.UseFont = true;
-            this.textEdit3.Size = new System.Drawing.Size(273, 148);
-            this.textEdit3.TabIndex = 13;
+            this.tbUserDescribe.EditValue = "";
+            this.tbUserDescribe.Location = new System.Drawing.Point(156, 358);
+            this.tbUserDescribe.Name = "tbUserDescribe";
+            this.tbUserDescribe.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.tbUserDescribe.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
+            this.tbUserDescribe.Properties.Appearance.Options.UseBackColor = true;
+            this.tbUserDescribe.Properties.Appearance.Options.UseFont = true;
+            this.tbUserDescribe.Size = new System.Drawing.Size(273, 148);
+            this.tbUserDescribe.TabIndex = 13;
             // 
-            // panelControl1
+            // Exit
             // 
-            this.panelControl1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(178)))), ((int)(((byte)(201)))));
-            this.panelControl1.Appearance.BorderColor = System.Drawing.Color.White;
-            this.panelControl1.Appearance.Options.UseBackColor = true;
-            this.panelControl1.Appearance.Options.UseBorderColor = true;
-            this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.panelControl1.Controls.Add(this.labelControl5);
-            this.panelControl1.Location = new System.Drawing.Point(12, 12);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(490, 63);
-            this.panelControl1.TabIndex = 15;
+            this.Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Exit.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            this.Exit.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.BottomCenter;
+            this.Exit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Exit.ImageOptions.SvgImage")));
+            this.Exit.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
+            this.Exit.Location = new System.Drawing.Point(456, 7);
+            this.Exit.Margin = new System.Windows.Forms.Padding(4);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(29, 30);
+            this.Exit.TabIndex = 15;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
+            // txtPasswdError
+            // 
+            this.txtPasswdError.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
+            this.txtPasswdError.Appearance.ForeColor = System.Drawing.Color.Brown;
+            this.txtPasswdError.Appearance.Options.UseFont = true;
+            this.txtPasswdError.Appearance.Options.UseForeColor = true;
+            this.txtPasswdError.Location = new System.Drawing.Point(281, 295);
+            this.txtPasswdError.Name = "txtPasswdError";
+            this.txtPasswdError.Size = new System.Drawing.Size(140, 19);
+            this.txtPasswdError.TabIndex = 16;
+            this.txtPasswdError.Text = "密码不一致请重新输入";
+            this.txtPasswdError.Visible = false;
             // 
             // csu_AddUser
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ChildControls.Add(this.directXFormContainerControl1);
-            this.ClientSize = new System.Drawing.Size(514, 634);
+            this.ClientSize = new System.Drawing.Size(504, 650);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.Image = global::EasyBuy.Properties.Resources.icon;
             this.Name = "csu_AddUser";
@@ -214,13 +249,13 @@
             this.Text = "管理员用户添加";
             this.directXFormContainerControl1.ResumeLayout(false);
             this.directXFormContainerControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbConfirmPasswd.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbUserName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbpasswd.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbUserDescribe.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -228,17 +263,19 @@
         #endregion
 
         private DevExpress.XtraEditors.DirectXFormContainerControl directXFormContainerControl1;
-        private DevExpress.XtraEditors.SimpleButton csu_AddConfirm;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.SimpleButton btnAddConfirm;
+        private DevExpress.XtraEditors.TextEdit tbUserName;
+        private DevExpress.XtraEditors.TextEdit tbpasswd;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.MemoEdit textEdit3;
+        private DevExpress.XtraEditors.MemoEdit tbUserDescribe;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit tbConfirmPasswd;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btnCancel;
         private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.SimpleButton Exit;
+        private DevExpress.XtraEditors.LabelControl txtPasswdError;
     }
 }

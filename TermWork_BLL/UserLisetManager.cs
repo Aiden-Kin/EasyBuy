@@ -22,5 +22,15 @@ namespace EasyBuy_BLL
 
             return userlist;
         }
+
+        public int SetUser(string userName, string userPasswd, string userGroup, string userDescribe, string thisTime)
+        {
+            return new UserListServer().SetUser(userName,userPasswd,userGroup,userDescribe,thisTime);
+        }
+
+        public int DeleteUser(string userName)
+        {
+            return new UserListServer().DeletUser(userName);
+        }
     }
-}
+}   

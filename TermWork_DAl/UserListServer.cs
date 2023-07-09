@@ -30,12 +30,13 @@ namespace EasyBuy_DAL
             User user;
             for (int i = 0; i < dt.Rows.Count; i++)
             {
+                
                 user = new User();
-                user.UserName = dt.Rows[0]["UserName"].ToString();
-                user.UserPassword = dt.Rows[0]["UserPassword"].ToString();
-                user.UserGroup = dt.Rows[0]["UserGroup"].ToString();
-                user.UserDescribe = dt.Rows[0]["UserDescirbe"].ToString();
-                user.UserRemark = dt.Rows[0]["UserRemark"].ToString();
+                user.UserName = dt.Rows[i]["UserName"].ToString();
+                user.UserPassword = dt.Rows[i]["UserPassword"].ToString();
+                user.UserGroup = dt.Rows[i]["UserGroup"].ToString();
+                user.UserDescribe = dt.Rows[i]["UserDescirbe"].ToString();
+                user.UserRemark = dt.Rows[i]["UserRemark"].ToString();
                 userlist.Add(user);
             }
 
@@ -55,6 +56,32 @@ namespace EasyBuy_DAL
             userList = ToModel(dt);
             return userList;
         }
+        public int SetUser(string userName,string userPasswd,string userGroup ,string userDescribe,string thisTime)
+        {
+            int non ;
+            string setUserSqlstr = string.Format("insert into tblUserList values('{0}', '{1}', '{2}', '{3}', '{4}')", userName, userPasswd,userGroup,userDescribe,thisTime);
+            non = SqlHelper.ExecuteNonQuery(setUserSqlstr);
+            return non;
+        }
+
+        public int DeletUser(string userName)
+        {
+            int deleteNum;
+            string deletUserSqlstr = string.Format("delete from tblUserList where UserName = '{0}'", userName);
+            
+            deleteNum = SqlHelper.ExecuteNonQuery(deletUserSqlstr);
+            return deleteNum;
+        }
+
+
+
+
+
+
+
+
+
+
     }
 
     
