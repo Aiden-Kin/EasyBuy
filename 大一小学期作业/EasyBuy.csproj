@@ -194,6 +194,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\icon\MainIcon.png" />
+    <None Include="Resources\管理员_角色管理.svg" />
     <None Include="Resources\人员信息.svg" />
     <None Include="Resources\菜单_工资绩效.svg" />
     <None Include="Resources\员工信息 %282%29.svg" />

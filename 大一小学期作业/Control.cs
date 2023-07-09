@@ -201,10 +201,12 @@ namespace EasyBuy
             cbs_SuperUserDataGrid.DataSource = superUser;
         }
 
+   
+
         private void cbs_btnAddUser_Click(object sender, EventArgs e)
         {
             csu_AddUser addUser = new csu_AddUser();
-            addUser.Show();
+            addUser.ShowDialog();
         }
 
         private void cbs_btnDleteUser_Click(object sender, EventArgs e)
@@ -240,6 +242,22 @@ namespace EasyBuy
             TimeSpan currentTime = DateTime.Now.TimeOfDay;
             currentTime = new TimeSpan(currentTime.Hours,currentTime.Minutes,currentTime.Seconds);
             NowTime.EditValue = currentTime;
+        }
+
+        private void cbs_SuperUserDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 4)
+            {
+                string a = e.RowIndex.ToString();
+            }
+        }
+
+        private void xtp_ControlUserSuper_VisibleChanged(object sender, EventArgs e)
+        {
+            if(xtp_ControlUserSuper.Visible)
+            {
+                cbs_btnSearchAll.PerformClick();
+            }
         }
     }
 }

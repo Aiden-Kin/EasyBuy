@@ -293,6 +293,16 @@ namespace EasyBuy.Properties {
         /// <summary>
         ///   查找 DevExpress.Utils.Svg.SvgImage 类型的本地化资源。
         /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage 管理员_角色管理 {
+            get {
+                object obj = ResourceManager.GetObject("管理员_角色管理", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 DevExpress.Utils.Svg.SvgImage 类型的本地化资源。
+        /// </summary>
         internal static DevExpress.Utils.Svg.SvgImage 菜单_工资绩效 {
             get {
                 object obj = ResourceManager.GetObject("菜单_工资绩效", resourceCulture);
