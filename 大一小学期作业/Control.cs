@@ -281,17 +281,22 @@ namespace EasyBuy
         private void cus_btSearch_Click(object sender, EventArgs e)
         {
             List<User> superUser = new List<User>();
-            //try
-            //{
+            try
+            {
                 superUser = new UserListManager().GetUserList("SuperUser","UserName",cbs_tbSearch.Text.Trim());
 
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message);
-            //}
+        }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             cbs_SuperUserDataGrid.AutoGenerateColumns = false;
             cbs_SuperUserDataGrid.DataSource = superUser;
+        }
+
+        private void cbs_tbSearch_EditValueChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

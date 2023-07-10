@@ -246,6 +246,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ChildControls.Add(this.directXFormContainerControl1);
             this.ClientSize = new System.Drawing.Size(504, 650);
+            this.Font = new System.Drawing.Font("小米兰亭", 10.5F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.Image = global::EasyBuy.Properties.Resources.icon;
             this.Name = "cus_Modify";
