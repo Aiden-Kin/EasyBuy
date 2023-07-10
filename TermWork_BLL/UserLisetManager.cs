@@ -1,4 +1,5 @@
-﻿using EasyBuy_DAL;
+﻿using DevExpress.CodeParser;
+using EasyBuy_DAL;
 using EasyBuy_Model;
 using System;
 using System.Collections.Generic;
@@ -28,9 +29,18 @@ namespace EasyBuy_BLL
             return new UserListServer().SetUser(userName,userPasswd,userGroup,userDescribe,thisTime);
         }
 
+        public bool SearchUser(string userName)
+        {
+            return new UserListServer().SearchUser(userName);
+        }
+
         public int DeleteUser(string userName)
         {
             return new UserListServer().DeletUser(userName);
+        }
+        public int UpdateUser(string userName, string userPasswd = null, string userDescribe = null)
+        {
+            return new UserListServer().UpdataUser(userName,userPasswd,userDescribe);
         }
     }
 }   

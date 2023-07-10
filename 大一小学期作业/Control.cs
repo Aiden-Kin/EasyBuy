@@ -201,12 +201,27 @@ namespace EasyBuy
             cbs_SuperUserDataGrid.DataSource = superUser;
         }
 
+        public void cus_DataRefresh()
+        {
+            List<User> superUser = new List<User>();
+            try
+            {
+                superUser = new UserListManager().GetUserList("SuperUser");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            cbs_SuperUserDataGrid.AutoGenerateColumns = false;
+            cbs_SuperUserDataGrid.DataSource = superUser;
+        }
    
 
         private void cbs_btnAddUser_Click(object sender, EventArgs e)
         {
-            csu_AddUser addUser = new csu_AddUser();
-            addUser.ShowDialog();
+            csu_AddUser addUser = new csu_AddUser(this);
+            addUser.Show();
         }
 
         private void cbs_btnDleteUser_Click(object sender, EventArgs e)
@@ -233,7 +248,7 @@ namespace EasyBuy
             {
                 MessageBox.Show("删除成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            
+            cus_DataRefresh();
 
         }
 
@@ -246,9 +261,12 @@ namespace EasyBuy
 
         private void cbs_SuperUserDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            int row = e.RowIndex;
             if (e.ColumnIndex == 4)
             {
-                string a = e.RowIndex.ToString();
+                cus_Modify modify = new cus_Modify(this, cbs_SuperUserDataGrid.Rows[row].Cells[0].Value.ToString(), cbs_SuperUserDataGrid.Rows[row].Cells[2].Value.ToString());
+                modify.Show();
+
             }
         }
 
@@ -258,6 +276,22 @@ namespace EasyBuy
             {
                 cbs_btnSearchAll.PerformClick();
             }
+        }
+
+        private void cus_btSearch_Click(object sender, EventArgs e)
+        {
+            List<User> superUser = new List<User>();
+            //try
+            //{
+                superUser = new UserListManager().GetUserList("SuperUser","UserName",cbs_tbSearch.Text.Trim());
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+            cbs_SuperUserDataGrid.AutoGenerateColumns = false;
+            cbs_SuperUserDataGrid.DataSource = superUser;
         }
     }
 }

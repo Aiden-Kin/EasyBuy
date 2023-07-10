@@ -1,6 +1,6 @@
 ﻿namespace EasyBuy.SecondPage
 {
-    partial class csu_AddUser
+    partial class cus_Modify
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(csu_AddUser));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cus_Modify));
             this.directXFormContainerControl1 = new DevExpress.XtraEditors.DirectXFormContainerControl();
             this.txtPasswdError = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
@@ -125,7 +125,7 @@
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(154, 29);
             this.labelControl5.TabIndex = 14;
-            this.labelControl5.Text = "添加管理员用户";
+            this.labelControl5.Text = "修改管理员用户";
             // 
             // labelControl3
             // 
@@ -155,7 +155,7 @@
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(64, 22);
             this.labelControl2.TabIndex = 12;
-            this.labelControl2.Text = "创建密码";
+            this.labelControl2.Text = "修改密码";
             // 
             // labelControl1
             // 
@@ -188,7 +188,7 @@
             this.btnAddConfirm.Name = "btnAddConfirm";
             this.btnAddConfirm.Size = new System.Drawing.Size(123, 42);
             this.btnAddConfirm.TabIndex = 5;
-            this.btnAddConfirm.Text = "添加";
+            this.btnAddConfirm.Text = "修改";
             this.btnAddConfirm.Click += new System.EventHandler(this.btnAddConfirm_Click);
             // 
             // tbConfirmPasswd
@@ -206,6 +206,7 @@
             // 
             // tbUserName
             // 
+            this.tbUserName.Enabled = false;
             this.tbUserName.Location = new System.Drawing.Point(210, 133);
             this.tbUserName.Name = "tbUserName";
             this.tbUserName.Properties.Appearance.BackColor = System.Drawing.Color.White;
@@ -240,14 +241,14 @@
             this.tbUserDescribe.Size = new System.Drawing.Size(273, 148);
             this.tbUserDescribe.TabIndex = 4;
             // 
-            // csu_AddUser
+            // cus_Modify
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ChildControls.Add(this.directXFormContainerControl1);
             this.ClientSize = new System.Drawing.Size(504, 650);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.Image = global::EasyBuy.Properties.Resources.icon;
-            this.Name = "csu_AddUser";
+            this.Name = "cus_Modify";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "管理员用户添加";
             this.directXFormContainerControl1.ResumeLayout(false);

@@ -132,7 +132,14 @@
     <Compile Include="Control.Designer.cs">
       <DependentUpon>Control.cs</DependentUpon>
     </Compile>
+    <Compile Include="SecondPage\csu_ModifyUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SecondPage\csu_AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondPage\DirectXForm1.Designer - 复制.cs">
+      <DependentUpon>csu_ModifyUser.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SecondPage\DirectXForm1.Designer.cs">
@@ -163,6 +170,9 @@
     </Compile>
     <EmbeddedResource Include="Control.resx">
       <DependentUpon>Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecondPage\csu_ModifyUser.resx">
+      <DependentUpon>csu_ModifyUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SecondPage\csu_AddUser.resx">
       <DependentUpon>csu_AddUser.cs</DependentUpon>

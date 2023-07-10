@@ -23,7 +23,7 @@ namespace EasyBuy_DAL
                 
             return userInfom;
         }
-
+        //将数据表转换为用户列
         private List<User> ToModel(DataTable dt)
         {
             List<User> userlist = new List<User>();
@@ -43,25 +43,50 @@ namespace EasyBuy_DAL
 
             return userlist;
         }
-
+        //获取一列用户
         public List<User> GetUserList (string userGroup ,string condition = null ,string searchData = null )
         {
             List<User> userList = new List<User>();
             string sqlstr = string.Format("select * from tblUserList where UserGroup = '{0}'", userGroup);
             if(condition != null)
             {
-                sqlstr += string.Format("and {0] = '{1}'", condition, searchData);
+                sqlstr += string.Format("and {0} = '{1}'", condition, searchData);
             }
             DataTable dt = SqlHelper.ExecuteDataTable(sqlstr);
             userList = ToModel(dt);
             return userList;
         }
+        //添加
         public int SetUser(string userName,string userPasswd,string userGroup ,string userDescribe,string thisTime)
         {
             int non ;
             string setUserSqlstr = string.Format("insert into tblUserList values('{0}', '{1}', '{2}', '{3}', '{4}')", userName, userPasswd,userGroup,userDescribe,thisTime);
             non = SqlHelper.ExecuteNonQuery(setUserSqlstr);
             return non;
+        }
+
+        public int UpdataUser(string userName,string userPasswd = null ,string userDescribe = null)
+        {
+            int updatedNum = 0;
+            string updateSqlstr = "update tblUserList set";
+            
+            if(userPasswd != null)
+            {
+                updateSqlstr += string.Format("UserPasswd = '{0}'", userPasswd);
+            }
+            if(userPasswd !=null && userDescribe!= null)
+            {
+                updateSqlstr += ",";
+            }
+            if(userDescribe != null)
+            {
+                updateSqlstr += string.Format("UserDescirbe = '{0}' ", userDescribe);
+            }
+            //统一添加限定
+            updateSqlstr += string.Format(" where UserName = '{1}'", userDescribe, userName);
+
+           updatedNum = SqlHelper.ExecuteNonQuery(updateSqlstr);
+            return updatedNum;
         }
 
         public int DeletUser(string userName)
@@ -71,6 +96,13 @@ namespace EasyBuy_DAL
             
             deleteNum = SqlHelper.ExecuteNonQuery(deletUserSqlstr);
             return deleteNum;
+        }
+
+        public bool SearchUser(string userName)
+        {
+            string searchSqlstr = string.Format("select * from tblUserList where UserName = '{0}'", userName);
+            bool mark = SqlHelper.Exist(searchSqlstr);
+            return mark;
         }
 
 

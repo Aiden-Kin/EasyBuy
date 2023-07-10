@@ -109,14 +109,16 @@ namespace EasyBuy_DAL
         /// <returns>返回int类型的受影响的行数</returns>
         public static int ExecuteNonQuery(string sqlstr)
         {
-            using (SqlConnection sqlCon = new SqlConnection(constr))
-            {
-                using (SqlCommand sqlCmd = new SqlCommand(sqlstr, sqlCon))
+           
+                using (SqlConnection sqlCon = new SqlConnection(constr))
                 {
-                    sqlCon.Open();
-                    return sqlCmd.ExecuteNonQuery();
+                    using (SqlCommand sqlCmd = new SqlCommand(sqlstr, sqlCon))
+                    {
+                        sqlCon.Open();
+                        return sqlCmd.ExecuteNonQuery();
+                    }
                 }
-            }
+           
         }
         #endregion
 

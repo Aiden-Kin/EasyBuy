@@ -14,15 +14,17 @@ using System.Windows.Forms;
 
 namespace EasyBuy.SecondPage
 {
-    public partial class csu_AddUser : DevExpress.XtraEditors.DirectXForm
+    public partial class cus_Modify : DevExpress.XtraEditors.DirectXForm
     {
         bool passwdflag = false;
         Control mainControl;
         
-        public csu_AddUser(Control mainControl)
+        public cus_Modify(Control mainControl,string userName, string userDescibe)
         {
             InitializeComponent();
             this.mainControl = mainControl;
+            this.tbUserName.Text = userName;
+            this.tbUserDescribe.Text = userDescibe;
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)
@@ -36,9 +38,9 @@ namespace EasyBuy.SecondPage
             try
             {
                  //校验用户名重复
-                if(new UserListManager().SearchUser(tbUserName.Text))
+                if(!new UserListManager().SearchUser(tbUserName.Text))
                 {
-                    MessageBox.Show("已存在此用户名请重新输入", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("用户不存在", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
                 //添加用户密码正确校验
@@ -53,9 +55,8 @@ namespace EasyBuy.SecondPage
                     string userGroup = "SuperUser";
                     string userDescribe = tbUserDescribe.Text.Trim();
                     string thisTime = DateTime.Now.ToString();
-                    new UserListManager().SetUser(username, userpasswd, userGroup, userDescribe, thisTime);
-                    MessageBox.Show("添加成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    TextClear();
+                    new UserListManager().UpdateUser(username, userpasswd, userDescribe);
+                    MessageBox.Show("修改成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     mainControl.cus_DataRefresh();
                 }
                 
@@ -66,13 +67,6 @@ namespace EasyBuy.SecondPage
                 MessageBox.Show(ex.Message);
             }
             
-        }
-        private void TextClear()
-        {
-            this.tbUserName.Clear();
-            this.tbpasswd.Clear();
-            this.tbUserDescribe.Clear();
-            this.tbConfirmPasswd.Clear();
         }
 
         private void tbConfirmPasswd_EditValueChanged(object sender, EventArgs e)
