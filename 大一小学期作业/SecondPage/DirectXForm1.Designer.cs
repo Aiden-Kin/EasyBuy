@@ -33,7 +33,7 @@
             this.txtPasswdError = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.Exit = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.txtTetle = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -94,7 +94,7 @@
             this.panelControl1.Appearance.Options.UseBorderColor = true;
             this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.panelControl1.Controls.Add(this.Exit);
-            this.panelControl1.Controls.Add(this.labelControl5);
+            this.panelControl1.Controls.Add(this.txtTetle);
             this.panelControl1.Location = new System.Drawing.Point(6, 6);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(490, 63);
@@ -117,15 +117,15 @@
             this.Exit.TabIndex = 7;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
-            // labelControl5
+            // txtTetle
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("小米兰亭", 16F);
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(24, 15);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(154, 29);
-            this.labelControl5.TabIndex = 14;
-            this.labelControl5.Text = "添加管理员用户";
+            this.txtTetle.Appearance.Font = new System.Drawing.Font("小米兰亭", 16F);
+            this.txtTetle.Appearance.Options.UseFont = true;
+            this.txtTetle.Location = new System.Drawing.Point(24, 15);
+            this.txtTetle.Name = "txtTetle";
+            this.txtTetle.Size = new System.Drawing.Size(154, 29);
+            this.txtTetle.TabIndex = 14;
+            this.txtTetle.Text = "添加管理员用户";
             // 
             // labelControl3
             // 
@@ -275,7 +275,7 @@
         private DevExpress.XtraEditors.MemoEdit tbUserDescribe;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.TextEdit tbConfirmPasswd;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.LabelControl txtTetle;
         private DevExpress.XtraEditors.SimpleButton btnCancel;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.SimpleButton Exit;

@@ -18,11 +18,13 @@ namespace EasyBuy.SecondPage
     {
         bool passwdflag = false;
         Control mainControl;
+        string userGroup;
         
-        public csu_AddUser(Control mainControl)
+        public csu_AddUser(Control mainControl, string userGroup)
         {
             InitializeComponent();
             this.mainControl = mainControl;
+            this.userGroup = userGroup;
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)
