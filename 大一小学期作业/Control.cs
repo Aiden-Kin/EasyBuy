@@ -59,44 +59,36 @@ namespace EasyBuy
             xtb_ControlPanel.SelectedTabPage = xtp_GoodsClass; 
         }
 
-        private void pcbtnSearchAll_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void bbtnGoodsInform_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             xtb_ControlPanel.SelectedTabPage = xtp_GoodsInfom;
         }
 
-
+        //搜搜框设定
         private void cbs_tbSearch_EditValueChanged(object sender, EventArgs e)
         {
-            cbs_tbSearch.Text = string.Empty;
-            cbs_tbSearch.ForeColor = Color.Black;
+            cbs_tbSearcht.Text = string.Empty;
+            cbs_tbSearcht.ForeColor = Color.Black;
         }
 
     
-        private void cbs_tbSearch_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
 
         private void cbs_tbSearch_MouseLeave(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(cbs_tbSearch.Text))
+            if (string.IsNullOrEmpty(cbs_tbSearcht.Text))
             {
-                cbs_tbSearch.Text = "搜索用户";
-                cbs_tbSearch.ForeColor = Color.Gray;
+                cbs_tbSearcht.Text = "搜索用户";
+                cbs_tbSearcht.ForeColor = Color.Gray;
             }
         }
 
         private void cbs_tbSearch_MouseClick(object sender, MouseEventArgs e)
         {
-            if (cbs_tbSearch.Text == "搜索用户")
+            if (cbs_tbSearcht.Text == "搜索用户")
             {
-                cbs_tbSearch.Text = "";
-                cbs_tbSearch.ForeColor = Color.Black;
+                cbs_tbSearcht.Text = "";
+                cbs_tbSearcht.ForeColor = Color.Black;
             }
         }
 
@@ -283,9 +275,9 @@ namespace EasyBuy
             List<User> superUser = new List<User>();
             try
             {
-                superUser = new UserListManager().GetUserList("SuperUser","UserName",cbs_tbSearch.Text.Trim());
+                superUser = new UserListManager().GetUserList("SuperUser","UserName", cbs_tbSearcht.Text.Trim());
 
-        }
+            }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
