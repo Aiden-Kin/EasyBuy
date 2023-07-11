@@ -2,6 +2,7 @@
 using DevExpress.Skins;
 using DevExpress.UserSkins;
 using DevExpress.XtraEditors;
+using EasyBuy.SecondPage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +27,7 @@ namespace EasyBuy
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Control());
+            Application.Run(new StfInfom_Add(null));
         }
     }
 }

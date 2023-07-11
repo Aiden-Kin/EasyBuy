@@ -10,51 +10,58 @@ using System.Data;
 
 namespace EasyBuy_DAL
 {
-    public class UserListServer
+    public class StfInformationServer
     {
-        public  User GetSingleUser(string userName,string userPassword)  
-        {
-            User userInfom = new User();
-            string sqlstr = string.Format("select * from tblUserList where UserName ='{0}' and UserPassword = '{1}'", userName,userPassword);
-            using (DataTable dt = SqlHelper.ExecuteDataTable(sqlstr))
-            {
-                userInfom = ToModel(dt)[0];
-            }
+
+        //public  User GetSingleUser(string userName,string userPassword)  
+        //{
+        //    StaffInformation stfInfom = new StaffInformation();
+        //    string sqlstr = string.Format("select * from tblUserList where UserName ='{0}' and UserPassword = '{1}'", userName,userPassword);
+        //    using (DataTable dt = SqlHelper.ExecuteDataTable(sqlstr))
+        //    {
+        //        stfInfom = ToModel(dt)[0];
+        //    }
                 
-            return userInfom;
-        }
+        //    return stfInfom;
+        //}
+
+
         //将数据表转换为用户列
-        private List<User> ToModel(DataTable dt)
+        private List<StaffInformation> ToModel(DataTable dt)
         {
-            List<User> userlist = new List<User>();
-            User user;
+            List<StaffInformation> userlist = new List<StaffInformation>();
+            StaffInformation information;
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                
-                user = new User();
-                user.UserName = dt.Rows[i]["UserName"].ToString();
-                user.UserPassword = dt.Rows[i]["UserPassword"].ToString();
-                user.UserGroup = dt.Rows[i]["UserGroup"].ToString();
-                user.UserDescribe = dt.Rows[i]["UserDescirbe"].ToString();
-                user.UserRemark = dt.Rows[i]["UserRemark"].ToString();
-                userlist.Add(user);
+
+                information = new StaffInformation();
+                information.StfID = Convert.ToInt32(dt.Rows[i]["StfID"]);
+                information.StfName = dt.Rows[i]["StfName"].ToString();
+                information.StfSex = dt.Rows[i]["StfSex"].ToString();
+                information.StfAge = Convert.ToInt32(dt.Rows[i]["StfAge"]);
+                information.StfPhoneNumber = dt.Rows[i]["StfPhoneNumber"].ToString();
+                information.StfState = dt.Rows[i]["StfState"].ToString();
+                information.StfPost = dt.Rows[i]["StfPost"].ToString();
+                information.StfAddTime = dt.Rows[i]["StfAddTime"].ToString();
+
+                userlist.Add(information);
             }
 
 
             return userlist;
         }
         //获取一列用户
-        public List<User> GetUserList (string userGroup ,string condition = null ,string searchData = null )
+        public List<StaffInformation> GetUserList (string condition = null ,string searchData = null )
         {
-            List<User> userList = new List<User>();
-            string sqlstr = string.Format("select * from tblUserList where UserGroup = '{0}'", userGroup);
+            List<StaffInformation> stfinformationList = new List<StaffInformation>();
+            string sqlstr = string.Format("select * from tblStaffInformation ");
             if(condition != null)
             {
-                sqlstr += string.Format("and {0} = '{1}'", condition, searchData);
+                sqlstr += string.Format("where {0} = '{1}'", condition, searchData);
             }
             DataTable dt = SqlHelper.ExecuteDataTable(sqlstr);
-            userList = ToModel(dt);
-            return userList;
+            stfinformationList = ToModel(dt);
+            return stfinformationList;
         }
         //添加
         public int SetUser(string userName,string userPasswd,string userGroup ,string userDescribe,string thisTime)

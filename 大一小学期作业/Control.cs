@@ -69,24 +69,7 @@ namespace EasyBuy
         #region 通用代码
 
         //搜索框通用显示设定
-        private void shar_tbSearch_MouseLeave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(cbs_tbSearcht.Text))
-            {
-                cbs_tbSearcht.Text = "搜索用户";
-                cbs_tbSearcht.ForeColor = Color.Gray;
-            }
-        }
-
-        private void shar_tbSearch_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (cbs_tbSearcht.Text == "搜索用户")
-            {
-                cbs_tbSearcht.Text = "";
-                cbs_tbSearcht.ForeColor = Color.Black;
-            }
-        }
-
+    
 
 
         #endregion
@@ -119,7 +102,7 @@ namespace EasyBuy
 
         private void bbtn_StafUser_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            xtb_ControlPanel.SelectedTabPage = xtp_StafMoney;
+            xtb_ControlPanel.SelectedTabPage = xtp_ControlUserStaff;
         }
 
         private void bbtn_CustomerUser_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -164,7 +147,7 @@ namespace EasyBuy
 
         private void ace_StaffUser_Click(object sender, EventArgs e)
         {
-            xtb_ControlPanel.SelectedTabPage = xtp_StafMoney;
+            xtb_ControlPanel.SelectedTabPage = xtp_ControlUserStaff;
         }
 
         private void ace_Customer_Click(object sender, EventArgs e)
@@ -238,6 +221,7 @@ namespace EasyBuy
 
         #region 管理员用户控件区
         //公共函数
+
         //刷新函数
         public void cus_DataRefresh()
         {
@@ -271,6 +255,24 @@ namespace EasyBuy
             cbs_SuperUserDataGrid.AutoGenerateColumns = false;
             cbs_SuperUserDataGrid.DataSource = superUser;
         }
+        private void cbs_tbSearch_MouseLeave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(cbs_tbSearcht.Text))
+            {
+                cbs_tbSearcht.Text = "搜索用户";
+                cbs_tbSearcht.ForeColor = Color.Gray;
+            }
+        }
+
+        private void cbs_tbSearch_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (cbs_tbSearcht.Text == "搜索用户")
+            {
+                cbs_tbSearcht.Text = "";
+                cbs_tbSearcht.ForeColor = Color.Black;
+            }
+        }
+
 
 
         private void cbs_btnAddUser_Click(object sender, EventArgs e)
@@ -292,7 +294,7 @@ namespace EasyBuy
             int row = e.RowIndex;
             if (e.ColumnIndex == 4)
             {
-                cus_Modify modify = new cus_Modify(this, cbs_SuperUserDataGrid.Rows[row].Cells[0].Value.ToString(), cbs_SuperUserDataGrid.Rows[row].Cells[2].Value.ToString());
+                cus_Modify modify = new cus_Modify(this, cbs_SuperUserDataGrid.Rows[row].Cells[0].Value.ToString(), cbs_SuperUserDataGrid.Rows[row].Cells[2].Value.ToString(),"SuperUser");
                 modify.Show();
 
             }
@@ -367,15 +369,157 @@ namespace EasyBuy
         {
             common_Search("Staff", cStaf_dataGridView);
         }
+        private void cStf_tbSearchUser_MouseLeave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(cStf_tbSearchUser.Text))
+            {
+                cStf_tbSearchUser.Text = "搜索用户";
+                cStf_tbSearchUser.ForeColor = Color.Gray;
+            }
+        }
 
-        #endregion
-
+        private void cStf_tbSearchUser_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (cStf_tbSearchUser.Text == "搜索用户")
+            {
+                cStf_tbSearchUser.Text = "";
+                cStf_tbSearchUser.ForeColor = Color.Black;
+            }
+        }
         private void xtp_ControlUserStaff_VisibleChanged(object sender, EventArgs e)
         {
             if (xtp_ControlUserStaff.Visible)
             {
                 cStf_DataRefresh();
             }
+        }
+
+        #endregion
+
+
+
+        #region 客户账户控件区
+        //公用函数
+        public void cCtm_RefreshData()
+        {
+            List<User> superUser = new List<User>();
+            try
+            {
+                superUser = new UserListManager().GetUserList("Customer");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            cCtm_dataGridView.AutoGenerateColumns = false;
+            cCtm_dataGridView.DataSource = superUser;
+
+        }
+
+        //函数区域
+        private void cCtm_btnSearchAll_Click(object sender, EventArgs e)
+        {
+            cCtm_RefreshData();
+        }
+        private void cCtm_tbSearch_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (cCtm_tbSearch.Text == "搜索用户")
+            {
+                cCtm_tbSearch.Text = "";
+                cCtm_tbSearch.ForeColor = Color.Black;
+            }
+        }
+
+        private void cCtm_tbSearch_MouseLeave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(cCtm_tbSearch.Text))
+            {
+                cCtm_tbSearch.Text = "搜索用户";
+                cCtm_tbSearch.ForeColor = Color.Gray;
+            }
+        }
+        private void cCtm_btnAdd_Click(object sender, EventArgs e)
+        {
+            csu_AddUser addUser = new csu_AddUser(this, "Customer");
+            addUser.Show();
+        }
+
+        private void xtp_ControlUserCustmer_VisibleChanged(object sender, EventArgs e)
+        {
+            if (xtp_ControlUserCustmer.Visible)
+            {
+                cCtm_RefreshData();
+            }
+        }
+
+
+        #endregion
+
+        private void cStaf_dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int row = e.RowIndex;
+            if (e.ColumnIndex == 4)
+            {
+                cus_Modify modify = new cus_Modify(this, cStaf_dataGridView.Rows[row].Cells[0].Value.ToString(), cStaf_dataGridView.Rows[row].Cells[2].Value.ToString(), "Staff");
+                modify.Show();
+
+            }
+        }
+
+        private void cCtm_dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int row = e.RowIndex;
+            if (e.ColumnIndex == 4)
+            {
+                cus_Modify modify = new cus_Modify(this, cCtm_dataGridView.Rows[row].Cells[0].Value.ToString(), cCtm_dataGridView.Rows[row].Cells[2].Value.ToString(), "Customer");
+                modify.Show();
+
+            }
+        }
+
+
+        #region 员工信息控件区
+        //公共函数
+        public void stfInfo_RefreshData()
+        {
+            List<StaffInformation> staffInformation = new List<StaffInformation>();
+            try
+            {
+                staffInformation = new StfInformationManager().GetStaffInformationList();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            stfInfo_dataGridView.AutoGenerateColumns = false;
+            stfInfo_dataGridView.DataSource = staffInformation;
+        }
+
+
+        //控件
+
+
+
+        #endregion
+        private void stfIfo_btSearchAll_Click(object sender, EventArgs e)
+        {
+            stfInfo_RefreshData();
+        }
+
+        private void xtp_StaffInformation_VisibleChanged(object sender, EventArgs e)
+        {
+            if (xtp_StaffInformation.Visible)
+            {
+                stfInfo_RefreshData();
+            }
+        }
+
+        private void stfInfo_btAdd_Click(object sender, EventArgs e)
+        {
+            StfInfom_Add addUser = new StfInfom_Add(this);
+            addUser.Show();
         }
     }
 }

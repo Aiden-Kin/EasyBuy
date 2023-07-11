@@ -14,17 +14,30 @@ using System.Windows.Forms;
 
 namespace EasyBuy.SecondPage
 {
-    public partial class csu_AddUser : DevExpress.XtraEditors.DirectXForm
+    public partial class cus_Modify : DevExpress.XtraEditors.DirectXForm
     {
         bool passwdflag = false;
         Control mainControl;
         string userGroup;
-        
-        public csu_AddUser(Control mainControl, string userGroup)
+
+
+        public cus_Modify(Control mainControl,string userName, string userDescibe, string userGroup)
         {
             InitializeComponent();
             this.mainControl = mainControl;
+            this.tbUserName.Text = userName;
+            this.tbUserDescribe.Text = userDescibe;
             this.userGroup = userGroup;
+
+            //用户组自定义
+            if (userGroup == "Staff")
+            {
+                txtTitle.Text = "修改员工用户";
+            }
+            else if (userGroup == "Customer")
+            {
+                txtTitle.Text = "修改顾客用户";
+            }
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)
@@ -35,12 +48,12 @@ namespace EasyBuy.SecondPage
         private void btnAddConfirm_Click(object sender, EventArgs e)
         {
             
-            try
-            {
+            //try
+            //{
                  //校验用户名重复
-                if(new UserListManager().SearchUser(tbUserName.Text))
+                if(!new UserListManager().SearchUser(tbUserName.Text))
                 {
-                    MessageBox.Show("已存在此用户名请重新输入", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("用户不存在", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
                 //添加用户密码正确校验
@@ -52,29 +65,36 @@ namespace EasyBuy.SecondPage
                 {
                     string username = tbUserName.Text.Trim();
                     string userpasswd = tbpasswd.Text.Trim();
-                    string userGroup = "SuperUser";
                     string userDescribe = tbUserDescribe.Text.Trim();
                     string thisTime = DateTime.Now.ToString();
-                    new UserListManager().SetUser(username, userpasswd, userGroup, userDescribe, thisTime);
-                    MessageBox.Show("添加成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    TextClear();
-                    mainControl.cus_DataRefresh();
+                    if(userpasswd == ""&&  userpasswd == "使用原密码")
+                    {
+                        userpasswd = null;
+                    }
+                    new UserListManager().UpdateUser(username, userpasswd, userDescribe);
+                    MessageBox.Show("修改成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    switch (userGroup)
+                    {
+                        case "SuperUser":
+                            mainControl.cus_DataRefresh();
+                            break;
+                        case "Staff":
+                            mainControl.cStf_DataRefresh();
+                            break;
+                        case "Customer":
+                            mainControl.cCtm_RefreshData();
+                            break;
+                    }
+                    this.Close();
                 }
                 
-            }
-            catch (Exception ex)
-            {
+            //}
+            //catch (Exception ex)
+            //{
 
-                MessageBox.Show(ex.Message);
-            }
+            //    MessageBox.Show("请联系管理员" + ex.Message);
+            //}
             
-        }
-        private void TextClear()
-        {
-            this.tbUserName.Clear();
-            this.tbpasswd.Clear();
-            this.tbUserDescribe.Clear();
-            this.tbConfirmPasswd.Clear();
         }
 
         private void tbConfirmPasswd_EditValueChanged(object sender, EventArgs e)
@@ -125,6 +145,13 @@ namespace EasyBuy.SecondPage
         private void panelControl1_MouseUp(object sender, MouseEventArgs e)
         {
             mouseOffset = Point.Empty;
+        }
+
+        private void tbpasswd_MouseClick(object sender, MouseEventArgs e)
+        {
+            tbpasswd.Text = null;
+            tbpasswd.ForeColor = Color.Black;
+            tbpasswd.Properties.PasswordChar = '*';
         }
     }
 }

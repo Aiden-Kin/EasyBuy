@@ -203,6 +203,16 @@ namespace EasyBuy.Properties {
         /// <summary>
         ///   查找 DevExpress.Utils.Svg.SvgImage 类型的本地化资源。
         /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage 员工 {
+            get {
+                object obj = ResourceManager.GetObject("员工", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 DevExpress.Utils.Svg.SvgImage 类型的本地化资源。
+        /// </summary>
         internal static DevExpress.Utils.Svg.SvgImage 员工信息__2_ {
             get {
                 object obj = ResourceManager.GetObject("员工信息 (2)", resourceCulture);
@@ -306,6 +316,16 @@ namespace EasyBuy.Properties {
         internal static DevExpress.Utils.Svg.SvgImage 菜单_工资绩效 {
             get {
                 object obj = ResourceManager.GetObject("菜单_工资绩效", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 DevExpress.Utils.Svg.SvgImage 类型的本地化资源。
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage 顾客01 {
+            get {
+                object obj = ResourceManager.GetObject("顾客01", resourceCulture);
                 return ((DevExpress.Utils.Svg.SvgImage)(obj));
             }
         }

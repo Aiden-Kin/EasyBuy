@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using DevExpress.CodeParser;
+using DevExpress.XtraEditors;
 using DevExpress.XtraMap;
 using EasyBuy_BLL;
 using EasyBuy_Model;
@@ -14,17 +15,28 @@ using System.Windows.Forms;
 
 namespace EasyBuy.SecondPage
 {
-    public partial class cus_Modify : DevExpress.XtraEditors.DirectXForm
+    public partial class csu_AddUser : DevExpress.XtraEditors.DirectXForm
     {
         bool passwdflag = false;
         Control mainControl;
+        string userGroup;
+
         
-        public cus_Modify(Control mainControl,string userName, string userDescibe)
+        public csu_AddUser(Control mainControl, string userGroup)
         {
             InitializeComponent();
             this.mainControl = mainControl;
-            this.tbUserName.Text = userName;
-            this.tbUserDescribe.Text = userDescibe;
+            this.userGroup = userGroup;
+
+            //用户组自定义
+            if(userGroup == "Staff")
+            {
+                txtTetle.Text = "添加员工用户";
+            }else if(userGroup == "Customer")
+            {
+                txtTetle.Text = "添加顾客用户";
+            }
+
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)
@@ -38,9 +50,9 @@ namespace EasyBuy.SecondPage
             try
             {
                  //校验用户名重复
-                if(!new UserListManager().SearchUser(tbUserName.Text))
+                if(new UserListManager().SearchUser(tbUserName.Text))
                 {
-                    MessageBox.Show("用户不存在", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("已存在此用户名请重新输入", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
                 //添加用户密码正确校验
@@ -52,12 +64,22 @@ namespace EasyBuy.SecondPage
                 {
                     string username = tbUserName.Text.Trim();
                     string userpasswd = tbpasswd.Text.Trim();
-                    string userGroup = "SuperUser";
                     string userDescribe = tbUserDescribe.Text.Trim();
                     string thisTime = DateTime.Now.ToString();
-                    new UserListManager().UpdateUser(username, userpasswd, userDescribe);
-                    MessageBox.Show("修改成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    mainControl.cus_DataRefresh();
+                    new UserListManager().SetUser(username, userpasswd, userGroup, userDescribe, thisTime);
+                    MessageBox.Show("添加成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    TextClear();
+                    switch (userGroup)
+                    {
+                        case "SuperUser": mainControl.cus_DataRefresh();
+                            break;
+                        case "Staff" :mainControl.cStf_DataRefresh(); 
+                            break;
+                        case "Customer": mainControl.cCtm_RefreshData();
+                            break;
+
+                    }
+                    
                 }
                 
             }
@@ -67,6 +89,13 @@ namespace EasyBuy.SecondPage
                 MessageBox.Show(ex.Message);
             }
             
+        }
+        private void TextClear()
+        {
+            this.tbUserName.Clear();
+            this.tbpasswd.Clear();
+            this.tbUserDescribe.Clear();
+            this.tbConfirmPasswd.Clear();
         }
 
         private void tbConfirmPasswd_EditValueChanged(object sender, EventArgs e)

@@ -33,7 +33,7 @@
             this.txtPasswdError = new DevExpress.XtraEditors.LabelControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.Exit = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.txtTitle = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -79,7 +79,7 @@
             this.txtPasswdError.Appearance.ForeColor = System.Drawing.Color.Brown;
             this.txtPasswdError.Appearance.Options.UseFont = true;
             this.txtPasswdError.Appearance.Options.UseForeColor = true;
-            this.txtPasswdError.Location = new System.Drawing.Point(281, 295);
+            this.txtPasswdError.Location = new System.Drawing.Point(281, 297);
             this.txtPasswdError.Name = "txtPasswdError";
             this.txtPasswdError.Size = new System.Drawing.Size(140, 19);
             this.txtPasswdError.TabIndex = 16;
@@ -94,7 +94,7 @@
             this.panelControl1.Appearance.Options.UseBorderColor = true;
             this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.panelControl1.Controls.Add(this.Exit);
-            this.panelControl1.Controls.Add(this.labelControl5);
+            this.panelControl1.Controls.Add(this.txtTitle);
             this.panelControl1.Location = new System.Drawing.Point(6, 6);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(490, 63);
@@ -117,21 +117,21 @@
             this.Exit.TabIndex = 7;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
-            // labelControl5
+            // txtTitle
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("小米兰亭", 16F);
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(24, 15);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(154, 29);
-            this.labelControl5.TabIndex = 14;
-            this.labelControl5.Text = "修改管理员用户";
+            this.txtTitle.Appearance.Font = new System.Drawing.Font("小米兰亭", 16F);
+            this.txtTitle.Appearance.Options.UseFont = true;
+            this.txtTitle.Location = new System.Drawing.Point(24, 15);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(154, 29);
+            this.txtTitle.TabIndex = 14;
+            this.txtTitle.Text = "修改管理员用户";
             // 
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(47, 360);
+            this.labelControl3.Location = new System.Drawing.Point(47, 389);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(64, 22);
             this.labelControl3.TabIndex = 12;
@@ -141,7 +141,7 @@
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(60, 255);
+            this.labelControl4.Location = new System.Drawing.Point(60, 257);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(96, 22);
             this.labelControl4.TabIndex = 12;
@@ -151,7 +151,7 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(79, 190);
+            this.labelControl2.Location = new System.Drawing.Point(79, 199);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(64, 22);
             this.labelControl2.TabIndex = 12;
@@ -161,7 +161,7 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(90, 133);
+            this.labelControl1.Location = new System.Drawing.Point(90, 143);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(48, 22);
             this.labelControl1.TabIndex = 11;
@@ -193,12 +193,14 @@
             // 
             // tbConfirmPasswd
             // 
-            this.tbConfirmPasswd.Location = new System.Drawing.Point(210, 252);
+            this.tbConfirmPasswd.Location = new System.Drawing.Point(210, 254);
             this.tbConfirmPasswd.Name = "tbConfirmPasswd";
             this.tbConfirmPasswd.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.tbConfirmPasswd.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
+            this.tbConfirmPasswd.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
             this.tbConfirmPasswd.Properties.Appearance.Options.UseBackColor = true;
             this.tbConfirmPasswd.Properties.Appearance.Options.UseFont = true;
+            this.tbConfirmPasswd.Properties.Appearance.Options.UseForeColor = true;
             this.tbConfirmPasswd.Properties.PasswordChar = '*';
             this.tbConfirmPasswd.Size = new System.Drawing.Size(219, 26);
             this.tbConfirmPasswd.TabIndex = 3;
@@ -207,7 +209,7 @@
             // tbUserName
             // 
             this.tbUserName.Enabled = false;
-            this.tbUserName.Location = new System.Drawing.Point(210, 133);
+            this.tbUserName.Location = new System.Drawing.Point(210, 143);
             this.tbUserName.Name = "tbUserName";
             this.tbUserName.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.tbUserName.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
@@ -218,21 +220,24 @@
             // 
             // tbpasswd
             // 
-            this.tbpasswd.Location = new System.Drawing.Point(210, 190);
+            this.tbpasswd.EditValue = "使用原密码";
+            this.tbpasswd.Location = new System.Drawing.Point(210, 199);
             this.tbpasswd.Name = "tbpasswd";
             this.tbpasswd.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.tbpasswd.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
+            this.tbpasswd.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.tbpasswd.Properties.Appearance.Options.UseBackColor = true;
             this.tbpasswd.Properties.Appearance.Options.UseFont = true;
-            this.tbpasswd.Properties.PasswordChar = '*';
+            this.tbpasswd.Properties.Appearance.Options.UseForeColor = true;
             this.tbpasswd.Size = new System.Drawing.Size(219, 26);
             this.tbpasswd.TabIndex = 2;
             this.tbpasswd.EditValueChanged += new System.EventHandler(this.tbpasswd_EditValueChanged);
+            this.tbpasswd.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tbpasswd_MouseClick);
             // 
             // tbUserDescribe
             // 
             this.tbUserDescribe.EditValue = "";
-            this.tbUserDescribe.Location = new System.Drawing.Point(156, 358);
+            this.tbUserDescribe.Location = new System.Drawing.Point(156, 387);
             this.tbUserDescribe.Name = "tbUserDescribe";
             this.tbUserDescribe.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.tbUserDescribe.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
@@ -246,7 +251,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ChildControls.Add(this.directXFormContainerControl1);
             this.ClientSize = new System.Drawing.Size(504, 650);
-            this.Font = new System.Drawing.Font("小米兰亭", 10.5F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.Image = global::EasyBuy.Properties.Resources.icon;
             this.Name = "cus_Modify";
@@ -277,7 +281,7 @@
         private DevExpress.XtraEditors.MemoEdit tbUserDescribe;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.TextEdit tbConfirmPasswd;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.LabelControl txtTitle;
         private DevExpress.XtraEditors.SimpleButton btnCancel;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.SimpleButton Exit;

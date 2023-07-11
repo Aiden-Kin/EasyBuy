@@ -245,6 +245,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ChildControls.Add(this.directXFormContainerControl1);
             this.ClientSize = new System.Drawing.Size(504, 650);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.Image = global::EasyBuy.Properties.Resources.icon;
             this.Name = "csu_AddUser";
