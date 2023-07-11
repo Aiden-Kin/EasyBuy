@@ -25,9 +25,9 @@ namespace EasyBuy_BLL
             return stafflist;
         }
 
-        public int SetUser(string userName, string userPasswd, string userGroup, string userDescribe, string thisTime)
+        public int SetStaffInfo(StaffInformation staff)
         {
-            return new UserListServer().SetUser(userName,userPasswd,userGroup,userDescribe,thisTime);
+            return new StfInformationServer().SetUser(staff);
         }
 
         public bool SearchUser(string userName)
@@ -35,9 +35,9 @@ namespace EasyBuy_BLL
             return new UserListServer().SearchUser(userName);
         }
 
-        public int DeleteUser(string userName)
+        public int DeleteUser(string deletStaffID)
         {
-            return new UserListServer().DeletUser(userName);
+            return new StfInformationServer().DeletUser(deletStaffID);
         }
         public int UpdateUser(string userName, string userPasswd = null, string userDescribe = null)
         {

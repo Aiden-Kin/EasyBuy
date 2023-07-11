@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StfInfom_Add));
             this.directXFormContainerControl1 = new DevExpress.XtraEditors.DirectXFormContainerControl();
-            this.comboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cbSex = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cbState = new DevExpress.XtraEditors.ComboBoxEdit();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.Exit = new DevExpress.XtraEditors.SimpleButton();
             this.txtTetle = new DevExpress.XtraEditors.LabelControl();
@@ -44,29 +44,29 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.btnAddConfirm = new DevExpress.XtraEditors.SimpleButton();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.tbUserName = new DevExpress.XtraEditors.TextEdit();
-            this.comboBoxEdit3 = new DevExpress.XtraEditors.DateEdit();
+            this.tbPositon = new DevExpress.XtraEditors.TextEdit();
+            this.tbPhone = new DevExpress.XtraEditors.TextEdit();
+            this.tbAge = new DevExpress.XtraEditors.TextEdit();
+            this.tbName = new DevExpress.XtraEditors.TextEdit();
+            this.cbDate = new DevExpress.XtraEditors.DateEdit();
             this.directXFormContainerControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbSex.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbState.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbUserName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbPositon.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbPhone.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbAge.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbDate.Properties.CalendarTimeProperties)).BeginInit();
             this.SuspendLayout();
             // 
             // directXFormContainerControl1
             // 
             this.directXFormContainerControl1.BackColor = System.Drawing.Color.White;
-            this.directXFormContainerControl1.Controls.Add(this.comboBoxEdit2);
-            this.directXFormContainerControl1.Controls.Add(this.comboBoxEdit1);
+            this.directXFormContainerControl1.Controls.Add(this.cbSex);
+            this.directXFormContainerControl1.Controls.Add(this.cbState);
             this.directXFormContainerControl1.Controls.Add(this.panelControl1);
             this.directXFormContainerControl1.Controls.Add(this.labelControl7);
             this.directXFormContainerControl1.Controls.Add(this.labelControl6);
@@ -77,45 +77,45 @@
             this.directXFormContainerControl1.Controls.Add(this.labelControl1);
             this.directXFormContainerControl1.Controls.Add(this.btnCancel);
             this.directXFormContainerControl1.Controls.Add(this.btnAddConfirm);
-            this.directXFormContainerControl1.Controls.Add(this.textEdit4);
-            this.directXFormContainerControl1.Controls.Add(this.textEdit2);
-            this.directXFormContainerControl1.Controls.Add(this.textEdit1);
-            this.directXFormContainerControl1.Controls.Add(this.tbUserName);
-            this.directXFormContainerControl1.Controls.Add(this.comboBoxEdit3);
+            this.directXFormContainerControl1.Controls.Add(this.tbPositon);
+            this.directXFormContainerControl1.Controls.Add(this.tbPhone);
+            this.directXFormContainerControl1.Controls.Add(this.tbAge);
+            this.directXFormContainerControl1.Controls.Add(this.tbName);
+            this.directXFormContainerControl1.Controls.Add(this.cbDate);
             this.directXFormContainerControl1.Location = new System.Drawing.Point(0, 0);
             this.directXFormContainerControl1.Name = "directXFormContainerControl1";
             this.directXFormContainerControl1.Size = new System.Drawing.Size(504, 650);
             this.directXFormContainerControl1.TabIndex = 0;
             // 
-            // comboBoxEdit2
+            // cbSex
             // 
-            this.comboBoxEdit2.EditValue = "";
-            this.comboBoxEdit2.Location = new System.Drawing.Point(160, 168);
-            this.comboBoxEdit2.Name = "comboBoxEdit2";
-            this.comboBoxEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cbSex.EditValue = "";
+            this.cbSex.Location = new System.Drawing.Point(160, 168);
+            this.cbSex.Name = "cbSex";
+            this.cbSex.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit2.Properties.Items.AddRange(new object[] {
+            this.cbSex.Properties.Items.AddRange(new object[] {
             "男",
             "女"});
-            this.comboBoxEdit2.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEdit2.Size = new System.Drawing.Size(59, 28);
-            this.comboBoxEdit2.TabIndex = 2;
+            this.cbSex.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cbSex.Size = new System.Drawing.Size(59, 28);
+            this.cbSex.TabIndex = 2;
             // 
-            // comboBoxEdit1
+            // cbState
             // 
-            this.comboBoxEdit1.EditValue = "";
-            this.comboBoxEdit1.Location = new System.Drawing.Point(160, 333);
-            this.comboBoxEdit1.Name = "comboBoxEdit1";
-            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cbState.EditValue = "";
+            this.cbState.Location = new System.Drawing.Point(160, 333);
+            this.cbState.Name = "cbState";
+            this.cbState.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit1.Properties.Items.AddRange(new object[] {
+            this.cbState.Properties.Items.AddRange(new object[] {
             "在职",
             "休假",
             "离职",
             "实习"});
-            this.comboBoxEdit1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEdit1.Size = new System.Drawing.Size(89, 28);
-            this.comboBoxEdit1.TabIndex = 5;
+            this.cbState.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cbState.Size = new System.Drawing.Size(89, 28);
+            this.cbState.TabIndex = 5;
             // 
             // panelControl1
             // 
@@ -252,71 +252,71 @@
             this.btnAddConfirm.Text = "添加";
             this.btnAddConfirm.Click += new System.EventHandler(this.btnAddConfirm_Click);
             // 
-            // textEdit4
+            // tbPositon
             // 
-            this.textEdit4.Location = new System.Drawing.Point(160, 396);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.textEdit4.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
-            this.textEdit4.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit4.Properties.Appearance.Options.UseFont = true;
-            this.textEdit4.Size = new System.Drawing.Size(174, 26);
-            this.textEdit4.TabIndex = 6;
+            this.tbPositon.Location = new System.Drawing.Point(160, 396);
+            this.tbPositon.Name = "tbPositon";
+            this.tbPositon.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.tbPositon.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
+            this.tbPositon.Properties.Appearance.Options.UseBackColor = true;
+            this.tbPositon.Properties.Appearance.Options.UseFont = true;
+            this.tbPositon.Size = new System.Drawing.Size(174, 26);
+            this.tbPositon.TabIndex = 6;
             // 
-            // textEdit2
+            // tbPhone
             // 
-            this.textEdit2.Location = new System.Drawing.Point(160, 272);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
-            this.textEdit2.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Size = new System.Drawing.Size(219, 26);
-            this.textEdit2.TabIndex = 4;
+            this.tbPhone.Location = new System.Drawing.Point(160, 272);
+            this.tbPhone.Name = "tbPhone";
+            this.tbPhone.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.tbPhone.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
+            this.tbPhone.Properties.Appearance.Options.UseBackColor = true;
+            this.tbPhone.Properties.Appearance.Options.UseFont = true;
+            this.tbPhone.Size = new System.Drawing.Size(219, 26);
+            this.tbPhone.TabIndex = 4;
             // 
-            // textEdit1
+            // tbAge
             // 
-            this.textEdit1.Location = new System.Drawing.Point(160, 225);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
-            this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(100, 26);
-            this.textEdit1.TabIndex = 3;
+            this.tbAge.Location = new System.Drawing.Point(160, 225);
+            this.tbAge.Name = "tbAge";
+            this.tbAge.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.tbAge.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
+            this.tbAge.Properties.Appearance.Options.UseBackColor = true;
+            this.tbAge.Properties.Appearance.Options.UseFont = true;
+            this.tbAge.Size = new System.Drawing.Size(100, 26);
+            this.tbAge.TabIndex = 3;
             // 
-            // tbUserName
+            // tbName
             // 
-            this.tbUserName.Location = new System.Drawing.Point(160, 113);
-            this.tbUserName.Name = "tbUserName";
-            this.tbUserName.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.tbUserName.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
-            this.tbUserName.Properties.Appearance.Options.UseBackColor = true;
-            this.tbUserName.Properties.Appearance.Options.UseFont = true;
-            this.tbUserName.Size = new System.Drawing.Size(203, 26);
-            this.tbUserName.TabIndex = 1;
+            this.tbName.Location = new System.Drawing.Point(160, 113);
+            this.tbName.Name = "tbName";
+            this.tbName.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.tbName.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
+            this.tbName.Properties.Appearance.Options.UseBackColor = true;
+            this.tbName.Properties.Appearance.Options.UseFont = true;
+            this.tbName.Size = new System.Drawing.Size(203, 26);
+            this.tbName.TabIndex = 1;
             // 
-            // comboBoxEdit3
+            // cbDate
             // 
-            this.comboBoxEdit3.EditValue = "";
-            this.comboBoxEdit3.Location = new System.Drawing.Point(160, 454);
-            this.comboBoxEdit3.Name = "comboBoxEdit3";
-            this.comboBoxEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cbDate.EditValue = "";
+            this.cbDate.Location = new System.Drawing.Point(160, 454);
+            this.cbDate.Name = "cbDate";
+            this.cbDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit3.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cbDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit3.Properties.CalendarTimeProperties.DisplayFormat.FormatString = "d";
-            this.comboBoxEdit3.Properties.CalendarTimeProperties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.comboBoxEdit3.Properties.CalendarTimeProperties.UseMaskAsDisplayFormat = true;
-            this.comboBoxEdit3.Properties.DisplayFormat.FormatString = "";
-            this.comboBoxEdit3.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.comboBoxEdit3.Properties.EditFormat.FormatString = "";
-            this.comboBoxEdit3.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.comboBoxEdit3.Properties.MaskSettings.Set("mask", "D");
-            this.comboBoxEdit3.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEdit3.Properties.UseMaskAsDisplayFormat = true;
-            this.comboBoxEdit3.Size = new System.Drawing.Size(203, 28);
-            this.comboBoxEdit3.TabIndex = 7;
+            this.cbDate.Properties.CalendarTimeProperties.DisplayFormat.FormatString = "d";
+            this.cbDate.Properties.CalendarTimeProperties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.cbDate.Properties.CalendarTimeProperties.UseMaskAsDisplayFormat = true;
+            this.cbDate.Properties.DisplayFormat.FormatString = "";
+            this.cbDate.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.cbDate.Properties.EditFormat.FormatString = "";
+            this.cbDate.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.cbDate.Properties.MaskSettings.Set("mask", "D");
+            this.cbDate.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cbDate.Properties.UseMaskAsDisplayFormat = true;
+            this.cbDate.Size = new System.Drawing.Size(203, 28);
+            this.cbDate.TabIndex = 7;
             // 
             // StfInfom_Add
             // 
@@ -331,17 +331,17 @@
             this.Text = "管理员用户添加";
             this.directXFormContainerControl1.ResumeLayout(false);
             this.directXFormContainerControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbSex.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbState.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbUserName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbPositon.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbPhone.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbAge.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbDate.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -350,23 +350,23 @@
 
         private DevExpress.XtraEditors.DirectXFormContainerControl directXFormContainerControl1;
         private DevExpress.XtraEditors.SimpleButton btnAddConfirm;
-        private DevExpress.XtraEditors.TextEdit tbUserName;
+        private DevExpress.XtraEditors.TextEdit tbName;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl txtTetle;
         private DevExpress.XtraEditors.SimpleButton btnCancel;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.SimpleButton Exit;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
+        private DevExpress.XtraEditors.ComboBoxEdit cbState;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit tbAge;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit tbPhone;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit2;
-        private DevExpress.XtraEditors.DateEdit comboBoxEdit3;
+        private DevExpress.XtraEditors.TextEdit tbPositon;
+        private DevExpress.XtraEditors.ComboBoxEdit cbSex;
+        private DevExpress.XtraEditors.DateEdit cbDate;
     }
 }

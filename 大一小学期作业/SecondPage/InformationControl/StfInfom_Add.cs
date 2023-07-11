@@ -21,21 +21,11 @@ namespace EasyBuy.SecondPage
         Control mainControl;
         string userGroup;
 
-        
+
         public StfInfom_Add(Control mainControl)
         {
             InitializeComponent();
             this.mainControl = mainControl;
-
-
-            //用户组自定义
-            //if(userGroup == "Staff")
-            //{
-            //    txtTetle.Text = "添加员工用户";
-            //}else if(userGroup == "Customer")
-            //{
-            //    txtTetle.Text = "添加顾客用户";
-            //}
 
         }
 
@@ -80,79 +70,59 @@ namespace EasyBuy.SecondPage
         private void btnAddConfirm_Click(object sender, EventArgs e)
         {
 
-            //    try
+            try
+            {
+                StaffInformation staff = new StaffInformation();
+                staff.StfName = tbName.Text.Trim();
+                staff.StfSex = cbSex.Text.Trim();
+                staff.StfPhoneNumber = tbPhone.Text.Trim();
+                staff.StfState = cbState.Text.Trim();
+                staff.StfPost = tbPositon.Text.Trim();
+                staff.StfAddTime = cbDate.Text.Trim();
+
+                new StfInformationManager().SetStaffInfo(staff);
+                MessageBox.Show("添加成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                mainControl.stfInfo_RefreshData();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+            //}
+            //private void TextClear()
+            //{
+            //    this.tbUserName.Clear();
+            //    this.tbpasswd.Clear();
+            //    this.tbUserDescribe.Clear();
+            //    this.tbConfirmPasswd.Clear();
+            //}
+
+            //private void tbConfirmPasswd_EditValueChanged(object sender, EventArgs e)
+            //{
+            //    //密码重复判断并设置flag和提示词
+            //    if(tbpasswd.Text!=tbConfirmPasswd.Text)
             //    {
-            //         //校验用户名重复
-            //        if(new UserListManager().SearchUser(tbUserName.Text))
-            //        {
-            //            MessageBox.Show("已存在此用户名请重新输入", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //            return;
-            //        }
-            //        //添加用户密码正确校验
-            //        if (passwdflag == true)
-            //        {
-            //            MessageBox.Show("密码不一致请重新输入", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //        }
-            //        else
-            //        {
-            //            string username = tbUserName.Text.Trim();
-            //            string userpasswd = tbpasswd.Text.Trim();
-            //            string userDescribe = tbUserDescribe.Text.Trim();
-            //            string thisTime = DateTime.Now.ToString();
-            //            new UserListManager().SetUser(username, userpasswd, userGroup, userDescribe, thisTime);
-            //            MessageBox.Show("添加成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //            TextClear();
-            //            switch (userGroup)
-            //            {
-            //                case "SuperUser": mainControl.cus_DataRefresh();
-            //                    break;
-            //                case "Staff" :mainControl.cStf_DataRefresh(); 
-            //                    break;
-            //                case "Customer": mainControl.cCtm_RefreshData();
-            //                    break;
+            //        passwdflag = true;
+            //        txtPasswdError.Visible = true;
+            //    }
+            //    else
+            //    {
+            //        passwdflag = false;
+            //        txtPasswdError.Visible = false;
+            //    }
+            //}
 
-            //            }
+            //private void tbpasswd_EditValueChanged(object sender, EventArgs e)
+            //{
+            //    tbConfirmPasswd.Text = null;
+            //    txtPasswdError.Visible = false;
+            //}
 
-            //        }
+
 
         }
-        //    catch (Exception ex)
-        //    {
-
-        //        MessageBox.Show(ex.Message);
-        //    }
-
-        //}
-        //private void TextClear()
-        //{
-        //    this.tbUserName.Clear();
-        //    this.tbpasswd.Clear();
-        //    this.tbUserDescribe.Clear();
-        //    this.tbConfirmPasswd.Clear();
-        //}
-
-        //private void tbConfirmPasswd_EditValueChanged(object sender, EventArgs e)
-        //{
-        //    //密码重复判断并设置flag和提示词
-        //    if(tbpasswd.Text!=tbConfirmPasswd.Text)
-        //    {
-        //        passwdflag = true;
-        //        txtPasswdError.Visible = true;
-        //    }
-        //    else
-        //    {
-        //        passwdflag = false;
-        //        txtPasswdError.Visible = false;
-        //    }
-        //}
-
-        //private void tbpasswd_EditValueChanged(object sender, EventArgs e)
-        //{
-        //    tbConfirmPasswd.Text = null;
-        //    txtPasswdError.Visible = false;
-        //}
-
-
-
     }
 }

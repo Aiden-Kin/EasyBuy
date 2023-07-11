@@ -64,12 +64,11 @@ namespace EasyBuy_DAL
             return stfinformationList;
         }
         //添加
-        public int SetUser(string userName,string userPasswd,string userGroup ,string userDescribe,string thisTime)
+        public int SetUser(StaffInformation staff)
         {
-            int non ;
-            string setUserSqlstr = string.Format("insert into tblUserList values('{0}', '{1}', '{2}', '{3}', '{4}')", userName, userPasswd,userGroup,userDescribe,thisTime);
-            non = SqlHelper.ExecuteNonQuery(setUserSqlstr);
-            return non;
+            
+            string setUserSqlstr = string.Format("insert into tblStaffINformation values ('{0}','{1}',{2},'{3}','{4}','{5}','{6}')", staff.StfName, staff.StfSex,staff.StfAge,staff.StfPhoneNumber,staff.StfState,staff.StfPost,staff.StfAddTime);
+            return SqlHelper.ExecuteNonQuery(setUserSqlstr);
         }
 
         public int UpdataUser(string userName,string userPasswd = null ,string userDescribe = null)
@@ -96,13 +95,11 @@ namespace EasyBuy_DAL
             return updatedNum;
         }
 
-        public int DeletUser(string userName)
+        public int DeletUser(string deletStaffID)
         {
-            int deleteNum;
-            string deletUserSqlstr = string.Format("delete from tblUserList where UserName = '{0}'", userName);
-            
-            deleteNum = SqlHelper.ExecuteNonQuery(deletUserSqlstr);
-            return deleteNum;
+            string deletUserSqlstr = string.Format("delete from tblStaffINformation where StfID = '{0}'", deletStaffID);
+            return SqlHelper.ExecuteNonQuery(deletUserSqlstr);
+;
         }
 
         public bool SearchUser(string userName)

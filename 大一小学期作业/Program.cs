@@ -27,7 +27,7 @@ namespace EasyBuy
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StfInfom_Add(null));
+            Application.Run(new Control(null));
         }
     }
 }

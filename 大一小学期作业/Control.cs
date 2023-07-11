@@ -18,7 +18,7 @@ namespace EasyBuy
     public partial class Control : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         User userInform = new User();
-        public Control (User user)
+        public Control(User user)
         {
 
             InitializeComponent();
@@ -32,13 +32,13 @@ namespace EasyBuy
 
         private void Control_Load(object sender, EventArgs e)
         {
-           Nowtimer.Start();
-          
+            Nowtimer.Start();
+
         }
 
         private void Exit_Click(object sender, EventArgs e)
         {
-           Application.Exit();
+            Application.Exit();
         }
 
         private void xtraTabPage4_Paint(object sender, PaintEventArgs e)
@@ -56,7 +56,7 @@ namespace EasyBuy
 
         private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            xtb_ControlPanel.SelectedTabPage = xtp_GoodsClass; 
+            xtb_ControlPanel.SelectedTabPage = xtp_GoodsClass;
         }
 
 
@@ -69,7 +69,7 @@ namespace EasyBuy
         #region 通用代码
 
         //搜索框通用显示设定
-    
+
 
 
         #endregion
@@ -199,7 +199,7 @@ namespace EasyBuy
             refresh();
         }
 
-       private void common_Search(string userGroup,DataGridView dgv)
+        private void common_Search(string userGroup, DataGridView dgv)
         {
             List<User> superUser = new List<User>();
             try
@@ -215,7 +215,7 @@ namespace EasyBuy
             dgv.DataSource = superUser;
         }
 
-      
+
         #endregion
 
 
@@ -277,7 +277,7 @@ namespace EasyBuy
 
         private void cbs_btnAddUser_Click(object sender, EventArgs e)
         {
-            csu_AddUser addUser = new csu_AddUser(this,"SuperUser");
+            csu_AddUser addUser = new csu_AddUser(this, "SuperUser");
             addUser.Show();
         }
 
@@ -287,14 +287,14 @@ namespace EasyBuy
 
         }
 
-     
+
 
         private void cbs_SuperUserDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int row = e.RowIndex;
             if (e.ColumnIndex == 4)
             {
-                cus_Modify modify = new cus_Modify(this, cbs_SuperUserDataGrid.Rows[row].Cells[0].Value.ToString(), cbs_SuperUserDataGrid.Rows[row].Cells[2].Value.ToString(),"SuperUser");
+                cus_Modify modify = new cus_Modify(this, cbs_SuperUserDataGrid.Rows[row].Cells[0].Value.ToString(), cbs_SuperUserDataGrid.Rows[row].Cells[2].Value.ToString(), "SuperUser");
                 modify.Show();
 
             }
@@ -520,6 +520,41 @@ namespace EasyBuy
         {
             StfInfom_Add addUser = new StfInfom_Add(this);
             addUser.Show();
+        }
+
+        private void stfInfo_dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void stfInfo_btDelete_Click(object sender, EventArgs e)
+        {
+
+            int deleteNum = 0;
+            //提取选中用户
+            string deletStaffID = stfInfo_dataGridView.SelectedCells[0].Value.ToString();
+            string deleteStaffName = stfInfo_dataGridView.SelectedCells[1].Value.ToString();
+            string deletinfom = string.Format("是否确认要删除ID为【{0}】的员工【{1}】", deletStaffID, deleteStaffName);
+
+            DialogResult confirmResult = MessageBox.Show(deletinfom, "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            try
+            {
+                if (confirmResult == DialogResult.OK)
+                {
+                    deleteNum = new StfInformationManager().DeleteUser(deletStaffID);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            if (deleteNum > 0)
+            {
+                MessageBox.Show("删除成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            stfInfo_RefreshData();
+
         }
     }
 }
