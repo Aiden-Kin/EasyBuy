@@ -71,25 +71,10 @@ namespace EasyBuy_DAL
             return SqlHelper.ExecuteNonQuery(setUserSqlstr);
         }
 
-        public int UpdataUser(string userName,string userPasswd = null ,string userDescribe = null)
+        public int UpdataStaffInfo(StaffInformation staff)
         {
             int updatedNum = 0;
-            string updateSqlstr = "update tblUserList set ";
-            
-            if(userPasswd != null)
-            {
-                updateSqlstr += string.Format("UserPasswd = '{0}'", userPasswd);
-            }
-            if(userPasswd !=null && userDescribe!= null)
-            {
-                updateSqlstr += ",";
-            }
-            if(userDescribe != null)
-            {
-                updateSqlstr += string.Format("UserDescirbe = '{0}' ", userDescribe);
-            }
-            //统一添加限定
-            updateSqlstr += string.Format(" where UserName = '{1}'", userDescribe, userName);
+            string updateSqlstr = string.Format("update tblStaffINformation set  StfName = '{0}', StfSex = '{1}',StfAge = {2},StfPhoneNumber = '{3}',StfState = '{4}',StfPost = '{5}',StfAddTime = '{6}'  where StfID = {7}", staff.StfName, staff.StfSex, staff.StfAge, staff.StfPhoneNumber, staff.StfState, staff.StfPost, staff.StfAddTime,staff.StfID);
 
            updatedNum = SqlHelper.ExecuteNonQuery(updateSqlstr);
             return updatedNum;

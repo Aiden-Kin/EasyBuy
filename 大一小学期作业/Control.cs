@@ -524,7 +524,13 @@ namespace EasyBuy
 
         private void stfInfo_dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            int row = e.RowIndex;
+            if (e.ColumnIndex == 8)
+            {
+                StfInfom_Modify modify = new StfInfom_Modify(this, stfInfo_dataGridView.Rows[row]);
+                modify.Show();
 
+            }
         }
 
         private void stfInfo_btDelete_Click(object sender, EventArgs e)

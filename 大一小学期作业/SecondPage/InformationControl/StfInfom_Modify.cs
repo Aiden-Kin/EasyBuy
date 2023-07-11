@@ -1,4 +1,5 @@
 ﻿using DevExpress.CodeParser;
+using DevExpress.DashboardCommon.DataProcessing;
 using DevExpress.XtraEditors;
 using DevExpress.XtraMap;
 using EasyBuy_BLL;
@@ -15,18 +16,24 @@ using System.Windows.Forms;
 
 namespace EasyBuy.SecondPage
 {
-    public partial class StfInfom_Add : DevExpress.XtraEditors.DirectXForm
+    public partial class StfInfom_Modify : DevExpress.XtraEditors.DirectXForm
     {
         bool passwdflag = false;
         Control mainControl;
-        string userGroup;
+        int stfID;
 
-
-        public StfInfom_Add(Control mainControl)
+        public StfInfom_Modify(Control mainControl, DataGridViewRow dataRow)
         {
             InitializeComponent();
             this.mainControl = mainControl;
-
+            tbName.Text = dataRow.Cells[1].Value.ToString();
+            cbSex.Text = dataRow.Cells[2].Value.ToString();
+            tbAge.Text = dataRow.Cells[3].Value.ToString();
+            tbPhone.Text = dataRow.Cells[4].Value.ToString();
+            cbState.Text = dataRow.Cells[5].Value.ToString();
+            tbPositon.Text = dataRow.Cells[6].Value.ToString();
+            cbDate.Text = dataRow.Cells[7].Value.ToString();
+            stfID = Convert.ToInt32(dataRow.Cells[0].Value);
         }
 
         #region 窗口属性
@@ -80,11 +87,17 @@ namespace EasyBuy.SecondPage
                 staff.StfPost = tbPositon.Text.Trim();
                 staff.StfAddTime = cbDate.Text.Trim();
                 staff.StfAge = Convert.ToInt32(tbAge.Text.Trim());
+                staff.StfID = stfID;
 
-                new StfInformationManager().SetStaffInfo(staff);
-                MessageBox.Show("添加成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                int num = new StfInformationManager().UpdataStaffInfo(staff);
+                if (num > 0)
+                {
+                    MessageBox.Show("修改成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
                 mainControl.stfInfo_RefreshData();
-
+                this.Close();
             }
             catch (Exception ex)
             {

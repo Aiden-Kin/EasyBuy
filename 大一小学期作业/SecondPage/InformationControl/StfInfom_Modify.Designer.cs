@@ -1,6 +1,6 @@
 ﻿namespace EasyBuy.SecondPage
 {
-    partial class StfInfom_Add
+    partial class StfInfom_Modify
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StfInfom_Add));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StfInfom_Modify));
             this.directXFormContainerControl1 = new DevExpress.XtraEditors.DirectXFormContainerControl();
             this.cbSex = new DevExpress.XtraEditors.ComboBoxEdit();
             this.cbState = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -156,7 +156,7 @@
             this.txtTetle.Name = "txtTetle";
             this.txtTetle.Size = new System.Drawing.Size(132, 29);
             this.txtTetle.TabIndex = 14;
-            this.txtTetle.Text = "添加员工信息";
+            this.txtTetle.Text = "修改员工信息";
             // 
             // labelControl7
             // 
@@ -230,7 +230,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.btnCancel.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
             this.btnCancel.Appearance.Options.UseFont = true;
             this.btnCancel.Location = new System.Drawing.Point(290, 558);
             this.btnCancel.Name = "btnCancel";
@@ -242,7 +242,7 @@
             // btnAddConfirm
             // 
             this.btnAddConfirm.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(178)))), ((int)(((byte)(201)))));
-            this.btnAddConfirm.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.btnAddConfirm.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
             this.btnAddConfirm.Appearance.Options.UseBackColor = true;
             this.btnAddConfirm.Appearance.Options.UseFont = true;
             this.btnAddConfirm.Location = new System.Drawing.Point(79, 558);
@@ -318,7 +318,7 @@
             this.cbDate.Size = new System.Drawing.Size(203, 28);
             this.cbDate.TabIndex = 7;
             // 
-            // StfInfom_Add
+            // StfInfom_Modify
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ChildControls.Add(this.directXFormContainerControl1);
@@ -326,7 +326,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.Image = global::EasyBuy.Properties.Resources.icon;
-            this.Name = "StfInfom_Add";
+            this.Name = "StfInfom_Modify";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "管理员用户添加";
             this.directXFormContainerControl1.ResumeLayout(false);

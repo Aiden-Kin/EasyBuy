@@ -39,9 +39,9 @@ namespace EasyBuy_BLL
         {
             return new StfInformationServer().DeletUser(deletStaffID);
         }
-        public int UpdateUser(string userName, string userPasswd = null, string userDescribe = null)
+        public int UpdataStaffInfo(StaffInformation staff)
         {
-            return new UserListServer().UpdataUser(userName,userPasswd,userDescribe);
+            return new StfInformationServer().UpdataStaffInfo(staff);
         }
     }
 }   
