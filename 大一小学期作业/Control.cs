@@ -1,5 +1,6 @@
 ﻿using DevExpress.Persistent.Base;
 using DevExpress.XtraEditors;
+using DevExpress.XtraEditors.Mask;
 using EasyBuy.SecondPage;
 using EasyBuy_BLL;
 using EasyBuy_Model;
@@ -499,10 +500,6 @@ namespace EasyBuy
 
 
         //控件
-
-
-
-        #endregion
         private void stfIfo_btSearchAll_Click(object sender, EventArgs e)
         {
             stfInfo_RefreshData();
@@ -562,5 +559,94 @@ namespace EasyBuy
             stfInfo_RefreshData();
 
         }
+
+
+
+        #endregion
+
+        #region 商品类控件
+
+        //公用函数与变量
+        bool gClass_ifChange = false;
+        bool gClass_ifAdd = false;
+
+        private void gClass_ClearControls()
+        {
+            gClass_tbParentID.Text = "";
+            gClass_tbParentName.Text = "";
+            gClass_tbClassID.Text = "";
+            gClass_tbClassName.Text = "";
+        }
+
+
+
+
+
+
+        //控件区
+
+        private void gClass_btAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gClass_Modify_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gClass_btDlete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gClass_TreeView_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+
+            TreeNode node = gClass_TreeView.SelectedNode;
+            string str = node.Tag.ToString();
+            string id = str.Split()[0];
+            string parentId = str.Split()[1];
+            string parentName = str.Split()[2];
+
+            if (gClass_ifChange || gClass_ifAdd)
+            {
+                //添加和修改模式中选择的本身就是父类
+                gClass_tbParentID.Text = id;
+                gClass_tbParentName.Text = node.Text;
+            }
+            else
+            {
+                gClass_tbParentID.Text = parentId;
+                gClass_tbParentName.Text = parentName;
+                gClass_tbClassID.Text = id;
+                gClass_tbClassName.Text = node.Text;
+            }
+
+        }
+
+        private void xtp_GoodsClass_VisibleChanged(object sender, EventArgs e)
+        {
+            if (xtp_GoodsClass.Visible)
+            {
+                //重新加载
+                gClass_TreeView.Nodes.Clear();
+                try
+                {
+                    gClass_TreeView.Nodes.Add(new GoodTypeManager().GetListTreeNode(new GoodTypeManager().Get()));
+                }
+                catch (Exception exp)
+                {
+                    MsgBox.ShowError("错误: " + exp.Message);
+                    return;
+                }
+                gClass_TreeView.ExpandAll(); //展开全部
+
+
+
+                cbs_btnSearchAll.PerformClick();
+            }
+        }
     }
+    #endregion
 }

@@ -12,41 +12,8 @@ namespace EasyBuy_DAL
     {
         private static string constr = "Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=EesyBuy;Data Source=Air\\MYSQL";
 
-        #region 执行查询语句，返回SqlDataReader
-        /// <summary>
-        /// 执行查询语句，返回SqlDataReader
-        /// </summary>
-        /// <param name="sqlstr">要执行的SQL查询语句</param>
-        /// <returns>返回SqlDataReader，需手工关闭连接</returns>
-        public static SqlDataReader ExecuteReader(string sqlstr)
-        {
-            #region 注释部分的代码为什么不可以？
-            //using (SqlConnection sqlCon = new SqlConnection(constr))
-            //{                
-            //    using (SqlCommand sqlCmd = new SqlCommand(sqlstr, sqlCon))
-            //    {
-            //        sqlCon.Open();
-            //        SqlDataReader sqlReader = sqlCmd.ExecuteReader(CommandBehavior.CloseConnection);
-            //        return sqlReader;
-            //        //return sqlCmd.ExecuteReader();
-            //    }
-            //}
-            #endregion
-            SqlConnection sqlCon = new SqlConnection(constr);
-            sqlCon.Open();
-            using (SqlCommand sqlCmd = new SqlCommand(sqlstr, sqlCon))
-            {
-                return sqlCmd.ExecuteReader(CommandBehavior.CloseConnection);  //创建了 DataReader 并将 CommandBehavior 设置为 CloseConnection，则关闭 DataReader 会自动关闭此连接。
-            }
-            #region
-            //如果想要返回对象前不关闭数据库连接，须要用CommandBehavior.CloseConnection；
-            //CommandBehavior.CloseConnection的功能恰好就是为了避免类似的尴尬境地，它能够保证当SqlDataReader对象被关闭时，其依赖的连接也会被自动关闭CommandBehavior.
-            #endregion
-        }        
-        #endregion
 
-        //SqlDataAdapter:   查询---返回DataSet
-        //                  添加（Insert）、修改（Update）、删除（Delete）---返回影响的行数
+
 
         #region 执行SQL查询语句，返回DataSet
         /// <summary>
@@ -122,25 +89,7 @@ namespace EasyBuy_DAL
         }
         #endregion
 
-        #region ExecuteScalar方法
-        /// <summary>
-        /// ExecuteScalar方法返回的类型是object类型，这个方法返回sql语句执行后的第一行第一列的值
-        /// </summary>
-        /// <param name="sqlstr"></param>
-        /// <returns>无记录返回时，ExecuteScalar()返回NULL值，
-        /// 无法再将null值赋给任何对象或者变量，否则出现异常</returns>
-        public static object ExecuteScalar(string sqlstr)
-        {
-            using (SqlConnection sqlCon = new SqlConnection(constr))
-            {
-                using (SqlCommand sqlCmd = new SqlCommand(sqlstr, sqlCon))
-                {
-                    sqlCon.Open();
-                    return sqlCmd.ExecuteScalar();
-                }
-            }
-        }
-        #endregion
+
 
         #region 输入SQL查询命令，检查数据表中是否有该数据信息，返回bool值
         /// <summary>
@@ -182,17 +131,6 @@ namespace EasyBuy_DAL
             }
         }
         #endregion
-
-
-        //注意下面2条语句的区别
-        //SELECT  *
-        //FROM tblStudent
-        //where Sage>=20
-
-        //SELECT COUNT(*)
-        //FROM tblStudent
-        //where Sage>=20
-        //结论：ExecuteSQL也适合于最后的情况
 
     }
 }

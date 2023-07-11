@@ -31,101 +31,101 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation1 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
-            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation2 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions4 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject13 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions5 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject17 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject18 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject19 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject20 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions6 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject21 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject22 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject23 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject24 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions7 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject25 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject26 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject27 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject28 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions8 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject29 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject30 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject31 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject32 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions9 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject33 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject34 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject35 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject36 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions10 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject37 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject38 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject39 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject40 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions11 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject41 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject42 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject43 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject44 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions12 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject45 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject46 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject47 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject48 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions13 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject49 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject50 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject51 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject52 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions14 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject53 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject54 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject55 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject56 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions15 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject57 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject58 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject59 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject60 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions16 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject61 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject62 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject63 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject64 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions17 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject65 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject66 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject67 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject68 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions18 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject69 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject70 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject71 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject72 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation3 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
+            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation4 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions19 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject73 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject74 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject75 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject76 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions20 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject77 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject78 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject79 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject80 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions21 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject81 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject82 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject83 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject84 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions22 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject85 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject86 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject87 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject88 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions23 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject89 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject90 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject91 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject92 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions24 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject93 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject94 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject95 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject96 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions25 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject97 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject98 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject99 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject100 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions26 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject101 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject102 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject103 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject104 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions27 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject105 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject106 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject107 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject108 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions28 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject109 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject110 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject111 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject112 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions29 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject113 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject114 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject115 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject116 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions30 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject117 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject118 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject119 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject120 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions31 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject121 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject122 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject123 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject124 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions32 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject125 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject126 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject127 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject128 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions33 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject129 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject130 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject131 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject132 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions34 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject133 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject134 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject135 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject136 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions35 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject137 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject138 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject139 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject140 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions36 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject141 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject142 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject143 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject144 = new DevExpress.Utils.SerializableAppearanceObject();
             this.ribbonReportDesigner4 = new DevExpress.XtraReports.UserDesigner.Native.RibbonReportDesigner();
             this.ribbonReportDesigner5 = new DevExpress.XtraReports.UserDesigner.Native.RibbonReportDesigner();
             this.ribbonReportDesigner6 = new DevExpress.XtraReports.UserDesigner.Native.RibbonReportDesigner();
@@ -188,14 +188,19 @@
             this.repositoryItemTimeEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit();
             this.xtb_ControlPanel = new DevExpress.XtraTab.XtraTabControl();
             this.xtp_GoodsClass = new DevExpress.XtraTab.XtraTabPage();
-            this.treeList1 = new DevExpress.XtraTreeList.TreeList();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.remark = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.gClass_btDlete = new DevExpress.XtraEditors.SimpleButton();
+            this.gClass_Modify = new DevExpress.XtraEditors.SimpleButton();
+            this.gClass_btAdd = new DevExpress.XtraEditors.SimpleButton();
+            this.gClass_TreeView = new System.Windows.Forms.TreeView();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.gClass_tbClassName = new DevExpress.XtraEditors.TextEdit();
+            this.gClass_tbClassID = new DevExpress.XtraEditors.TextEdit();
+            this.gClass_tbParentID = new DevExpress.XtraEditors.TextEdit();
+            this.gClass_tbParentName = new DevExpress.XtraEditors.TextEdit();
+            this.gClass_datagridview = new System.Windows.Forms.DataGridView();
             this.xtp_Supplier = new DevExpress.XtraTab.XtraTabPage();
             this.dgvSupplier = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -312,6 +317,13 @@
             this.NowTime = new DevExpress.XtraEditors.TimeEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.Nowtimer = new System.Windows.Forms.Timer(this.components);
+            this.treeListBand1 = new DevExpress.XtraTreeList.Columns.TreeListBand();
+            this.treeListBand2 = new DevExpress.XtraTreeList.Columns.TreeListBand();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateTimeOffsetEdit1)).BeginInit();
@@ -319,8 +331,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtb_ControlPanel)).BeginInit();
             this.xtb_ControlPanel.SuspendLayout();
             this.xtp_GoodsClass.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.treeList1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gClass_tbClassName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gClass_tbClassID.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gClass_tbParentID.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gClass_tbParentName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gClass_datagridview)).BeginInit();
             this.xtp_Supplier.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSupplier)).BeginInit();
             this.xtp_SuperUserControl.SuspendLayout();
@@ -773,18 +788,18 @@
             this.ribbonPageGroup9,
             this.ribbonPageGroup14});
             this.PageGoods.Name = "PageGoods";
-            reduceOperation1.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
-            reduceOperation1.GroupName = null;
-            reduceOperation1.ItemLinkIndex = 0;
-            reduceOperation1.ItemLinksCount = 0;
-            reduceOperation1.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
-            reduceOperation2.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
-            reduceOperation2.GroupName = null;
-            reduceOperation2.ItemLinkIndex = 0;
-            reduceOperation2.ItemLinksCount = 0;
-            reduceOperation2.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.Gallery;
-            this.PageGoods.ReduceOperations.Add(reduceOperation1);
-            this.PageGoods.ReduceOperations.Add(reduceOperation2);
+            reduceOperation3.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
+            reduceOperation3.GroupName = null;
+            reduceOperation3.ItemLinkIndex = 0;
+            reduceOperation3.ItemLinksCount = 0;
+            reduceOperation3.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
+            reduceOperation4.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
+            reduceOperation4.GroupName = null;
+            reduceOperation4.ItemLinkIndex = 0;
+            reduceOperation4.ItemLinksCount = 0;
+            reduceOperation4.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.Gallery;
+            this.PageGoods.ReduceOperations.Add(reduceOperation3);
+            this.PageGoods.ReduceOperations.Add(reduceOperation4);
             this.PageGoods.Text = "信息管理";
             // 
             // ribbonPageGroup1
@@ -860,99 +875,153 @@
             // 
             // xtp_GoodsClass
             // 
-            this.xtp_GoodsClass.Controls.Add(this.treeList1);
-            this.xtp_GoodsClass.Controls.Add(this.dataGridView1);
+            this.xtp_GoodsClass.Controls.Add(this.labelControl10);
+            this.xtp_GoodsClass.Controls.Add(this.gClass_btDlete);
+            this.xtp_GoodsClass.Controls.Add(this.gClass_Modify);
+            this.xtp_GoodsClass.Controls.Add(this.gClass_btAdd);
+            this.xtp_GoodsClass.Controls.Add(this.gClass_TreeView);
+            this.xtp_GoodsClass.Controls.Add(this.labelControl9);
+            this.xtp_GoodsClass.Controls.Add(this.labelControl8);
+            this.xtp_GoodsClass.Controls.Add(this.labelControl7);
+            this.xtp_GoodsClass.Controls.Add(this.gClass_tbClassName);
+            this.xtp_GoodsClass.Controls.Add(this.gClass_tbClassID);
+            this.xtp_GoodsClass.Controls.Add(this.gClass_tbParentID);
+            this.xtp_GoodsClass.Controls.Add(this.gClass_tbParentName);
+            this.xtp_GoodsClass.Controls.Add(this.gClass_datagridview);
             this.xtp_GoodsClass.Margin = new System.Windows.Forms.Padding(5);
             this.xtp_GoodsClass.Name = "xtp_GoodsClass";
             this.xtp_GoodsClass.Size = new System.Drawing.Size(1389, 605);
             this.xtp_GoodsClass.Text = "商品类别";
+            this.xtp_GoodsClass.VisibleChanged += new System.EventHandler(this.xtp_GoodsClass_VisibleChanged);
             // 
-            // treeList1
+            // labelControl10
             // 
-            this.treeList1.FixedLineWidth = 3;
-            this.treeList1.HorzScrollStep = 4;
-            this.treeList1.Location = new System.Drawing.Point(32, 183);
-            this.treeList1.Margin = new System.Windows.Forms.Padding(4);
-            this.treeList1.MenuManager = this.ribbonControl1;
-            this.treeList1.MinWidth = 26;
-            this.treeList1.Name = "treeList1";
-            this.treeList1.Size = new System.Drawing.Size(315, 495);
-            this.treeList1.TabIndex = 6;
-            this.treeList1.TreeLevelWidth = 31;
+            this.labelControl10.Location = new System.Drawing.Point(518, 106);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(56, 19);
+            this.labelControl10.TabIndex = 10;
+            this.labelControl10.Text = "父类名称";
             // 
-            // dataGridView1
+            // gClass_btDlete
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.gClass_btDlete.Location = new System.Drawing.Point(1046, 13);
+            this.gClass_btDlete.Name = "gClass_btDlete";
+            this.gClass_btDlete.Size = new System.Drawing.Size(75, 23);
+            this.gClass_btDlete.TabIndex = 9;
+            this.gClass_btDlete.Text = "删除";
+            this.gClass_btDlete.Click += new System.EventHandler(this.gClass_btDlete_Click);
+            // 
+            // gClass_Modify
+            // 
+            this.gClass_Modify.Location = new System.Drawing.Point(765, 13);
+            this.gClass_Modify.Name = "gClass_Modify";
+            this.gClass_Modify.Size = new System.Drawing.Size(75, 23);
+            this.gClass_Modify.TabIndex = 9;
+            this.gClass_Modify.Text = "修改";
+            this.gClass_Modify.Click += new System.EventHandler(this.gClass_Modify_Click);
+            // 
+            // gClass_btAdd
+            // 
+            this.gClass_btAdd.Location = new System.Drawing.Point(442, 13);
+            this.gClass_btAdd.Name = "gClass_btAdd";
+            this.gClass_btAdd.Size = new System.Drawing.Size(75, 23);
+            this.gClass_btAdd.TabIndex = 9;
+            this.gClass_btAdd.Text = "增加";
+            this.gClass_btAdd.Click += new System.EventHandler(this.gClass_btAdd_Click);
+            // 
+            // gClass_TreeView
+            // 
+            this.gClass_TreeView.Location = new System.Drawing.Point(41, 73);
+            this.gClass_TreeView.Name = "gClass_TreeView";
+            this.gClass_TreeView.Size = new System.Drawing.Size(293, 506);
+            this.gClass_TreeView.TabIndex = 8;
+            this.gClass_TreeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.gClass_TreeView_AfterSelect);
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Location = new System.Drawing.Point(870, 106);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(56, 19);
+            this.labelControl9.TabIndex = 7;
+            this.labelControl9.Text = "类别名称";
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Location = new System.Drawing.Point(883, 56);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(56, 19);
+            this.labelControl8.TabIndex = 7;
+            this.labelControl8.Text = "类别编号";
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Location = new System.Drawing.Point(518, 55);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(70, 19);
+            this.labelControl7.TabIndex = 7;
+            this.labelControl7.Text = "父类别编号";
+            // 
+            // gClass_tbClassName
+            // 
+            this.gClass_tbClassName.Location = new System.Drawing.Point(973, 102);
+            this.gClass_tbClassName.Name = "gClass_tbClassName";
+            this.gClass_tbClassName.Size = new System.Drawing.Size(200, 28);
+            this.gClass_tbClassName.TabIndex = 6;
+            // 
+            // gClass_tbClassID
+            // 
+            this.gClass_tbClassID.Location = new System.Drawing.Point(973, 51);
+            this.gClass_tbClassID.Name = "gClass_tbClassID";
+            this.gClass_tbClassID.Size = new System.Drawing.Size(200, 28);
+            this.gClass_tbClassID.TabIndex = 6;
+            // 
+            // gClass_tbParentID
+            // 
+            this.gClass_tbParentID.Location = new System.Drawing.Point(615, 51);
+            this.gClass_tbParentID.Name = "gClass_tbParentID";
+            this.gClass_tbParentID.Size = new System.Drawing.Size(200, 28);
+            this.gClass_tbParentID.TabIndex = 6;
+            // 
+            // gClass_tbParentName
+            // 
+            this.gClass_tbParentName.Location = new System.Drawing.Point(615, 103);
+            this.gClass_tbParentName.MenuManager = this.ribbonControl1;
+            this.gClass_tbParentName.Name = "gClass_tbParentName";
+            this.gClass_tbParentName.Size = new System.Drawing.Size(200, 28);
+            this.gClass_tbParentName.TabIndex = 6;
+            // 
+            // gClass_datagridview
+            // 
+            this.gClass_datagridview.AllowUserToAddRows = false;
+            this.gClass_datagridview.AllowUserToDeleteRows = false;
+            this.gClass_datagridview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.gClass_datagridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gClass_datagridview.BackgroundColor = System.Drawing.Color.White;
+            this.gClass_datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gClass_datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewTextBoxColumn10,
             this.Column9,
             this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.remark});
-            this.dataGridView1.Location = new System.Drawing.Point(396, 183);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1003, 316);
-            this.dataGridView1.TabIndex = 5;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "pcID";
-            this.dataGridViewTextBoxColumn9.HeaderText = "商品类别编号";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "pcName";
-            this.dataGridViewTextBoxColumn10.HeaderText = "商品类别名称";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "父类别";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "pcDescription";
-            this.dataGridViewTextBoxColumn11.HeaderText = "类别描述";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "pcAddedTime";
-            this.dataGridViewTextBoxColumn12.HeaderText = "添加时间";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            // 
-            // remark
-            // 
-            this.remark.HeaderText = "备注";
-            this.remark.Name = "remark";
-            this.remark.ReadOnly = true;
+            this.dataGridViewTextBoxColumn12});
+            this.gClass_datagridview.Location = new System.Drawing.Point(372, 159);
+            this.gClass_datagridview.Margin = new System.Windows.Forms.Padding(5);
+            this.gClass_datagridview.Name = "gClass_datagridview";
+            this.gClass_datagridview.ReadOnly = true;
+            this.gClass_datagridview.RowHeadersVisible = false;
+            this.gClass_datagridview.RowTemplate.Height = 23;
+            this.gClass_datagridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gClass_datagridview.Size = new System.Drawing.Size(996, 420);
+            this.gClass_datagridview.TabIndex = 5;
             // 
             // xtp_Supplier
             // 
             this.xtp_Supplier.Controls.Add(this.dgvSupplier);
             this.xtp_Supplier.Margin = new System.Windows.Forms.Padding(5);
             this.xtp_Supplier.Name = "xtp_Supplier";
-            this.xtp_Supplier.Size = new System.Drawing.Size(1367, 605);
+            this.xtp_Supplier.Size = new System.Drawing.Size(1389, 605);
             this.xtp_Supplier.Text = "供货商信息";
             // 
             // dgvSupplier
@@ -981,7 +1050,7 @@
             this.dgvSupplier.RowHeadersVisible = false;
             this.dgvSupplier.RowTemplate.Height = 23;
             this.dgvSupplier.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSupplier.Size = new System.Drawing.Size(1379, 554);
+            this.dgvSupplier.Size = new System.Drawing.Size(1423, 554);
             this.dgvSupplier.TabIndex = 3;
             // 
             // Column1
@@ -1045,7 +1114,7 @@
             this.xtp_SuperUserControl.Controls.Add(this.dgvSuperUserControl);
             this.xtp_SuperUserControl.Margin = new System.Windows.Forms.Padding(5);
             this.xtp_SuperUserControl.Name = "xtp_SuperUserControl";
-            this.xtp_SuperUserControl.Size = new System.Drawing.Size(1367, 605);
+            this.xtp_SuperUserControl.Size = new System.Drawing.Size(1389, 605);
             this.xtp_SuperUserControl.Text = "管理员账户";
             // 
             // dgvSuperUserControl
@@ -1074,7 +1143,7 @@
             this.dgvSuperUserControl.RowHeadersVisible = false;
             this.dgvSuperUserControl.RowTemplate.Height = 23;
             this.dgvSuperUserControl.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSuperUserControl.Size = new System.Drawing.Size(1389, 567);
+            this.dgvSuperUserControl.Size = new System.Drawing.Size(1433, 567);
             this.dgvSuperUserControl.TabIndex = 4;
             // 
             // dataGridViewTextBoxColumn1
@@ -1137,7 +1206,7 @@
             // 
             this.xtp_GoodsInfom.Margin = new System.Windows.Forms.Padding(5);
             this.xtp_GoodsInfom.Name = "xtp_GoodsInfom";
-            this.xtp_GoodsInfom.Size = new System.Drawing.Size(1367, 605);
+            this.xtp_GoodsInfom.Size = new System.Drawing.Size(1389, 605);
             this.xtp_GoodsInfom.Text = "商品信息";
             this.xtp_GoodsInfom.Paint += new System.Windows.Forms.PaintEventHandler(this.xtraTabPage4_Paint);
             // 
@@ -1145,7 +1214,7 @@
             // 
             this.xtp_GoodsStock.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_GoodsStock.Name = "xtp_GoodsStock";
-            this.xtp_GoodsStock.Size = new System.Drawing.Size(1367, 605);
+            this.xtp_GoodsStock.Size = new System.Drawing.Size(1389, 605);
             this.xtp_GoodsStock.Text = "商品库存";
             // 
             // xtp_StaffInformation
@@ -1302,7 +1371,7 @@
             this.stfInfo_dataGridView.RowHeadersVisible = false;
             this.stfInfo_dataGridView.RowTemplate.Height = 23;
             this.stfInfo_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.stfInfo_dataGridView.Size = new System.Drawing.Size(1336, 437);
+            this.stfInfo_dataGridView.Size = new System.Drawing.Size(1358, 437);
             this.stfInfo_dataGridView.TabIndex = 6;
             this.stfInfo_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.stfInfo_dataGridView_CellContentClick);
             // 
@@ -1406,7 +1475,7 @@
             // 
             this.xtp_StafMoney.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_StafMoney.Name = "xtp_StafMoney";
-            this.xtp_StafMoney.Size = new System.Drawing.Size(1367, 605);
+            this.xtp_StafMoney.Size = new System.Drawing.Size(1389, 605);
             this.xtp_StafMoney.Text = "员工工资绩效";
             // 
             // xtp_SupplierInformation
@@ -1414,7 +1483,7 @@
             this.xtp_SupplierInformation.Controls.Add(this.dataGridView5);
             this.xtp_SupplierInformation.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_SupplierInformation.Name = "xtp_SupplierInformation";
-            this.xtp_SupplierInformation.Size = new System.Drawing.Size(1367, 605);
+            this.xtp_SupplierInformation.Size = new System.Drawing.Size(1389, 605);
             this.xtp_SupplierInformation.Text = "供货商人员信息";
             // 
             // dataGridView5
@@ -1442,7 +1511,7 @@
             this.dataGridView5.RowHeadersVisible = false;
             this.dataGridView5.RowTemplate.Height = 23;
             this.dataGridView5.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView5.Size = new System.Drawing.Size(1395, 417);
+            this.dataGridView5.Size = new System.Drawing.Size(1461, 417);
             this.dataGridView5.TabIndex = 7;
             // 
             // dataGridViewTextBoxColumn30
@@ -1503,7 +1572,7 @@
             this.xtp_ControlUserSuper.Controls.Add(this.cbs_SuperUserDataGrid);
             this.xtp_ControlUserSuper.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_ControlUserSuper.Name = "xtp_ControlUserSuper";
-            this.xtp_ControlUserSuper.Size = new System.Drawing.Size(1367, 605);
+            this.xtp_ControlUserSuper.Size = new System.Drawing.Size(1389, 605);
             this.xtp_ControlUserSuper.Text = "管理员账户";
             this.xtp_ControlUserSuper.VisibleChanged += new System.EventHandler(this.xtp_ControlUserSuper_VisibleChanged);
             // 
@@ -1511,7 +1580,7 @@
             // 
             this.cbs_tbSearcht.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbs_tbSearcht.EditValue = "搜索用户";
-            this.cbs_tbSearcht.Location = new System.Drawing.Point(984, 33);
+            this.cbs_tbSearcht.Location = new System.Drawing.Point(1028, 33);
             this.cbs_tbSearcht.Margin = new System.Windows.Forms.Padding(4);
             this.cbs_tbSearcht.MenuManager = this.ribbonControl1;
             this.cbs_tbSearcht.Name = "cbs_tbSearcht";
@@ -1529,7 +1598,7 @@
             this.cus_btSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cus_btSearch.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
             this.cus_btSearch.Appearance.Options.UseFont = true;
-            this.cus_btSearch.Location = new System.Drawing.Point(1256, 29);
+            this.cus_btSearch.Location = new System.Drawing.Point(1300, 29);
             this.cus_btSearch.Margin = new System.Windows.Forms.Padding(4);
             this.cus_btSearch.Name = "cus_btSearch";
             this.cus_btSearch.Size = new System.Drawing.Size(120, 36);
@@ -1600,7 +1669,7 @@
             this.cbs_SuperUserDataGrid.RowHeadersVisible = false;
             this.cbs_SuperUserDataGrid.RowTemplate.Height = 23;
             this.cbs_SuperUserDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.cbs_SuperUserDataGrid.Size = new System.Drawing.Size(1349, 477);
+            this.cbs_SuperUserDataGrid.Size = new System.Drawing.Size(1393, 477);
             this.cbs_SuperUserDataGrid.TabIndex = 14;
             this.cbs_SuperUserDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cbs_SuperUserDataGrid_CellContentClick);
             // 
@@ -1634,9 +1703,9 @@
             // 
             // actionColum
             // 
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.actionColum.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.actionColum.DefaultCellStyle = dataGridViewCellStyle4;
             this.actionColum.FillWeight = 50F;
             this.actionColum.HeaderText = "操作";
             this.actionColum.Name = "actionColum";
@@ -1656,7 +1725,7 @@
             this.xtp_ControlUserStaff.Controls.Add(this.cStaf_dataGridView);
             this.xtp_ControlUserStaff.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_ControlUserStaff.Name = "xtp_ControlUserStaff";
-            this.xtp_ControlUserStaff.Size = new System.Drawing.Size(1367, 605);
+            this.xtp_ControlUserStaff.Size = new System.Drawing.Size(1389, 605);
             this.xtp_ControlUserStaff.Text = "员工账户";
             this.xtp_ControlUserStaff.VisibleChanged += new System.EventHandler(this.xtp_ControlUserStaff_VisibleChanged);
             // 
@@ -1664,7 +1733,7 @@
             // 
             this.cStf_tbSearchUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cStf_tbSearchUser.EditValue = "搜索用户";
-            this.cStf_tbSearchUser.Location = new System.Drawing.Point(976, 39);
+            this.cStf_tbSearchUser.Location = new System.Drawing.Point(1020, 39);
             this.cStf_tbSearchUser.Margin = new System.Windows.Forms.Padding(4);
             this.cStf_tbSearchUser.MenuManager = this.ribbonControl1;
             this.cStf_tbSearchUser.Name = "cStf_tbSearchUser";
@@ -1682,7 +1751,7 @@
             this.cStf_btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cStf_btnSearch.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
             this.cStf_btnSearch.Appearance.Options.UseFont = true;
-            this.cStf_btnSearch.Location = new System.Drawing.Point(1248, 35);
+            this.cStf_btnSearch.Location = new System.Drawing.Point(1292, 35);
             this.cStf_btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.cStf_btnSearch.Name = "cStf_btnSearch";
             this.cStf_btnSearch.Size = new System.Drawing.Size(120, 36);
@@ -1753,7 +1822,7 @@
             this.cStaf_dataGridView.RowHeadersVisible = false;
             this.cStaf_dataGridView.RowTemplate.Height = 23;
             this.cStaf_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.cStaf_dataGridView.Size = new System.Drawing.Size(1343, 477);
+            this.cStaf_dataGridView.Size = new System.Drawing.Size(1387, 477);
             this.cStaf_dataGridView.TabIndex = 20;
             this.cStaf_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cStaf_dataGridView_CellContentClick);
             // 
@@ -1787,9 +1856,9 @@
             // 
             // dataGridViewLinkColumn1
             // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.dataGridViewLinkColumn1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.dataGridViewLinkColumn1.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewLinkColumn1.FillWeight = 50F;
             this.dataGridViewLinkColumn1.HeaderText = "操作";
             this.dataGridViewLinkColumn1.Name = "dataGridViewLinkColumn1";
@@ -1809,7 +1878,7 @@
             this.xtp_ControlUserCustmer.Controls.Add(this.cCtm_dataGridView);
             this.xtp_ControlUserCustmer.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_ControlUserCustmer.Name = "xtp_ControlUserCustmer";
-            this.xtp_ControlUserCustmer.Size = new System.Drawing.Size(1367, 605);
+            this.xtp_ControlUserCustmer.Size = new System.Drawing.Size(1389, 605);
             this.xtp_ControlUserCustmer.Text = "顾客账户";
             this.xtp_ControlUserCustmer.VisibleChanged += new System.EventHandler(this.xtp_ControlUserCustmer_VisibleChanged);
             // 
@@ -1817,7 +1886,7 @@
             // 
             this.cCtm_tbSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cCtm_tbSearch.EditValue = "搜索用户";
-            this.cCtm_tbSearch.Location = new System.Drawing.Point(898, 39);
+            this.cCtm_tbSearch.Location = new System.Drawing.Point(942, 39);
             this.cCtm_tbSearch.Margin = new System.Windows.Forms.Padding(4);
             this.cCtm_tbSearch.MenuManager = this.ribbonControl1;
             this.cCtm_tbSearch.Name = "cCtm_tbSearch";
@@ -1835,7 +1904,7 @@
             this.cCtm_btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cCtm_btnSearch.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
             this.cCtm_btnSearch.Appearance.Options.UseFont = true;
-            this.cCtm_btnSearch.Location = new System.Drawing.Point(1170, 35);
+            this.cCtm_btnSearch.Location = new System.Drawing.Point(1214, 35);
             this.cCtm_btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.cCtm_btnSearch.Name = "cCtm_btnSearch";
             this.cCtm_btnSearch.Size = new System.Drawing.Size(78, 36);
@@ -1904,7 +1973,7 @@
             this.cCtm_dataGridView.RowHeadersVisible = false;
             this.cCtm_dataGridView.RowTemplate.Height = 23;
             this.cCtm_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.cCtm_dataGridView.Size = new System.Drawing.Size(1306, 477);
+            this.cCtm_dataGridView.Size = new System.Drawing.Size(1350, 477);
             this.cCtm_dataGridView.TabIndex = 20;
             this.cCtm_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cCtm_dataGridView_CellContentClick);
             // 
@@ -1938,9 +2007,9 @@
             // 
             // dataGridViewLinkColumn2
             // 
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.dataGridViewLinkColumn2.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.dataGridViewLinkColumn2.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewLinkColumn2.HeaderText = "操作";
             this.dataGridViewLinkColumn2.Name = "dataGridViewLinkColumn2";
             this.dataGridViewLinkColumn2.ReadOnly = true;
@@ -1953,7 +2022,7 @@
             // 
             this.xtraTabPage14.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabPage14.Name = "xtraTabPage14";
-            this.xtraTabPage14.Size = new System.Drawing.Size(1367, 605);
+            this.xtraTabPage14.Size = new System.Drawing.Size(1389, 605);
             this.xtraTabPage14.Text = "xtraTabPage14";
             // 
             // repositoryItemRibbonSearchEdit1
@@ -1961,10 +2030,10 @@
             this.repositoryItemRibbonSearchEdit1.AllowFocused = false;
             this.repositoryItemRibbonSearchEdit1.AutoHeight = false;
             this.repositoryItemRibbonSearchEdit1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            editorButtonImageOptions1.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            editorButtonImageOptions19.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.repositoryItemRibbonSearchEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions19, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject73, serializableAppearanceObject74, serializableAppearanceObject75, serializableAppearanceObject76, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions20, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject77, serializableAppearanceObject78, serializableAppearanceObject79, serializableAppearanceObject80, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemRibbonSearchEdit1.Name = "repositoryItemRibbonSearchEdit1";
             this.repositoryItemRibbonSearchEdit1.NullText = "Search";
             // 
@@ -1973,10 +2042,10 @@
             this.repositoryItemRibbonSearchEdit2.AllowFocused = false;
             this.repositoryItemRibbonSearchEdit2.AutoHeight = false;
             this.repositoryItemRibbonSearchEdit2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            editorButtonImageOptions3.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            editorButtonImageOptions21.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.repositoryItemRibbonSearchEdit2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions21, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject81, serializableAppearanceObject82, serializableAppearanceObject83, serializableAppearanceObject84, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions22, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject85, serializableAppearanceObject86, serializableAppearanceObject87, serializableAppearanceObject88, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemRibbonSearchEdit2.Name = "repositoryItemRibbonSearchEdit2";
             this.repositoryItemRibbonSearchEdit2.NullText = "Search";
             // 
@@ -1985,10 +2054,10 @@
             this.repositoryItemRibbonSearchEdit3.AllowFocused = false;
             this.repositoryItemRibbonSearchEdit3.AutoHeight = false;
             this.repositoryItemRibbonSearchEdit3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            editorButtonImageOptions5.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            editorButtonImageOptions23.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.repositoryItemRibbonSearchEdit3.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions5, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions6, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject21, serializableAppearanceObject22, serializableAppearanceObject23, serializableAppearanceObject24, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions23, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject89, serializableAppearanceObject90, serializableAppearanceObject91, serializableAppearanceObject92, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions24, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject93, serializableAppearanceObject94, serializableAppearanceObject95, serializableAppearanceObject96, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemRibbonSearchEdit3.Name = "repositoryItemRibbonSearchEdit3";
             this.repositoryItemRibbonSearchEdit3.NullText = "Search";
             // 
@@ -1997,10 +2066,10 @@
             this.repositoryItemRibbonSearchEdit4.AllowFocused = false;
             this.repositoryItemRibbonSearchEdit4.AutoHeight = false;
             this.repositoryItemRibbonSearchEdit4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            editorButtonImageOptions7.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            editorButtonImageOptions25.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.repositoryItemRibbonSearchEdit4.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions7, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject25, serializableAppearanceObject26, serializableAppearanceObject27, serializableAppearanceObject28, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions8, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject29, serializableAppearanceObject30, serializableAppearanceObject31, serializableAppearanceObject32, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions25, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject97, serializableAppearanceObject98, serializableAppearanceObject99, serializableAppearanceObject100, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions26, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject101, serializableAppearanceObject102, serializableAppearanceObject103, serializableAppearanceObject104, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemRibbonSearchEdit4.Name = "repositoryItemRibbonSearchEdit4";
             this.repositoryItemRibbonSearchEdit4.NullText = "Search";
             // 
@@ -2009,10 +2078,10 @@
             this.repositoryItemRibbonSearchEdit5.AllowFocused = false;
             this.repositoryItemRibbonSearchEdit5.AutoHeight = false;
             this.repositoryItemRibbonSearchEdit5.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            editorButtonImageOptions9.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            editorButtonImageOptions27.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.repositoryItemRibbonSearchEdit5.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions9, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject33, serializableAppearanceObject34, serializableAppearanceObject35, serializableAppearanceObject36, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions10, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject37, serializableAppearanceObject38, serializableAppearanceObject39, serializableAppearanceObject40, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions27, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject105, serializableAppearanceObject106, serializableAppearanceObject107, serializableAppearanceObject108, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions28, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject109, serializableAppearanceObject110, serializableAppearanceObject111, serializableAppearanceObject112, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemRibbonSearchEdit5.Name = "repositoryItemRibbonSearchEdit5";
             this.repositoryItemRibbonSearchEdit5.NullText = "Search";
             // 
@@ -2021,10 +2090,10 @@
             this.repositoryItemRibbonSearchEdit6.AllowFocused = false;
             this.repositoryItemRibbonSearchEdit6.AutoHeight = false;
             this.repositoryItemRibbonSearchEdit6.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            editorButtonImageOptions11.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            editorButtonImageOptions29.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.repositoryItemRibbonSearchEdit6.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions11, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject41, serializableAppearanceObject42, serializableAppearanceObject43, serializableAppearanceObject44, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions12, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject45, serializableAppearanceObject46, serializableAppearanceObject47, serializableAppearanceObject48, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions29, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject113, serializableAppearanceObject114, serializableAppearanceObject115, serializableAppearanceObject116, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions30, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject117, serializableAppearanceObject118, serializableAppearanceObject119, serializableAppearanceObject120, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemRibbonSearchEdit6.Name = "repositoryItemRibbonSearchEdit6";
             this.repositoryItemRibbonSearchEdit6.NullText = "Search";
             // 
@@ -2045,10 +2114,10 @@
             this.repositoryItemRibbonSearchEdit7.AllowFocused = false;
             this.repositoryItemRibbonSearchEdit7.AutoHeight = false;
             this.repositoryItemRibbonSearchEdit7.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            editorButtonImageOptions13.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            editorButtonImageOptions31.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.repositoryItemRibbonSearchEdit7.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions13, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject49, serializableAppearanceObject50, serializableAppearanceObject51, serializableAppearanceObject52, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions14, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject53, serializableAppearanceObject54, serializableAppearanceObject55, serializableAppearanceObject56, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions31, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject121, serializableAppearanceObject122, serializableAppearanceObject123, serializableAppearanceObject124, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions32, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject125, serializableAppearanceObject126, serializableAppearanceObject127, serializableAppearanceObject128, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemRibbonSearchEdit7.Name = "repositoryItemRibbonSearchEdit7";
             this.repositoryItemRibbonSearchEdit7.NullText = "Search";
             // 
@@ -2103,10 +2172,10 @@
             this.repositoryItemRibbonSearchEdit8.AllowFocused = false;
             this.repositoryItemRibbonSearchEdit8.AutoHeight = false;
             this.repositoryItemRibbonSearchEdit8.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            editorButtonImageOptions15.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            editorButtonImageOptions33.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.repositoryItemRibbonSearchEdit8.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions15, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject57, serializableAppearanceObject58, serializableAppearanceObject59, serializableAppearanceObject60, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions16, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject61, serializableAppearanceObject62, serializableAppearanceObject63, serializableAppearanceObject64, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions33, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject129, serializableAppearanceObject130, serializableAppearanceObject131, serializableAppearanceObject132, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions34, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject133, serializableAppearanceObject134, serializableAppearanceObject135, serializableAppearanceObject136, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemRibbonSearchEdit8.Name = "repositoryItemRibbonSearchEdit8";
             this.repositoryItemRibbonSearchEdit8.NullText = "Search";
             // 
@@ -2115,10 +2184,10 @@
             this.repositoryItemRibbonSearchEdit9.AllowFocused = false;
             this.repositoryItemRibbonSearchEdit9.AutoHeight = false;
             this.repositoryItemRibbonSearchEdit9.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            editorButtonImageOptions17.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            editorButtonImageOptions35.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.repositoryItemRibbonSearchEdit9.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions17, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject65, serializableAppearanceObject66, serializableAppearanceObject67, serializableAppearanceObject68, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions18, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject69, serializableAppearanceObject70, serializableAppearanceObject71, serializableAppearanceObject72, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions35, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject137, serializableAppearanceObject138, serializableAppearanceObject139, serializableAppearanceObject140, "", null, null, DevExpress.Utils.ToolTipAnchor.Default),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Clear, "", -1, true, false, false, editorButtonImageOptions36, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject141, serializableAppearanceObject142, serializableAppearanceObject143, serializableAppearanceObject144, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemRibbonSearchEdit9.Name = "repositoryItemRibbonSearchEdit9";
             this.repositoryItemRibbonSearchEdit9.NullText = "Search";
             // 
@@ -2174,6 +2243,50 @@
             this.Nowtimer.Interval = 1000;
             this.Nowtimer.Tick += new System.EventHandler(this.Nowtimer_Tick);
             // 
+            // treeListBand1
+            // 
+            this.treeListBand1.Caption = "treeListBand1";
+            this.treeListBand1.Name = "treeListBand1";
+            // 
+            // treeListBand2
+            // 
+            this.treeListBand2.Caption = "treeListBand2";
+            this.treeListBand2.Name = "treeListBand2";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "pcID";
+            this.dataGridViewTextBoxColumn9.HeaderText = "商品类别编号";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "pcName";
+            this.dataGridViewTextBoxColumn10.HeaderText = "商品类别名称";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "父类别编号";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "pcDescription";
+            this.dataGridViewTextBoxColumn11.HeaderText = "类别描述";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "pcAddedTime";
+            this.dataGridViewTextBoxColumn12.HeaderText = "添加时间";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            // 
             // Control
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.True;
@@ -2201,8 +2314,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtb_ControlPanel)).EndInit();
             this.xtb_ControlPanel.ResumeLayout(false);
             this.xtp_GoodsClass.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.treeList1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.xtp_GoodsClass.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gClass_tbClassName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gClass_tbClassID.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gClass_tbParentID.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gClass_tbParentName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gClass_datagridview)).EndInit();
             this.xtp_Supplier.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSupplier)).EndInit();
             this.xtp_SuperUserControl.ResumeLayout(false);
@@ -2337,7 +2454,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement ace_SuperUser;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ace_StaffUser;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ace_Customer;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView gClass_datagridview;
         private System.Windows.Forms.DataGridView stfInfo_dataGridView;
         private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn30;
@@ -2348,13 +2465,6 @@
         private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn ContactInformation;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
-        private DevExpress.XtraTreeList.TreeList treeList1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn remark;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement6;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ace_GoodsClass;
@@ -2431,5 +2541,24 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
         private System.Windows.Forms.DataGridViewLinkColumn dataGridViewLinkColumn1;
+        private DevExpress.XtraTreeList.Columns.TreeListBand treeListBand1;
+        private DevExpress.XtraTreeList.Columns.TreeListBand treeListBand2;
+        private DevExpress.XtraEditors.TextEdit gClass_tbParentName;
+        private System.Windows.Forms.TreeView gClass_TreeView;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.SimpleButton gClass_btDlete;
+        private DevExpress.XtraEditors.SimpleButton gClass_Modify;
+        private DevExpress.XtraEditors.SimpleButton gClass_btAdd;
+        private DevExpress.XtraEditors.LabelControl labelControl9;
+        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.LabelControl labelControl7;
+        private DevExpress.XtraEditors.TextEdit gClass_tbClassName;
+        private DevExpress.XtraEditors.TextEdit gClass_tbClassID;
+        private DevExpress.XtraEditors.TextEdit gClass_tbParentID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
     }
 }

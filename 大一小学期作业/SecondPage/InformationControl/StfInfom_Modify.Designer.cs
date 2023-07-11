@@ -230,7 +230,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
+            this.btnCancel.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
             this.btnCancel.Appearance.Options.UseFont = true;
             this.btnCancel.Location = new System.Drawing.Point(290, 558);
             this.btnCancel.Name = "btnCancel";
@@ -242,14 +242,14 @@
             // btnAddConfirm
             // 
             this.btnAddConfirm.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(178)))), ((int)(((byte)(201)))));
-            this.btnAddConfirm.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
+            this.btnAddConfirm.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
             this.btnAddConfirm.Appearance.Options.UseBackColor = true;
             this.btnAddConfirm.Appearance.Options.UseFont = true;
             this.btnAddConfirm.Location = new System.Drawing.Point(79, 558);
             this.btnAddConfirm.Name = "btnAddConfirm";
             this.btnAddConfirm.Size = new System.Drawing.Size(123, 42);
             this.btnAddConfirm.TabIndex = 8;
-            this.btnAddConfirm.Text = "添加";
+            this.btnAddConfirm.Text = "修改";
             this.btnAddConfirm.Click += new System.EventHandler(this.btnAddConfirm_Click);
             // 
             // tbPositon

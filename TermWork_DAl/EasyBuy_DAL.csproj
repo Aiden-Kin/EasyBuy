@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GoodsClassServer.cs" />
     <Compile Include="StfInformationServer.cs" />
     <Compile Include="UserListServer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
