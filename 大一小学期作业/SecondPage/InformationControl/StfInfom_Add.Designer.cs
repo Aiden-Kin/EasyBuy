@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StfInfom_Add));
             this.directXFormContainerControl1 = new DevExpress.XtraEditors.DirectXFormContainerControl();
-            this.cbSex = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.cbState = new DevExpress.XtraEditors.ComboBoxEdit();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.Exit = new DevExpress.XtraEditors.SimpleButton();
             this.txtTetle = new DevExpress.XtraEditors.LabelControl();
@@ -44,16 +42,18 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.btnAddConfirm = new DevExpress.XtraEditors.SimpleButton();
+            this.cbSex = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cbState = new DevExpress.XtraEditors.ComboBoxEdit();
             this.tbPositon = new DevExpress.XtraEditors.TextEdit();
             this.tbPhone = new DevExpress.XtraEditors.TextEdit();
             this.tbAge = new DevExpress.XtraEditors.TextEdit();
             this.tbName = new DevExpress.XtraEditors.TextEdit();
             this.cbDate = new DevExpress.XtraEditors.DateEdit();
             this.directXFormContainerControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cbSex.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbState.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cbSex.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbState.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbPositon.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbPhone.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbAge.Properties)).BeginInit();
@@ -87,36 +87,6 @@
             this.directXFormContainerControl1.Size = new System.Drawing.Size(504, 650);
             this.directXFormContainerControl1.TabIndex = 0;
             // 
-            // cbSex
-            // 
-            this.cbSex.EditValue = "";
-            this.cbSex.Location = new System.Drawing.Point(160, 168);
-            this.cbSex.Name = "cbSex";
-            this.cbSex.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbSex.Properties.Items.AddRange(new object[] {
-            "男",
-            "女"});
-            this.cbSex.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cbSex.Size = new System.Drawing.Size(59, 28);
-            this.cbSex.TabIndex = 2;
-            // 
-            // cbState
-            // 
-            this.cbState.EditValue = "";
-            this.cbState.Location = new System.Drawing.Point(160, 333);
-            this.cbState.Name = "cbState";
-            this.cbState.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbState.Properties.Items.AddRange(new object[] {
-            "在职",
-            "休假",
-            "离职",
-            "实习"});
-            this.cbState.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cbState.Size = new System.Drawing.Size(89, 28);
-            this.cbState.TabIndex = 5;
-            // 
             // panelControl1
             // 
             this.panelControl1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(178)))), ((int)(((byte)(201)))));
@@ -141,7 +111,7 @@
             this.Exit.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.BottomCenter;
             this.Exit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Exit.ImageOptions.SvgImage")));
             this.Exit.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.Exit.Location = new System.Drawing.Point(456, 7);
+            this.Exit.Location = new System.Drawing.Point(447, 14);
             this.Exit.Margin = new System.Windows.Forms.Padding(4);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(29, 30);
@@ -252,6 +222,36 @@
             this.btnAddConfirm.Text = "添加";
             this.btnAddConfirm.Click += new System.EventHandler(this.btnAddConfirm_Click);
             // 
+            // cbSex
+            // 
+            this.cbSex.EditValue = "";
+            this.cbSex.Location = new System.Drawing.Point(160, 168);
+            this.cbSex.Name = "cbSex";
+            this.cbSex.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbSex.Properties.Items.AddRange(new object[] {
+            "男",
+            "女"});
+            this.cbSex.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cbSex.Size = new System.Drawing.Size(59, 28);
+            this.cbSex.TabIndex = 2;
+            // 
+            // cbState
+            // 
+            this.cbState.EditValue = "";
+            this.cbState.Location = new System.Drawing.Point(160, 333);
+            this.cbState.Name = "cbState";
+            this.cbState.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbState.Properties.Items.AddRange(new object[] {
+            "在职",
+            "休假",
+            "离职",
+            "实习"});
+            this.cbState.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cbState.Size = new System.Drawing.Size(89, 28);
+            this.cbState.TabIndex = 5;
+            // 
             // tbPositon
             // 
             this.tbPositon.Location = new System.Drawing.Point(160, 396);
@@ -331,11 +331,11 @@
             this.Text = "管理员用户添加";
             this.directXFormContainerControl1.ResumeLayout(false);
             this.directXFormContainerControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cbSex.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbState.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cbSex.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbState.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbPositon.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbPhone.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbAge.Properties)).EndInit();

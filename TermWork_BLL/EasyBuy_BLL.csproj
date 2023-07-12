@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GoodsClassManagercs.cs" />
+    <Compile Include="GoodsClassManagers.cs" />
     <Compile Include="StfInformationManager.cs" />
     <Compile Include="UserLisetManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

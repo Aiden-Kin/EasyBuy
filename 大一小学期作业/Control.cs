@@ -1,6 +1,7 @@
 ﻿using DevExpress.Persistent.Base;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Mask;
+using DevExpress.XtraRichEdit.Model;
 using EasyBuy.SecondPage;
 using EasyBuy_BLL;
 using EasyBuy_Model;
@@ -13,6 +14,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace EasyBuy
 {
@@ -580,6 +582,27 @@ namespace EasyBuy
 
 
 
+        public void gClass_Refresh()
+        {
+            gClass_TreeView.Nodes.Clear();
+            try
+            {
+                gClass_TreeView.Nodes.Add(new GoodsClassManagers().GetListTreeNode(new GoodsClassManagers().Get()));
+            }
+            catch (Exception exp)
+            {
+                Common.ShowError("错误: " + exp.Message);
+                return;
+            }
+            gClass_TreeView.ExpandAll(); //展开全部
+
+
+            //DataGridView绑定
+            gClass_datagridview.DataSource = new GoodsClassManagers().Get();
+
+
+
+        }
 
 
 
@@ -587,17 +610,55 @@ namespace EasyBuy
 
         private void gClass_btAdd_Click(object sender, EventArgs e)
         {
-
+            GoodsClass_Add goodsClass_Add = new GoodsClass_Add(this,gClass_tbClassID.Text, gClass_tbClassName.Text);
+            goodsClass_Add.Show();
         }
+
+        string gClass_describe;
 
         private void gClass_Modify_Click(object sender, EventArgs e)
         {
+            if (gClass_tbClassID.Text == "0" || gClass_tbClassName.Text == string.Empty)
+            {
+                Common.ShowError("禁止修改根节点或空节点!");
+                return;
+            }
 
+            int ClassID = Convert.ToInt32(gClass_tbClassID.Text);
+            foreach (DataGridViewRow row in gClass_datagridview.Rows)
+            {
+                int currentID = Convert.ToInt32(row.Cells[0].Value);
+
+                if (currentID == ClassID)
+                {
+                    gClass_describe = row.Cells[3].Value.ToString();
+                    break;
+
+                }
+
+            }
+            GoodsClass_Modify goodsClass_modify = new GoodsClass_Modify(this, gClass_tbParentID.Text, gClass_tbParentName.Text,gClass_tbClassID.Text,gClass_tbClassName.Text, gClass_describe);
+            goodsClass_modify.Show();
         }
 
         private void gClass_btDlete_Click(object sender, EventArgs e)
         {
-
+            if (Common.ShowAsk("删除该类别将会导致下属类别和所属商品全部被删除!是否继续?"))
+            {
+                //继续
+                try
+                {
+                    new GoodsClassManagers().Delete(gClass_tbClassID.Text);
+                }
+                catch (Exception exp)
+                {
+                    Common.ShowError("删除失败! 原因: " + exp.Message);
+                    return;
+                }
+                Common.ShowInfo("删除成功!");
+            }
+            gClass_Refresh();
+            gClass_ClearControls();
         }
 
         private void gClass_TreeView_AfterSelect(object sender, TreeViewEventArgs e)
@@ -609,19 +670,12 @@ namespace EasyBuy
             string parentId = str.Split()[1];
             string parentName = str.Split()[2];
 
-            if (gClass_ifChange || gClass_ifAdd)
-            {
-                //添加和修改模式中选择的本身就是父类
-                gClass_tbParentID.Text = id;
-                gClass_tbParentName.Text = node.Text;
-            }
-            else
-            {
+
                 gClass_tbParentID.Text = parentId;
                 gClass_tbParentName.Text = parentName;
                 gClass_tbClassID.Text = id;
                 gClass_tbClassName.Text = node.Text;
-            }
+            
 
         }
 
@@ -629,22 +683,34 @@ namespace EasyBuy
         {
             if (xtp_GoodsClass.Visible)
             {
-                //重新加载
-                gClass_TreeView.Nodes.Clear();
-                try
+                gClass_Refresh();
+            }
+        }
+
+        private void gClass_datagridview_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int rowindex = gClass_datagridview.CurrentRow.Index;//选择行的索引
+            //将选中行数据存储到对象student中
+            gClass_tbClassID.Text = gClass_datagridview.Rows[rowindex].Cells[0].Value.ToString();
+            gClass_tbClassName.Text = gClass_datagridview.Rows[rowindex].Cells[1].Value.ToString();
+            gClass_tbParentID.Text = gClass_datagridview.Rows[rowindex].Cells[2].Value.ToString();
+
+            //通过编号索引父类
+            int parentID = Convert.ToInt32(gClass_datagridview.Rows[rowindex].Cells[2].Value);
+            foreach (DataGridViewRow row in gClass_datagridview.Rows)
+            {
+                int currentID = Convert.ToInt32(row.Cells[0].Value);
+
+                 if (currentID == parentID)
                 {
-                    gClass_TreeView.Nodes.Add(new GoodTypeManager().GetListTreeNode(new GoodTypeManager().Get()));
+                    gClass_tbParentName.Text = row.Cells[1].Value.ToString(); 
+                   
                 }
-                catch (Exception exp)
+                else if (parentID == 0)
                 {
-                    MsgBox.ShowError("错误: " + exp.Message);
-                    return;
+                    gClass_tbParentName.Text = "商品类型"; 
+                    break;
                 }
-                gClass_TreeView.ExpandAll(); //展开全部
-
-
-
-                cbs_btnSearchAll.PerformClick();
             }
         }
     }

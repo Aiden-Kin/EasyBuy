@@ -118,6 +118,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common.cs" />
     <Compile Include="LoinForm\Regist.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +138,18 @@
     </Compile>
     <Compile Include="Control.Designer.cs">
       <DependentUpon>Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecondPage\GoodsClass\GoodsClass_Add - 复制.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondPage\GoodsClass\GoodsClass_Add - 复制.Designer.cs">
+      <DependentUpon>GoodsClass_Add - 复制.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecondPage\GoodsClass\GoodsClass_Modify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondPage\GoodsClass\GoodsClass_Modify.Designer.cs">
+      <DependentUpon>GoodsClass_Modify.cs</DependentUpon>
     </Compile>
     <Compile Include="SecondPage\InformationControl\StfInfom_Modify.cs">
       <SubType>Form</SubType>
@@ -182,6 +195,12 @@
     </Compile>
     <EmbeddedResource Include="Control.resx">
       <DependentUpon>Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecondPage\GoodsClass\GoodsClass_Add - 复制.resx">
+      <DependentUpon>GoodsClass_Add - 复制.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecondPage\GoodsClass\GoodsClass_Modify.resx">
+      <DependentUpon>GoodsClass_Modify.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SecondPage\InformationControl\StfInfom_Modify.resx">
       <DependentUpon>StfInfom_Modify.cs</DependentUpon>

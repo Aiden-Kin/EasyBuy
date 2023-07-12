@@ -141,7 +141,7 @@
             this.Exit.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.BottomCenter;
             this.Exit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Exit.ImageOptions.SvgImage")));
             this.Exit.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
-            this.Exit.Location = new System.Drawing.Point(456, 7);
+            this.Exit.Location = new System.Drawing.Point(447, 15);
             this.Exit.Margin = new System.Windows.Forms.Padding(4);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(29, 30);

@@ -9,7 +9,7 @@ using static EasyBuy_DAL.GoodsClassServer;
 
 namespace EasyBuy_BLL
 {
-    public class GoodsClassManagercs
+    public class GoodsClassManagers
     {
         public List<GoodsClass> Get()
         {
@@ -71,7 +71,7 @@ namespace EasyBuy_BLL
             new GoodTypeService().Delete(id);
         }
 
-        public void Update(string parentIdStr, string idStr, string name)
+        public void Update(string parentIdStr, string idStr, string name,string Describe ,string NowTime)
         {
             GoodsClass gt = new GoodsClass();
             int parentId;
@@ -87,6 +87,9 @@ namespace EasyBuy_BLL
             gt.ClassID = id;
             gt.ClassName = name;
             gt.ParentID = parentId;
+            gt.Descreption = Describe;
+            gt.AddTime = NowTime;
+
             new GoodTypeService().Update(gt);
         }
     }

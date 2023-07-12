@@ -53,8 +53,9 @@ namespace EasyBuy_DAL
 
             public void Update(GoodsClass gt)
             {
-                string sqlStr = String.Format("UPDATE tblGoodsClass SET GT_Name = '{0}', GT_ParentNo = '{1}' WHERE GT_No = '{2}'",gt.ClassName, gt.ParentID, gt.ClassID);
+                string sqlStr = String.Format("UPDATE tblGoodsClass SET ClassName = '{0}', ParentID = '{1}', Descreption = '{2}', AddTime = '{3}' WHERE ClassID = '{4}'", gt.ClassName, gt.ParentID,gt.Descreption,gt.AddTime, gt.ClassID);
                 SqlHelper.ExecuteNonQuery(sqlStr);
             }
         }
+    }
 }
