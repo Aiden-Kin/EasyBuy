@@ -46,7 +46,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GoodsClassManagers.cs" />
+    <Compile Include="GoodsInfomManager.cs" />
     <Compile Include="StfInformationManager.cs" />
+    <Compile Include="SupplierManager.cs" />
     <Compile Include="UserLisetManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

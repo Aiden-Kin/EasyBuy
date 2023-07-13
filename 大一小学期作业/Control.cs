@@ -1,4 +1,5 @@
-﻿using DevExpress.Persistent.Base;
+﻿using DevExpress.Charts.Native;
+using DevExpress.Persistent.Base;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Mask;
 using DevExpress.XtraRichEdit.Model;
@@ -713,6 +714,152 @@ namespace EasyBuy
                 }
             }
         }
+
+
+        private void gClass_btSearchAll_Click(object sender, EventArgs e)
+        {
+            gClass_Refresh();
+        }
+        #endregion
+
+
+
+
+
+
+        #region 供货商信息区
+        //公用函数与变量
+
+
+        public void SInfo_RefreshData(string condition = "", string find = "")
+        {
+            List<Supplier> superUser = new List<Supplier>();
+            try
+            {
+                superUser = new SupplierManager().GetList(condition, find);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            SInfo_dategridview.AutoGenerateColumns = false;
+            SInfo_dategridview.DataSource = superUser;
+
+        }
+
+
+
+        //控件区
+
+        private void SInfo_btSearchAll_Click(object sender, EventArgs e)
+        {
+            SInfo_RefreshData();
+        }
+
+        private void SInfo_btAdd_Click(object sender, EventArgs e)
+        {
+            Supplier_Add add = new Supplier_Add(this);
+            add.Show();
+        }
+
+        private void SInfo_btModify_Click(object sender, EventArgs e)
+        {
+            Supplier sp = new Supplier();
+            sp.ID = Convert.ToInt32(SInfo_dategridview.SelectedCells[0].Value);
+            sp.Name = SInfo_dategridview.SelectedCells[1].Value.ToString();
+            sp.LegalPerson = SInfo_dategridview.SelectedCells[2].Value.ToString();
+            sp.Linkman = SInfo_dategridview.SelectedCells[3].Value.ToString();
+            sp.LinkPhone = SInfo_dategridview.SelectedCells[4].Value.ToString();
+            sp.LinkAddress = SInfo_dategridview.SelectedCells[5].Value.ToString();
+            sp.RecordDate = SInfo_dategridview.SelectedCells[6].Value.ToString();
+            sp.Remark = SInfo_dategridview.SelectedCells[7].Value.ToString();
+
+
+            Supplier_Modify add = new Supplier_Modify(this,sp);
+            add.Show();
+        }
+
+        private void SInfo_btDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                new SupplierManager().Delete(SInfo_dategridview.SelectedCells[0].Value.ToString());
+                Common.ShowInfo("删除成功");
+                SInfo_RefreshData();
+            }
+            catch (Exception ex)
+            {
+                Common.ShowError(ex.Message);
+            }
+        }
+
+        private void SInfo_tbSearch_Click(object sender, EventArgs e)
+        {
+            List<Supplier> sp = new SupplierManager().GetList(SInfo_cbCelect.Text, SInfo_tbSelectInfom.Text);
+            SInfo_dategridview.DataSource = sp;
+        }
+
+        private void xtp_Supplier_VisibleChanged(object sender, EventArgs e)
+        {
+            if (xtp_Supplier.Visible)
+            {
+                SInfo_RefreshData();
+            }
+        }
+
+        #endregion
+
+        #region 商品信息区域
+        //公共函数与变量
+        public void GInform_RefreshData()
+        {
+            List<GoodsInfom> goodsInfom = new List<GoodsInfom>();
+            try
+            {
+                goodsInfom = new GoodsInfomManager().GetList();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            gInfom_dategridview.AutoGenerateColumns = false;
+            gInfom_dategridview.DataSource = goodsInfom;
+        }
+
+        //控件区
+
+
+        private void xtp_GoodsInfom_VisibleChanged(object sender, EventArgs e)
+        {
+            if (xtp_GoodsInfom.Visible)
+            {
+                GInform_RefreshData();
+            }
+        }
+
+        private void gInfom_btChangeInfom_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            List<GoodsInfom> goodsInfom = new List<GoodsInfom>();
+            try
+            {
+                goodsInfom = new GoodsInfomManager().GetList();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            gridControl1.DataSource = goodsInfom;
+        }
     }
-    #endregion
+        #endregion
 }

@@ -13,20 +13,6 @@ namespace EasyBuy_DAL
     public class StfInformationServer
     {
 
-        //public  User GetSingleUser(string userName,string userPassword)  
-        //{
-        //    StaffInformation stfInfom = new StaffInformation();
-        //    string sqlstr = string.Format("select * from tblUserList where UserName ='{0}' and UserPassword = '{1}'", userName,userPassword);
-        //    using (DataTable dt = SqlHelper.ExecuteDataTable(sqlstr))
-        //    {
-        //        stfInfom = ToModel(dt)[0];
-        //    }
-                
-        //    return stfInfom;
-        //}
-
-
-        //将数据表转换为用户列
         private List<StaffInformation> ToModel(DataTable dt)
         {
             List<StaffInformation> userlist = new List<StaffInformation>();

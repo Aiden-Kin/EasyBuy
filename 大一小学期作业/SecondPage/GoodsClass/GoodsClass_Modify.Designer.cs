@@ -198,7 +198,7 @@
             this.tbClassName.Properties.Appearance.Options.UseBackColor = true;
             this.tbClassName.Properties.Appearance.Options.UseFont = true;
             this.tbClassName.Size = new System.Drawing.Size(172, 26);
-            this.tbClassName.TabIndex = 2;
+            this.tbClassName.TabIndex = 3;
             // 
             // tbParentName
             // 
