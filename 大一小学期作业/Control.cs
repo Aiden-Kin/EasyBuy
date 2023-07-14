@@ -4,6 +4,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Mask;
 using DevExpress.XtraRichEdit.Model;
 using EasyBuy.SecondPage;
+using EasyBuy.SecondPage.S_GoodsInfom;
 using EasyBuy_BLL;
 using EasyBuy_Model;
 using System;
@@ -12,6 +13,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -81,7 +83,6 @@ namespace EasyBuy
 
         private void bbtn_GoodsStock_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            xtb_ControlPanel.SelectedTabPage = xtp_GoodsStock;
         }
 
         private void bbtn_EmploerInfomation_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -91,12 +92,11 @@ namespace EasyBuy
 
         private void bbtn_EmploerMoney_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            xtb_ControlPanel.SelectedTabPage = xtp_StafMoney;
+            xtb_ControlPanel.SelectedTabPage = xtp_StaffSalary;
         }
 
         private void bbtn_Supplyer_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            xtb_ControlPanel.SelectedTabPage = xtp_SupplierInformation;
         }
 
         private void bbtn_SuperUser_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -126,7 +126,6 @@ namespace EasyBuy
 
         private void ace_GoodsStock_Click(object sender, EventArgs e)
         {
-            xtb_ControlPanel.SelectedTabPage = xtp_GoodsStock;
         }
 
         private void ace_StafInformation_Click(object sender, EventArgs e)
@@ -136,12 +135,11 @@ namespace EasyBuy
 
         private void ace_StafMoney_Click(object sender, EventArgs e)
         {
-            xtb_ControlPanel.SelectedTabPage = xtp_StafMoney;
+            xtb_ControlPanel.SelectedTabPage = xtp_StaffSalary;
         }
 
         private void ace_SupplierInformation_Click(object sender, EventArgs e)
         {
-            xtb_ControlPanel.SelectedTabPage = xtp_SupplierInformation;
         }
 
         private void ace_SuperUser_Click(object sender, EventArgs e)
@@ -842,24 +840,102 @@ namespace EasyBuy
 
         private void gInfom_btChangeInfom_Click(object sender, EventArgs e)
         {
+            GoodsInfom  sp = new GoodsInfom();
 
+            sp.ID = Convert.ToInt32(gInfom_dategridview.SelectedCells[0].Value);
+            sp.Name = gInfom_dategridview.SelectedCells[1].Value.ToString();
+            sp.Class = gInfom_dategridview.SelectedCells[2].Value.ToString();
+            sp.Location = gInfom_dategridview.SelectedCells[3].Value.ToString();
+            sp.ProductDate = gInfom_dategridview.SelectedCells[4].Value.ToString();
+            sp.Repertory = Convert.ToInt32(gInfom_dategridview.SelectedCells[5].Value);
+            sp.Supplier = gInfom_dategridview.SelectedCells[6].Value.ToString();
+            sp.Price = Convert.ToSingle(gInfom_dategridview.SelectedCells[7].Value);
+            sp.Remark = gInfom_dategridview.SelectedCells[8].Value.ToString();
+            sp.AddTime = gInfom_dategridview.SelectedCells[9].Value.ToString();
+
+
+            GoodsInfom_ChangeGoods add = new GoodsInfom_ChangeGoods(this, sp);
+            add.Show();
         }
 
-        private void simpleButton1_Click(object sender, EventArgs e)
+
+
+        private void gInfom_btNewGood_Click(object sender, EventArgs e)
         {
-            List<GoodsInfom> goodsInfom = new List<GoodsInfom>();
+            GoodsInfom_AddGods add = new GoodsInfom_AddGods(this);
+            add.ShowDialog();
+        }
+
+        private void gInfom_btDelete_Click(object sender, EventArgs e)
+        {
             try
             {
-                goodsInfom = new GoodsInfomManager().GetList();
+                new GoodsInfomManager().Delete(gInfom_dategridview.SelectedCells[0].Value.ToString());
+                Common.ShowInfo("删除成功");
+                GInform_RefreshData();
+            }
+            catch (Exception ex)
+            {
+                Common.ShowError(ex.Message);
+            }
+        }
+
+        private void gInfom_btrepetoryManage_Click(object sender, EventArgs e)
+        {
+            string gInfom_ID = gInfom_dategridview.SelectedCells[0].Value.ToString();
+            string gInfom_Name = gInfom_dategridview.SelectedCells[1].Value.ToString();
+            string gInfom_Repor = gInfom_dategridview.SelectedCells[5].Value.ToString();
+
+            GoodsInfom_RepertoryForm gp = new GoodsInfom_RepertoryForm(this, gInfom_ID, gInfom_Name, gInfom_Repor);
+            gp.Show();
+        }
+        #endregion
+
+        #region 员工工资区域
+        //公共函数
+        public void StaffM_Refresh()
+        {
+            List<StaffSalary> staffSalary = new List<StaffSalary>();
+            try
+            {
+                staffSalary = new StaffSalaryManager().GetStaffInformationList();
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+            StaffS_datagrid.DataSource = staffSalary;
+        }
 
-            gridControl1.DataSource = goodsInfom;
+
+
+
+
+        //控件区
+        private void xtp_StafMoney_VisibleChanged(object sender, EventArgs e)
+        {
+            if (xtp_StaffSalary.Visible)
+            {
+                StaffM_Refresh();
+            }
+        }
+
+
+
+        private void StaffS_datagrid_VisibleChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StaffS_datagrid_Leave(object sender, EventArgs e)
+        {
+            List<StaffSalary> dataSource = StaffS_datagrid.DataSource as List<StaffSalary>;
+            foreach (StaffSalary staff in dataSource)
+            {
+                new StaffSalaryManager().UpdateStaffInfo(staff);
+            }
         }
     }
-        #endregion
+            #endregion
 }

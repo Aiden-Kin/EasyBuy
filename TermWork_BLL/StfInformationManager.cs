@@ -37,7 +37,15 @@ namespace EasyBuy_BLL
 
         public int DeleteUser(string deletStaffID)
         {
-            return new StfInformationServer().DeletUser(deletStaffID);
+            int flag1,flag2;
+            int id = Convert.ToInt32(deletStaffID);
+            flag2 = new StaffSalaryManager().DeleteUser(id);
+            flag1 = new StfInformationServer().DeletUser(deletStaffID);
+            if (flag1 + flag2 > 0)
+            {
+                return 1;
+            }
+            return 0;
         }
         public int UpdataStaffInfo(StaffInformation staff)
         {

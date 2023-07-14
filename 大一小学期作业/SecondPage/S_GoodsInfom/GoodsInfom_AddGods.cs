@@ -2,6 +2,7 @@
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Mask;
 using DevExpress.XtraMap;
+using EasyBuy.SecondPage.S_GoodsInfom;
 using EasyBuy_BLL;
 using EasyBuy_Model;
 using System;
@@ -16,52 +17,41 @@ using System.Windows.Forms;
 
 namespace EasyBuy.SecondPage
 {
-    public partial class GoodsInfom_ChangeInfom : DevExpress.XtraEditors.DirectXForm
+    public partial class GoodsInfom_AddGods : DevExpress.XtraEditors.DirectXForm
     {
         bool passwdflag = false;
         Control mainControl;
         string userGroup;
 
 
-        public GoodsInfom_ChangeInfom(Control mainControl)
+        public GoodsInfom_AddGods(Control mainControl)
         {
             InitializeComponent();
             this.mainControl = mainControl;
 
             List<string> dataList = new List<string>();
 
-            cbType.Properties.Items.AddRange(dataList.ToArray());
 
         }
 
 
-        //private void btnAddConfirm_Click(object sender, EventArgs e)
-        //{
+        private void btnAddConfirm_Click(object sender, EventArgs e)
+        {
 
-        //    if (tbParentID.Text == string.Empty)
-        //    {
-        //        tbParentID.Text = "0";
-        //        tbParentName.Text = "商品分类";
-        //    }
-        //    if (ClassName.Text.Trim() == string.Empty)
-        //    {
-        //        Common.ShowError("请输入分类名称!");
-        //        return;
-        //    }
 
-        //    try
-        //    {
-        //        new GoodsClassManagers().Add(tbParentID.Text, ClassName.Text.Trim(), tbUserDescribe.Text,DateTime.Now.ToString());
-        //        Common.ShowInfo("添加成功");
-        //        mainControl.gClass_Refresh();
-        //        this.Close();
-        //    }
-        //    catch (Exception exp)
-        //    {
-        //        Common.ShowError("增加失败: " + exp.Message);
-        //    }
+            try
+            {
+                new GoodsInfomManager().Add(tbName.Text, tbType.Text.Trim(), tbLocation.Text, cbTime.Text, Convert.ToInt32(tbRepoertory.Text), cbSupplier.Text,Convert.ToSingle(tbMoney.Text), tbDescribe.Text,DateTime.Now.ToString());
+                Common.ShowInfo("添加成功");
+                mainControl.GInform_RefreshData();
+                this.Close();
+            }
+            catch (Exception exp)
+            {
+                Common.ShowError("增加失败: " + exp.Message);
+            }
 
-        //}
+        }
         private void TextClear()
         {
 
@@ -115,9 +105,13 @@ namespace EasyBuy.SecondPage
 
         }
 
-        private void btnAddConfirm_Click(object sender, EventArgs e)
+        private void TypeMore_Click(object sender, EventArgs e)
         {
-
+            GoodsInfom_TypeSelect_Form type = new GoodsInfom_TypeSelect_Form();
+            type.ShowDialog();
+            tbType.Text=Common.gInfom_SelectedType;
         }
+
+
     }
 }

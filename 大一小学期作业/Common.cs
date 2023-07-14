@@ -9,6 +9,15 @@ namespace EasyBuy
 {
     public class Common
     {
+        //传递变量
+        public static string gInfom_SelectedType ;
+
+
+
+
+
+
+
         //显示错误信息
         public static void ShowError(string msg)
         {

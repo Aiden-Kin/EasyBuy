@@ -16,7 +16,7 @@ namespace EasyBuy_DAL
             foreach (DataRow row in dt.Rows)
             {
                 GoodsInfom goods = new GoodsInfom();
-                goods.ID = row["ID"].ToString();
+                goods.ID = Convert.ToInt32(row["ID"].ToString());
                 goods.Name = row["Name"].ToString();
                 goods.Class = row["Class"].ToString();
                 goods.Location = row["Location"].ToString();
@@ -71,6 +71,12 @@ namespace EasyBuy_DAL
             string sqlStr = String.Format("UPDATE tblGoodsInfom SET Name = '{0}', Class = '{1}', Location = '{2}', ProductDate = '{3}', Repertory = {4}, Supplier = '{5}', Price = {6}, Remark = '{7}', AddTime = '{8}' WHERE ID = '{9}' ",
                 goods.Name, goods.Class, goods.Location, goods.ProductDate, goods.Repertory, goods.Supplier, goods.Price, goods.Remark, goods.AddTime, goods.ID);
             SqlHelper.ExecuteNonQuery(sqlStr);
+        }
+
+        public void UpRepodate(string id, string repo)
+        {
+            string sql = String.Format("UPDATE tblGoodsInfom set Repertory ={0} WHERE ID ={1} ", repo, id);
+            SqlHelper.ExecuteNonQuery(sql);
         }
     }
 }

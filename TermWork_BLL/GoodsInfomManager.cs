@@ -80,7 +80,7 @@ namespace EasyBuy_BLL
         private GoodsInfom GetModel(int id, string name, string className, string location, string productDate, int repertory, string supplier, float price, string remark, string addTime)
         {
             GoodsInfom goods = new GoodsInfom();
-            goods.ID = id.ToString();
+            goods.ID = id;
             goods.Name = name;
             goods.Class = className;
             goods.Location = location;
@@ -93,15 +93,11 @@ namespace EasyBuy_BLL
             return goods;
         }
 
-        public void ChangeInfo(string id, string name, string className, string location, string productDate, int repertory, string supplier, float price, string remark, string addTime)
+        public void ChangeInfo(int id, string name, string className, string location, string productDate, int repertory, string supplier, float price, string remark, string addTime)
         {
             ValidateInfo(name, className, location, productDate, repertory, supplier, price);
-            int idInt;
-            if (!Int32.TryParse(id, out idInt))
-            {
-                throw new Exception("编号不正确!");
-            }
-            new GoodsInfomServer().ChangeInfo(GetModel(idInt, name, className, location, productDate, repertory, supplier, price, remark, addTime));
+
+            new GoodsInfomServer().ChangeInfo(GetModel(id, name, className, location, productDate, repertory, supplier, price, remark, addTime));
         }
 
         public void Add(string name, string className, string location, string productDate, int repertory, string supplier, float price, string remark, string addTime)
@@ -119,6 +115,11 @@ namespace EasyBuy_BLL
                 throw new Exception("编号不正确!");
             }
             new GoodsInfomServer().Delete(idInt);
+        }
+
+        public void UpRepodate(string id,string repo)
+        {
+            new GoodsInfomServer().UpRepodate(id, repo);
         }
     }
 

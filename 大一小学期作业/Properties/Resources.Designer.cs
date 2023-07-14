@@ -263,6 +263,16 @@ namespace EasyBuy.Properties {
         /// <summary>
         ///   查找 DevExpress.Utils.Svg.SvgImage 类型的本地化资源。
         /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage 更多 {
+            get {
+                object obj = ResourceManager.GetObject("更多", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 DevExpress.Utils.Svg.SvgImage 类型的本地化资源。
+        /// </summary>
         internal static DevExpress.Utils.Svg.SvgImage 注册 {
             get {
                 object obj = ResourceManager.GetObject("注册", resourceCulture);

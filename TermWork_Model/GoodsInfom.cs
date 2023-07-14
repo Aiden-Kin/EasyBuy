@@ -8,7 +8,7 @@ namespace EasyBuy_Model
 {
     public class GoodsInfom
     {
-        public string ID { get; set; }
+        public int ID { get; set; }
         public string Name { get; set; }
         public string Class { get; set; }
         public string Location { get; set; }

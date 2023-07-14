@@ -1,6 +1,6 @@
 ﻿namespace EasyBuy.SecondPage
 {
-    partial class GoodsInfom_ChangeInfom
+    partial class GoodsInfom_AddGods
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GoodsInfom_ChangeInfom));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GoodsInfom_AddGods));
             this.directXFormContainerControl1 = new DevExpress.XtraEditors.DirectXFormContainerControl();
             this.xtraScrollableControl1 = new DevExpress.XtraEditors.XtraScrollableControl();
-            this.cbType = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.TypeMore = new DevExpress.XtraEditors.SimpleButton();
             this.tbDescribe = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
@@ -43,6 +43,7 @@
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.tbRepoertory = new DevExpress.XtraEditors.TextEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.tbType = new DevExpress.XtraEditors.TextEdit();
             this.tbName = new DevExpress.XtraEditors.TextEdit();
             this.tbLocation = new DevExpress.XtraEditors.TextEdit();
             this.cbTime = new DevExpress.XtraEditors.DateEdit();
@@ -54,10 +55,10 @@
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.directXFormContainerControl1.SuspendLayout();
             this.xtraScrollableControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cbType.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbDescribe.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMoney.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbRepoertory.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbType.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbLocation.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbTime.Properties)).BeginInit();
@@ -81,7 +82,7 @@
             // 
             // xtraScrollableControl1
             // 
-            this.xtraScrollableControl1.Controls.Add(this.cbType);
+            this.xtraScrollableControl1.Controls.Add(this.TypeMore);
             this.xtraScrollableControl1.Controls.Add(this.tbDescribe);
             this.xtraScrollableControl1.Controls.Add(this.labelControl4);
             this.xtraScrollableControl1.Controls.Add(this.labelControl6);
@@ -93,6 +94,7 @@
             this.xtraScrollableControl1.Controls.Add(this.labelControl7);
             this.xtraScrollableControl1.Controls.Add(this.tbRepoertory);
             this.xtraScrollableControl1.Controls.Add(this.labelControl8);
+            this.xtraScrollableControl1.Controls.Add(this.tbType);
             this.xtraScrollableControl1.Controls.Add(this.tbName);
             this.xtraScrollableControl1.Controls.Add(this.tbLocation);
             this.xtraScrollableControl1.Controls.Add(this.cbTime);
@@ -102,15 +104,15 @@
             this.xtraScrollableControl1.Size = new System.Drawing.Size(462, 525);
             this.xtraScrollableControl1.TabIndex = 16;
             // 
-            // cbType
+            // TypeMore
             // 
-            this.cbType.Location = new System.Drawing.Point(181, 81);
-            this.cbType.Name = "cbType";
-            this.cbType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cbType.Size = new System.Drawing.Size(172, 28);
-            this.cbType.TabIndex = 2;
+            this.TypeMore.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.更多;
+            this.TypeMore.ImageOptions.SvgImageSize = new System.Drawing.Size(18, 18);
+            this.TypeMore.Location = new System.Drawing.Point(329, 82);
+            this.TypeMore.Name = "TypeMore";
+            this.TypeMore.Size = new System.Drawing.Size(24, 26);
+            this.TypeMore.TabIndex = 13;
+            this.TypeMore.Click += new System.EventHandler(this.TypeMore_Click);
             // 
             // tbDescribe
             // 
@@ -226,6 +228,17 @@
             this.labelControl8.TabIndex = 12;
             this.labelControl8.Text = "单价(元)";
             // 
+            // tbType
+            // 
+            this.tbType.Location = new System.Drawing.Point(181, 82);
+            this.tbType.Name = "tbType";
+            this.tbType.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.tbType.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
+            this.tbType.Properties.Appearance.Options.UseBackColor = true;
+            this.tbType.Properties.Appearance.Options.UseFont = true;
+            this.tbType.Size = new System.Drawing.Size(142, 26);
+            this.tbType.TabIndex = 1;
+            // 
             // tbName
             // 
             this.tbName.Location = new System.Drawing.Point(180, 23);
@@ -281,6 +294,10 @@
             this.cbSupplier.Properties.Appearance.Options.UseFont = true;
             this.cbSupplier.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbSupplier.Properties.Items.AddRange(new object[] {
+            "华为科技有限公司",
+            "小米科技有限公司",
+            "德芙"});
             this.cbSupplier.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cbSupplier.Size = new System.Drawing.Size(172, 26);
             this.cbSupplier.TabIndex = 6;
@@ -351,7 +368,7 @@
             this.btnCancel.Text = "取消";
             this.btnCancel.Click += new System.EventHandler(this.Exit_Click);
             // 
-            // GoodsInfom_ChangeInfom
+            // GoodsInfom_AddGods
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ChildControls.Add(this.directXFormContainerControl1);
@@ -359,16 +376,16 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.Image = global::EasyBuy.Properties.Resources.icon;
-            this.Name = "GoodsInfom_ChangeInfom";
+            this.Name = "GoodsInfom_AddGods";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "管理员用户添加";
             this.directXFormContainerControl1.ResumeLayout(false);
             this.xtraScrollableControl1.ResumeLayout(false);
             this.xtraScrollableControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cbType.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbDescribe.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMoney.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbRepoertory.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbType.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbLocation.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbTime.Properties.CalendarTimeProperties)).EndInit();
@@ -403,8 +420,9 @@
         private DevExpress.XtraEditors.TextEdit tbName;
         private DevExpress.XtraEditors.XtraScrollableControl xtraScrollableControl1;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.ComboBoxEdit cbType;
         private DevExpress.XtraEditors.DateEdit cbTime;
+        private DevExpress.XtraEditors.TextEdit tbType;
+        private DevExpress.XtraEditors.SimpleButton TypeMore;
         private DevExpress.XtraEditors.ComboBoxEdit cbSupplier;
     }
 }

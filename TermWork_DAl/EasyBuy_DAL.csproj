@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="GoodsClassServer.cs" />
     <Compile Include="GoodsInfomServer.cs" />
+    <Compile Include="StaffSarlaryServer.cs" />
     <Compile Include="StfInformationServer.cs" />
     <Compile Include="SupplierServer.cs" />
     <Compile Include="UserListServer.cs" />
