@@ -15,8 +15,10 @@ namespace EasyBuy_Model
         public string ProductDate { get; set; }
         public int Repertory { get; set; }
         public string Supplier { get; set; }
+        public float Discount { get; set; }
         public float Price { get; set; }
         public string Remark { get; set; }
         public string AddTime { get; set;}
+        public float DPrice { get; set; }
     }
 }

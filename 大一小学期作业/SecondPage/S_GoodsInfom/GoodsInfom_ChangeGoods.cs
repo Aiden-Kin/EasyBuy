@@ -23,6 +23,22 @@ namespace EasyBuy.SecondPage
         Control mainControl;
         int ID;
 
+        public GoodsInfom_ChangeGoods( GoodsInfom sp)
+        {
+            InitializeComponent();
+
+            tbName.Text = sp.Name;
+            tbType.Text = sp.Class;
+            tbLocation.Text = sp.Location;
+            cbTime.EditValue = Convert.ToDateTime(sp.ProductDate);
+            tbRepoertory.Text = sp.Repertory.ToString();
+            cbSupplier.Text = sp.Supplier;
+            tbMoney.Text = sp.Price.ToString();
+            tbDescribe.Text = sp.Remark;
+            ID = sp.ID;
+
+
+        }
 
         public GoodsInfom_ChangeGoods(Control mainControl,GoodsInfom sp)
         {
@@ -49,7 +65,7 @@ namespace EasyBuy.SecondPage
 
             try
             {
-                new GoodsInfomManager().ChangeInfo(ID,tbName.Text, tbType.Text.Trim(), tbLocation.Text, cbTime.Text, Convert.ToInt32(tbRepoertory.Text), cbSupplier.Text,Convert.ToSingle(tbMoney.Text), tbDescribe.Text,DateTime.Now.ToString());
+                new GoodsInfomManager().ChangeInfo(ID,tbName.Text, tbType.Text.Trim(), tbLocation.Text, cbTime.Text, Convert.ToInt32(tbRepoertory.Text), cbSupplier.Text, 1, Convert.ToSingle(tbMoney.Text), tbDescribe.Text,DateTime.Now.ToString());
                 Common.ShowInfo("修改成功");
                 mainControl.GInform_RefreshData();
                 this.Close();

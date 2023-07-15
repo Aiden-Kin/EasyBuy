@@ -23,9 +23,11 @@ namespace EasyBuy_DAL
                 goods.ProductDate = row["ProductDate"].ToString();
                 goods.Repertory = Convert.ToInt32(row["Repertory"]);
                 goods.Supplier = row["Supplier"].ToString();
+                goods.Discount = Convert.ToSingle(row["Discount"]);
                 goods.Price = Convert.ToSingle(row["Price"]);
                 goods.Remark = row["Remark"].ToString();
                 goods.AddTime = row["AddTime"].ToString();
+                goods.DPrice = Convert.ToSingle(row["DPrice"]);
                 list.Add(goods);
             }
             return list;
@@ -55,8 +57,8 @@ namespace EasyBuy_DAL
 
         public void Add(GoodsInfom goods)
         {
-            string sqlStr = string.Format("INSERT INTO tblGoodsInfom (Name, Class, Location, ProductDate, Repertory, Supplier, Price, Remark, AddTime) VALUES ('{0}', '{1}', '{2}', '{3}', {4}, '{5}', {6}, '{7}', '{8}') ",
-                goods.Name, goods.Class, goods.Location, goods.ProductDate, goods.Repertory, goods.Supplier, goods.Price, goods.Remark, goods.AddTime);
+            string sqlStr = string.Format("INSERT INTO tblGoodsInfom (Name, Class, Location, ProductDate, Repertory, Supplier, Price, Remark, AddTime) VALUES ('{0}', '{1}', '{2}', '{3}', {4}, '{5}', {6}, {7}, '{8}','{9}') ",
+                goods.Name, goods.Class, goods.Location, goods.ProductDate, goods.Repertory, goods.Supplier,goods.Discount, goods.Price, goods.Remark, goods.AddTime);
             SqlHelper.ExecuteNonQuery(sqlStr);
         }
 
@@ -68,14 +70,21 @@ namespace EasyBuy_DAL
 
         public void ChangeInfo(GoodsInfom goods)
         {
-            string sqlStr = String.Format("UPDATE tblGoodsInfom SET Name = '{0}', Class = '{1}', Location = '{2}', ProductDate = '{3}', Repertory = {4}, Supplier = '{5}', Price = {6}, Remark = '{7}', AddTime = '{8}' WHERE ID = '{9}' ",
-                goods.Name, goods.Class, goods.Location, goods.ProductDate, goods.Repertory, goods.Supplier, goods.Price, goods.Remark, goods.AddTime, goods.ID);
+            string sqlStr = String.Format("UPDATE tblGoodsInfom SET Name = '{0}', Class = '{1}', Location = '{2}', ProductDate = '{3}', Repertory = {4}, Supplier = '{5}', Price = {6}, Remark = '{7}', AddTime = '{8}',Discount = {9} WHERE ID = '{10}' ",
+                goods.Name, goods.Class, goods.Location, goods.ProductDate, goods.Repertory, goods.Supplier, goods.Price, goods.Remark, goods.AddTime,goods.Discount, goods.ID);
             SqlHelper.ExecuteNonQuery(sqlStr);
         }
 
         public void UpRepodate(string id, string repo)
         {
             string sql = String.Format("UPDATE tblGoodsInfom set Repertory ={0} WHERE ID ={1} ", repo, id);
+            SqlHelper.ExecuteNonQuery(sql);
+        }
+
+
+        public void UpPrice(string id,  string discount)
+        {
+            string sql = String.Format("UPDATE tblGoodsInfom set Discount ={0} WHERE ID ={1} ", discount, id);
             SqlHelper.ExecuteNonQuery(sql);
         }
     }

@@ -1,4 +1,5 @@
-﻿using DevExpress.LookAndFeel;
+﻿using CampusTradingSystemofNEPU.AdminForms;
+using DevExpress.LookAndFeel;
 using DevExpress.Skins;
 using DevExpress.UserSkins;
 using DevExpress.XtraEditors;
@@ -28,7 +29,7 @@ namespace EasyBuy
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Control());
+            Application.Run(new uiHead());
         }
     }
 }

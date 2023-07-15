@@ -77,7 +77,7 @@ namespace EasyBuy_BLL
             }
         }
 
-        private GoodsInfom GetModel(int id, string name, string className, string location, string productDate, int repertory, string supplier, float price, string remark, string addTime)
+        private GoodsInfom GetModel(int id, string name, string className, string location, string productDate, int repertory, string supplier,float discount, float price, string remark, string addTime)
         {
             GoodsInfom goods = new GoodsInfom();
             goods.ID = id;
@@ -87,24 +87,25 @@ namespace EasyBuy_BLL
             goods.ProductDate = productDate;
             goods.Repertory = repertory;
             goods.Supplier = supplier;
+            goods.Discount = discount;
             goods.Price = price;
             goods.Remark = remark;
             goods.AddTime = addTime;
             return goods;
         }
 
-        public void ChangeInfo(int id, string name, string className, string location, string productDate, int repertory, string supplier, float price, string remark, string addTime)
+        public void ChangeInfo(int id, string name, string className, string location, string productDate, int repertory, string supplier,float discount, float price, string remark, string addTime)
         {
             ValidateInfo(name, className, location, productDate, repertory, supplier, price);
 
-            new GoodsInfomServer().ChangeInfo(GetModel(id, name, className, location, productDate, repertory, supplier, price, remark, addTime));
+            new GoodsInfomServer().ChangeInfo(GetModel(id, name, className, location, productDate, repertory, supplier,discount, price, remark, addTime));
         }
 
-        public void Add(string name, string className, string location, string productDate, int repertory, string supplier, float price, string remark, string addTime)
+        public void Add(string name, string className, string location, string productDate, int repertory, string supplier,float discount, float price, string remark, string addTime)
         {
             ValidateInfo(name, className, location, productDate, repertory, supplier, price);
             int id = 0;
-            new GoodsInfomServer().Add(GetModel(id, name, className, location, productDate, repertory, supplier, price, remark, addTime));
+            new GoodsInfomServer().Add(GetModel(id, name, className, location, productDate, repertory, supplier,discount, price, remark, addTime));
         }
 
         public void Delete(string id)
@@ -120,6 +121,11 @@ namespace EasyBuy_BLL
         public void UpRepodate(string id,string repo)
         {
             new GoodsInfomServer().UpRepodate(id, repo);
+        }
+
+        public void UpPrice(string id,string discount)
+        {
+            new GoodsInfomServer().UpPrice(id, discount);
         }
     }
 

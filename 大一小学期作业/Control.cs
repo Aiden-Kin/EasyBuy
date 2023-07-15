@@ -609,7 +609,7 @@ namespace EasyBuy
 
         private void gClass_btAdd_Click(object sender, EventArgs e)
         {
-            GoodsClass_Add goodsClass_Add = new GoodsClass_Add(this,gClass_tbClassID.Text, gClass_tbClassName.Text);
+            GoodsClass_Add goodsClass_Add = new GoodsClass_Add(this, gClass_tbClassID.Text, gClass_tbClassName.Text);
             goodsClass_Add.Show();
         }
 
@@ -636,7 +636,7 @@ namespace EasyBuy
                 }
 
             }
-            GoodsClass_Modify goodsClass_modify = new GoodsClass_Modify(this, gClass_tbParentID.Text, gClass_tbParentName.Text,gClass_tbClassID.Text,gClass_tbClassName.Text, gClass_describe);
+            GoodsClass_Modify goodsClass_modify = new GoodsClass_Modify(this, gClass_tbParentID.Text, gClass_tbParentName.Text, gClass_tbClassID.Text, gClass_tbClassName.Text, gClass_describe);
             goodsClass_modify.Show();
         }
 
@@ -670,11 +670,11 @@ namespace EasyBuy
             string parentName = str.Split()[2];
 
 
-                gClass_tbParentID.Text = parentId;
-                gClass_tbParentName.Text = parentName;
-                gClass_tbClassID.Text = id;
-                gClass_tbClassName.Text = node.Text;
-            
+            gClass_tbParentID.Text = parentId;
+            gClass_tbParentName.Text = parentName;
+            gClass_tbClassID.Text = id;
+            gClass_tbClassName.Text = node.Text;
+
 
         }
 
@@ -700,14 +700,14 @@ namespace EasyBuy
             {
                 int currentID = Convert.ToInt32(row.Cells[0].Value);
 
-                 if (currentID == parentID)
+                if (currentID == parentID)
                 {
-                    gClass_tbParentName.Text = row.Cells[1].Value.ToString(); 
-                   
+                    gClass_tbParentName.Text = row.Cells[1].Value.ToString();
+
                 }
                 else if (parentID == 0)
                 {
-                    gClass_tbParentName.Text = "商品类型"; 
+                    gClass_tbParentName.Text = "商品类型";
                     break;
                 }
             }
@@ -774,7 +774,7 @@ namespace EasyBuy
             sp.Remark = SInfo_dategridview.SelectedCells[7].Value.ToString();
 
 
-            Supplier_Modify add = new Supplier_Modify(this,sp);
+            Supplier_Modify add = new Supplier_Modify(this, sp);
             add.Show();
         }
 
@@ -840,7 +840,7 @@ namespace EasyBuy
 
         private void gInfom_btChangeInfom_Click(object sender, EventArgs e)
         {
-            GoodsInfom  sp = new GoodsInfom();
+            GoodsInfom sp = new GoodsInfom();
 
             sp.ID = Convert.ToInt32(gInfom_dategridview.SelectedCells[0].Value);
             sp.Name = gInfom_dategridview.SelectedCells[1].Value.ToString();
@@ -889,6 +889,19 @@ namespace EasyBuy
             GoodsInfom_RepertoryForm gp = new GoodsInfom_RepertoryForm(this, gInfom_ID, gInfom_Name, gInfom_Repor);
             gp.Show();
         }
+
+        private void gInfom_btrDiscount_Click(object sender, EventArgs e)
+        {
+
+            string gInfom_ID = gInfom_dategridview.SelectedCells[0].Value.ToString();
+            string gInfom_Name = gInfom_dategridview.SelectedCells[1].Value.ToString();
+            string gInfom_Repor = gInfom_dategridview.SelectedCells[8].Value.ToString();
+
+            GoodsInfom_DiscountForm ds = new GoodsInfom_DiscountForm(this, gInfom_ID, gInfom_Name, gInfom_Repor);
+            ds.Show();
+        }
+
+
         #endregion
 
         #region 员工工资区域
@@ -936,6 +949,44 @@ namespace EasyBuy
                 new StaffSalaryManager().UpdateStaffInfo(staff);
             }
         }
+        #endregion
+
+        #region 订单管理区域
+        //公共函数
+        public void OrderL_RefreshData()
+        {
+            List<OrderList> oL = new List<OrderList>();
+            try
+            {
+                oL = new OrderListManager().GetList();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            OrderL_dataGridView.AutoGenerateColumns = false;
+            OrderL_dataGridView.DataSource = oL;
+        }
+
+
+
+
+
+        //控件区
+
+
+        private void OrderL_AddOrder_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+
+
+
+
     }
-            #endregion
+     #endregion
 }

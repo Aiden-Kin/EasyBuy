@@ -229,12 +229,32 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.xtp_SuperUserControl = new DevExpress.XtraTab.XtraTabPage();
+            this.panelControl8 = new DevExpress.XtraEditors.PanelControl();
+            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.OrderL_SelectOrder = new DevExpress.XtraEditors.SimpleButton();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.OrderL_ChangeOrder = new DevExpress.XtraEditors.SimpleButton();
+            this.OrderL_AddOrder = new DevExpress.XtraEditors.SimpleButton();
+            this.OrderL_DeleteOrder = new DevExpress.XtraEditors.SimpleButton();
+            this.OrderL_dataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.xtp_GoodsInfom = new DevExpress.XtraTab.XtraTabPage();
             this.panelControl7 = new DevExpress.XtraEditors.PanelControl();
             this.gInfom_cbSelect = new DevExpress.XtraEditors.ComboBoxEdit();
             this.gInfom_Search = new DevExpress.XtraEditors.SimpleButton();
             this.gInfom_tbSelectInfom = new DevExpress.XtraEditors.TextEdit();
             this.gInfom_btNewGood = new DevExpress.XtraEditors.SimpleButton();
+            this.gInfom_btrDiscount = new DevExpress.XtraEditors.SimpleButton();
             this.gInfom_btrepetoryManage = new DevExpress.XtraEditors.SimpleButton();
             this.gInfom_btChangeInfom = new DevExpress.XtraEditors.SimpleButton();
             this.gInfom_btDelete = new DevExpress.XtraEditors.SimpleButton();
@@ -247,6 +267,8 @@
             this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.xtp_StaffInformation = new DevExpress.XtraTab.XtraTabPage();
@@ -373,6 +395,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.SInfo_cbCelect.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SInfo_tbSelectInfom.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SInfo_dategridview)).BeginInit();
+            this.xtp_SuperUserControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl8)).BeginInit();
+            this.panelControl8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OrderL_dataGridView)).BeginInit();
             this.xtp_GoodsInfom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl7)).BeginInit();
             this.panelControl7.SuspendLayout();
@@ -798,7 +826,7 @@
             // 
             // 销售记录
             // 
-            this.销售记录.Caption = "barButtonItem8";
+            this.销售记录.Caption = "订单信息";
             this.销售记录.Id = 48;
             this.销售记录.Name = "销售记录";
             // 
@@ -1054,7 +1082,9 @@
             // 
             // gClass_Modify
             // 
+            this.gClass_Modify.Appearance.BackColor = System.Drawing.Color.SteelBlue;
             this.gClass_Modify.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.gClass_Modify.Appearance.Options.UseBackColor = true;
             this.gClass_Modify.Appearance.Options.UseFont = true;
             this.gClass_Modify.Location = new System.Drawing.Point(855, 150);
             this.gClass_Modify.Name = "gClass_Modify";
@@ -1065,11 +1095,13 @@
             // 
             // gClass_btAdd
             // 
+            this.gClass_btAdd.Appearance.BackColor = System.Drawing.Color.CadetBlue;
             this.gClass_btAdd.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.gClass_btAdd.Appearance.Options.UseBackColor = true;
             this.gClass_btAdd.Appearance.Options.UseFont = true;
-            this.gClass_btAdd.Location = new System.Drawing.Point(613, 150);
+            this.gClass_btAdd.Location = new System.Drawing.Point(613, 153);
             this.gClass_btAdd.Name = "gClass_btAdd";
-            this.gClass_btAdd.Size = new System.Drawing.Size(148, 40);
+            this.gClass_btAdd.Size = new System.Drawing.Size(148, 37);
             this.gClass_btAdd.TabIndex = 9;
             this.gClass_btAdd.Text = "增加";
             this.gClass_btAdd.Click += new System.EventHandler(this.gClass_btAdd_Click);
@@ -1105,7 +1137,7 @@
             this.gClass_datagridview.RowHeadersVisible = false;
             this.gClass_datagridview.RowTemplate.Height = 23;
             this.gClass_datagridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gClass_datagridview.Size = new System.Drawing.Size(968, 367);
+            this.gClass_datagridview.Size = new System.Drawing.Size(1166, 367);
             this.gClass_datagridview.TabIndex = 5;
             this.gClass_datagridview.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gClass_datagridview_CellClick);
             // 
@@ -1150,7 +1182,7 @@
             this.xtp_Supplier.Controls.Add(this.SInfo_dategridview);
             this.xtp_Supplier.Margin = new System.Windows.Forms.Padding(5);
             this.xtp_Supplier.Name = "xtp_Supplier";
-            this.xtp_Supplier.Size = new System.Drawing.Size(1367, 605);
+            this.xtp_Supplier.Size = new System.Drawing.Size(1389, 605);
             this.xtp_Supplier.Text = "供货商信息";
             this.xtp_Supplier.VisibleChanged += new System.EventHandler(this.xtp_Supplier_VisibleChanged);
             // 
@@ -1171,9 +1203,11 @@
             // SInfo_cbCelect
             // 
             this.SInfo_cbCelect.EditValue = "筛选条件";
-            this.SInfo_cbCelect.Location = new System.Drawing.Point(745, 35);
+            this.SInfo_cbCelect.Location = new System.Drawing.Point(775, 36);
             this.SInfo_cbCelect.Name = "SInfo_cbCelect";
+            this.SInfo_cbCelect.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
             this.SInfo_cbCelect.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.SInfo_cbCelect.Properties.Appearance.Options.UseFont = true;
             this.SInfo_cbCelect.Properties.Appearance.Options.UseForeColor = true;
             this.SInfo_cbCelect.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1183,7 +1217,7 @@
             "联系人",
             "供货商编号"});
             this.SInfo_cbCelect.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.SInfo_cbCelect.Size = new System.Drawing.Size(103, 28);
+            this.SInfo_cbCelect.Size = new System.Drawing.Size(103, 30);
             this.SInfo_cbCelect.TabIndex = 25;
             // 
             // SInfo_tbSearch
@@ -1216,7 +1250,9 @@
             // 
             // SInfo_btAdd
             // 
+            this.SInfo_btAdd.Appearance.BackColor = System.Drawing.Color.CadetBlue;
             this.SInfo_btAdd.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.SInfo_btAdd.Appearance.Options.UseBackColor = true;
             this.SInfo_btAdd.Appearance.Options.UseFont = true;
             this.SInfo_btAdd.Location = new System.Drawing.Point(194, 28);
             this.SInfo_btAdd.Margin = new System.Windows.Forms.Padding(4);
@@ -1228,7 +1264,9 @@
             // 
             // SInfo_btModify
             // 
+            this.SInfo_btModify.Appearance.BackColor = System.Drawing.Color.SteelBlue;
             this.SInfo_btModify.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.SInfo_btModify.Appearance.Options.UseBackColor = true;
             this.SInfo_btModify.Appearance.Options.UseFont = true;
             this.SInfo_btModify.Location = new System.Drawing.Point(350, 28);
             this.SInfo_btModify.Margin = new System.Windows.Forms.Padding(4);
@@ -1292,7 +1330,7 @@
             this.SInfo_dategridview.RowHeadersVisible = false;
             this.SInfo_dategridview.RowTemplate.Height = 23;
             this.SInfo_dategridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.SInfo_dategridview.Size = new System.Drawing.Size(1328, 464);
+            this.SInfo_dategridview.Size = new System.Drawing.Size(1460, 464);
             this.SInfo_dategridview.TabIndex = 3;
             // 
             // Column1
@@ -1353,10 +1391,221 @@
             // 
             // xtp_SuperUserControl
             // 
+            this.xtp_SuperUserControl.Controls.Add(this.panelControl8);
+            this.xtp_SuperUserControl.Controls.Add(this.OrderL_dataGridView);
             this.xtp_SuperUserControl.Margin = new System.Windows.Forms.Padding(5);
             this.xtp_SuperUserControl.Name = "xtp_SuperUserControl";
             this.xtp_SuperUserControl.Size = new System.Drawing.Size(1389, 605);
-            this.xtp_SuperUserControl.Text = "未知";
+            this.xtp_SuperUserControl.Text = "订单管理";
+            // 
+            // panelControl8
+            // 
+            this.panelControl8.Controls.Add(this.comboBoxEdit1);
+            this.panelControl8.Controls.Add(this.OrderL_SelectOrder);
+            this.panelControl8.Controls.Add(this.textEdit2);
+            this.panelControl8.Controls.Add(this.OrderL_ChangeOrder);
+            this.panelControl8.Controls.Add(this.OrderL_AddOrder);
+            this.panelControl8.Controls.Add(this.OrderL_DeleteOrder);
+            this.panelControl8.Location = new System.Drawing.Point(25, 30);
+            this.panelControl8.Name = "panelControl8";
+            this.panelControl8.Size = new System.Drawing.Size(1343, 67);
+            this.panelControl8.TabIndex = 27;
+            // 
+            // comboBoxEdit1
+            // 
+            this.comboBoxEdit1.EditValue = "筛选条件";
+            this.comboBoxEdit1.Location = new System.Drawing.Point(820, 21);
+            this.comboBoxEdit1.Name = "comboBoxEdit1";
+            this.comboBoxEdit1.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.comboBoxEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.comboBoxEdit1.Properties.Appearance.Options.UseFont = true;
+            this.comboBoxEdit1.Properties.Appearance.Options.UseForeColor = true;
+            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit1.Properties.Items.AddRange(new object[] {
+            "名称",
+            "法人",
+            "联系人",
+            "供货商编号"});
+            this.comboBoxEdit1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.comboBoxEdit1.Size = new System.Drawing.Size(103, 30);
+            this.comboBoxEdit1.TabIndex = 28;
+            // 
+            // OrderL_SelectOrder
+            // 
+            this.OrderL_SelectOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.OrderL_SelectOrder.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.OrderL_SelectOrder.Appearance.Options.UseFont = true;
+            this.OrderL_SelectOrder.Location = new System.Drawing.Point(1204, 15);
+            this.OrderL_SelectOrder.Margin = new System.Windows.Forms.Padding(4);
+            this.OrderL_SelectOrder.Name = "OrderL_SelectOrder";
+            this.OrderL_SelectOrder.Size = new System.Drawing.Size(120, 36);
+            this.OrderL_SelectOrder.TabIndex = 26;
+            this.OrderL_SelectOrder.Text = "筛选";
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textEdit2.EditValue = "筛选内容";
+            this.textEdit2.Location = new System.Drawing.Point(930, 20);
+            this.textEdit2.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit2.MenuManager = this.ribbonControl1;
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.textEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.textEdit2.Properties.Appearance.Options.UseFont = true;
+            this.textEdit2.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit2.Size = new System.Drawing.Size(253, 30);
+            this.textEdit2.TabIndex = 27;
+            // 
+            // OrderL_ChangeOrder
+            // 
+            this.OrderL_ChangeOrder.Appearance.BackColor = System.Drawing.Color.SteelBlue;
+            this.OrderL_ChangeOrder.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.OrderL_ChangeOrder.Appearance.Options.UseBackColor = true;
+            this.OrderL_ChangeOrder.Appearance.Options.UseFont = true;
+            this.OrderL_ChangeOrder.Location = new System.Drawing.Point(190, 14);
+            this.OrderL_ChangeOrder.Margin = new System.Windows.Forms.Padding(4);
+            this.OrderL_ChangeOrder.Name = "OrderL_ChangeOrder";
+            this.OrderL_ChangeOrder.Size = new System.Drawing.Size(124, 37);
+            this.OrderL_ChangeOrder.TabIndex = 24;
+            this.OrderL_ChangeOrder.Text = "修改信息";
+            // 
+            // OrderL_AddOrder
+            // 
+            this.OrderL_AddOrder.Appearance.BackColor = System.Drawing.Color.CadetBlue;
+            this.OrderL_AddOrder.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.OrderL_AddOrder.Appearance.Options.UseBackColor = true;
+            this.OrderL_AddOrder.Appearance.Options.UseFont = true;
+            this.OrderL_AddOrder.Location = new System.Drawing.Point(39, 15);
+            this.OrderL_AddOrder.Margin = new System.Windows.Forms.Padding(4);
+            this.OrderL_AddOrder.Name = "OrderL_AddOrder";
+            this.OrderL_AddOrder.Size = new System.Drawing.Size(125, 37);
+            this.OrderL_AddOrder.TabIndex = 23;
+            this.OrderL_AddOrder.Text = "新增订单";
+            this.OrderL_AddOrder.Click += new System.EventHandler(this.OrderL_AddOrder_Click);
+            // 
+            // OrderL_DeleteOrder
+            // 
+            this.OrderL_DeleteOrder.Appearance.BackColor = System.Drawing.Color.Brown;
+            this.OrderL_DeleteOrder.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.OrderL_DeleteOrder.Appearance.Options.UseBackColor = true;
+            this.OrderL_DeleteOrder.Appearance.Options.UseFont = true;
+            this.OrderL_DeleteOrder.CausesValidation = false;
+            this.OrderL_DeleteOrder.Location = new System.Drawing.Point(345, 14);
+            this.OrderL_DeleteOrder.Margin = new System.Windows.Forms.Padding(4);
+            this.OrderL_DeleteOrder.Name = "OrderL_DeleteOrder";
+            this.OrderL_DeleteOrder.Size = new System.Drawing.Size(117, 34);
+            this.OrderL_DeleteOrder.TabIndex = 22;
+            this.OrderL_DeleteOrder.TabStop = false;
+            this.OrderL_DeleteOrder.Text = "删除订单";
+            // 
+            // OrderL_dataGridView
+            // 
+            this.OrderL_dataGridView.AllowUserToAddRows = false;
+            this.OrderL_dataGridView.AllowUserToDeleteRows = false;
+            this.OrderL_dataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.OrderL_dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.OrderL_dataGridView.BackgroundColor = System.Drawing.Color.White;
+            this.OrderL_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.OrderL_dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.Column11,
+            this.Column12,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn30,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn4});
+            this.OrderL_dataGridView.Location = new System.Drawing.Point(17, 117);
+            this.OrderL_dataGridView.Margin = new System.Windows.Forms.Padding(5);
+            this.OrderL_dataGridView.Name = "OrderL_dataGridView";
+            this.OrderL_dataGridView.ReadOnly = true;
+            this.OrderL_dataGridView.RowHeadersVisible = false;
+            this.OrderL_dataGridView.RowTemplate.Height = 23;
+            this.OrderL_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.OrderL_dataGridView.Size = new System.Drawing.Size(1483, 475);
+            this.OrderL_dataGridView.TabIndex = 6;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "订单编号";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "订单顾客";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "顾客联系电话";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "顾客联系地址";
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Price";
+            this.dataGridViewTextBoxColumn8.HeaderText = "商品编号";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "Remark";
+            this.dataGridViewTextBoxColumn30.HeaderText = "商品名称";
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            this.dataGridViewTextBoxColumn30.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Supplier";
+            this.dataGridViewTextBoxColumn7.HeaderText = "商品价格";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Repertory";
+            this.dataGridViewTextBoxColumn6.HeaderText = "商品数量";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Class";
+            this.dataGridViewTextBoxColumn3.HeaderText = "订单支付方式";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "ProductDate";
+            this.dataGridViewTextBoxColumn5.HeaderText = "订单总价";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Location";
+            this.dataGridViewTextBoxColumn4.HeaderText = "订单交易时间";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // xtp_GoodsInfom
             // 
@@ -1375,6 +1624,7 @@
             this.panelControl7.Controls.Add(this.gInfom_Search);
             this.panelControl7.Controls.Add(this.gInfom_tbSelectInfom);
             this.panelControl7.Controls.Add(this.gInfom_btNewGood);
+            this.panelControl7.Controls.Add(this.gInfom_btrDiscount);
             this.panelControl7.Controls.Add(this.gInfom_btrepetoryManage);
             this.panelControl7.Controls.Add(this.gInfom_btChangeInfom);
             this.panelControl7.Controls.Add(this.gInfom_btDelete);
@@ -1386,19 +1636,21 @@
             // gInfom_cbSelect
             // 
             this.gInfom_cbSelect.EditValue = "筛选条件";
-            this.gInfom_cbSelect.Location = new System.Drawing.Point(798, 35);
+            this.gInfom_cbSelect.Location = new System.Drawing.Point(819, 33);
             this.gInfom_cbSelect.Name = "gInfom_cbSelect";
+            this.gInfom_cbSelect.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
             this.gInfom_cbSelect.Properties.Appearance.ForeColor = System.Drawing.Color.Gray;
+            this.gInfom_cbSelect.Properties.Appearance.Options.UseFont = true;
             this.gInfom_cbSelect.Properties.Appearance.Options.UseForeColor = true;
             this.gInfom_cbSelect.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.gInfom_cbSelect.Properties.Items.AddRange(new object[] {
-            "名称",
-            "法人",
-            "联系人",
-            "供货商编号"});
+            "类别",
+            "供货商",
+            "商品编号",
+            "商品名称"});
             this.gInfom_cbSelect.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.gInfom_cbSelect.Size = new System.Drawing.Size(103, 28);
+            this.gInfom_cbSelect.Size = new System.Drawing.Size(103, 30);
             this.gInfom_cbSelect.TabIndex = 25;
             // 
             // gInfom_Search
@@ -1442,13 +1694,27 @@
             this.gInfom_btNewGood.Text = "商品上新";
             this.gInfom_btNewGood.Click += new System.EventHandler(this.gInfom_btNewGood_Click);
             // 
+            // gInfom_btrDiscount
+            // 
+            this.gInfom_btrDiscount.Appearance.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.gInfom_btrDiscount.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.gInfom_btrDiscount.Appearance.Options.UseBackColor = true;
+            this.gInfom_btrDiscount.Appearance.Options.UseFont = true;
+            this.gInfom_btrDiscount.Location = new System.Drawing.Point(487, 28);
+            this.gInfom_btrDiscount.Margin = new System.Windows.Forms.Padding(4);
+            this.gInfom_btrDiscount.Name = "gInfom_btrDiscount";
+            this.gInfom_btrDiscount.Size = new System.Drawing.Size(125, 37);
+            this.gInfom_btrDiscount.TabIndex = 22;
+            this.gInfom_btrDiscount.Text = "打折促销";
+            this.gInfom_btrDiscount.Click += new System.EventHandler(this.gInfom_btrDiscount_Click);
+            // 
             // gInfom_btrepetoryManage
             // 
             this.gInfom_btrepetoryManage.Appearance.BackColor = System.Drawing.Color.SteelBlue;
             this.gInfom_btrepetoryManage.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
             this.gInfom_btrepetoryManage.Appearance.Options.UseBackColor = true;
             this.gInfom_btrepetoryManage.Appearance.Options.UseFont = true;
-            this.gInfom_btrepetoryManage.Location = new System.Drawing.Point(363, 28);
+            this.gInfom_btrepetoryManage.Location = new System.Drawing.Point(343, 28);
             this.gInfom_btrepetoryManage.Margin = new System.Windows.Forms.Padding(4);
             this.gInfom_btrepetoryManage.Name = "gInfom_btrepetoryManage";
             this.gInfom_btrepetoryManage.Size = new System.Drawing.Size(125, 37);
@@ -1462,7 +1728,7 @@
             this.gInfom_btChangeInfom.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
             this.gInfom_btChangeInfom.Appearance.Options.UseBackColor = true;
             this.gInfom_btChangeInfom.Appearance.Options.UseFont = true;
-            this.gInfom_btChangeInfom.Location = new System.Drawing.Point(204, 28);
+            this.gInfom_btChangeInfom.Location = new System.Drawing.Point(192, 28);
             this.gInfom_btChangeInfom.Margin = new System.Windows.Forms.Padding(4);
             this.gInfom_btChangeInfom.Name = "gInfom_btChangeInfom";
             this.gInfom_btChangeInfom.Size = new System.Drawing.Size(125, 37);
@@ -1477,7 +1743,7 @@
             this.gInfom_btDelete.Appearance.Options.UseBackColor = true;
             this.gInfom_btDelete.Appearance.Options.UseFont = true;
             this.gInfom_btDelete.CausesValidation = false;
-            this.gInfom_btDelete.Location = new System.Drawing.Point(524, 29);
+            this.gInfom_btDelete.Location = new System.Drawing.Point(640, 30);
             this.gInfom_btDelete.Margin = new System.Windows.Forms.Padding(4);
             this.gInfom_btDelete.Name = "gInfom_btDelete";
             this.gInfom_btDelete.Size = new System.Drawing.Size(117, 34);
@@ -1505,6 +1771,8 @@
             this.dataGridViewTextBoxColumn38,
             this.dataGridViewTextBoxColumn39,
             this.dataGridViewTextBoxColumn41,
+            this.Column13,
+            this.Column14,
             this.Column7,
             this.Column10});
             this.gInfom_dategridview.Location = new System.Drawing.Point(28, 131);
@@ -1514,7 +1782,7 @@
             this.gInfom_dategridview.RowHeadersVisible = false;
             this.gInfom_dategridview.RowTemplate.Height = 23;
             this.gInfom_dategridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gInfom_dategridview.Size = new System.Drawing.Size(1362, 461);
+            this.gInfom_dategridview.Size = new System.Drawing.Size(1406, 461);
             this.gInfom_dategridview.TabIndex = 5;
             // 
             // dataGridViewTextBoxColumn25
@@ -1569,9 +1837,23 @@
             // dataGridViewTextBoxColumn41
             // 
             this.dataGridViewTextBoxColumn41.DataPropertyName = "Price";
-            this.dataGridViewTextBoxColumn41.HeaderText = "单价(元)";
+            this.dataGridViewTextBoxColumn41.HeaderText = "原价(元)";
             this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
             this.dataGridViewTextBoxColumn41.ReadOnly = true;
+            // 
+            // Column13
+            // 
+            this.Column13.DataPropertyName = "Discount";
+            this.Column13.HeaderText = "折扣";
+            this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
+            // 
+            // Column14
+            // 
+            this.Column14.DataPropertyName = "DPrice";
+            this.Column14.HeaderText = "折后价(元)";
+            this.Column14.Name = "Column14";
+            this.Column14.ReadOnly = true;
             // 
             // Column7
             // 
@@ -1596,7 +1878,7 @@
             this.xtp_StaffInformation.Controls.Add(this.stfInfo_btAdd);
             this.xtp_StaffInformation.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_StaffInformation.Name = "xtp_StaffInformation";
-            this.xtp_StaffInformation.Size = new System.Drawing.Size(1389, 605);
+            this.xtp_StaffInformation.Size = new System.Drawing.Size(1367, 605);
             this.xtp_StaffInformation.Text = "员工信息";
             this.xtp_StaffInformation.VisibleChanged += new System.EventHandler(this.xtp_StaffInformation_VisibleChanged);
             // 
@@ -1741,7 +2023,7 @@
             this.stfInfo_dataGridView.RowHeadersVisible = false;
             this.stfInfo_dataGridView.RowTemplate.Height = 23;
             this.stfInfo_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.stfInfo_dataGridView.Size = new System.Drawing.Size(1336, 437);
+            this.stfInfo_dataGridView.Size = new System.Drawing.Size(1314, 437);
             this.stfInfo_dataGridView.TabIndex = 6;
             this.stfInfo_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.stfInfo_dataGridView_CellContentClick);
             // 
@@ -1832,7 +2114,9 @@
             // 
             // stfInfo_btAdd
             // 
+            this.stfInfo_btAdd.Appearance.BackColor = System.Drawing.Color.CadetBlue;
             this.stfInfo_btAdd.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.stfInfo_btAdd.Appearance.Options.UseBackColor = true;
             this.stfInfo_btAdd.Appearance.Options.UseFont = true;
             this.stfInfo_btAdd.Location = new System.Drawing.Point(254, 109);
             this.stfInfo_btAdd.Name = "stfInfo_btAdd";
@@ -1996,7 +2280,9 @@
             // 
             // cbs_btnAddUser
             // 
+            this.cbs_btnAddUser.Appearance.BackColor = System.Drawing.Color.CadetBlue;
             this.cbs_btnAddUser.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.cbs_btnAddUser.Appearance.Options.UseBackColor = true;
             this.cbs_btnAddUser.Appearance.Options.UseFont = true;
             this.cbs_btnAddUser.Location = new System.Drawing.Point(182, 17);
             this.cbs_btnAddUser.Margin = new System.Windows.Forms.Padding(4);
@@ -2057,7 +2343,7 @@
             this.cbs_SuperUserDataGrid.RowHeadersVisible = false;
             this.cbs_SuperUserDataGrid.RowTemplate.Height = 23;
             this.cbs_SuperUserDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.cbs_SuperUserDataGrid.Size = new System.Drawing.Size(1349, 477);
+            this.cbs_SuperUserDataGrid.Size = new System.Drawing.Size(1481, 477);
             this.cbs_SuperUserDataGrid.TabIndex = 14;
             this.cbs_SuperUserDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cbs_SuperUserDataGrid_CellContentClick);
             // 
@@ -2157,7 +2443,9 @@
             // 
             // cStf_btnAdd
             // 
+            this.cStf_btnAdd.Appearance.BackColor = System.Drawing.Color.CadetBlue;
             this.cStf_btnAdd.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.cStf_btnAdd.Appearance.Options.UseBackColor = true;
             this.cStf_btnAdd.Appearance.Options.UseFont = true;
             this.cStf_btnAdd.Location = new System.Drawing.Point(182, 14);
             this.cStf_btnAdd.Margin = new System.Windows.Forms.Padding(4);
@@ -2317,7 +2605,9 @@
             // 
             // cCtm_btnAdd
             // 
+            this.cCtm_btnAdd.Appearance.BackColor = System.Drawing.Color.CadetBlue;
             this.cCtm_btnAdd.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.cCtm_btnAdd.Appearance.Options.UseBackColor = true;
             this.cCtm_btnAdd.Appearance.Options.UseFont = true;
             this.cCtm_btnAdd.Location = new System.Drawing.Point(180, 13);
             this.cCtm_btnAdd.Margin = new System.Windows.Forms.Padding(4);
@@ -2377,7 +2667,7 @@
             this.cCtm_dataGridView.RowHeadersVisible = false;
             this.cCtm_dataGridView.RowTemplate.Height = 23;
             this.cCtm_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.cCtm_dataGridView.Size = new System.Drawing.Size(1343, 477);
+            this.cCtm_dataGridView.Size = new System.Drawing.Size(1475, 477);
             this.cCtm_dataGridView.TabIndex = 20;
             this.cCtm_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cCtm_dataGridView_CellContentClick);
             // 
@@ -2735,6 +3025,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.SInfo_cbCelect.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SInfo_tbSelectInfom.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SInfo_dategridview)).EndInit();
+            this.xtp_SuperUserControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl8)).EndInit();
+            this.panelControl8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OrderL_dataGridView)).EndInit();
             this.xtp_GoodsInfom.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl7)).EndInit();
             this.panelControl7.ResumeLayout(false);
@@ -2989,16 +3285,6 @@
         private DevExpress.XtraEditors.SimpleButton gInfom_btChangeInfom;
         private DevExpress.XtraEditors.SimpleButton gInfom_btDelete;
         private DevExpress.XtraEditors.SimpleButton gInfom_btrepetoryManage;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn35;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn40;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn36;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn37;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn38;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn39;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn41;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private DevExpress.XtraGrid.GridControl StaffS_datagrid;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
@@ -3015,5 +3301,37 @@
         private DevExpress.XtraBars.Ribbon.GalleryDropDown galleryDropDown1;
         private DevExpress.XtraBars.BarButtonItem 销售记录;
         private DevExpress.Utils.WorkspaceManager workspaceManager1;
+        private System.Windows.Forms.DataGridView OrderL_dataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn30;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private DevExpress.XtraEditors.PanelControl panelControl8;
+        private DevExpress.XtraEditors.SimpleButton OrderL_ChangeOrder;
+        private DevExpress.XtraEditors.SimpleButton OrderL_AddOrder;
+        private DevExpress.XtraEditors.SimpleButton OrderL_DeleteOrder;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
+        private DevExpress.XtraEditors.SimpleButton OrderL_SelectOrder;
+        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.SimpleButton gInfom_btrDiscount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn35;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn40;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn36;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn37;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn38;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn39;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn41;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
     }
 }

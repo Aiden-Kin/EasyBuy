@@ -23,13 +23,17 @@ namespace EasyBuy.SecondPage
         Control mainControl;
         string userGroup;
 
+        public GoodsInfom_AddGods()
+        {
+            InitializeComponent();
+      
 
+
+        }
         public GoodsInfom_AddGods(Control mainControl)
         {
             InitializeComponent();
             this.mainControl = mainControl;
-
-            List<string> dataList = new List<string>();
 
 
         }
@@ -41,7 +45,7 @@ namespace EasyBuy.SecondPage
 
             try
             {
-                new GoodsInfomManager().Add(tbName.Text, tbType.Text.Trim(), tbLocation.Text, cbTime.Text, Convert.ToInt32(tbRepoertory.Text), cbSupplier.Text,Convert.ToSingle(tbMoney.Text), tbDescribe.Text,DateTime.Now.ToString());
+                new GoodsInfomManager().Add(tbName.Text, tbType.Text.Trim(), tbLocation.Text, cbTime.Text, Convert.ToInt32(tbRepoertory.Text), cbSupplier.Text,1,Convert.ToSingle(tbMoney.Text), tbDescribe.Text,DateTime.Now.ToString());
                 Common.ShowInfo("添加成功");
                 mainControl.GInform_RefreshData();
                 this.Close();

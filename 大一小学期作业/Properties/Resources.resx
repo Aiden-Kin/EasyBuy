@@ -157,8 +157,14 @@
   <data name="确认" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\确认.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="BackGround_city_Width" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BackGround_city_Width.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="刷新" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\刷新.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Simple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Simple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BackGround_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BackGround_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,9 +178,6 @@
   <data name="登陆" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\登陆.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="Simple_Wide" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Simple_Wide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="商品_类别管理" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\商品_类别管理.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
@@ -187,11 +190,17 @@
   <data name="忘记密码" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\忘记密码.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
+  <data name="添加" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\添加.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="刷新1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\刷新.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="Simple" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Simple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="更多" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\更多.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="Simple_Wide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Simple_Wide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="人员信息" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\人员信息.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
@@ -199,7 +208,7 @@
   <data name="BackGround_city" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BackGround_city.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="更多" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\更多.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v23.1, Version=23.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="BackGround_city_Width1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BackGround_city_Width1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
