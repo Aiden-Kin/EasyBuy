@@ -93,6 +93,26 @@ namespace EasyBuy.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap BackGround_Blue_Small {
+            get {
+                object obj = ResourceManager.GetObject("BackGround_Blue_Small", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap BackGround_Blue_Small1 {
+            get {
+                object obj = ResourceManager.GetObject("BackGround_Blue_Small1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap BackGround_city {
             get {
                 object obj = ResourceManager.GetObject("BackGround_city", resourceCulture);
@@ -336,6 +356,16 @@ namespace EasyBuy.Properties {
         internal static DevExpress.Utils.Svg.SvgImage 登陆__1_ {
             get {
                 object obj = ResourceManager.GetObject("登陆 (1)", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 DevExpress.Utils.Svg.SvgImage 类型的本地化资源。
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage 登陆__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("登陆 (1)1", resourceCulture);
                 return ((DevExpress.Utils.Svg.SvgImage)(obj));
             }
         }

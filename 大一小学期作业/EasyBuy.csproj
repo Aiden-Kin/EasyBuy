@@ -273,6 +273,18 @@
     <Compile Include="LoinForm\UserDisplayForm\UserForm.Designer.cs">
       <DependentUpon>UserForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="LoinForm\ForgetPasswd.resx">
       <DependentUpon>ForgetPasswd.cs</DependentUpon>
     </EmbeddedResource>
@@ -356,6 +368,12 @@
     <EmbeddedResource Include="LoinForm\UserDisplayForm\UserForm.resx">
       <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -380,6 +398,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\icon\MainIcon.png" />
+    <None Include="Resources\BackGround_Blue_Small1.png" />
+    <None Include="Resources\BackGround_Blue_Small.png" />
+    <None Include="Resources\登陆 %281%291.svg" />
     <None Include="Resources\订单管理.svg" />
     <None Include="Resources\ITSM系统所需图标_口令管理.svg" />
     <None Include="Resources\重置口令.svg" />
