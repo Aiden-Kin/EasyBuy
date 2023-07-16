@@ -151,6 +151,16 @@ namespace EasyBuy.Properties {
         }
         
         /// <summary>
+        ///   查找 DevExpress.Utils.Svg.SvgImage 类型的本地化资源。
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage ITSM系统所需图标_口令管理 {
+            get {
+                object obj = ResourceManager.GetObject("ITSM系统所需图标_口令管理", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
         internal static System.Drawing.Bitmap LoinImg {
@@ -356,6 +366,26 @@ namespace EasyBuy.Properties {
         internal static DevExpress.Utils.Svg.SvgImage 菜单_工资绩效 {
             get {
                 object obj = ResourceManager.GetObject("菜单_工资绩效", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 DevExpress.Utils.Svg.SvgImage 类型的本地化资源。
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage 订单管理 {
+            get {
+                object obj = ResourceManager.GetObject("订单管理", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 DevExpress.Utils.Svg.SvgImage 类型的本地化资源。
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage 重置口令 {
+            get {
+                object obj = ResourceManager.GetObject("重置口令", resourceCulture);
                 return ((DevExpress.Utils.Svg.SvgImage)(obj));
             }
         }

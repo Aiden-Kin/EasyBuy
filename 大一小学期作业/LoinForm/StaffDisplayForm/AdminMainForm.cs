@@ -13,10 +13,10 @@ using Sunny.UI;
 
 namespace CampusTradingSystemofNEPU.AdminForms
 {
-    public partial class uiHead : UIHeaderAsideMainFrame
+    public partial class AdminMainForm : UIHeaderAsideMainFrame
     {
 
-        public uiHead()
+        public AdminMainForm()
         {
             InitializeComponent();
             this.ControlBox = false;

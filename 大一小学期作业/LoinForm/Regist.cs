@@ -1,5 +1,8 @@
 ﻿using DevExpress.XtraBars;
+using DevExpress.XtraMap;
 using DevExpress.XtraSplashScreen;
+using EasyBuy_BLL;
+using Sunny.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,6 +22,9 @@ namespace EasyBuy
 
         private Random random = new Random();
 
+        string identify;
+        bool passwdflag = false;
+
         public Regist()
         {
             InitializeComponent();      
@@ -33,7 +39,11 @@ namespace EasyBuy
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            GenerateCaptcha();      //调用验证码
+            RefreshIdentify();
+        }
+        void RefreshIdentify()
+        {
+            identify = GenerateCaptcha();      //调用验证码
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -91,7 +101,7 @@ namespace EasyBuy
             }
             return new string(captchaChars);
         }
-        private void GenerateCaptcha()
+        private string GenerateCaptcha()
         {
             // 生成验证码文本
             string captchaText = GeneraterandomText();
@@ -120,16 +130,92 @@ namespace EasyBuy
 
             // 设置 PictureBox 的图像
             pbVerification.Image = bitmap;
+
+            return captchaText;
         }
 
+        void TextClear()
+        {
+            tbUser.Text = string.Empty;
+            tbPassword.Text = string.Empty;
+            tbidentify.Text = string.Empty;
+            tbConfirmPasswd.Text = string.Empty;
+        }
 
+        private void tbConfirmPasswd_EditValueChanged(object sender, EventArgs e)
+        {
+            //密码重复判断并设置flag和提示词
+            if (tbPassword.Text != tbConfirmPasswd.Text)
+            {
+                passwdflag = true;
+                txtPasswdError.Visible = true;
+            }
+            else
+            {
+                passwdflag = false;
+                txtPasswdError.Visible = false;
+            }
+        }
 
+        private void tbpasswd_EditValueChanged(object sender, EventArgs e)
+        {
+            tbConfirmPasswd.Text = null;
+            txtPasswdError.Visible = false;
+        }
 
         #endregion
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             GenerateCaptcha();
+        }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            if(tbidentify.Text == identify)
+            {
+
+
+                try
+                {
+                    //校验用户名重复
+                    if (new UserListManager().SearchUser(tbUser.Text))
+                    {
+                        MessageBox.Show("已存在此用户名请重新输入", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
+                    //添加用户密码正确校验
+                    if (passwdflag == true)
+                    {
+                        MessageBox.Show("密码不一致请重新输入", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        string username = tbUser.Text.Trim();
+                        string userpasswd = tbPassword.Text.Trim();
+                        string thisTime = DateTime.Now.ToString();
+                        new UserListManager().SetUser(username, userpasswd, "Customer","注册界面注册用户", thisTime);
+                        MessageBox.Show("添加成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        TextClear();
+
+
+                    }
+
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
+                }
+
+
+            }
+            else
+            {
+                UIMessageBox.ShowError("验证码错误请重新输入");
+                tbidentify.Text = null;
+                RefreshIdentify();
+            }
         }
     }
 }

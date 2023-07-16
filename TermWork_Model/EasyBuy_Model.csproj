@@ -47,6 +47,7 @@
     <Compile Include="GoodsClass.cs" />
     <Compile Include="GoodsInfom.cs" />
     <Compile Include="OrderList.cs" />
+    <Compile Include="PassKey.cs" />
     <Compile Include="StaffInformation.cs" />
     <Compile Include="StaffSalary.cs" />
     <Compile Include="Supplier.cs" />

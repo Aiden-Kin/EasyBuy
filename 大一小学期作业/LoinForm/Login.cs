@@ -11,6 +11,8 @@ using System.Text;
 using System.Windows.Forms;
 using EasyBuy_BLL;
 using DevExpress.CodeParser;
+using CampusTradingSystemofNEPU.AdminForms;
+using Sunny.UI;
 
 namespace EasyBuy
 {
@@ -61,19 +63,32 @@ namespace EasyBuy
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (tbUser.Text.Length <= 0 || tbPassword.Text.Length <= 0)
+
+            if (string.IsNullOrEmpty(tbPassword.Text)|| string.IsNullOrEmpty(tbUser.Text))
             {
-                MessageBox.Show( "请检查用户名称与密码", "登录提示", MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+                UIMessageBox.ShowError("请检查用户名称与密码");
                 return;
             }
 
             User UserInform = new UserListManager().GetUser(tbUser.Text.Trim(), tbPassword.Text.Trim());
 
-            if (UserInform.UserGroup == "SuperUser")
+            if (UserInform.UserGroup == null)
+            {
+                UIMessageBox.ShowError("账户密码错误请重新输入");
+                tbPassword.Text = null;
+                tbUser.Text = null;  
+            }
+            else if (UserInform.UserGroup == "SuperUser")
+            {
+                UserInform.UserPassword = null; //密码释放
+                this.Hide();
+                Control controlform = new Control(UserInform);
+                controlform.Show();
+            }else if (UserInform.UserGroup == "Staff")
             {
                 UserInform.UserPassword = null;
                 this.Hide();
-                Control controlform = new Control(UserInform);
+                AdminMainForm controlform = new AdminMainForm();
                 controlform.Show();
             }
         }
@@ -100,7 +115,9 @@ namespace EasyBuy
 
         private void btnForgetPass_Click(object sender, EventArgs e)
         {
-
+            ForgetPasswd forget = new ForgetPasswd(this);
+            forget.Show();
+            this.Hide();
         }
     }
 }

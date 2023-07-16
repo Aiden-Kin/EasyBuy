@@ -1,6 +1,6 @@
 ﻿namespace EasyBuy
 {
-    partial class Regist
+    partial class ForgetPasswd
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Regist));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForgetPasswd));
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.tbUser = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -56,10 +56,8 @@
             this.barDockControl8 = new DevExpress.XtraBars.BarDockControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.tbConfirmPasswd = new DevExpress.XtraEditors.TextEdit();
-            this.pbVerification = new System.Windows.Forms.PictureBox();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.tbidentify = new DevExpress.XtraEditors.TextEdit();
-            this.btnRefresh = new DevExpress.XtraEditors.SimpleButton();
+            this.tbResetKey = new DevExpress.XtraEditors.TextEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.txtPasswdError = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.tbUser.Properties)).BeginInit();
@@ -70,8 +68,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.barManager2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbConfirmPasswd.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbVerification)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbidentify.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbResetKey.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -82,7 +79,7 @@
             this.labelControl1.Appearance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(463, 125);
+            this.labelControl1.Location = new System.Drawing.Point(465, 164);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(5);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(66, 29);
@@ -93,7 +90,7 @@
             // 
             this.tbUser.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbUser.Location = new System.Drawing.Point(586, 128);
+            this.tbUser.Location = new System.Drawing.Point(588, 167);
             this.tbUser.Margin = new System.Windows.Forms.Padding(5);
             this.tbUser.Name = "tbUser";
             this.tbUser.Properties.Appearance.BackColor = System.Drawing.Color.White;
@@ -111,12 +108,12 @@
             this.labelControl2.Appearance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(451, 195);
+            this.labelControl2.Location = new System.Drawing.Point(425, 232);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(5);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(88, 29);
+            this.labelControl2.Size = new System.Drawing.Size(132, 29);
             this.labelControl2.TabIndex = 0;
-            this.labelControl2.Text = "登陆密码";
+            this.labelControl2.Text = "重置登陆密码";
             // 
             // btnConfirm
             // 
@@ -127,7 +124,7 @@
             this.btnConfirm.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.btnConfirm.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.确认;
             this.btnConfirm.ImageOptions.SvgImageSize = new System.Drawing.Size(30, 30);
-            this.btnConfirm.Location = new System.Drawing.Point(491, 521);
+            this.btnConfirm.Location = new System.Drawing.Point(521, 489);
             this.btnConfirm.Margin = new System.Windows.Forms.Padding(5);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(264, 62);
@@ -139,7 +136,7 @@
             // 
             this.tbPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbPassword.Location = new System.Drawing.Point(586, 198);
+            this.tbPassword.Location = new System.Drawing.Point(588, 237);
             this.tbPassword.Margin = new System.Windows.Forms.Padding(5);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 9F);
@@ -148,7 +145,6 @@
             this.tbPassword.Properties.UseSystemPasswordChar = true;
             this.tbPassword.Size = new System.Drawing.Size(225, 24);
             this.tbPassword.TabIndex = 1;
-            this.tbPassword.EditValueChanged += new System.EventHandler(this.tbpasswd_EditValueChanged);
             // 
             // Exit
             // 
@@ -192,9 +188,9 @@
             this.labelControl3.Location = new System.Drawing.Point(15, 16);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(5);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(112, 20);
+            this.labelControl3.Size = new System.Drawing.Size(140, 20);
             this.labelControl3.TabIndex = 4;
-            this.labelControl3.Text = "东油易购用户注册";
+            this.labelControl3.Text = "东油易购忘记用户密码";
             // 
             // barManager1
             // 
@@ -336,7 +332,7 @@
             this.labelControl4.Appearance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(451, 271);
+            this.labelControl4.Location = new System.Drawing.Point(452, 304);
             this.labelControl4.Margin = new System.Windows.Forms.Padding(5);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(88, 29);
@@ -347,7 +343,7 @@
             // 
             this.tbConfirmPasswd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbConfirmPasswd.Location = new System.Drawing.Point(586, 276);
+            this.tbConfirmPasswd.Location = new System.Drawing.Point(587, 309);
             this.tbConfirmPasswd.Margin = new System.Windows.Forms.Padding(5);
             this.tbConfirmPasswd.Name = "tbConfirmPasswd";
             this.tbConfirmPasswd.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 9F);
@@ -356,19 +352,6 @@
             this.tbConfirmPasswd.Properties.UseSystemPasswordChar = true;
             this.tbConfirmPasswd.Size = new System.Drawing.Size(225, 24);
             this.tbConfirmPasswd.TabIndex = 1;
-            this.tbConfirmPasswd.EditValueChanged += new System.EventHandler(this.tbConfirmPasswd_EditValueChanged);
-            // 
-            // pbVerification
-            // 
-            this.pbVerification.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbVerification.BackColor = System.Drawing.Color.Transparent;
-            this.pbVerification.Location = new System.Drawing.Point(504, 419);
-            this.pbVerification.Margin = new System.Windows.Forms.Padding(5);
-            this.pbVerification.Name = "pbVerification";
-            this.pbVerification.Size = new System.Drawing.Size(197, 62);
-            this.pbVerification.TabIndex = 17;
-            this.pbVerification.TabStop = false;
             // 
             // labelControl5
             // 
@@ -378,40 +361,26 @@
             this.labelControl5.Appearance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(401, 343);
+            this.labelControl5.Location = new System.Drawing.Point(403, 382);
             this.labelControl5.Margin = new System.Windows.Forms.Padding(5);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(132, 29);
+            this.labelControl5.Size = new System.Drawing.Size(154, 29);
             this.labelControl5.TabIndex = 0;
-            this.labelControl5.Text = "请输入验证码";
+            this.labelControl5.Text = "请输入重置口令";
             // 
-            // tbidentify
+            // tbResetKey
             // 
-            this.tbidentify.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.tbResetKey.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbidentify.Location = new System.Drawing.Point(586, 346);
-            this.tbidentify.Margin = new System.Windows.Forms.Padding(5);
-            this.tbidentify.Name = "tbidentify";
-            this.tbidentify.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 9F);
-            this.tbidentify.Properties.Appearance.Options.UseFont = true;
-            this.tbidentify.Properties.PasswordChar = '*';
-            this.tbidentify.Properties.UseSystemPasswordChar = true;
-            this.tbidentify.Size = new System.Drawing.Size(225, 24);
-            this.tbidentify.TabIndex = 1;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Appearance.Font = new System.Drawing.Font("小米兰亭", 11F);
-            this.btnRefresh.Appearance.Options.UseFont = true;
-            this.btnRefresh.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.刷新1;
-            this.btnRefresh.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
-            this.btnRefresh.Location = new System.Drawing.Point(717, 429);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(5);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(89, 42);
-            this.btnRefresh.TabIndex = 18;
-            this.btnRefresh.Text = "刷新";
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            this.tbResetKey.Location = new System.Drawing.Point(588, 385);
+            this.tbResetKey.Margin = new System.Windows.Forms.Padding(5);
+            this.tbResetKey.Name = "tbResetKey";
+            this.tbResetKey.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 9F);
+            this.tbResetKey.Properties.Appearance.Options.UseFont = true;
+            this.tbResetKey.Properties.PasswordChar = '*';
+            this.tbResetKey.Properties.UseSystemPasswordChar = true;
+            this.tbResetKey.Size = new System.Drawing.Size(225, 24);
+            this.tbResetKey.TabIndex = 1;
             // 
             // labelControl7
             // 
@@ -419,7 +388,7 @@
             this.labelControl7.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl7.Appearance.Options.UseFont = true;
             this.labelControl7.Appearance.Options.UseForeColor = true;
-            this.labelControl7.Location = new System.Drawing.Point(833, 200);
+            this.labelControl7.Location = new System.Drawing.Point(835, 239);
             this.labelControl7.Margin = new System.Windows.Forms.Padding(5);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(97, 19);
@@ -432,14 +401,14 @@
             this.txtPasswdError.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtPasswdError.Appearance.Options.UseFont = true;
             this.txtPasswdError.Appearance.Options.UseForeColor = true;
-            this.txtPasswdError.Location = new System.Drawing.Point(631, 314);
+            this.txtPasswdError.Location = new System.Drawing.Point(633, 347);
             this.txtPasswdError.Name = "txtPasswdError";
             this.txtPasswdError.Size = new System.Drawing.Size(180, 24);
-            this.txtPasswdError.TabIndex = 46;
+            this.txtPasswdError.TabIndex = 45;
             this.txtPasswdError.Text = "密码不一致请重新输入";
             this.txtPasswdError.Visible = false;
             // 
-            // Regist
+            // ForgetPasswd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -448,10 +417,8 @@
             this.ClientSize = new System.Drawing.Size(973, 666);
             this.Controls.Add(this.txtPasswdError);
             this.Controls.Add(this.labelControl7);
-            this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.pbVerification);
             this.Controls.Add(this.sidePanel1);
-            this.Controls.Add(this.tbidentify);
+            this.Controls.Add(this.tbResetKey);
             this.Controls.Add(this.tbConfirmPasswd);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.tbUser);
@@ -476,7 +443,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.Image = global::EasyBuy.Properties.Resources.icon;
             this.Margin = new System.Windows.Forms.Padding(5);
-            this.Name = "Regist";
+            this.Name = "ForgetPasswd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "用户密码";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -489,8 +456,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.barManager2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbConfirmPasswd.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbVerification)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbidentify.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbResetKey.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -524,10 +490,8 @@
         private DevExpress.XtraBars.BarDockControl barDockControl8;
         private DevExpress.XtraEditors.TextEdit tbConfirmPasswd;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private System.Windows.Forms.PictureBox pbVerification;
-        private DevExpress.XtraEditors.TextEdit tbidentify;
+        private DevExpress.XtraEditors.TextEdit tbResetKey;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.SimpleButton btnRefresh;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl txtPasswdError;
     }

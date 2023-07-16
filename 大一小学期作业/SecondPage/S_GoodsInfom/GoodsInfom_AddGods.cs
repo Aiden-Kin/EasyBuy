@@ -1,4 +1,5 @@
-﻿using DevExpress.CodeParser;
+﻿using CampusTradingSystemofNEPU.AdminForms;
+using DevExpress.CodeParser;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Mask;
 using DevExpress.XtraMap;
@@ -22,13 +23,12 @@ namespace EasyBuy.SecondPage
         bool passwdflag = false;
         Control mainControl;
         string userGroup;
+        AdminCommodityInfoPage adminCommodityInfoPage;
 
-        public GoodsInfom_AddGods()
+        public GoodsInfom_AddGods(AdminCommodityInfoPage adc)
         {
             InitializeComponent();
-      
-
-
+            adminCommodityInfoPage = adc;
         }
         public GoodsInfom_AddGods(Control mainControl)
         {
@@ -47,7 +47,15 @@ namespace EasyBuy.SecondPage
             {
                 new GoodsInfomManager().Add(tbName.Text, tbType.Text.Trim(), tbLocation.Text, cbTime.Text, Convert.ToInt32(tbRepoertory.Text), cbSupplier.Text,1,Convert.ToSingle(tbMoney.Text), tbDescribe.Text,DateTime.Now.ToString());
                 Common.ShowInfo("添加成功");
-                mainControl.GInform_RefreshData();
+                if(mainControl != null) 
+                {
+                    mainControl.GInform_RefreshData();
+                }
+                if(adminCommodityInfoPage != null)
+                {
+                    adminCommodityInfoPage.RefreshData();
+                }
+              
                 this.Close();
             }
             catch (Exception exp)

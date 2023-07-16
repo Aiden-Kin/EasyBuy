@@ -108,14 +108,14 @@ namespace EasyBuy_BLL
             new GoodsInfomServer().Add(GetModel(id, name, className, location, productDate, repertory, supplier,discount, price, remark, addTime));
         }
 
-        public void Delete(string id)
+        public int Delete(string id)
         {
             int idInt;
             if (!Int32.TryParse(id, out idInt))
             {
                 throw new Exception("编号不正确!");
             }
-            new GoodsInfomServer().Delete(idInt);
+            return new GoodsInfomServer().Delete(idInt);
         }
 
         public void UpRepodate(string id,string repo)

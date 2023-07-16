@@ -1,6 +1,6 @@
 ﻿namespace CampusTradingSystemofNEPU.AdminForms
 {
-    partial class uiHead
+    partial class AdminMainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uiHead));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminMainForm));
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
             // 
@@ -37,17 +37,17 @@
             // 
             this.Aside.FillColor = System.Drawing.Color.Black;
             this.Aside.LineColor = System.Drawing.Color.Black;
-            this.Aside.Location = new System.Drawing.Point(0, 155);
+            this.Aside.Location = new System.Drawing.Point(0, 147);
             this.Aside.MenuStyle = Sunny.UI.UIMenuStyle.Custom;
             this.Aside.SelectedColor2 = System.Drawing.Color.Black;
-            this.Aside.Size = new System.Drawing.Size(195, 475);
+            this.Aside.Size = new System.Drawing.Size(195, 483);
             this.Aside.Style = Sunny.UI.UIStyle.Custom;
             // 
             // Header
             // 
             this.Header.BackgroundImage = global::EasyBuy.Properties.Resources.BackGround_city_Width1;
             this.Header.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Header.Size = new System.Drawing.Size(949, 120);
+            this.Header.Size = new System.Drawing.Size(949, 112);
             this.Header.Style = Sunny.UI.UIStyle.Custom;
             this.Header.MenuItemClick += new Sunny.UI.UINavBar.OnMenuItemClick(this.Header_MenuItemClick);
             // 
@@ -58,7 +58,7 @@
             this.notifyIcon.Visible = true;
             this.notifyIcon.DoubleClick += new System.EventHandler(this.notifyIcon_DoubleClick);
             // 
-            // uiHead
+            // AdminMainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(949, 630);
@@ -67,7 +67,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "uiHead";
+            this.Name = "AdminMainForm";
             this.RectColor = System.Drawing.Color.Black;
             this.Style = Sunny.UI.UIStyle.Custom;
             this.Text = "员工销售面板";

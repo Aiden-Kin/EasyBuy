@@ -57,15 +57,15 @@ namespace EasyBuy_DAL
 
         public void Add(GoodsInfom goods)
         {
-            string sqlStr = string.Format("INSERT INTO tblGoodsInfom (Name, Class, Location, ProductDate, Repertory, Supplier, Price, Remark, AddTime) VALUES ('{0}', '{1}', '{2}', '{3}', {4}, '{5}', {6}, {7}, '{8}','{9}') ",
+            string sqlStr = string.Format("INSERT INTO tblGoodsInfom (Name, Class, Location, ProductDate, Repertory, Supplier,Discount, Price, Remark, AddTime) VALUES ('{0}', '{1}', '{2}', '{3}', {4}, '{5}', {6}, {7}, '{8}','{9}') ",
                 goods.Name, goods.Class, goods.Location, goods.ProductDate, goods.Repertory, goods.Supplier,goods.Discount, goods.Price, goods.Remark, goods.AddTime);
             SqlHelper.ExecuteNonQuery(sqlStr);
         }
 
-        public void Delete(int id)
+        public int Delete(int id)
         {
             string sqlStr = String.Format("DELETE FROM tblGoodsInfom WHERE ID = {0}", id);
-            SqlHelper.ExecuteNonQuery(sqlStr);
+            return SqlHelper.ExecuteNonQuery(sqlStr);
         }
 
         public void ChangeInfo(GoodsInfom goods)

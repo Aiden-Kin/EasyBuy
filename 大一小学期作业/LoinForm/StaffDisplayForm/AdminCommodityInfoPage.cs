@@ -112,8 +112,9 @@ namespace CampusTradingSystemofNEPU.AdminForms
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            GoodsInfom_AddGods goodsAddForm = new GoodsInfom_AddGods();
+            GoodsInfom_AddGods goodsAddForm = new GoodsInfom_AddGods(this);
             goodsAddForm.ShowDialog();
+            RefreshData();
         }
 
         private void btnAlter_Click(object sender, EventArgs e)
@@ -152,16 +153,18 @@ namespace CampusTradingSystemofNEPU.AdminForms
                     return;
                 }
 
-                //int result = new GoodsListManager().GoodsaDelete(dgvInfo.Rows[rowIndex].Cells[0].Value.ToString());
-                //if (result > 0)
-                //{
-                //    UIMessageBox.Show("删除成功！", "信息提示");
-                //}
-                //else
-                //{
-                //    UIMessageBox.Show("删除失败.", "信息提示");
-                //}
+                int result = new GoodsInfomManager().Delete(dgvInfo.Rows[rowIndex].Cells[0].Value.ToString());
+
+                if (result > 0)
+                {
+                    UIMessageBox.Show("删除成功！", "信息提示");
+                }
+                else
+                {
+                    UIMessageBox.Show("删除失败.", "信息提示");
+                }
             }
+            RefreshData();
         }
 
         private void btnDetails_Click(object sender, EventArgs e)

@@ -7,6 +7,7 @@ using EasyBuy.SecondPage;
 using EasyBuy.SecondPage.S_GoodsInfom;
 using EasyBuy_BLL;
 using EasyBuy_Model;
+using Sunny.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -83,6 +84,7 @@ namespace EasyBuy
 
         private void bbtn_GoodsStock_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            xtb_ControlPanel.SelectedTabPage = xtp_Supplier;
         }
 
         private void bbtn_EmploerInfomation_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -980,13 +982,63 @@ namespace EasyBuy
         {
 
         }
+         #endregion
+
+
+        private void 销售记录_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtp_SuperUserControl;
+        }
 
 
 
+        #region 口令生成
+        private void ResetPasswd_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            string passkey = RandomGenerate();
+            string passstring = string.Format("生成的秘钥为:【{0}】(有效期24h)", passkey);
+           
+            PassKey addkey = new PassKey();
+            addkey.Passkey = passkey;
+            addkey.PassGenerateTime = DateTime.Now.ToString();
+            try
+            {
+                int success = new PassKeyManager().SetPassKey(addkey);
+                if (success > 0)
+                {
+                    UIMessageBox.ShowWarning(passstring);
+                }
+            }
+            catch (Exception ex)
+            {
 
+                Common.ShowError(ex.Message);
+            }
+    
+           
 
+        }
 
+        private static readonly Random Random = new Random();
 
+        public static string RandomGenerate()
+        {
+            int length = 6;
+            string password = string.Empty;
+            for (int i = 0; i < length; i++)
+            {
+                password += Random.Next(10).ToString();
+            }
+            return password;
+        }
+
+        #endregion
+
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            PasskeyForm passkeyForm = new PasskeyForm();
+            passkeyForm.Show();
+        }
     }
-     #endregion
+  
 }

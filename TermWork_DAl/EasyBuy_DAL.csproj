@@ -48,6 +48,7 @@
     <Compile Include="GoodsClassServer.cs" />
     <Compile Include="GoodsInfomServer.cs" />
     <Compile Include="OrderListServer.cs" />
+    <Compile Include="PassKeyServer.cs" />
     <Compile Include="StaffSarlaryServer.cs" />
     <Compile Include="StfInformationServer.cs" />
     <Compile Include="SupplierServer.cs" />

@@ -30,7 +30,7 @@ namespace EasyBuy.SecondPage
             tbName.Text = sp.Name;
             tbType.Text = sp.Class;
             tbLocation.Text = sp.Location;
-            cbTime.EditValue = Convert.ToDateTime(sp.ProductDate);
+            cbTime.Text = sp.ProductDate;
             tbRepoertory.Text = sp.Repertory.ToString();
             cbSupplier.Text = sp.Supplier;
             tbMoney.Text = sp.Price.ToString();

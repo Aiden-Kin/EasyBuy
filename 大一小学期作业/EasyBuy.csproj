@@ -126,6 +126,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common.cs" />
+    <Compile Include="LoinForm\ForgetPasswd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoinForm\ForgetPasswd.Designer.cs">
+      <DependentUpon>ForgetPasswd.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoinForm\Regist.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +193,12 @@
     </Compile>
     <Compile Include="SecondPage\GoodsClass\GoodsClass_Modify.Designer.cs">
       <DependentUpon>GoodsClass_Modify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecondPage\Pass\PasskeyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondPage\Pass\PasskeyForm.Designer.cs">
+      <DependentUpon>PasskeyForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SecondPage\S_GoodsInfom\GoodsInfom_ChangeGoods.cs">
       <SubType>Form</SubType>
@@ -261,6 +273,9 @@
     <Compile Include="LoinForm\UserDisplayForm\UserForm.Designer.cs">
       <DependentUpon>UserForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="LoinForm\ForgetPasswd.resx">
+      <DependentUpon>ForgetPasswd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoinForm\Regist.resx">
       <DependentUpon>Regist.cs</DependentUpon>
     </EmbeddedResource>
@@ -301,6 +316,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SecondPage\GoodsClass\GoodsClass_Modify.resx">
       <DependentUpon>GoodsClass_Modify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecondPage\Pass\PasskeyForm.resx">
+      <DependentUpon>PasskeyForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SecondPage\S_GoodsInfom\GoodsInfom_ChangeGoods.resx">
       <DependentUpon>GoodsInfom_ChangeGoods.cs</DependentUpon>
@@ -362,6 +380,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\icon\MainIcon.png" />
+    <None Include="Resources\订单管理.svg" />
+    <None Include="Resources\ITSM系统所需图标_口令管理.svg" />
+    <None Include="Resources\重置口令.svg" />
     <None Include="Resources\BackGround_city_Width1.png" />
     <None Include="Resources\BackGround_city_Width.png" />
     <None Include="Resources\添加.svg" />

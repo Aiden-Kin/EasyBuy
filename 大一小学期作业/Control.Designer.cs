@@ -161,7 +161,6 @@
             this.bbtn_EmploerMoney = new DevExpress.XtraBars.BarButtonItem();
             this.bbtn_GoodsClass = new DevExpress.XtraBars.BarButtonItem();
             this.bbtn_EmploerInfomation = new DevExpress.XtraBars.BarButtonItem();
-            this.bbtn_Supplyer = new DevExpress.XtraBars.BarButtonItem();
             this.bbtn_GoodsInform = new DevExpress.XtraBars.BarButtonItem();
             this.bbtn_SellChart = new DevExpress.XtraBars.BarButtonItem();
             this.bbtn_SuperUser = new DevExpress.XtraBars.BarButtonItem();
@@ -176,11 +175,12 @@
             this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
             this.barTime = new DevExpress.XtraBars.BarEditItem();
             this.销售记录 = new DevExpress.XtraBars.BarButtonItem();
+            this.ResetPasswd = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.rbcControl = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
             this.rbpManage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgManage = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.PageGoods = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -346,6 +346,7 @@
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewLinkColumn2 = new System.Windows.Forms.DataGridViewLinkColumn();
             this.xtraTabPage14 = new DevExpress.XtraTab.XtraTabPage();
+            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             this.repositoryItemRibbonSearchEdit1 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
             this.repositoryItemRibbonSearchEdit2 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
             this.repositoryItemRibbonSearchEdit3 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
@@ -433,6 +434,8 @@
             this.panelControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cCtm_tbSearch.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cCtm_dataGridView)).BeginInit();
+            this.xtraTabPage14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit3)).BeginInit();
@@ -662,7 +665,6 @@
             this.bbtn_EmploerMoney,
             this.bbtn_GoodsClass,
             this.bbtn_EmploerInfomation,
-            this.bbtn_Supplyer,
             this.bbtn_GoodsInform,
             this.bbtn_SellChart,
             this.bbtn_SuperUser,
@@ -676,10 +678,12 @@
             this.barButtonItem4,
             this.barSubItem1,
             this.barTime,
-            this.销售记录});
+            this.销售记录,
+            this.ResetPasswd,
+            this.barButtonItem8});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5);
-            this.ribbonControl1.MaxItemId = 51;
+            this.ribbonControl1.MaxItemId = 53;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.OptionsMenuMinWidth = 411;
             this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
@@ -728,14 +732,6 @@
             this.bbtn_EmploerInfomation.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.员工信息__2_;
             this.bbtn_EmploerInfomation.Name = "bbtn_EmploerInfomation";
             this.bbtn_EmploerInfomation.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbtn_EmploerInfomation_ItemClick);
-            // 
-            // bbtn_Supplyer
-            // 
-            this.bbtn_Supplyer.Caption = "供货人员信息";
-            this.bbtn_Supplyer.Id = 14;
-            this.bbtn_Supplyer.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.人员信息;
-            this.bbtn_Supplyer.Name = "bbtn_Supplyer";
-            this.bbtn_Supplyer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbtn_Supplyer_ItemClick);
             // 
             // bbtn_GoodsInform
             // 
@@ -826,9 +822,27 @@
             // 
             // 销售记录
             // 
-            this.销售记录.Caption = "订单信息";
+            this.销售记录.Caption = "订单管理";
             this.销售记录.Id = 48;
+            this.销售记录.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.订单管理;
             this.销售记录.Name = "销售记录";
+            this.销售记录.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.销售记录_ItemClick);
+            // 
+            // ResetPasswd
+            // 
+            this.ResetPasswd.Caption = "生成重置口令";
+            this.ResetPasswd.Id = 51;
+            this.ResetPasswd.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.重置口令;
+            this.ResetPasswd.Name = "ResetPasswd";
+            this.ResetPasswd.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ResetPasswd_ItemClick);
+            // 
+            // barButtonItem8
+            // 
+            this.barButtonItem8.Caption = "重置口令管理";
+            this.barButtonItem8.Id = 52;
+            this.barButtonItem8.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.ITSM系统所需图标_口令管理;
+            this.barButtonItem8.Name = "barButtonItem8";
+            this.barButtonItem8.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
             // 
             // rbcControl
             // 
@@ -841,28 +855,25 @@
             // 
             this.rbpManage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.rpgManage,
-            this.ribbonPageGroup11,
-            this.ribbonPageGroup12});
+            this.ribbonPageGroup3});
             this.rbpManage.Name = "rbpManage";
             this.rbpManage.Text = "账户管理";
             // 
             // rpgManage
             // 
             this.rpgManage.ItemLinks.Add(this.bbtn_SuperUser);
+            this.rpgManage.ItemLinks.Add(this.bbtn_StafUser, true);
+            this.rpgManage.ItemLinks.Add(this.bbtn_CustomerUser, true);
             this.rpgManage.ItemsLayout = DevExpress.XtraBars.Ribbon.RibbonPageGroupItemsLayout.OneRow;
             this.rpgManage.Name = "rpgManage";
+            this.rpgManage.Text = "账户管理";
             // 
-            // ribbonPageGroup11
+            // ribbonPageGroup3
             // 
-            this.ribbonPageGroup11.ItemLinks.Add(this.bbtn_StafUser);
-            this.ribbonPageGroup11.Name = "ribbonPageGroup11";
-            this.ribbonPageGroup11.Text = "ribbonPageGroup11";
-            // 
-            // ribbonPageGroup12
-            // 
-            this.ribbonPageGroup12.ItemLinks.Add(this.bbtn_CustomerUser);
-            this.ribbonPageGroup12.Name = "ribbonPageGroup12";
-            this.ribbonPageGroup12.Text = "ribbonPageGroup12";
+            this.ribbonPageGroup3.ItemLinks.Add(this.ResetPasswd);
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem8, true);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            this.ribbonPageGroup3.Text = "账户重置";
             // 
             // PageGoods
             // 
@@ -893,15 +904,14 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.bbtn_GoodsStock, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.销售记录, true);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "商品信息";
+            this.ribbonPageGroup1.Text = "商品管理";
             // 
             // ribbonPageGroup2
             // 
             this.ribbonPageGroup2.ItemLinks.Add(this.bbtn_EmploerInfomation);
             this.ribbonPageGroup2.ItemLinks.Add(this.bbtn_EmploerMoney, true);
-            this.ribbonPageGroup2.ItemLinks.Add(this.bbtn_Supplyer);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "人员信息";
+            this.ribbonPageGroup2.Text = "人员管理";
             // 
             // ribbonPageGroup9
             // 
@@ -1137,7 +1147,7 @@
             this.gClass_datagridview.RowHeadersVisible = false;
             this.gClass_datagridview.RowTemplate.Height = 23;
             this.gClass_datagridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gClass_datagridview.Size = new System.Drawing.Size(1166, 367);
+            this.gClass_datagridview.Size = new System.Drawing.Size(1298, 367);
             this.gClass_datagridview.TabIndex = 5;
             this.gClass_datagridview.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gClass_datagridview_CellClick);
             // 
@@ -1330,7 +1340,7 @@
             this.SInfo_dategridview.RowHeadersVisible = false;
             this.SInfo_dategridview.RowTemplate.Height = 23;
             this.SInfo_dategridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.SInfo_dategridview.Size = new System.Drawing.Size(1460, 464);
+            this.SInfo_dategridview.Size = new System.Drawing.Size(1526, 464);
             this.SInfo_dategridview.TabIndex = 3;
             // 
             // Column1
@@ -1529,7 +1539,7 @@
             this.OrderL_dataGridView.RowHeadersVisible = false;
             this.OrderL_dataGridView.RowTemplate.Height = 23;
             this.OrderL_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.OrderL_dataGridView.Size = new System.Drawing.Size(1483, 475);
+            this.OrderL_dataGridView.Size = new System.Drawing.Size(1549, 475);
             this.OrderL_dataGridView.TabIndex = 6;
             // 
             // dataGridViewTextBoxColumn1
@@ -1613,7 +1623,7 @@
             this.xtp_GoodsInfom.Controls.Add(this.gInfom_dategridview);
             this.xtp_GoodsInfom.Margin = new System.Windows.Forms.Padding(5);
             this.xtp_GoodsInfom.Name = "xtp_GoodsInfom";
-            this.xtp_GoodsInfom.Size = new System.Drawing.Size(1389, 605);
+            this.xtp_GoodsInfom.Size = new System.Drawing.Size(1367, 605);
             this.xtp_GoodsInfom.Text = "商品信息";
             this.xtp_GoodsInfom.VisibleChanged += new System.EventHandler(this.xtp_GoodsInfom_VisibleChanged);
             this.xtp_GoodsInfom.Paint += new System.Windows.Forms.PaintEventHandler(this.xtraTabPage4_Paint);
@@ -1782,7 +1792,7 @@
             this.gInfom_dategridview.RowHeadersVisible = false;
             this.gInfom_dategridview.RowTemplate.Height = 23;
             this.gInfom_dategridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gInfom_dategridview.Size = new System.Drawing.Size(1406, 461);
+            this.gInfom_dategridview.Size = new System.Drawing.Size(1450, 461);
             this.gInfom_dategridview.TabIndex = 5;
             // 
             // dataGridViewTextBoxColumn25
@@ -2023,7 +2033,7 @@
             this.stfInfo_dataGridView.RowHeadersVisible = false;
             this.stfInfo_dataGridView.RowTemplate.Height = 23;
             this.stfInfo_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.stfInfo_dataGridView.Size = new System.Drawing.Size(1314, 437);
+            this.stfInfo_dataGridView.Size = new System.Drawing.Size(1358, 437);
             this.stfInfo_dataGridView.TabIndex = 6;
             this.stfInfo_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.stfInfo_dataGridView_CellContentClick);
             // 
@@ -2343,7 +2353,7 @@
             this.cbs_SuperUserDataGrid.RowHeadersVisible = false;
             this.cbs_SuperUserDataGrid.RowTemplate.Height = 23;
             this.cbs_SuperUserDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.cbs_SuperUserDataGrid.Size = new System.Drawing.Size(1481, 477);
+            this.cbs_SuperUserDataGrid.Size = new System.Drawing.Size(1525, 477);
             this.cbs_SuperUserDataGrid.TabIndex = 14;
             this.cbs_SuperUserDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cbs_SuperUserDataGrid_CellContentClick);
             // 
@@ -2506,7 +2516,7 @@
             this.cStaf_dataGridView.RowHeadersVisible = false;
             this.cStaf_dataGridView.RowTemplate.Height = 23;
             this.cStaf_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.cStaf_dataGridView.Size = new System.Drawing.Size(1343, 477);
+            this.cStaf_dataGridView.Size = new System.Drawing.Size(1387, 477);
             this.cStaf_dataGridView.TabIndex = 20;
             this.cStaf_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cStaf_dataGridView_CellContentClick);
             // 
@@ -2667,7 +2677,7 @@
             this.cCtm_dataGridView.RowHeadersVisible = false;
             this.cCtm_dataGridView.RowTemplate.Height = 23;
             this.cCtm_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.cCtm_dataGridView.Size = new System.Drawing.Size(1475, 477);
+            this.cCtm_dataGridView.Size = new System.Drawing.Size(1519, 477);
             this.cCtm_dataGridView.TabIndex = 20;
             this.cCtm_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cCtm_dataGridView_CellContentClick);
             // 
@@ -2715,10 +2725,20 @@
             // 
             // xtraTabPage14
             // 
+            this.xtraTabPage14.Controls.Add(this.chartControl1);
             this.xtraTabPage14.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabPage14.Name = "xtraTabPage14";
             this.xtraTabPage14.Size = new System.Drawing.Size(1367, 605);
             this.xtraTabPage14.Text = "xtraTabPage14";
+            // 
+            // chartControl1
+            // 
+            this.chartControl1.Legend.LegendID = -1;
+            this.chartControl1.Location = new System.Drawing.Point(357, 136);
+            this.chartControl1.Name = "chartControl1";
+            this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
+            this.chartControl1.Size = new System.Drawing.Size(300, 200);
+            this.chartControl1.TabIndex = 0;
             // 
             // repositoryItemRibbonSearchEdit1
             // 
@@ -3064,6 +3084,8 @@
             this.panelControl6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cCtm_tbSearch.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cCtm_dataGridView)).EndInit();
+            this.xtraTabPage14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit3)).EndInit();
@@ -3112,7 +3134,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
         private DevExpress.XtraBars.BarButtonItem bbtn_GoodsClass;
         private DevExpress.XtraBars.BarButtonItem bbtn_EmploerInfomation;
-        private DevExpress.XtraBars.BarButtonItem bbtn_Supplyer;
         private DevExpress.XtraBars.BarButtonItem bbtn_GoodsInform;
         private DevExpress.XtraBars.BarButtonItem bbtn_SellChart;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
@@ -3124,9 +3145,7 @@
         private DevExpress.XtraBars.BarButtonItem bbtn_SuperUser;
         private DevExpress.XtraBars.BarButtonItem barButtonItem11;
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
         private DevExpress.XtraBars.BarButtonItem bbtn_StafUser;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
         private DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit repositoryItemRibbonSearchEdit8;
         private DevExpress.XtraBars.BarButtonItem bbtn_CustomerUser;
         private DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit repositoryItemRibbonSearchEdit9;
@@ -3333,5 +3352,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private DevExpress.XtraBars.BarButtonItem ResetPasswd;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
+        private DevExpress.XtraCharts.ChartControl chartControl1;
     }
 }

@@ -18,7 +18,12 @@ namespace EasyBuy_DAL
             string sqlstr = string.Format("select * from tblUserList where UserName ='{0}' and UserPassword = '{1}'", userName,userPassword);
             using (DataTable dt = SqlHelper.ExecuteDataTable(sqlstr))
             {
-                userInfom = ToModel(dt)[0];
+                if(dt.Rows.Count != 0)
+                {
+                    userInfom = ToModel(dt)[0];
+       
+                }
+               
             }
                 
             return userInfom;
@@ -72,7 +77,7 @@ namespace EasyBuy_DAL
             
             if(userPasswd != null)
             {
-                updateSqlstr += string.Format("UserPasswd = '{0}'", userPasswd);
+                updateSqlstr += string.Format("UserPassword = '{0}'", userPasswd);
             }
             if(userPasswd !=null && userDescribe!= null)
             {
@@ -83,7 +88,7 @@ namespace EasyBuy_DAL
                 updateSqlstr += string.Format("UserDescirbe = '{0}' ", userDescribe);
             }
             //统一添加限定
-            updateSqlstr += string.Format(" where UserName = '{1}'", userDescribe, userName);
+            updateSqlstr += string.Format(" where UserName = '{0}'",  userName);
 
            updatedNum = SqlHelper.ExecuteNonQuery(updateSqlstr);
             return updatedNum;
