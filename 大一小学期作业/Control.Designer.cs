@@ -148,6 +148,7 @@
             this.ace_GoodsClass = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ace_GoodsInformation = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ace_GoodsStock = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator5 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ace_StafInformation = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -155,6 +156,7 @@
             this.accordionControlSeparator2 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement10 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement8 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlSeparator3 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ace_SuperUser = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -386,8 +388,7 @@
             this.galleryDropDown1 = new DevExpress.XtraBars.Ribbon.GalleryDropDown(this.components);
             this.workspaceManager1 = new DevExpress.Utils.WorkspaceManager(this.components);
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement8 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateTimeOffsetEdit1)).BeginInit();
@@ -574,6 +575,13 @@
             this.ace_GoodsStock.Text = "商品供货商信息";
             this.ace_GoodsStock.Click += new System.EventHandler(this.ace_GoodsStock_Click);
             // 
+            // accordionControlElement7
+            // 
+            this.accordionControlElement7.Name = "accordionControlElement7";
+            this.accordionControlElement7.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement7.Text = "订单管理";
+            this.accordionControlElement7.Click += new System.EventHandler(this.accordionControlElement7_Click);
+            // 
             // accordionControlSeparator5
             // 
             this.accordionControlSeparator5.Name = "accordionControlSeparator5";
@@ -620,6 +628,13 @@
             this.accordionControlElement10.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement10.Text = "订单信息统计";
             this.accordionControlElement10.Click += new System.EventHandler(this.accordionControlElement10_Click);
+            // 
+            // accordionControlElement8
+            // 
+            this.accordionControlElement8.Name = "accordionControlElement8";
+            this.accordionControlElement8.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement8.Text = "员工绩效统计";
+            this.accordionControlElement8.Click += new System.EventHandler(this.accordionControlElement8_Click);
             // 
             // accordionControlSeparator3
             // 
@@ -1148,7 +1163,7 @@
             this.gClass_datagridview.RowHeadersVisible = false;
             this.gClass_datagridview.RowTemplate.Height = 23;
             this.gClass_datagridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gClass_datagridview.Size = new System.Drawing.Size(972, 317);
+            this.gClass_datagridview.Size = new System.Drawing.Size(994, 317);
             this.gClass_datagridview.TabIndex = 5;
             this.gClass_datagridview.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gClass_datagridview_CellClick);
             // 
@@ -1341,7 +1356,7 @@
             this.SInfo_dategridview.RowHeadersVisible = false;
             this.SInfo_dategridview.RowTemplate.Height = 23;
             this.SInfo_dategridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.SInfo_dategridview.Size = new System.Drawing.Size(1336, 414);
+            this.SInfo_dategridview.Size = new System.Drawing.Size(1358, 414);
             this.SInfo_dategridview.TabIndex = 3;
             // 
             // Column1
@@ -1412,6 +1427,7 @@
             // 
             // panelControl8
             // 
+            this.panelControl8.Controls.Add(this.simpleButton1);
             this.panelControl8.Controls.Add(this.gInfom_cbsearch);
             this.panelControl8.Controls.Add(this.OrderL_SelectOrder);
             this.panelControl8.Controls.Add(this.Ginfom_tbSearch);
@@ -1476,7 +1492,7 @@
             this.OrderL_ChangeOrder.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
             this.OrderL_ChangeOrder.Appearance.Options.UseBackColor = true;
             this.OrderL_ChangeOrder.Appearance.Options.UseFont = true;
-            this.OrderL_ChangeOrder.Location = new System.Drawing.Point(190, 14);
+            this.OrderL_ChangeOrder.Location = new System.Drawing.Point(338, 16);
             this.OrderL_ChangeOrder.Margin = new System.Windows.Forms.Padding(4);
             this.OrderL_ChangeOrder.Name = "OrderL_ChangeOrder";
             this.OrderL_ChangeOrder.Size = new System.Drawing.Size(124, 37);
@@ -1490,7 +1506,7 @@
             this.OrderL_AddOrder.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
             this.OrderL_AddOrder.Appearance.Options.UseBackColor = true;
             this.OrderL_AddOrder.Appearance.Options.UseFont = true;
-            this.OrderL_AddOrder.Location = new System.Drawing.Point(39, 15);
+            this.OrderL_AddOrder.Location = new System.Drawing.Point(186, 15);
             this.OrderL_AddOrder.Margin = new System.Windows.Forms.Padding(4);
             this.OrderL_AddOrder.Name = "OrderL_AddOrder";
             this.OrderL_AddOrder.Size = new System.Drawing.Size(125, 37);
@@ -1505,7 +1521,7 @@
             this.OrderL_DeleteOrder.Appearance.Options.UseBackColor = true;
             this.OrderL_DeleteOrder.Appearance.Options.UseFont = true;
             this.OrderL_DeleteOrder.CausesValidation = false;
-            this.OrderL_DeleteOrder.Location = new System.Drawing.Point(345, 14);
+            this.OrderL_DeleteOrder.Location = new System.Drawing.Point(485, 18);
             this.OrderL_DeleteOrder.Margin = new System.Windows.Forms.Padding(4);
             this.OrderL_DeleteOrder.Name = "OrderL_DeleteOrder";
             this.OrderL_DeleteOrder.Size = new System.Drawing.Size(117, 34);
@@ -1696,6 +1712,7 @@
             this.gInfom_tbSelectInfom.Properties.Appearance.Options.UseForeColor = true;
             this.gInfom_tbSelectInfom.Size = new System.Drawing.Size(253, 30);
             this.gInfom_tbSelectInfom.TabIndex = 24;
+            this.gInfom_tbSelectInfom.EditValueChanged += new System.EventHandler(this.gInfom_tbSelectInfom_EditValueChanged);
             // 
             // gInfom_btNewGood
             // 
@@ -2252,7 +2269,7 @@
             this.xtp_ControlUserSuper.Controls.Add(this.cbs_SuperUserDataGrid);
             this.xtp_ControlUserSuper.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_ControlUserSuper.Name = "xtp_ControlUserSuper";
-            this.xtp_ControlUserSuper.Size = new System.Drawing.Size(1389, 555);
+            this.xtp_ControlUserSuper.Size = new System.Drawing.Size(1367, 555);
             this.xtp_ControlUserSuper.Text = "管理员账户";
             this.xtp_ControlUserSuper.VisibleChanged += new System.EventHandler(this.xtp_ControlUserSuper_VisibleChanged);
             // 
@@ -2415,7 +2432,7 @@
             this.xtp_ControlUserStaff.Controls.Add(this.cStaf_dataGridView);
             this.xtp_ControlUserStaff.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_ControlUserStaff.Name = "xtp_ControlUserStaff";
-            this.xtp_ControlUserStaff.Size = new System.Drawing.Size(1389, 555);
+            this.xtp_ControlUserStaff.Size = new System.Drawing.Size(1367, 555);
             this.xtp_ControlUserStaff.Text = "员工账户";
             this.xtp_ControlUserStaff.VisibleChanged += new System.EventHandler(this.xtp_ControlUserStaff_VisibleChanged);
             // 
@@ -2578,7 +2595,7 @@
             this.xtp_ControlUserCustmer.Controls.Add(this.cCtm_dataGridView);
             this.xtp_ControlUserCustmer.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_ControlUserCustmer.Name = "xtp_ControlUserCustmer";
-            this.xtp_ControlUserCustmer.Size = new System.Drawing.Size(1389, 555);
+            this.xtp_ControlUserCustmer.Size = new System.Drawing.Size(1367, 555);
             this.xtp_ControlUserCustmer.Text = "顾客账户";
             this.xtp_ControlUserCustmer.VisibleChanged += new System.EventHandler(this.xtp_ControlUserCustmer_VisibleChanged);
             // 
@@ -2739,7 +2756,7 @@
             this.xtraTabPage14.Controls.Add(this.chartControl1);
             this.xtraTabPage14.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabPage14.Name = "xtraTabPage14";
-            this.xtraTabPage14.Size = new System.Drawing.Size(1389, 555);
+            this.xtraTabPage14.Size = new System.Drawing.Size(1367, 555);
             this.xtraTabPage14.Text = "商品订单信息统计";
             this.xtraTabPage14.VisibleChanged += new System.EventHandler(this.xtraTabPage14_VisibleChanged);
             // 
@@ -2786,7 +2803,7 @@
             // 
             this.xtraTabStaffMark.Controls.Add(this.chartControlstaff);
             this.xtraTabStaffMark.Name = "xtraTabStaffMark";
-            this.xtraTabStaffMark.Size = new System.Drawing.Size(1389, 555);
+            this.xtraTabStaffMark.Size = new System.Drawing.Size(1367, 555);
             this.xtraTabStaffMark.Text = "员工绩效统计";
             this.xtraTabStaffMark.VisibleChanged += new System.EventHandler(this.xtraTabStaffMark_VisibleChanged);
             // 
@@ -3067,19 +3084,17 @@
             this.workspaceManager1.TargetControl = this;
             this.workspaceManager1.TransitionType = pushTransition1;
             // 
-            // accordionControlElement7
+            // simpleButton1
             // 
-            this.accordionControlElement7.Name = "accordionControlElement7";
-            this.accordionControlElement7.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement7.Text = "订单管理";
-            this.accordionControlElement7.Click += new System.EventHandler(this.accordionControlElement7_Click);
-            // 
-            // accordionControlElement8
-            // 
-            this.accordionControlElement8.Name = "accordionControlElement8";
-            this.accordionControlElement8.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement8.Text = "员工绩效统计";
-            this.accordionControlElement8.Click += new System.EventHandler(this.accordionControlElement8_Click);
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.Location = new System.Drawing.Point(37, 15);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(125, 37);
+            this.simpleButton1.TabIndex = 29;
+            this.simpleButton1.Text = "查询全部";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // Control
             // 
@@ -3446,5 +3461,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem10;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement7;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement8;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

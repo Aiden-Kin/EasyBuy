@@ -1157,21 +1157,22 @@ namespace EasyBuy
         {
             string condition = null;
             string search = null;
-            if (stfInfo_tbStaffID.Text != null) {
+            if (stfInfo_tbStaffID.Text != string.Empty) {
                 condition = "StfID";
                 search = stfInfo_tbStaffID.Text;
             }
 
-            else if (stfInfo_tbName.Text != null) { condition = "StfName";
+            else if (stfInfo_tbName.Text != string.Empty) { condition = "StfName";
                 search = stfInfo_tbName.Text;
             }
-            else if (tbStaffstateus.Text != null) { condition = "StfState";
+            else if (tbStaffstateus.Text != string.Empty) { condition = "StfState";
                 search = tbStaffstateus.Text;
             }
-            else if (tbPositionst.Text != null) { condition = "StfPost";
+            else if (tbPositionst.Text != string.Empty) { condition = "StfPost";
                 search = tbPositionst.Text;
             }
-            new StfInformationManager().GetStaffInformationList(condition,search);
+            List<StaffInformation> ls = new StfInformationManager().GetStaffInformationList(condition,search);
+            stfInfo_dataGridView.DataSource = ls;   
         }
 
         #region 统计表界面
@@ -1221,7 +1222,18 @@ namespace EasyBuy
 
         private void gInfom_Search_Click(object sender, EventArgs e)
         {
+            List<GoodsInfom> ginfom = new List<GoodsInfom>();
+            try
+            {
+                ginfom = new GoodsInfomManager().GetList(gInfom_cbSelect.Text, gInfom_tbSelectInfom.Text.Trim());
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            gInfom_dategridview.AutoGenerateColumns = false;
+            gInfom_dategridview.DataSource = ginfom;
         }
 
         private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -1319,6 +1331,16 @@ namespace EasyBuy
         private void accordionControlElement8_Click(object sender, EventArgs e)
         {
             xtb_ControlPanel.SelectedTabPage = xtraTabStaffMark;
+        }
+
+        private void gInfom_tbSelectInfom_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            OrderL_RefreshData();
         }
     }
 

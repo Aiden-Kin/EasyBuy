@@ -1,5 +1,7 @@
 ﻿using DevExpress.XtraBars;
 using DevExpress.XtraSplashScreen;
+using EasyBuy_BLL;
+using EasyBuy_Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,19 +21,20 @@ namespace EasyBuy
 
         public UserForm()
         {
-            InitializeComponent();      
+            InitializeComponent();
         }
 
 
         public UserForm(Login login)
         {
             InitializeComponent();
-          
+       
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            RefreshData();
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -67,6 +70,23 @@ namespace EasyBuy
         }
         #endregion
 
+
+        void RefreshData()
+        {
+            List<GoodsInfom> gL = new List<GoodsInfom>();
+            try
+            {
+                gL = new GoodsInfomManager().GetList();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            gInfom_dategridview.AutoGenerateColumns = false;
+            gInfom_dategridview.DataSource = gL;
+        }
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
             Control controlPanel = new Control();
@@ -87,6 +107,19 @@ namespace EasyBuy
         private void btnRefresh_Click(object sender, EventArgs e)
         {
  
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+           RefreshData();
+        }
+
+        private void gInfom_Search_Click(object sender, EventArgs e)
+        {
+            string ts = gInfom_tbSelectInfom.Text;
+            List<OrderList> list = new List<OrderList>();
+            list = new OrderListManager().GetList(gInfom_cbSelect.Text, ts);
+            gInfom_dategridview.DataSource = list;
         }
     }
 }

@@ -30,11 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserForm));
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.tbUser = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.btnConfirm = new DevExpress.XtraEditors.SimpleButton();
-            this.tbPassword = new DevExpress.XtraEditors.TextEdit();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.Exit = new DevExpress.XtraEditors.SimpleButton();
             this.sidePanel1 = new DevExpress.XtraEditors.SidePanel();
@@ -54,103 +49,33 @@
             this.barDockControl6 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl7 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl8 = new DevExpress.XtraBars.BarDockControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.pbVerification = new System.Windows.Forms.PictureBox();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.btnRefresh = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            ((System.ComponentModel.ISupportInitialize)(this.tbUser.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbPassword.Properties)).BeginInit();
+            this.gInfom_dategridview = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gInfom_cbSelect = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.gInfom_Search = new DevExpress.XtraEditors.SimpleButton();
+            this.gInfom_tbSelectInfom = new DevExpress.XtraEditors.TextEdit();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.sidePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbVerification)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gInfom_dategridview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gInfom_cbSelect.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gInfom_tbSelectInfom.Properties)).BeginInit();
             this.SuspendLayout();
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("小米兰亭", 16F);
-            this.labelControl1.Appearance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(206, 109);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(5);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(66, 29);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "用户名";
-            // 
-            // tbUser
-            // 
-            this.tbUser.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbUser.Location = new System.Drawing.Point(329, 112);
-            this.tbUser.Margin = new System.Windows.Forms.Padding(5);
-            this.tbUser.Name = "tbUser";
-            this.tbUser.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.tbUser.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 9F);
-            this.tbUser.Properties.Appearance.Options.UseBackColor = true;
-            this.tbUser.Properties.Appearance.Options.UseFont = true;
-            this.tbUser.Size = new System.Drawing.Size(225, 24);
-            this.tbUser.TabIndex = 1;
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("小米兰亭", 16F);
-            this.labelControl2.Appearance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(194, 179);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(5);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(88, 29);
-            this.labelControl2.TabIndex = 0;
-            this.labelControl2.Text = "登陆密码";
-            // 
-            // btnConfirm
-            // 
-            this.btnConfirm.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnConfirm.Appearance.Font = new System.Drawing.Font("小米兰亭", 14F);
-            this.btnConfirm.Appearance.Options.UseFont = true;
-            this.btnConfirm.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnConfirm.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.确认;
-            this.btnConfirm.ImageOptions.SvgImageSize = new System.Drawing.Size(30, 30);
-            this.btnConfirm.Location = new System.Drawing.Point(234, 505);
-            this.btnConfirm.Margin = new System.Windows.Forms.Padding(5);
-            this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(264, 62);
-            this.btnConfirm.TabIndex = 2;
-            this.btnConfirm.Text = "确认";
-            // 
-            // tbPassword
-            // 
-            this.tbPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbPassword.Location = new System.Drawing.Point(329, 182);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(5);
-            this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 9F);
-            this.tbPassword.Properties.Appearance.Options.UseFont = true;
-            this.tbPassword.Properties.PasswordChar = '*';
-            this.tbPassword.Properties.UseSystemPasswordChar = true;
-            this.tbPassword.Size = new System.Drawing.Size(225, 24);
-            this.tbPassword.TabIndex = 1;
             // 
             // Exit
             // 
             this.Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Exit.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.Exit.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.BottomCenter;
             this.Exit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Exit.ImageOptions.SvgImage")));
             this.Exit.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
@@ -192,7 +117,7 @@
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(112, 20);
             this.labelControl3.TabIndex = 4;
-            this.labelControl3.Text = "东油易购用户注册";
+            this.labelControl3.Text = "东油易购商品浏览";
             // 
             // barManager1
             // 
@@ -326,102 +251,157 @@
             this.barDockControl8.Margin = new System.Windows.Forms.Padding(5);
             this.barDockControl8.Size = new System.Drawing.Size(0, 666);
             // 
-            // labelControl4
+            // gInfom_dategridview
             // 
-            this.labelControl4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.gInfom_dategridview.AllowUserToAddRows = false;
+            this.gInfom_dategridview.AllowUserToDeleteRows = false;
+            this.gInfom_dategridview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("小米兰亭", 16F);
-            this.labelControl4.Appearance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(194, 255);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(5);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(88, 29);
-            this.labelControl4.TabIndex = 0;
-            this.labelControl4.Text = "确认密码";
+            this.gInfom_dategridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gInfom_dategridview.BackgroundColor = System.Drawing.Color.White;
+            this.gInfom_dategridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gInfom_dategridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn25,
+            this.dataGridViewTextBoxColumn35,
+            this.dataGridViewTextBoxColumn40,
+            this.dataGridViewTextBoxColumn38,
+            this.dataGridViewTextBoxColumn39,
+            this.dataGridViewTextBoxColumn41,
+            this.Column13,
+            this.Column14,
+            this.Column10});
+            this.gInfom_dategridview.Location = new System.Drawing.Point(26, 124);
+            this.gInfom_dategridview.Margin = new System.Windows.Forms.Padding(5);
+            this.gInfom_dategridview.Name = "gInfom_dategridview";
+            this.gInfom_dategridview.ReadOnly = true;
+            this.gInfom_dategridview.RowHeadersVisible = false;
+            this.gInfom_dategridview.RowTemplate.Height = 23;
+            this.gInfom_dategridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gInfom_dategridview.Size = new System.Drawing.Size(924, 485);
+            this.gInfom_dategridview.TabIndex = 45;
             // 
-            // textEdit1
+            // dataGridViewTextBoxColumn25
             // 
-            this.textEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textEdit1.Location = new System.Drawing.Point(329, 260);
-            this.textEdit1.Margin = new System.Windows.Forms.Padding(5);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 9F);
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Properties.PasswordChar = '*';
-            this.textEdit1.Properties.UseSystemPasswordChar = true;
-            this.textEdit1.Size = new System.Drawing.Size(225, 24);
-            this.textEdit1.TabIndex = 1;
+            this.dataGridViewTextBoxColumn25.DataPropertyName = "ID";
+            this.dataGridViewTextBoxColumn25.HeaderText = "商品编号";
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            this.dataGridViewTextBoxColumn25.ReadOnly = true;
             // 
-            // pbVerification
+            // dataGridViewTextBoxColumn35
             // 
-            this.pbVerification.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbVerification.BackColor = System.Drawing.Color.Transparent;
-            this.pbVerification.Location = new System.Drawing.Point(247, 403);
-            this.pbVerification.Margin = new System.Windows.Forms.Padding(5);
-            this.pbVerification.Name = "pbVerification";
-            this.pbVerification.Size = new System.Drawing.Size(197, 62);
-            this.pbVerification.TabIndex = 17;
-            this.pbVerification.TabStop = false;
+            this.dataGridViewTextBoxColumn35.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn35.HeaderText = "商品名称";
+            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
+            this.dataGridViewTextBoxColumn35.ReadOnly = true;
             // 
-            // labelControl5
+            // dataGridViewTextBoxColumn40
             // 
-            this.labelControl5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("小米兰亭", 16F);
-            this.labelControl5.Appearance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Appearance.Options.UseForeColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(144, 327);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(5);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(132, 29);
-            this.labelControl5.TabIndex = 0;
-            this.labelControl5.Text = "请输入验证码";
+            this.dataGridViewTextBoxColumn40.DataPropertyName = "Class";
+            this.dataGridViewTextBoxColumn40.HeaderText = "类别";
+            this.dataGridViewTextBoxColumn40.Name = "dataGridViewTextBoxColumn40";
+            this.dataGridViewTextBoxColumn40.ReadOnly = true;
             // 
-            // textEdit2
+            // dataGridViewTextBoxColumn38
             // 
-            this.textEdit2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textEdit2.Location = new System.Drawing.Point(329, 330);
-            this.textEdit2.Margin = new System.Windows.Forms.Padding(5);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 9F);
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Properties.PasswordChar = '*';
-            this.textEdit2.Properties.UseSystemPasswordChar = true;
-            this.textEdit2.Size = new System.Drawing.Size(225, 24);
-            this.textEdit2.TabIndex = 1;
+            this.dataGridViewTextBoxColumn38.DataPropertyName = "Repertory";
+            this.dataGridViewTextBoxColumn38.HeaderText = "库存数量";
+            this.dataGridViewTextBoxColumn38.Name = "dataGridViewTextBoxColumn38";
+            this.dataGridViewTextBoxColumn38.ReadOnly = true;
             // 
-            // btnRefresh
+            // dataGridViewTextBoxColumn39
             // 
-            this.btnRefresh.Appearance.Font = new System.Drawing.Font("小米兰亭", 11F);
-            this.btnRefresh.Appearance.Options.UseFont = true;
-            this.btnRefresh.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.刷新1;
-            this.btnRefresh.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
-            this.btnRefresh.Location = new System.Drawing.Point(460, 413);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(5);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(89, 42);
-            this.btnRefresh.TabIndex = 18;
-            this.btnRefresh.Text = "刷新";
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            this.dataGridViewTextBoxColumn39.DataPropertyName = "Supplier";
+            this.dataGridViewTextBoxColumn39.HeaderText = "供货商";
+            this.dataGridViewTextBoxColumn39.Name = "dataGridViewTextBoxColumn39";
+            this.dataGridViewTextBoxColumn39.ReadOnly = true;
             // 
-            // labelControl7
+            // dataGridViewTextBoxColumn41
             // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("小米兰亭", 10F);
-            this.labelControl7.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Appearance.Options.UseForeColor = true;
-            this.labelControl7.Location = new System.Drawing.Point(576, 184);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(5);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(97, 19);
-            this.labelControl7.TabIndex = 32;
-            this.labelControl7.Text = "请输入 a-Z 0-9";
+            this.dataGridViewTextBoxColumn41.DataPropertyName = "Price";
+            this.dataGridViewTextBoxColumn41.HeaderText = "原价(元)";
+            this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
+            this.dataGridViewTextBoxColumn41.ReadOnly = true;
+            // 
+            // Column13
+            // 
+            this.Column13.DataPropertyName = "Discount";
+            this.Column13.HeaderText = "折扣";
+            this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
+            // 
+            // Column14
+            // 
+            this.Column14.DataPropertyName = "DPrice";
+            this.Column14.HeaderText = "折后价(元)";
+            this.Column14.Name = "Column14";
+            this.Column14.ReadOnly = true;
+            // 
+            // Column10
+            // 
+            this.Column10.DataPropertyName = "AddTime";
+            this.Column10.HeaderText = "上新时间";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            // 
+            // gInfom_cbSelect
+            // 
+            this.gInfom_cbSelect.EditValue = "筛选条件";
+            this.gInfom_cbSelect.Location = new System.Drawing.Point(321, 78);
+            this.gInfom_cbSelect.Name = "gInfom_cbSelect";
+            this.gInfom_cbSelect.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.gInfom_cbSelect.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.gInfom_cbSelect.Properties.Appearance.Options.UseFont = true;
+            this.gInfom_cbSelect.Properties.Appearance.Options.UseForeColor = true;
+            this.gInfom_cbSelect.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.gInfom_cbSelect.Properties.Items.AddRange(new object[] {
+            "类别",
+            "供货商",
+            "商品编号",
+            "商品名称"});
+            this.gInfom_cbSelect.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.gInfom_cbSelect.Size = new System.Drawing.Size(119, 30);
+            this.gInfom_cbSelect.TabIndex = 48;
+            // 
+            // gInfom_Search
+            // 
+            this.gInfom_Search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.gInfom_Search.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.gInfom_Search.Appearance.Options.UseFont = true;
+            this.gInfom_Search.Location = new System.Drawing.Point(800, 73);
+            this.gInfom_Search.Margin = new System.Windows.Forms.Padding(4);
+            this.gInfom_Search.Name = "gInfom_Search";
+            this.gInfom_Search.Size = new System.Drawing.Size(117, 37);
+            this.gInfom_Search.TabIndex = 46;
+            this.gInfom_Search.Text = "筛选";
+            this.gInfom_Search.Click += new System.EventHandler(this.gInfom_Search_Click);
+            // 
+            // gInfom_tbSelectInfom
+            // 
+            this.gInfom_tbSelectInfom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.gInfom_tbSelectInfom.EditValue = "筛选内容";
+            this.gInfom_tbSelectInfom.Location = new System.Drawing.Point(447, 78);
+            this.gInfom_tbSelectInfom.Margin = new System.Windows.Forms.Padding(4);
+            this.gInfom_tbSelectInfom.Name = "gInfom_tbSelectInfom";
+            this.gInfom_tbSelectInfom.Properties.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.gInfom_tbSelectInfom.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.gInfom_tbSelectInfom.Properties.Appearance.Options.UseFont = true;
+            this.gInfom_tbSelectInfom.Properties.Appearance.Options.UseForeColor = true;
+            this.gInfom_tbSelectInfom.Size = new System.Drawing.Size(345, 30);
+            this.gInfom_tbSelectInfom.TabIndex = 47;
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.Location = new System.Drawing.Point(189, 73);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(125, 37);
+            this.simpleButton1.TabIndex = 61;
+            this.simpleButton1.Text = "查询全部";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // UserForm
             // 
@@ -430,19 +410,12 @@
             this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Stretch;
             this.BackgroundImageStore = global::EasyBuy.Properties.Resources.Backgroundn_Small;
             this.ClientSize = new System.Drawing.Size(973, 666);
-            this.Controls.Add(this.labelControl7);
-            this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.pbVerification);
+            this.Controls.Add(this.simpleButton1);
+            this.Controls.Add(this.gInfom_cbSelect);
+            this.Controls.Add(this.gInfom_Search);
+            this.Controls.Add(this.gInfom_tbSelectInfom);
+            this.Controls.Add(this.gInfom_dategridview);
             this.Controls.Add(this.sidePanel1);
-            this.Controls.Add(this.textEdit2);
-            this.Controls.Add(this.textEdit1);
-            this.Controls.Add(this.tbPassword);
-            this.Controls.Add(this.tbUser);
-            this.Controls.Add(this.labelControl5);
-            this.Controls.Add(this.labelControl4);
-            this.Controls.Add(this.labelControl2);
-            this.Controls.Add(this.labelControl1);
-            this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
@@ -463,29 +436,21 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "用户密码";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.tbUser.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbPassword.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.sidePanel1.ResumeLayout(false);
             this.sidePanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbVerification)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gInfom_dategridview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gInfom_cbSelect.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gInfom_tbSelectInfom.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.TextEdit tbUser;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.SimpleButton btnConfirm;
-        private DevExpress.XtraEditors.TextEdit tbPassword;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private DevExpress.XtraEditors.SimpleButton Exit;
         private DevExpress.XtraEditors.SidePanel sidePanel1;
@@ -505,13 +470,20 @@
         private DevExpress.XtraBars.BarDockControl barDockControl5;
         private DevExpress.XtraBars.BarDockControl barDockControl6;
         private DevExpress.XtraBars.BarDockControl barDockControl8;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        private System.Windows.Forms.PictureBox pbVerification;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.SimpleButton btnRefresh;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
+        private System.Windows.Forms.DataGridView gInfom_dategridview;
+        private DevExpress.XtraEditors.ComboBoxEdit gInfom_cbSelect;
+        private DevExpress.XtraEditors.SimpleButton gInfom_Search;
+        private DevExpress.XtraEditors.TextEdit gInfom_tbSelectInfom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn35;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn40;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn38;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn39;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn41;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }
 

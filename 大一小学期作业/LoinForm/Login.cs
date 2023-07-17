@@ -92,6 +92,12 @@ namespace EasyBuy
                 this.Hide();
                 AdminMainForm controlform = new AdminMainForm(UserInform.UserName);
                 controlform.Show();
+            }else if(UserInform.UserGroup == "Customer")
+            {
+                UserInform.UserPassword = null;
+                this.Hide();
+                UserForm userfo = new UserForm();
+                userfo.Show();
             }
         }
 

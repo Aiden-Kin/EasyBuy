@@ -1,4 +1,5 @@
-﻿using EasyBuy_DAL;
+﻿using DevExpress.CodeParser;
+using EasyBuy_DAL;
 using EasyBuy_Model;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,26 @@ namespace EasyBuy_BLL
 
         public List<GoodsInfom> GetList(string condition = "", string find = "")
         {
-    
+            switch (condition)
+            {
+                case "类别":
+                    condition = "Class";
+                    break;
+                case "供货商":
+                    condition = "Supplier";
+                    break;
+                case "商品编号":
+                    condition = "ID";
+                    break;
+                case "商品名称":
+                    condition = "Name";
+                    break;
+                case "不筛选":
+                default:
+                    condition = "";
+                    break;
+            }
+
             return new GoodsInfomServer().GetList(condition, find);
         }
 
