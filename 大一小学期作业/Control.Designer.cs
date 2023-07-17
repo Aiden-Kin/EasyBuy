@@ -182,6 +182,7 @@
             this.ResetPasswd = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.rbcControl = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
             this.rbpManage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgManage = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -385,6 +386,8 @@
             this.galleryDropDown1 = new DevExpress.XtraBars.Ribbon.GalleryDropDown(this.components);
             this.workspaceManager1 = new DevExpress.Utils.WorkspaceManager(this.components);
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
+            this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement8 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateTimeOffsetEdit1)).BeginInit();
@@ -543,7 +546,8 @@
             this.accordionControlElement6.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.ace_GoodsClass,
             this.ace_GoodsInformation,
-            this.ace_GoodsStock});
+            this.ace_GoodsStock,
+            this.accordionControlElement7});
             this.accordionControlElement6.Expanded = true;
             this.accordionControlElement6.Name = "accordionControlElement6";
             this.accordionControlElement6.Text = "商品信息管理";
@@ -604,7 +608,8 @@
             // accordionControlElement1
             // 
             this.accordionControlElement1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement10});
+            this.accordionControlElement10,
+            this.accordionControlElement8});
             this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Text = "统计图表";
@@ -613,7 +618,8 @@
             // 
             this.accordionControlElement10.Name = "accordionControlElement10";
             this.accordionControlElement10.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement10.Text = "销售统计图表";
+            this.accordionControlElement10.Text = "订单信息统计";
+            this.accordionControlElement10.Click += new System.EventHandler(this.accordionControlElement10_Click);
             // 
             // accordionControlSeparator3
             // 
@@ -674,10 +680,11 @@
             this.销售记录,
             this.ResetPasswd,
             this.barButtonItem8,
-            this.barButtonItem9});
+            this.barButtonItem9,
+            this.barButtonItem10});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5);
-            this.ribbonControl1.MaxItemId = 54;
+            this.ribbonControl1.MaxItemId = 55;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.OptionsMenuMinWidth = 411;
             this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
@@ -691,7 +698,7 @@
             // 
             // bbtn_GoodsStock
             // 
-            this.bbtn_GoodsStock.Caption = "商品供货商信息";
+            this.bbtn_GoodsStock.Caption = "供货商信息";
             this.bbtn_GoodsStock.Id = 8;
             this.bbtn_GoodsStock.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.商品_库存管理;
             this.bbtn_GoodsStock.Name = "bbtn_GoodsStock";
@@ -729,7 +736,7 @@
             // 
             // bbtn_GoodsInform
             // 
-            this.bbtn_GoodsInform.Caption = "商品管理";
+            this.bbtn_GoodsInform.Caption = "商品信息管理";
             this.bbtn_GoodsInform.Id = 15;
             this.bbtn_GoodsInform.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.商品信息;
             this.bbtn_GoodsInform.Name = "bbtn_GoodsInform";
@@ -741,6 +748,7 @@
             this.bbtn_SellChart.Id = 16;
             this.bbtn_SellChart.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.统计__3_;
             this.bbtn_SellChart.Name = "bbtn_SellChart";
+            this.bbtn_SellChart.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbtn_SellChart_ItemClick);
             // 
             // bbtn_SuperUser
             // 
@@ -829,6 +837,14 @@
             this.barButtonItem9.Name = "barButtonItem9";
             this.barButtonItem9.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9_ItemClick);
             // 
+            // barButtonItem10
+            // 
+            this.barButtonItem10.Caption = "员工绩效统计";
+            this.barButtonItem10.Id = 54;
+            this.barButtonItem10.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.绩效统计__1_;
+            this.barButtonItem10.Name = "barButtonItem10";
+            this.barButtonItem10.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem10_ItemClick);
+            // 
             // rbcControl
             // 
             this.rbcControl.Name = "rbcControl";
@@ -865,7 +881,7 @@
             // 
             this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem9);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.Text = "ribbonPageGroup4";
+            this.ribbonPageGroup4.Text = "MFA管理";
             // 
             // PageGoods
             // 
@@ -907,6 +923,7 @@
             // ribbonPageGroup9
             // 
             this.ribbonPageGroup9.ItemLinks.Add(this.bbtn_SellChart);
+            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem10, true);
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
             this.ribbonPageGroup9.Text = "图表统计";
             // 
@@ -989,7 +1006,7 @@
             this.panelControl2.Controls.Add(this.labelControl9);
             this.panelControl2.Location = new System.Drawing.Point(372, 13);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(946, 122);
+            this.panelControl2.Size = new System.Drawing.Size(972, 122);
             this.panelControl2.TabIndex = 11;
             // 
             // labelControl7
@@ -1131,7 +1148,7 @@
             this.gClass_datagridview.RowHeadersVisible = false;
             this.gClass_datagridview.RowTemplate.Height = 23;
             this.gClass_datagridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gClass_datagridview.Size = new System.Drawing.Size(1144, 317);
+            this.gClass_datagridview.Size = new System.Drawing.Size(972, 317);
             this.gClass_datagridview.TabIndex = 5;
             this.gClass_datagridview.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gClass_datagridview_CellClick);
             // 
@@ -1176,7 +1193,7 @@
             this.xtp_Supplier.Controls.Add(this.SInfo_dategridview);
             this.xtp_Supplier.Margin = new System.Windows.Forms.Padding(5);
             this.xtp_Supplier.Name = "xtp_Supplier";
-            this.xtp_Supplier.Size = new System.Drawing.Size(1367, 555);
+            this.xtp_Supplier.Size = new System.Drawing.Size(1389, 555);
             this.xtp_Supplier.Text = "供货商信息";
             this.xtp_Supplier.VisibleChanged += new System.EventHandler(this.xtp_Supplier_VisibleChanged);
             // 
@@ -1189,7 +1206,7 @@
             this.panelControl3.Controls.Add(this.SInfo_btModify);
             this.panelControl3.Controls.Add(this.SInfo_btSearchAll);
             this.panelControl3.Controls.Add(this.SInfo_btDelete);
-            this.panelControl3.Location = new System.Drawing.Point(33, 18);
+            this.panelControl3.Location = new System.Drawing.Point(34, 19);
             this.panelControl3.Name = "panelControl3";
             this.panelControl3.Size = new System.Drawing.Size(1327, 93);
             this.panelControl3.TabIndex = 25;
@@ -1324,7 +1341,7 @@
             this.SInfo_dategridview.RowHeadersVisible = false;
             this.SInfo_dategridview.RowTemplate.Height = 23;
             this.SInfo_dategridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.SInfo_dategridview.Size = new System.Drawing.Size(1438, 437);
+            this.SInfo_dategridview.Size = new System.Drawing.Size(1336, 414);
             this.SInfo_dategridview.TabIndex = 3;
             // 
             // Column1
@@ -1389,7 +1406,7 @@
             this.xtp_OrderControl.Controls.Add(this.OrderL_dataGridView);
             this.xtp_OrderControl.Margin = new System.Windows.Forms.Padding(5);
             this.xtp_OrderControl.Name = "xtp_OrderControl";
-            this.xtp_OrderControl.Size = new System.Drawing.Size(1367, 555);
+            this.xtp_OrderControl.Size = new System.Drawing.Size(1389, 555);
             this.xtp_OrderControl.Text = "订单管理";
             this.xtp_OrderControl.VisibleChanged += new System.EventHandler(this.xtp_OrderControl_VisibleChanged_1);
             // 
@@ -1401,7 +1418,7 @@
             this.panelControl8.Controls.Add(this.OrderL_ChangeOrder);
             this.panelControl8.Controls.Add(this.OrderL_AddOrder);
             this.panelControl8.Controls.Add(this.OrderL_DeleteOrder);
-            this.panelControl8.Location = new System.Drawing.Point(25, 30);
+            this.panelControl8.Location = new System.Drawing.Point(26, 31);
             this.panelControl8.Name = "panelControl8";
             this.panelControl8.Size = new System.Drawing.Size(1343, 67);
             this.panelControl8.TabIndex = 27;
@@ -1526,7 +1543,7 @@
             this.OrderL_dataGridView.RowHeadersVisible = false;
             this.OrderL_dataGridView.RowTemplate.Height = 23;
             this.OrderL_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.OrderL_dataGridView.Size = new System.Drawing.Size(1461, 448);
+            this.OrderL_dataGridView.Size = new System.Drawing.Size(1351, 425);
             this.OrderL_dataGridView.TabIndex = 6;
             // 
             // dataGridViewTextBoxColumn1
@@ -1612,7 +1629,7 @@
             this.xtp_GoodsInfom.Controls.Add(this.gInfom_dategridview);
             this.xtp_GoodsInfom.Margin = new System.Windows.Forms.Padding(5);
             this.xtp_GoodsInfom.Name = "xtp_GoodsInfom";
-            this.xtp_GoodsInfom.Size = new System.Drawing.Size(1367, 555);
+            this.xtp_GoodsInfom.Size = new System.Drawing.Size(1389, 555);
             this.xtp_GoodsInfom.Text = "商品信息";
             this.xtp_GoodsInfom.VisibleChanged += new System.EventHandler(this.xtp_GoodsInfom_VisibleChanged);
             this.xtp_GoodsInfom.Paint += new System.Windows.Forms.PaintEventHandler(this.xtraTabPage4_Paint);
@@ -1627,7 +1644,7 @@
             this.panelControl7.Controls.Add(this.gInfom_btrepetoryManage);
             this.panelControl7.Controls.Add(this.gInfom_btChangeInfom);
             this.panelControl7.Controls.Add(this.gInfom_btDelete);
-            this.panelControl7.Location = new System.Drawing.Point(28, 21);
+            this.panelControl7.Location = new System.Drawing.Point(29, 22);
             this.panelControl7.Name = "panelControl7";
             this.panelControl7.Size = new System.Drawing.Size(1340, 93);
             this.panelControl7.TabIndex = 26;
@@ -1782,7 +1799,7 @@
             this.gInfom_dategridview.RowHeadersVisible = false;
             this.gInfom_dategridview.RowTemplate.Height = 23;
             this.gInfom_dategridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gInfom_dategridview.Size = new System.Drawing.Size(1428, 434);
+            this.gInfom_dategridview.Size = new System.Drawing.Size(1340, 411);
             this.gInfom_dategridview.TabIndex = 5;
             // 
             // dataGridViewTextBoxColumn25
@@ -1878,7 +1895,7 @@
             this.xtp_StaffInformation.Controls.Add(this.stfInfo_btAdd);
             this.xtp_StaffInformation.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_StaffInformation.Name = "xtp_StaffInformation";
-            this.xtp_StaffInformation.Size = new System.Drawing.Size(1367, 555);
+            this.xtp_StaffInformation.Size = new System.Drawing.Size(1389, 555);
             this.xtp_StaffInformation.Text = "员工信息";
             this.xtp_StaffInformation.VisibleChanged += new System.EventHandler(this.xtp_StaffInformation_VisibleChanged);
             // 
@@ -2026,7 +2043,7 @@
             this.stfInfo_dataGridView.RowHeadersVisible = false;
             this.stfInfo_dataGridView.RowTemplate.Height = 23;
             this.stfInfo_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.stfInfo_dataGridView.Size = new System.Drawing.Size(1424, 410);
+            this.stfInfo_dataGridView.Size = new System.Drawing.Size(1314, 379);
             this.stfInfo_dataGridView.TabIndex = 6;
             this.stfInfo_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.stfInfo_dataGridView_CellContentClick);
             // 
@@ -2133,7 +2150,7 @@
             this.xtp_StaffSalary.Controls.Add(this.StaffS_datagrid);
             this.xtp_StaffSalary.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_StaffSalary.Name = "xtp_StaffSalary";
-            this.xtp_StaffSalary.Size = new System.Drawing.Size(1367, 555);
+            this.xtp_StaffSalary.Size = new System.Drawing.Size(1389, 555);
             this.xtp_StaffSalary.Text = "员工工资绩效";
             this.xtp_StaffSalary.VisibleChanged += new System.EventHandler(this.xtp_StafMoney_VisibleChanged);
             // 
@@ -2143,7 +2160,7 @@
             this.StaffS_datagrid.MainView = this.gridView1;
             this.StaffS_datagrid.MenuManager = this.ribbonControl1;
             this.StaffS_datagrid.Name = "StaffS_datagrid";
-            this.StaffS_datagrid.Size = new System.Drawing.Size(1369, 606);
+            this.StaffS_datagrid.Size = new System.Drawing.Size(1369, 544);
             this.StaffS_datagrid.TabIndex = 1;
             this.StaffS_datagrid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -2235,7 +2252,7 @@
             this.xtp_ControlUserSuper.Controls.Add(this.cbs_SuperUserDataGrid);
             this.xtp_ControlUserSuper.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_ControlUserSuper.Name = "xtp_ControlUserSuper";
-            this.xtp_ControlUserSuper.Size = new System.Drawing.Size(1367, 555);
+            this.xtp_ControlUserSuper.Size = new System.Drawing.Size(1389, 555);
             this.xtp_ControlUserSuper.Text = "管理员账户";
             this.xtp_ControlUserSuper.VisibleChanged += new System.EventHandler(this.xtp_ControlUserSuper_VisibleChanged);
             // 
@@ -2246,7 +2263,7 @@
             this.panelControl4.Controls.Add(this.cbs_btnAddUser);
             this.panelControl4.Controls.Add(this.cbs_btnSearchAll);
             this.panelControl4.Controls.Add(this.cbs_btnDleteUser);
-            this.panelControl4.Location = new System.Drawing.Point(20, 16);
+            this.panelControl4.Location = new System.Drawing.Point(21, 17);
             this.panelControl4.Name = "panelControl4";
             this.panelControl4.Size = new System.Drawing.Size(1349, 70);
             this.panelControl4.TabIndex = 20;
@@ -2346,7 +2363,7 @@
             this.cbs_SuperUserDataGrid.RowHeadersVisible = false;
             this.cbs_SuperUserDataGrid.RowTemplate.Height = 23;
             this.cbs_SuperUserDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.cbs_SuperUserDataGrid.Size = new System.Drawing.Size(1393, 450);
+            this.cbs_SuperUserDataGrid.Size = new System.Drawing.Size(1350, 450);
             this.cbs_SuperUserDataGrid.TabIndex = 14;
             this.cbs_SuperUserDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cbs_SuperUserDataGrid_CellContentClick);
             // 
@@ -2398,7 +2415,7 @@
             this.xtp_ControlUserStaff.Controls.Add(this.cStaf_dataGridView);
             this.xtp_ControlUserStaff.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_ControlUserStaff.Name = "xtp_ControlUserStaff";
-            this.xtp_ControlUserStaff.Size = new System.Drawing.Size(1367, 555);
+            this.xtp_ControlUserStaff.Size = new System.Drawing.Size(1389, 555);
             this.xtp_ControlUserStaff.Text = "员工账户";
             this.xtp_ControlUserStaff.VisibleChanged += new System.EventHandler(this.xtp_ControlUserStaff_VisibleChanged);
             // 
@@ -2409,7 +2426,7 @@
             this.panelControl5.Controls.Add(this.cStf_btnAdd);
             this.panelControl5.Controls.Add(this.cStf_btnSearchAll);
             this.panelControl5.Controls.Add(this.cStf_btnDelete);
-            this.panelControl5.Location = new System.Drawing.Point(26, 20);
+            this.panelControl5.Location = new System.Drawing.Point(27, 21);
             this.panelControl5.Name = "panelControl5";
             this.panelControl5.Size = new System.Drawing.Size(1343, 67);
             this.panelControl5.TabIndex = 26;
@@ -2509,7 +2526,7 @@
             this.cStaf_dataGridView.RowHeadersVisible = false;
             this.cStaf_dataGridView.RowTemplate.Height = 23;
             this.cStaf_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.cStaf_dataGridView.Size = new System.Drawing.Size(1387, 450);
+            this.cStaf_dataGridView.Size = new System.Drawing.Size(1343, 442);
             this.cStaf_dataGridView.TabIndex = 20;
             this.cStaf_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cStaf_dataGridView_CellContentClick);
             // 
@@ -2561,7 +2578,7 @@
             this.xtp_ControlUserCustmer.Controls.Add(this.cCtm_dataGridView);
             this.xtp_ControlUserCustmer.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_ControlUserCustmer.Name = "xtp_ControlUserCustmer";
-            this.xtp_ControlUserCustmer.Size = new System.Drawing.Size(1367, 555);
+            this.xtp_ControlUserCustmer.Size = new System.Drawing.Size(1389, 555);
             this.xtp_ControlUserCustmer.Text = "顾客账户";
             this.xtp_ControlUserCustmer.VisibleChanged += new System.EventHandler(this.xtp_ControlUserCustmer_VisibleChanged);
             // 
@@ -2572,7 +2589,7 @@
             this.panelControl6.Controls.Add(this.cCtm_btnAdd);
             this.panelControl6.Controls.Add(this.cCtm_btnSearchAll);
             this.panelControl6.Controls.Add(this.cCtm_btnDelete);
-            this.panelControl6.Location = new System.Drawing.Point(26, 16);
+            this.panelControl6.Location = new System.Drawing.Point(27, 17);
             this.panelControl6.Name = "panelControl6";
             this.panelControl6.Size = new System.Drawing.Size(1343, 64);
             this.panelControl6.TabIndex = 26;
@@ -2670,7 +2687,7 @@
             this.cCtm_dataGridView.RowHeadersVisible = false;
             this.cCtm_dataGridView.RowTemplate.Height = 23;
             this.cCtm_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.cCtm_dataGridView.Size = new System.Drawing.Size(1387, 450);
+            this.cCtm_dataGridView.Size = new System.Drawing.Size(1343, 446);
             this.cCtm_dataGridView.TabIndex = 20;
             this.cCtm_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cCtm_dataGridView_CellContentClick);
             // 
@@ -2770,7 +2787,7 @@
             this.xtraTabStaffMark.Controls.Add(this.chartControlstaff);
             this.xtraTabStaffMark.Name = "xtraTabStaffMark";
             this.xtraTabStaffMark.Size = new System.Drawing.Size(1389, 555);
-            this.xtraTabStaffMark.Text = "xtraTabPage1";
+            this.xtraTabStaffMark.Text = "员工绩效统计";
             this.xtraTabStaffMark.VisibleChanged += new System.EventHandler(this.xtraTabStaffMark_VisibleChanged);
             // 
             // chartControlstaff
@@ -3049,6 +3066,20 @@
             // 
             this.workspaceManager1.TargetControl = this;
             this.workspaceManager1.TransitionType = pushTransition1;
+            // 
+            // accordionControlElement7
+            // 
+            this.accordionControlElement7.Name = "accordionControlElement7";
+            this.accordionControlElement7.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement7.Text = "订单管理";
+            this.accordionControlElement7.Click += new System.EventHandler(this.accordionControlElement7_Click);
+            // 
+            // accordionControlElement8
+            // 
+            this.accordionControlElement8.Name = "accordionControlElement8";
+            this.accordionControlElement8.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement8.Text = "员工绩效统计";
+            this.accordionControlElement8.Click += new System.EventHandler(this.accordionControlElement8_Click);
             // 
             // Control
             // 
@@ -3412,5 +3443,8 @@
         private DevExpress.XtraEditors.TextEdit tbPositionst;
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem10;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement7;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement8;
     }
 }

@@ -61,6 +61,16 @@ namespace EasyBuy.Properties {
         }
         
         /// <summary>
+        ///   查找 DevExpress.Utils.Svg.SvgImage 类型的本地化资源。
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage _23工作绩效统计 {
+            get {
+                object obj = ResourceManager.GetObject("23工作绩效统计", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
         internal static System.Drawing.Bitmap BackGround {
@@ -261,6 +271,16 @@ namespace EasyBuy.Properties {
         }
         
         /// <summary>
+        ///   查找 DevExpress.Utils.Svg.SvgImage 类型的本地化资源。
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage 人员绩效统计 {
+            get {
+                object obj = ResourceManager.GetObject("人员绩效统计", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
         internal static System.Drawing.Bitmap 刷新 {
@@ -426,6 +446,26 @@ namespace EasyBuy.Properties {
         internal static DevExpress.Utils.Svg.SvgImage 统计__3_ {
             get {
                 object obj = ResourceManager.GetObject("统计 (3)", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 DevExpress.Utils.Svg.SvgImage 类型的本地化资源。
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage 绩效统计 {
+            get {
+                object obj = ResourceManager.GetObject("绩效统计", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 DevExpress.Utils.Svg.SvgImage 类型的本地化资源。
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage 绩效统计__1_ {
+            get {
+                object obj = ResourceManager.GetObject("绩效统计 (1)", resourceCulture);
                 return ((DevExpress.Utils.Svg.SvgImage)(obj));
             }
         }

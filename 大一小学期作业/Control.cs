@@ -119,7 +119,7 @@ namespace EasyBuy
 
         private void bbtn_CustomerUser_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            xtb_ControlPanel.SelectedTabPage = xtp_ControlUserCustmer; ;
+            xtb_ControlPanel.SelectedTabPage = xtp_ControlUserCustmer; 
         }
 
         private void ace_GoodsClass_Click(object sender, EventArgs e)
@@ -134,6 +134,7 @@ namespace EasyBuy
 
         private void ace_GoodsStock_Click(object sender, EventArgs e)
         {
+             xtb_ControlPanel.SelectedTabPage = xtp_Supplier;
         }
 
         private void ace_StafInformation_Click(object sender, EventArgs e)
@@ -1142,16 +1143,6 @@ namespace EasyBuy
 
 
 
-
-
-
-
-
-
-
-
-
-
         #endregion
 
         private void OrderL_SelectOrder_Click(object sender, EventArgs e)
@@ -1305,6 +1296,30 @@ namespace EasyBuy
 
         #endregion
 
+        private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtraTabStaffMark;
+        }
+
+        private void bbtn_SellChart_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtraTabPage14;
+        }
+
+        private void accordionControlElement7_Click(object sender, EventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtp_OrderControl;
+        }
+
+        private void accordionControlElement10_Click(object sender, EventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtraTabPage14;
+        }
+
+        private void accordionControlElement8_Click(object sender, EventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtraTabStaffMark;
+        }
     }
 
 }

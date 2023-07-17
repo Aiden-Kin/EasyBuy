@@ -434,6 +434,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\icon\MainIcon.png" />
+    <None Include="Resources\绩效统计 %281%29.svg" />
+    <None Include="Resources\人员绩效统计.svg" />
+    <None Include="Resources\绩效统计.svg" />
+    <None Include="Resources\23工作绩效统计.svg" />
     <None Include="Resources\BackGround_Blue_Small2.png" />
     <None Include="Resources\MFA验证.svg" />
     <None Include="Resources\统计 %283%29.svg" />
