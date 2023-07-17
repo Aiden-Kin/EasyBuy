@@ -58,10 +58,9 @@
             // 
             // peImage
             // 
-            this.peImage.BackgroundImage = global::EasyBuy.Properties.Resources.BackGround_Blue_Small1;
             this.peImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.peImage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.peImage.EditValue = global::EasyBuy.Properties.Resources.BackGround_Blue_Small;
+            this.peImage.EditValue = global::EasyBuy.Properties.Resources.BackGround_Blue_Small2;
             this.peImage.Location = new System.Drawing.Point(1, 1);
             this.peImage.Name = "peImage";
             this.peImage.Properties.AllowFocused = false;

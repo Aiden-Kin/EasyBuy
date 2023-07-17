@@ -113,6 +113,16 @@ namespace EasyBuy.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap BackGround_Blue_Small2 {
+            get {
+                object obj = ResourceManager.GetObject("BackGround_Blue_Small2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap BackGround_city {
             get {
                 object obj = ResourceManager.GetObject("BackGround_city", resourceCulture);
@@ -196,6 +206,26 @@ namespace EasyBuy.Properties {
         internal static System.Drawing.Bitmap MainIcon {
             get {
                 object obj = ResourceManager.GetObject("MainIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 DevExpress.Utils.Svg.SvgImage 类型的本地化资源。
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage MFA验证 {
+            get {
+                object obj = ResourceManager.GetObject("MFA验证", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap MFA验证1 {
+            get {
+                object obj = ResourceManager.GetObject("MFA验证1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

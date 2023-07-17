@@ -1225,6 +1225,12 @@ namespace EasyBuy
         {
 
         }
+
+        private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            MfaCreate mfac = new MfaCreate(userInform.UserName);
+            mfac.Show();
+        }
     }
 
 }

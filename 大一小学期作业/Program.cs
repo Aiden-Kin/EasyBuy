@@ -29,7 +29,7 @@ namespace EasyBuy
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminMainForm("lihua"));
+            Application.Run(new Login());
         }
     }
 }

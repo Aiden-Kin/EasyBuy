@@ -78,12 +78,14 @@ namespace EasyBuy
                 tbPassword.Text = null;
                 tbUser.Text = null;  
             }
+
             else if (UserInform.UserGroup == "SuperUser")
             {
+
                 UserInform.UserPassword = null; //密码释放
                 this.Hide();
-                Control controlform = new Control(UserInform);
-                controlform.Show();
+                Mfa mfaForm = new Mfa(UserInform);
+                mfaForm.Show();
             }else if (UserInform.UserGroup == "Staff")
             {
                 UserInform.UserPassword = null;

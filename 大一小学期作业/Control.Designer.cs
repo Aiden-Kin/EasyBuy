@@ -381,6 +381,8 @@
             this.galleryDropDown1 = new DevExpress.XtraBars.Ribbon.GalleryDropDown(this.components);
             this.workspaceManager1 = new DevExpress.Utils.WorkspaceManager(this.components);
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
+            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateTimeOffsetEdit1)).BeginInit();
@@ -667,10 +669,11 @@
             this.barTime,
             this.销售记录,
             this.ResetPasswd,
-            this.barButtonItem8});
+            this.barButtonItem8,
+            this.barButtonItem9});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(5);
-            this.ribbonControl1.MaxItemId = 53;
+            this.ribbonControl1.MaxItemId = 54;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.OptionsMenuMinWidth = 411;
             this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
@@ -825,7 +828,8 @@
             // 
             this.rbpManage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.rpgManage,
-            this.ribbonPageGroup3});
+            this.ribbonPageGroup3,
+            this.ribbonPageGroup4});
             this.rbpManage.Name = "rbpManage";
             this.rbpManage.Text = "账户管理";
             // 
@@ -1109,7 +1113,7 @@
             this.gClass_datagridview.RowHeadersVisible = false;
             this.gClass_datagridview.RowTemplate.Height = 23;
             this.gClass_datagridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gClass_datagridview.Size = new System.Drawing.Size(1100, 317);
+            this.gClass_datagridview.Size = new System.Drawing.Size(1122, 317);
             this.gClass_datagridview.TabIndex = 5;
             this.gClass_datagridview.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gClass_datagridview_CellClick);
             // 
@@ -1367,7 +1371,7 @@
             this.xtp_OrderControl.Controls.Add(this.OrderL_dataGridView);
             this.xtp_OrderControl.Margin = new System.Windows.Forms.Padding(5);
             this.xtp_OrderControl.Name = "xtp_OrderControl";
-            this.xtp_OrderControl.Size = new System.Drawing.Size(1389, 555);
+            this.xtp_OrderControl.Size = new System.Drawing.Size(1367, 555);
             this.xtp_OrderControl.Text = "订单管理";
             this.xtp_OrderControl.VisibleChanged += new System.EventHandler(this.xtp_OrderControl_VisibleChanged_1);
             // 
@@ -1590,7 +1594,7 @@
             this.xtp_GoodsInfom.Controls.Add(this.gInfom_dategridview);
             this.xtp_GoodsInfom.Margin = new System.Windows.Forms.Padding(5);
             this.xtp_GoodsInfom.Name = "xtp_GoodsInfom";
-            this.xtp_GoodsInfom.Size = new System.Drawing.Size(1389, 555);
+            this.xtp_GoodsInfom.Size = new System.Drawing.Size(1367, 555);
             this.xtp_GoodsInfom.Text = "商品信息";
             this.xtp_GoodsInfom.VisibleChanged += new System.EventHandler(this.xtp_GoodsInfom_VisibleChanged);
             this.xtp_GoodsInfom.Paint += new System.Windows.Forms.PaintEventHandler(this.xtraTabPage4_Paint);
@@ -1856,7 +1860,7 @@
             this.xtp_StaffInformation.Controls.Add(this.stfInfo_btAdd);
             this.xtp_StaffInformation.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_StaffInformation.Name = "xtp_StaffInformation";
-            this.xtp_StaffInformation.Size = new System.Drawing.Size(1389, 555);
+            this.xtp_StaffInformation.Size = new System.Drawing.Size(1367, 555);
             this.xtp_StaffInformation.Text = "员工信息";
             this.xtp_StaffInformation.VisibleChanged += new System.EventHandler(this.xtp_StaffInformation_VisibleChanged);
             // 
@@ -2111,7 +2115,7 @@
             this.xtp_StaffSalary.Controls.Add(this.StaffS_datagrid);
             this.xtp_StaffSalary.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_StaffSalary.Name = "xtp_StaffSalary";
-            this.xtp_StaffSalary.Size = new System.Drawing.Size(1389, 555);
+            this.xtp_StaffSalary.Size = new System.Drawing.Size(1367, 555);
             this.xtp_StaffSalary.Text = "员工工资绩效";
             this.xtp_StaffSalary.VisibleChanged += new System.EventHandler(this.xtp_StafMoney_VisibleChanged);
             // 
@@ -2213,7 +2217,7 @@
             this.xtp_ControlUserSuper.Controls.Add(this.cbs_SuperUserDataGrid);
             this.xtp_ControlUserSuper.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_ControlUserSuper.Name = "xtp_ControlUserSuper";
-            this.xtp_ControlUserSuper.Size = new System.Drawing.Size(1389, 555);
+            this.xtp_ControlUserSuper.Size = new System.Drawing.Size(1367, 555);
             this.xtp_ControlUserSuper.Text = "管理员账户";
             this.xtp_ControlUserSuper.VisibleChanged += new System.EventHandler(this.xtp_ControlUserSuper_VisibleChanged);
             // 
@@ -2376,7 +2380,7 @@
             this.xtp_ControlUserStaff.Controls.Add(this.cStaf_dataGridView);
             this.xtp_ControlUserStaff.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_ControlUserStaff.Name = "xtp_ControlUserStaff";
-            this.xtp_ControlUserStaff.Size = new System.Drawing.Size(1389, 555);
+            this.xtp_ControlUserStaff.Size = new System.Drawing.Size(1367, 555);
             this.xtp_ControlUserStaff.Text = "员工账户";
             this.xtp_ControlUserStaff.VisibleChanged += new System.EventHandler(this.xtp_ControlUserStaff_VisibleChanged);
             // 
@@ -2539,7 +2543,7 @@
             this.xtp_ControlUserCustmer.Controls.Add(this.cCtm_dataGridView);
             this.xtp_ControlUserCustmer.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_ControlUserCustmer.Name = "xtp_ControlUserCustmer";
-            this.xtp_ControlUserCustmer.Size = new System.Drawing.Size(1389, 555);
+            this.xtp_ControlUserCustmer.Size = new System.Drawing.Size(1367, 555);
             this.xtp_ControlUserCustmer.Text = "顾客账户";
             this.xtp_ControlUserCustmer.VisibleChanged += new System.EventHandler(this.xtp_ControlUserCustmer_VisibleChanged);
             // 
@@ -2700,7 +2704,7 @@
             this.xtraTabPage14.Controls.Add(this.chartControl1);
             this.xtraTabPage14.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabPage14.Name = "xtraTabPage14";
-            this.xtraTabPage14.Size = new System.Drawing.Size(1389, 555);
+            this.xtraTabPage14.Size = new System.Drawing.Size(1367, 555);
             this.xtraTabPage14.Text = "商品订单信息统计";
             this.xtraTabPage14.VisibleChanged += new System.EventHandler(this.xtraTabPage14_VisibleChanged);
             // 
@@ -2747,7 +2751,7 @@
             // 
             this.xtraTabPage1.Controls.Add(this.chartControl3);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1389, 555);
+            this.xtraTabPage1.Size = new System.Drawing.Size(1367, 555);
             this.xtraTabPage1.Text = "xtraTabPage1";
             // 
             // chartControl3
@@ -3022,6 +3026,20 @@
             // 
             this.workspaceManager1.TargetControl = this;
             this.workspaceManager1.TransitionType = pushTransition1;
+            // 
+            // ribbonPageGroup4
+            // 
+            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem9);
+            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
+            this.ribbonPageGroup4.Text = "ribbonPageGroup4";
+            // 
+            // barButtonItem9
+            // 
+            this.barButtonItem9.Caption = "MFA认证秘钥";
+            this.barButtonItem9.Id = 53;
+            this.barButtonItem9.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.MFA验证;
+            this.barButtonItem9.Name = "barButtonItem9";
+            this.barButtonItem9.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9_ItemClick);
             // 
             // Control
             // 
@@ -3381,5 +3399,7 @@
         private DevExpress.XtraCharts.ChartControl chartControl2;
         private DevExpress.XtraEditors.ComboBoxEdit tbStaffstateus;
         private DevExpress.XtraEditors.TextEdit tbPositionst;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
     }
 }
