@@ -112,7 +112,7 @@
             this.uiSymbolLabel6.Size = new System.Drawing.Size(112, 29);
             this.uiSymbolLabel6.Symbol = 61649;
             this.uiSymbolLabel6.TabIndex = 40;
-            this.uiSymbolLabel6.Text = "库存修改";
+            this.uiSymbolLabel6.Text = "进出库存";
             // 
             // panelControl1
             // 
@@ -181,6 +181,7 @@
             // 
             this.tbrepo.Location = new System.Drawing.Point(219, 228);
             this.tbrepo.Name = "tbrepo";
+            this.tbrepo.Properties.ReadOnly = true;
             this.tbrepo.Size = new System.Drawing.Size(156, 28);
             this.tbrepo.TabIndex = 42;
             // 
@@ -188,6 +189,7 @@
             // 
             this.tbnamee.Location = new System.Drawing.Point(219, 159);
             this.tbnamee.Name = "tbnamee";
+            this.tbnamee.Properties.ReadOnly = true;
             this.tbnamee.Size = new System.Drawing.Size(156, 28);
             this.tbnamee.TabIndex = 43;
             // 
@@ -195,6 +197,7 @@
             // 
             this.tbidd.Location = new System.Drawing.Point(219, 96);
             this.tbidd.Name = "tbidd";
+            this.tbidd.Properties.ReadOnly = true;
             this.tbidd.Size = new System.Drawing.Size(156, 28);
             this.tbidd.TabIndex = 44;
             // 

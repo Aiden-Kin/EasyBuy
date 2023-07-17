@@ -15,16 +15,18 @@ namespace EasyBuy.SecondPage.S_GoodsInfom
 {
     public partial class GoodsInfom_DiscountForm : DevExpress.XtraEditors.XtraForm
     {
-        bool passwdflag = false;
+   
         Control mainControl;
-
-        public GoodsInfom_DiscountForm(Control mainControl, string uid, string name, string price)
+        float Oprice;
+        public GoodsInfom_DiscountForm(Control mainControl, string uid, string name, string price,string discount)
         {
             InitializeComponent();
             tbname.Text = name;
             tbid.Text = uid;
             tbTotal.Text = price;
             this.mainControl = mainControl;
+            Oprice = Convert.ToSingle(price);
+            tbdiscount.Value = double.Parse(discount);
         }
 
         private void Clear()
@@ -34,7 +36,8 @@ namespace EasyBuy.SecondPage.S_GoodsInfom
 
         private void btnAddConfirm_Click(object sender, EventArgs e)
         {
-            new GoodsInfomManager().UpPrice(tbid.Text, tbdiscount.Text);
+            string disc = tbdiscount.Value.ToString("0.00");
+            new GoodsInfomManager().UpPrice(tbid.Text, disc);
             Common.ShowInfo("打折成功");
             mainControl.GInform_RefreshData();
         }
@@ -81,9 +84,9 @@ namespace EasyBuy.SecondPage.S_GoodsInfom
 
         private void tbdiscount_ValueChanged(object sender, double value)
         {
-            double tepertory = Convert.ToDouble(tbTotal.Text);
-            tepertory *= tbdiscount.Value;
-            tbTotal.Text = tepertory.ToString();
+            Double Nprice;
+            Nprice = Oprice * tbdiscount.Value;
+            tbTotal.Text = Nprice.ToString("0.00");
         }
     }
 }

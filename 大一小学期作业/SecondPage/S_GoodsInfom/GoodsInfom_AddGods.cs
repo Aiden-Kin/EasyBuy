@@ -30,6 +30,11 @@ namespace EasyBuy.SecondPage
             InitializeComponent();
             adminCommodityInfoPage = adc;
         }
+        public GoodsInfom_AddGods()
+        {
+            InitializeComponent();
+       
+        }
         public GoodsInfom_AddGods(Control mainControl)
         {
             InitializeComponent();

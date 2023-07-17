@@ -19,6 +19,9 @@ namespace EasyBuy_BLL
 
         public List<StaffInformation> GetStaffInformationList( string condition = null, string searchData = null)
         {
+
+
+
             List<StaffInformation> stafflist = new List<StaffInformation>();
             stafflist = new StfInformationServer().GetUserList(condition,searchData);
 

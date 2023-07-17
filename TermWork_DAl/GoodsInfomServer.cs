@@ -75,10 +75,10 @@ namespace EasyBuy_DAL
             SqlHelper.ExecuteNonQuery(sqlStr);
         }
 
-        public void UpRepodate(string id, string repo)
+        public int UpRepodate(string id, string repo)
         {
             string sql = String.Format("UPDATE tblGoodsInfom set Repertory ={0} WHERE ID ={1} ", repo, id);
-            SqlHelper.ExecuteNonQuery(sql);
+            return SqlHelper.ExecuteNonQuery(sql);
         }
 
 
@@ -86,6 +86,14 @@ namespace EasyBuy_DAL
         {
             string sql = String.Format("UPDATE tblGoodsInfom set Discount ={0} WHERE ID ={1} ", discount, id);
             SqlHelper.ExecuteNonQuery(sql);
+        }
+
+
+        public DataTable GetGoodsTable()
+        {
+            string sqlStr = "SELECT * FROM tblGoodsInfom";
+            DataTable dt = SqlHelper.ExecuteDataTable(sqlStr);
+            return dt;
         }
     }
 }

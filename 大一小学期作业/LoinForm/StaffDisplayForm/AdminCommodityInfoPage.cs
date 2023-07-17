@@ -63,33 +63,30 @@ namespace CampusTradingSystemofNEPU.AdminForms
             switch (cmbClassify.SelectedIndex)
             {
                 case 0:
-                    item = "GNum";
+                    item = "ID";
                     break;
                 case 1:
-                    item = "GName";
+                    item = "Name";
                     break;
                 case 2:
-                    item = "GClass";
+                    item = "Class";
                     break;
                 case 3:
-                    item = "GAddress";
                     break;
                 case 4:
-                    item = "GCount";
+                    item = "Repertory";
                     break;
                 case 5:
-                    item = "GSupplier";
+                    item = "Supplier";
                     break;
-                case 6:
-                    item = "GState";
-                    break;
+
                 default:
                     break;
             }
 
-            DataTable table = new DataTable();
-            //table = new GoodsListManager().GetGoodsByItem(item, tbSearch.Text);
-            if (table.Rows.Count > 0)
+            List<GoodsInfom> table = new List<GoodsInfom> ();
+            table = new GoodsInfomManager().GetList(item, tbSearch.Text);
+            if (table.Count > 0)
             {
                 dgvInfo.DataSource = table;
             }
@@ -171,8 +168,6 @@ namespace CampusTradingSystemofNEPU.AdminForms
         {
             SelectedItem();
 
-            //GoodsAddForm goodsDetailForm = new GoodsAddForm(goodsList,"商品详情");
-            //goodsDetailForm.ShowDialog();
         }
 
         private void cmbClassify_SelectedIndexChanged(object sender, EventArgs e)

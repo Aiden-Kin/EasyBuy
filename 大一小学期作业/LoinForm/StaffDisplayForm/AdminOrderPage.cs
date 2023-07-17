@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CampusTradingSystemofNEPU.AdminForms.OrderFormEditForm;
 using EasyBuy_BLL;
+using EasyBuy_Model;
 using Sunny.UI;
 
 
@@ -16,7 +18,7 @@ namespace CampusTradingSystemofNEPU.AdminForms
 {
     public partial class AdminOrderPage : UIPage
     {
-        //OrderFormList orderFormList = new OrderFormList();
+        OrderList orderFormList = new OrderList();
 
         //DataTable dataTable = new OrderFormListManager().GetOrder();
 
@@ -46,18 +48,18 @@ namespace CampusTradingSystemofNEPU.AdminForms
                 UIMessageBox.ShowWarning("没有选中订单！");
             }
 
-            //orderFormList.OrderNumber = dgvInfo.Rows[rowIndex].Cells[0].Value.ToString();
-            //orderFormList.OrderCustomerName = dgvInfo.Rows[rowIndex].Cells[4].Value.ToString();
-            //orderFormList.OrderCustomerPhone = dgvInfo.Rows[rowIndex].Cells[5].Value.ToString();
-            //orderFormList.OrderCustomerAddress = dgvInfo.Rows[rowIndex].Cells[6].Value.ToString();
-            //orderFormList.OrderGoodsNumber = dgvInfo.Rows[rowIndex].Cells[7].Value.ToString();
-            //orderFormList.OrderGoodsName = dgvInfo.Rows[rowIndex].Cells[8].Value.ToString();
-            //orderFormList.OrderGoodsPrice = float.Parse(dgvInfo.Rows[rowIndex].Cells[9].Value.ToString());
-            //orderFormList.OrderGoodsCount = int.Parse(dgvInfo.Rows[rowIndex].Cells[10].Value.ToString());
-            //orderFormList.OrderTotalPrice = float.Parse(dgvInfo.Rows[rowIndex].Cells[11].Value.ToString());
-            //orderFormList.OrderPayWay = dgvInfo.Rows[rowIndex].Cells[1].Value.ToString();
-            //orderFormList.OrderPayStatus = dgvInfo.Rows[rowIndex].Cells[3].Value.ToString();
-            //orderFormList.OrderPayTime = dgvInfo.Rows[rowIndex].Cells[2].Value.ToString();
+            orderFormList.ONum = Convert.ToInt32(dgvInfo.Rows[rowIndex].Cells[0].Value);
+            orderFormList.OCustom = dgvInfo.Rows[rowIndex].Cells[1].Value.ToString();
+            orderFormList.OCPhone = dgvInfo.Rows[rowIndex].Cells[2].Value.ToString();
+            orderFormList.OCAddress = dgvInfo.Rows[rowIndex].Cells[3].Value.ToString();
+            orderFormList.OGoodsNum = Convert.ToInt32(dgvInfo.Rows[rowIndex].Cells[4].Value.ToString());
+            orderFormList.OGoodsName = dgvInfo.Rows[rowIndex].Cells[5].Value.ToString();
+            orderFormList.OGoodsPrice = float.Parse(dgvInfo.Rows[rowIndex].Cells[6].Value.ToString());
+            orderFormList.OGoodsNum = int.Parse(dgvInfo.Rows[rowIndex].Cells[7].Value.ToString());
+            orderFormList.OPayWay = dgvInfo.Rows[rowIndex].Cells[8].Value.ToString();
+            orderFormList.OTotallyMoney = float.Parse(dgvInfo.Rows[rowIndex].Cells[9].Value.ToString());
+            orderFormList.OTime = dgvInfo.Rows[rowIndex].Cells[10].Value.ToString();
+      
         }
 
         public void RefreshData()
@@ -101,16 +103,16 @@ namespace CampusTradingSystemofNEPU.AdminForms
                     break;
             }
 
-            //DataTable table = new DataTable();
-            //table = new OrderFormListManager().GetOrderByItem(item,tbSearch.Text);
-            //if (table.Rows.Count > 0)
-            //{
-            //    dgvInfo.DataSource = table;
-            //}
-            //else
-            //{
-            //    UIMessageBox.Show("未找到符合要求的信息.", "信息提示");
-            //}
+            List<OrderList> table = new List<OrderList>();
+            table = new OrderListManager().GetList(item, tbSearch.Text);
+            if (table.Count > 0)
+            {
+                dgvInfo.DataSource = table;
+            }
+            else
+            {
+                UIMessageBox.Show("未找到符合要求的信息.", "信息提示");
+            }
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
@@ -126,22 +128,22 @@ namespace CampusTradingSystemofNEPU.AdminForms
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            //OrderEditForm orderEditForm = new OrderEditForm();
-            //orderEditForm.ShowDialog();
+            OrderEditForm orderEditForm = new OrderEditForm(this);
+            orderEditForm.ShowDialog();
         }
 
         private void btnAlter_Click(object sender, EventArgs e)
         {
             SelectedItem();
 
-            //if (orderFormList.OrderNumber == "OF0")
-            //{
-            //    UIMessageBox.ShowError("这是系统保留默认项目，不可操作.");
-            //    return;
-            //}
+            if (orderFormList.OGoodsName == null)
+            {
+                UIMessageBox.ShowError("请选择正确数据.");
+                return;
+            }
 
-            //OrderEditForm orderEditForm = new OrderEditForm(orderFormList);
-            //orderEditForm.ShowDialog();
+            OrderEditForm orderEditForm = new OrderEditForm(orderFormList);
+            orderEditForm.ShowDialog();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -152,28 +154,35 @@ namespace CampusTradingSystemofNEPU.AdminForms
             {
                 UIMessageBox.ShowWarning("没有选中订单！");
             }
-            if(dgvInfo.Rows[rowIndex].Cells[0].Value.ToString() == "OF0")
+            if (dgvInfo.Rows[rowIndex].Cells[0].Value.ToString() == "OF0")
             {
-                UIMessageBox.ShowError("这是系统保留默认项目，不可操作.");
+                UIMessageBox.ShowError("请选择正确订单.");
                 return;
             }
             else
             {
-                if (ShowAskDialog("确定要删除订单 “" + dgvInfo.Rows[rowIndex].Cells[0].Value.ToString() + "” 吗") == false)
+                DialogResult res = MessageBox.Show("确定要取消订单 “" + dgvInfo.Rows[rowIndex].Cells[0].Value.ToString() + "” 吗", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (res == DialogResult.Cancel)
                 {
-                    ShowErrorTip("您取消了删除");
+
                     return;
                 }
+                GoodsInfom good = new GoodsInfomManager().Get(dgvInfo.Rows[rowIndex].Cells[4].Value.ToString());
+                int Nowreper = good.Repertory + Convert.ToInt32(dgvInfo.Rows[rowIndex].Cells[7].Value);
+                int result = new OrderListManager().Delete(dgvInfo.Rows[rowIndex].Cells[0].Value.ToString());
 
-                //int result = new OrderFormListManager().OrderaDelete(dgvInfo.Rows[rowIndex].Cells[0].Value.ToString());
-                //if (result > 0)
-                //{
-                //    UIMessageBox.Show("删除成功！", "信息提示");
-                //}
-                //else
-                //{
-                //    UIMessageBox.Show("删除失败.", "信息提示");
-                //}
+                new GoodsInfomManager().UpRepodate(dgvInfo.Rows[rowIndex].Cells[4].Value.ToString(), Nowreper.ToString());
+
+                if (result > 0)
+                {
+                    UIMessageBox.Show("取消成功！", "信息提示");
+                }
+                else
+                {
+                    UIMessageBox.Show("取消失败.", "信息提示");
+                }
+                RefreshData();
+
             }
         }
 
@@ -181,8 +190,8 @@ namespace CampusTradingSystemofNEPU.AdminForms
         {
             SelectedItem();
 
-            //OrderEditForm orderEditForm = new OrderEditForm(orderFormList,"订单详情");
-            //orderEditForm.ShowDialog();
+            OrderEditForm orderEditForm = new OrderEditForm(orderFormList, "订单详情");
+            orderEditForm.ShowDialog();
         }
     }
 }

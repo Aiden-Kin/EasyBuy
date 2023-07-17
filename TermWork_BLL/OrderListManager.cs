@@ -17,22 +17,7 @@ namespace EasyBuy_BLL
 
         public List<OrderList> GetList(string condition = "", string find = "")
         {
-            switch (condition)
-            {
-                case "名称":
-                    condition = "Name";
-                    break;
-                case "类别":
-                    condition = "Class";
-                    break;
-                case "位置":
-                    condition = "Location";
-                    break;
-                case "不筛选":
-                default:
-                    condition = "";
-                    break;
-            }
+
             return new OrderListServer().GetList(condition, find);
         }
 
@@ -60,10 +45,10 @@ namespace EasyBuy_BLL
             }
         }
 
-        private OrderList GetModel(int oNum, string oCustom, string oCPhone, string oCAddress, int oGoodsID, string oGoodsName, float oGoodsPrice, int oGoodsNum, string oPayWay, float oTotallyMoney, string oTime)
+        private OrderList GetModel( string oCustom, string oCPhone, string oCAddress, int oGoodsID, string oGoodsName, float oGoodsPrice, int oGoodsNum, string oPayWay, float oTotallyMoney, string oTime)
         {
             OrderList order = new OrderList();
-            order.ONum = oNum;
+       
             order.OCustom = oCustom;
             order.OCPhone = oCPhone;
             order.OCAddress = oCAddress;
@@ -80,24 +65,47 @@ namespace EasyBuy_BLL
         public void ChangeInfo(int oNum, string oCustom, string oCPhone, string oCAddress, int oGoodsID, string oGoodsName, float oGoodsPrice, int oGoodsNum, string oPayWay, float oTotallyMoney, string oTime)
         {
             ValidateInfo(oCustom, oCPhone, oCAddress, oGoodsName, oPayWay);
-            new OrderListServer().ChangeInfo(GetModel(oNum, oCustom, oCPhone, oCAddress, oGoodsID, oGoodsName, oGoodsPrice, oGoodsNum, oPayWay, oTotallyMoney, oTime));
+            new OrderListServer().ChangeInfo(GetModel(oCustom, oCPhone, oCAddress, oGoodsID, oGoodsName, oGoodsPrice, oGoodsNum, oPayWay, oTotallyMoney, oTime));
         }
 
+        public int ChangeInfo(OrderList gd)
+        {
+            return new OrderListServer().ChangeInfo(gd);
+        }
         public void Add(string oCustom, string oCPhone, string oCAddress, int oGoodsID, string oGoodsName, float oGoodsPrice, int oGoodsNum, string oPayWay, float oTotallyMoney, string oTime)
         {
             ValidateInfo(oCustom, oCPhone, oCAddress, oGoodsName, oPayWay);
-            int oNum = 0; // 生成订单编号的逻辑
-            new OrderListServer().Add(GetModel(oNum, oCustom, oCPhone, oCAddress, oGoodsID, oGoodsName, oGoodsPrice, oGoodsNum, oPayWay, oTotallyMoney, oTime));
+         
+            new OrderListServer().Add(GetModel( oCustom, oCPhone, oCAddress, oGoodsID, oGoodsName, oGoodsPrice, oGoodsNum, oPayWay, oTotallyMoney, oTime));
         }
 
-        public void Delete(int oNum)
+        public int AddModel(OrderList list)
         {
-            new OrderListServer().Delete(oNum);
+        
+            return new OrderListServer().Add(list);
+        }
+
+
+        public int Delete(string oNum)
+        {
+            int c = int.Parse(oNum);
+           return new OrderListServer().Delete(c);
         }
 
         public void UpRepodate(int oGoodsID, int oGoodsNum)
         {
             // 根据需要进行相关操作
+        }
+
+        public float GetTotailPrice(float price,int count)
+        {
+            
+            return price * count;
+        }
+
+        public int GoodsCountUpdate(int num , string id )
+        {
+            return new OrderListServer().GoodsCountUpdate(num,id);
         }
     }
 }

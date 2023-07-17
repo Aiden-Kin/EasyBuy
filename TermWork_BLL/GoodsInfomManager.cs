@@ -2,6 +2,7 @@
 using EasyBuy_Model;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,22 +23,7 @@ namespace EasyBuy_BLL
 
         public List<GoodsInfom> GetList(string condition = "", string find = "")
         {
-            switch (condition)
-            {
-                case "名称":
-                    condition = "Name";
-                    break;
-                case "类别":
-                    condition = "Class";
-                    break;
-                case "位置":
-                    condition = "Location";
-                    break;
-                case "不筛选":
-                default:
-                    condition = "";
-                    break;
-            }
+    
             return new GoodsInfomServer().GetList(condition, find);
         }
 
@@ -118,15 +104,24 @@ namespace EasyBuy_BLL
             return new GoodsInfomServer().Delete(idInt);
         }
 
-        public void UpRepodate(string id,string repo)
+        public int UpRepodate(string id,string repo)
         {
-            new GoodsInfomServer().UpRepodate(id, repo);
+            return new GoodsInfomServer().UpRepodate(id, repo);
         }
 
         public void UpPrice(string id,string discount)
         {
             new GoodsInfomServer().UpPrice(id, discount);
         }
+
+
+        public DataTable GetGoodsTable()
+        {
+            return new GoodsInfomServer().GetGoodsTable();
+        }
+
+
+
     }
 
 }

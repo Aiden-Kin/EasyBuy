@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static DevExpress.CodeParser.CodeStyle.Formatting.Rules;
 
 namespace EasyBuy_DAL
 {
@@ -42,7 +43,11 @@ namespace EasyBuy_DAL
             }
             return ToModel(dt)[0];
         }
-
+        public int GoodsCountUpdate(int num, string id)
+        {
+            string sqlStr = String.Format("UPDATE tblOrderList SET OGoodsNum = {0} WHERE ONum = {1} ", num,id);
+            return SqlHelper.ExecuteNonQuery(sqlStr);
+        }
         public List<OrderList> GetList(string condition, string find)
         {
             string sqlStr = "SELECT * FROM tblOrderList";
@@ -53,25 +58,22 @@ namespace EasyBuy_DAL
             DataTable dt = SqlHelper.ExecuteDataTable(sqlStr);
             return ToModel(dt);
         }
-
-        public void Add(OrderList order)
+        public int Add(OrderList order)
         {
-            string sqlStr = string.Format("INSERT INTO tblOrderList (ONum, OCustom, OCPhone, OCAddress, OGoodsID, OGoodsName, OGoodsPrice, OGoodsNum, OPayWay, OTotallyMoney, OTime) VALUES ({0}, '{1}', '{2}', '{3}', {4}, '{5}', {6}, {7}, '{8}', {9}, '{10}') ",
-                order.ONum, order.OCustom, order.OCPhone, order.OCAddress, order.OGoodsID, order.OGoodsName, order.OGoodsPrice, order.OGoodsNum, order.OPayWay, order.OTotallyMoney, order.OTime);
-            SqlHelper.ExecuteNonQuery(sqlStr);
+            string sqlStr = string.Format("INSERT INTO tblOrderList ( OCustom, OCPhone, OCAddress, OGoodsID, OGoodsName, OGoodsPrice, OGoodsNum, OPayWay, OTotallyMoney, OTime) VALUES ('{0}', '{1}', '{2}', {3}, '{4}', {5}, {6}, '{7}', {8}, '{9}') ",
+             order.OCustom, order.OCPhone, order.OCAddress, order.OGoodsID, order.OGoodsName, order.OGoodsPrice, order.OGoodsNum, order.OPayWay, order.OTotallyMoney, order.OTime);
+            return SqlHelper.ExecuteNonQuery(sqlStr);
         }
-
-        public void Delete(int oNum)
+        public int Delete(int oNum)
         {
             string sqlStr = String.Format("DELETE FROM tblOrderList WHERE ONum = {0}", oNum);
-            SqlHelper.ExecuteNonQuery(sqlStr);
+            return SqlHelper.ExecuteNonQuery(sqlStr);
         }
-
-        public void ChangeInfo(OrderList order)
+        public int ChangeInfo(OrderList order)
         {
             string sqlStr = String.Format("UPDATE tblOrderList SET OCustom = '{0}', OCPhone = '{1}', OCAddress = '{2}', OGoodsID = {3}, OGoodsName = '{4}', OGoodsPrice = {5}, OGoodsNum = {6}, OPayWay = '{7}', OTotallyMoney = {8}, OTime = '{9}' WHERE ONum = {10} ",
-                order.OCustom, order.OCPhone, order.OCAddress, order.OGoodsID, order.OGoodsName, order.OGoodsPrice, order.OGoodsNum, order.OPayWay, order.OTotallyMoney, order.OTime, order.ONum);
-            SqlHelper.ExecuteNonQuery(sqlStr);
+            order.OCustom, order.OCPhone, order.OCAddress, order.OGoodsID, order.OGoodsName, order.OGoodsPrice, order.OGoodsNum, order.OPayWay, order.OTotallyMoney, order.OTime, order.ONum);
+            return SqlHelper.ExecuteNonQuery(sqlStr);
         }
     }
 }

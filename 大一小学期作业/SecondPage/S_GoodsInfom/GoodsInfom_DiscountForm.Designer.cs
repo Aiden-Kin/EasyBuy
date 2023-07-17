@@ -188,6 +188,7 @@
             // 
             this.tbTotal.Location = new System.Drawing.Point(219, 228);
             this.tbTotal.Name = "tbTotal";
+            this.tbTotal.Properties.ReadOnly = true;
             this.tbTotal.Size = new System.Drawing.Size(156, 28);
             this.tbTotal.TabIndex = 42;
             // 
@@ -195,6 +196,7 @@
             // 
             this.tbname.Location = new System.Drawing.Point(219, 165);
             this.tbname.Name = "tbname";
+            this.tbname.Properties.ReadOnly = true;
             this.tbname.Size = new System.Drawing.Size(156, 28);
             this.tbname.TabIndex = 43;
             // 
@@ -202,6 +204,7 @@
             // 
             this.tbid.Location = new System.Drawing.Point(219, 96);
             this.tbid.Name = "tbid";
+            this.tbid.Properties.ReadOnly = true;
             this.tbid.Size = new System.Drawing.Size(156, 28);
             this.tbid.TabIndex = 44;
             // 

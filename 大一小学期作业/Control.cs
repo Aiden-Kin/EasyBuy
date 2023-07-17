@@ -1,5 +1,9 @@
-﻿using DevExpress.Charts.Native;
+﻿using CampusTradingSystemofNEPU.AdminForms.OrderFormEditForm;
+using DevExpress.Charts.Native;
+using DevExpress.Office.Utils;
 using DevExpress.Persistent.Base;
+using DevExpress.Utils.Design;
+using DevExpress.XtraCharts;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Mask;
 using DevExpress.XtraRichEdit.Model;
@@ -18,6 +22,7 @@ using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 
 namespace EasyBuy
@@ -897,9 +902,10 @@ namespace EasyBuy
 
             string gInfom_ID = gInfom_dategridview.SelectedCells[0].Value.ToString();
             string gInfom_Name = gInfom_dategridview.SelectedCells[1].Value.ToString();
-            string gInfom_Repor = gInfom_dategridview.SelectedCells[8].Value.ToString();
+            string gInfom_Repor = gInfom_dategridview.SelectedCells[7].Value.ToString();
+            string gInfom_Discount = gInfom_dategridview.SelectedCells[8].Value.ToString(); ;
 
-            GoodsInfom_DiscountForm ds = new GoodsInfom_DiscountForm(this, gInfom_ID, gInfom_Name, gInfom_Repor);
+            GoodsInfom_DiscountForm ds = new GoodsInfom_DiscountForm(this, gInfom_ID, gInfom_Name, gInfom_Repor, gInfom_Discount);
             ds.Show();
         }
 
@@ -980,19 +986,104 @@ namespace EasyBuy
 
         private void OrderL_AddOrder_Click(object sender, EventArgs e)
         {
-
+            OrderEditForm orderform = new OrderEditForm(this);
+            orderform.ShowDialog();
         }
-         #endregion
 
 
-        private void 销售记录_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+
+      private void xtp_OrderControl_VisibleChanged_1(object sender, EventArgs e)
         {
-            xtb_ControlPanel.SelectedTabPage = xtp_SuperUserControl;
+            if (xtp_OrderControl.Visible)
+            {
+                OrderL_RefreshData();
+            }
+          
         }
 
+        private void OrderL_ChangeOrder_Click(object sender, EventArgs e)
+        {
+
+            int rowIndex = -1;
+            rowIndex = OrderL_dataGridView.CurrentRow.Index;
+            if (rowIndex < 0)
+            {
+                UIMessageBox.ShowWarning("没有选中订单！");
+            }
+            if (OrderL_dataGridView.Rows[rowIndex].Cells[0].Value.ToString() == "OF0")
+            {
+                UIMessageBox.ShowError("请选择正确订单.");
+                return;
+            }
+            else
+            {
+                OrderList ol = new OrderList();
+                ol.ONum = Convert.ToInt32(OrderL_dataGridView.Rows[rowIndex].Cells[0].Value);
+                ol.OCustom = OrderL_dataGridView.Rows[rowIndex].Cells[1].Value.ToString();
+                ol.OCPhone = OrderL_dataGridView.Rows[rowIndex].Cells[2].Value.ToString();
+                ol.OCAddress= OrderL_dataGridView.Rows[rowIndex].Cells[3].Value.ToString();
+                ol.OGoodsID = Convert.ToInt32(OrderL_dataGridView.Rows[rowIndex].Cells[4].Value);
+                ol.OGoodsName = OrderL_dataGridView.Rows[rowIndex].Cells[5].Value.ToString();
+                ol.OGoodsPrice = Convert.ToSingle(OrderL_dataGridView.Rows[rowIndex].Cells[6].Value);
+                ol.OGoodsNum = Convert.ToInt32(OrderL_dataGridView.Rows[rowIndex].Cells[7].Value);
+                ol.OPayWay = OrderL_dataGridView.Rows[rowIndex].Cells[8].Value.ToString();
+                ol.OTotallyMoney = Convert.ToSingle(OrderL_dataGridView.Rows[rowIndex].Cells[9].Value);
+                ol.OTime = OrderL_dataGridView.Rows[rowIndex].Cells[10].Value.ToString();
+                OrderEditForm orderform = new OrderEditForm(ol, this);
+                orderform.ShowDialog();
+            }
 
 
-        #region 口令生成
+        }
+
+        private void OrderL_DeleteOrder_Click(object sender, EventArgs e)
+        {
+            int rowIndex = -1;
+            rowIndex = OrderL_dataGridView.CurrentRow.Index;
+            if (rowIndex < 0)
+            {
+                UIMessageBox.ShowWarning("没有选中订单！");
+            }
+            if (OrderL_dataGridView.Rows[rowIndex].Cells[0].Value.ToString() == "OF0")
+            {
+                UIMessageBox.ShowError("请选择正确订单.");
+                return;
+            }
+            else
+            {
+                DialogResult res = MessageBox.Show("确定要取消订单 “" + OrderL_dataGridView.Rows[rowIndex].Cells[0].Value.ToString() + "” 吗","提示",MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
+                if ( res == DialogResult.Cancel)
+                {
+                  
+                    return;
+                }
+                GoodsInfom good = new GoodsInfomManager().Get(OrderL_dataGridView.Rows[rowIndex].Cells[4].Value.ToString());
+                int Nowreper = good.Repertory + Convert.ToInt32(OrderL_dataGridView.Rows[rowIndex].Cells[7].Value);
+                int result = new OrderListManager().Delete(OrderL_dataGridView.Rows[rowIndex].Cells[0].Value.ToString());
+
+                new GoodsInfomManager().UpRepodate(OrderL_dataGridView.Rows[rowIndex].Cells[4].Value.ToString(), Nowreper.ToString());
+
+                if (result > 0)
+                {
+                    UIMessageBox.Show("取消成功！", "信息提示");
+                }
+                else
+                {
+                    UIMessageBox.Show("取消失败.", "信息提示");
+                }
+                OrderL_RefreshData();
+            }
+        }
+
+     
+
+        #endregion
+
+
+
+
+
+        #region 账户秘钥管理区
         private void ResetPasswd_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             string passkey = RandomGenerate();
@@ -1032,13 +1123,108 @@ namespace EasyBuy
             return password;
         }
 
-        #endregion
-
         private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             PasskeyForm passkeyForm = new PasskeyForm();
             passkeyForm.Show();
         }
+        #endregion
+
+        #region 界面选择
+
+
+        private void 销售记录_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            xtb_ControlPanel.SelectedTabPage = xtp_OrderControl;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        #endregion
+
+        private void OrderL_SelectOrder_Click(object sender, EventArgs e)
+        {
+            string ts = Ginfom_tbSearch.Text;
+            List < OrderList > list = new List < OrderList >();
+            list = new OrderListManager().GetList(gInfom_cbsearch.Text, ts);
+            gInfom_dategridview.DataSource = list;
+        }
+
+        private void stfInfo_btSearch_Click(object sender, EventArgs e)
+        {
+            string condition = null;
+            string search = null;
+            if (stfInfo_tbStaffID.Text != null) {
+                condition = "StfID";
+                search = stfInfo_tbStaffID.Text;
+            }
+
+            else if (stfInfo_tbName.Text != null) { condition = "StfName";
+                search = stfInfo_tbName.Text;
+            }
+            else if (tbStaffstateus.Text != null) { condition = "StfState";
+                search = tbStaffstateus.Text;
+            }
+            else if (tbPositionst.Text != null) { condition = "StfPost";
+                search = tbPositionst.Text;
+            }
+            new StfInformationManager().GetStaffInformationList(condition,search);
+        }
+
+
+        public void refreshchare()
+        {
+            chartControl1.Series.Clear();
+            chartControl2.Series.Clear();
+            Series series = new Series("Order Total Price", ViewType.Pie);
+            series.Label.TextPattern = "订单:{A}: {VP:0.00%}";
+            Series seriesxy = new Series("销售额", ViewType.Bar);
+
+            List<OrderList>  orderList = new List<OrderList>();
+            orderList = new OrderListManager().GetList();
+
+            foreach (OrderList order in orderList)
+            {
+                series.Points.Add(new SeriesPoint(order.ONum.ToString(), order.OTotallyMoney));
+            }
+
+            foreach (OrderList order in orderList)
+            {
+                SeriesPoint point = new SeriesPoint(order.OGoodsName, order.OTotallyMoney);
+                seriesxy.Points.Add(point);
+            }
+
+            // 将系列添加到 ChartControl
+            chartControl1.Series.Add(series);
+            chartControl2.Series.Add(seriesxy);
+
+        }
+
+
+
+        private void xtraTabPage14_VisibleChanged(object sender, EventArgs e)
+        {
+            if (xtraTabPage14.Visible)
+            {
+                refreshchare();
+            }
+        }
+
+        private void gInfom_Search_Click(object sender, EventArgs e)
+        {
+
+        }
     }
-  
+
 }

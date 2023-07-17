@@ -49,6 +49,7 @@
     <Compile Include="GoodsInfomManager.cs" />
     <Compile Include="OrderListManager.cs" />
     <Compile Include="PassKeyManager.cs" />
+    <Compile Include="StaffMarkListManager.cs" />
     <Compile Include="StaffSalaryManager.cs" />
     <Compile Include="StfInformationManager.cs" />
     <Compile Include="SupplierManager.cs" />

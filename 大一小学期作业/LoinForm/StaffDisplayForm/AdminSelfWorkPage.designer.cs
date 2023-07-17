@@ -113,7 +113,7 @@
             this.tbRank.Symbol = 362729;
             this.tbRank.TabIndex = 14;
             this.tbRank.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.tbRank.Watermark = "权限级别";
+            this.tbRank.Watermark = "权限级别：Staff";
             // 
             // tbName
             // 
@@ -131,7 +131,8 @@
             this.tbName.Symbol = 62144;
             this.tbName.TabIndex = 16;
             this.tbName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.tbName.Watermark = "管理员名称";
+            this.tbName.Watermark = "用户名称：";
+            this.tbName.TextChanged += new System.EventHandler(this.tbName_TextChanged);
             // 
             // uiLabel2
             // 

@@ -49,7 +49,7 @@
             // 
             // labelStatus
             // 
-            this.labelStatus.Location = new System.Drawing.Point(24, 198);
+            this.labelStatus.Location = new System.Drawing.Point(24, 191);
             this.labelStatus.Margin = new System.Windows.Forms.Padding(3, 3, 3, 1);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(54, 19);
@@ -61,6 +61,7 @@
             this.peImage.BackgroundImage = global::EasyBuy.Properties.Resources.BackGround_Blue_Small1;
             this.peImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.peImage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.peImage.EditValue = global::EasyBuy.Properties.Resources.BackGround_Blue_Small;
             this.peImage.Location = new System.Drawing.Point(1, 1);
             this.peImage.Name = "peImage";
             this.peImage.Properties.AllowFocused = false;
@@ -77,8 +78,8 @@
             // 
             this.peLogo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.peLogo.BackgroundImage = global::EasyBuy.Properties.Resources.icon;
             this.peLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.peLogo.EditValue = global::EasyBuy.Properties.Resources.icon;
             this.peLogo.Location = new System.Drawing.Point(480, 255);
             this.peLogo.Name = "peLogo";
             this.peLogo.Properties.AllowFocused = false;
@@ -87,7 +88,7 @@
             this.peLogo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.peLogo.Properties.ShowMenu = false;
             this.peLogo.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
-            this.peLogo.Size = new System.Drawing.Size(67, 52);
+            this.peLogo.Size = new System.Drawing.Size(78, 55);
             this.peLogo.TabIndex = 8;
             // 
             // progressBarControl
@@ -113,6 +114,7 @@
             this.Name = "SplashScreen1";
             this.Padding = new System.Windows.Forms.Padding(1);
             this.Text = "SplashScreen1";
+            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.peImage.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.peLogo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.progressBarControl.Properties)).EndInit();

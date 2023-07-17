@@ -88,7 +88,7 @@ namespace EasyBuy
             {
                 UserInform.UserPassword = null;
                 this.Hide();
-                AdminMainForm controlform = new AdminMainForm();
+                AdminMainForm controlform = new AdminMainForm(UserInform.UserName);
                 controlform.Show();
             }
         }

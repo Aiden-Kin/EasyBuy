@@ -49,6 +49,7 @@
     <Compile Include="OrderList.cs" />
     <Compile Include="PassKey.cs" />
     <Compile Include="StaffInformation.cs" />
+    <Compile Include="StaffMarkList.cs" />
     <Compile Include="StaffSalary.cs" />
     <Compile Include="Supplier.cs" />
     <Compile Include="User.cs" />
