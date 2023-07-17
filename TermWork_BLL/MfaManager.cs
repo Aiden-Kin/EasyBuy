@@ -26,7 +26,7 @@ public class MfaManager
             if (mfaList.Count > 0)
             {
                 int last = mfaList.Count - 1;
-                return mfaList[last].CreateTime;
+                return mfaList[last].Base32Key;
             }
             return null;
         }

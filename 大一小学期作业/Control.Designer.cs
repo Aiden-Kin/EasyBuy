@@ -45,6 +45,8 @@
             DevExpress.XtraCharts.PieSeriesView pieSeriesView1 = new DevExpress.XtraCharts.PieSeriesView();
             DevExpress.XtraCharts.PieSeriesView pieSeriesView2 = new DevExpress.XtraCharts.PieSeriesView();
             DevExpress.XtraCharts.ChartTitle chartTitle2 = new DevExpress.XtraCharts.ChartTitle();
+            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.DoughnutSeriesView doughnutSeriesView1 = new DevExpress.XtraCharts.DoughnutSeriesView();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -179,10 +181,12 @@
             this.销售记录 = new DevExpress.XtraBars.BarButtonItem();
             this.ResetPasswd = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.rbcControl = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
             this.rbpManage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgManage = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.PageGoods = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -349,8 +353,8 @@
             this.xtraTabPage14 = new DevExpress.XtraTab.XtraTabPage();
             this.chartControl2 = new DevExpress.XtraCharts.ChartControl();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
-            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.chartControl3 = new DevExpress.XtraCharts.ChartControl();
+            this.xtraTabStaffMark = new DevExpress.XtraTab.XtraTabPage();
+            this.chartControlstaff = new DevExpress.XtraCharts.ChartControl();
             this.repositoryItemRibbonSearchEdit1 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
             this.repositoryItemRibbonSearchEdit2 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
             this.repositoryItemRibbonSearchEdit3 = new DevExpress.XtraBars.Ribbon.Internal.RepositoryItemRibbonSearchEdit();
@@ -381,8 +385,6 @@
             this.galleryDropDown1 = new DevExpress.XtraBars.Ribbon.GalleryDropDown(this.components);
             this.workspaceManager1 = new DevExpress.Utils.WorkspaceManager(this.components);
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateTimeOffsetEdit1)).BeginInit();
@@ -450,8 +452,10 @@
             ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesView2)).BeginInit();
-            this.xtraTabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl3)).BeginInit();
+            this.xtraTabStaffMark.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControlstaff)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(doughnutSeriesView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit3)).BeginInit();
@@ -817,6 +821,14 @@
             this.barButtonItem8.Name = "barButtonItem8";
             this.barButtonItem8.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
             // 
+            // barButtonItem9
+            // 
+            this.barButtonItem9.Caption = "MFA认证秘钥";
+            this.barButtonItem9.Id = 53;
+            this.barButtonItem9.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.MFA验证;
+            this.barButtonItem9.Name = "barButtonItem9";
+            this.barButtonItem9.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9_ItemClick);
+            // 
             // rbcControl
             // 
             this.rbcControl.Name = "rbcControl";
@@ -848,6 +860,12 @@
             this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem8, true);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "账户重置";
+            // 
+            // ribbonPageGroup4
+            // 
+            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem9);
+            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
+            this.ribbonPageGroup4.Text = "ribbonPageGroup4";
             // 
             // PageGoods
             // 
@@ -930,7 +948,7 @@
             this.xtp_ControlUserStaff,
             this.xtp_ControlUserCustmer,
             this.xtraTabPage14,
-            this.xtraTabPage1});
+            this.xtraTabStaffMark});
             // 
             // xtp_GoodsClass
             // 
@@ -1113,7 +1131,7 @@
             this.gClass_datagridview.RowHeadersVisible = false;
             this.gClass_datagridview.RowTemplate.Height = 23;
             this.gClass_datagridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gClass_datagridview.Size = new System.Drawing.Size(1122, 317);
+            this.gClass_datagridview.Size = new System.Drawing.Size(1144, 317);
             this.gClass_datagridview.TabIndex = 5;
             this.gClass_datagridview.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gClass_datagridview_CellClick);
             // 
@@ -2704,7 +2722,7 @@
             this.xtraTabPage14.Controls.Add(this.chartControl1);
             this.xtraTabPage14.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabPage14.Name = "xtraTabPage14";
-            this.xtraTabPage14.Size = new System.Drawing.Size(1367, 555);
+            this.xtraTabPage14.Size = new System.Drawing.Size(1389, 555);
             this.xtraTabPage14.Text = "商品订单信息统计";
             this.xtraTabPage14.VisibleChanged += new System.EventHandler(this.xtraTabPage14_VisibleChanged);
             // 
@@ -2747,21 +2765,26 @@
             this.chartControl1.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle2});
             // 
-            // xtraTabPage1
+            // xtraTabStaffMark
             // 
-            this.xtraTabPage1.Controls.Add(this.chartControl3);
-            this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1367, 555);
-            this.xtraTabPage1.Text = "xtraTabPage1";
+            this.xtraTabStaffMark.Controls.Add(this.chartControlstaff);
+            this.xtraTabStaffMark.Name = "xtraTabStaffMark";
+            this.xtraTabStaffMark.Size = new System.Drawing.Size(1389, 555);
+            this.xtraTabStaffMark.Text = "xtraTabPage1";
+            this.xtraTabStaffMark.VisibleChanged += new System.EventHandler(this.xtraTabStaffMark_VisibleChanged);
             // 
-            // chartControl3
+            // chartControlstaff
             // 
-            this.chartControl3.Legend.LegendID = -1;
-            this.chartControl3.Location = new System.Drawing.Point(286, 218);
-            this.chartControl3.Name = "chartControl3";
-            this.chartControl3.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chartControl3.Size = new System.Drawing.Size(300, 200);
-            this.chartControl3.TabIndex = 0;
+            this.chartControlstaff.Legend.LegendID = -1;
+            this.chartControlstaff.Location = new System.Drawing.Point(11, 5);
+            this.chartControlstaff.Name = "chartControlstaff";
+            series3.Name = "Series 1";
+            series3.SeriesID = 0;
+            series3.View = doughnutSeriesView1;
+            this.chartControlstaff.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+        series3};
+            this.chartControlstaff.Size = new System.Drawing.Size(1371, 539);
+            this.chartControlstaff.TabIndex = 0;
             // 
             // repositoryItemRibbonSearchEdit1
             // 
@@ -3027,20 +3050,6 @@
             this.workspaceManager1.TargetControl = this;
             this.workspaceManager1.TransitionType = pushTransition1;
             // 
-            // ribbonPageGroup4
-            // 
-            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem9);
-            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.Text = "ribbonPageGroup4";
-            // 
-            // barButtonItem9
-            // 
-            this.barButtonItem9.Caption = "MFA认证秘钥";
-            this.barButtonItem9.Id = 53;
-            this.barButtonItem9.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.MFA验证;
-            this.barButtonItem9.Name = "barButtonItem9";
-            this.barButtonItem9.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9_ItemClick);
-            // 
             // Control
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.True;
@@ -3130,8 +3139,10 @@
             ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
-            this.xtraTabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl3)).EndInit();
+            this.xtraTabStaffMark.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(doughnutSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControlstaff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit3)).EndInit();
@@ -3394,8 +3405,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.IO.Ports.SerialPort serialPort1;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
-        private DevExpress.XtraCharts.ChartControl chartControl3;
+        private DevExpress.XtraTab.XtraTabPage xtraTabStaffMark;
+        private DevExpress.XtraCharts.ChartControl chartControlstaff;
         private DevExpress.XtraCharts.ChartControl chartControl2;
         private DevExpress.XtraEditors.ComboBoxEdit tbStaffstateus;
         private DevExpress.XtraEditors.TextEdit tbPositionst;

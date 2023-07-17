@@ -141,6 +141,12 @@
     <Compile Include="LoinForm\ForgetPasswd.Designer.cs">
       <DependentUpon>ForgetPasswd.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoinForm\MFAForm\MfaCreateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoinForm\MFAForm\MfaCreateForm.Designer.cs">
+      <DependentUpon>MfaCreateForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoinForm\MFAForm\MfaCreate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -308,6 +314,9 @@
     </Compile>
     <EmbeddedResource Include="LoinForm\ForgetPasswd.resx">
       <DependentUpon>ForgetPasswd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoinForm\MFAForm\MfaCreateForm.resx">
+      <DependentUpon>MfaCreateForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoinForm\MFAForm\MfaCreate.resx">
       <DependentUpon>MfaCreate.cs</DependentUpon>

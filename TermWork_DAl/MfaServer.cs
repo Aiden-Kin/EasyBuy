@@ -18,7 +18,7 @@ namespace EasyBuy_DAL
                 MfaModel mfaModel = new MfaModel();
                 mfaModel.Base32Key = row["Base32Key"].ToString();
                 mfaModel.UserName = row["UserName"].ToString();
-                mfaModel.CreateTime = row["CreateTime"].ToString();
+                mfaModel.CreateTime = row["CreatTime"].ToString();
                 mfaList.Add(mfaModel);
             }
             return mfaList;
@@ -33,7 +33,7 @@ namespace EasyBuy_DAL
 
         public int SetMfa(MfaModel mfaModel)
         {
-            string setMfaSqlStr = $"INSERT INTO tblMfa (Base32Key, UserName, CreateTime) VALUES ('{mfaModel.Base32Key}', '{mfaModel.UserName}', '{mfaModel.CreateTime}')";
+            string setMfaSqlStr = $"INSERT INTO tblMfa (Base32Key, UserName, CreatTime) VALUES ('{mfaModel.Base32Key}', '{mfaModel.UserName}', '{mfaModel.CreateTime}')";
             return SqlHelper.ExecuteNonQuery(setMfaSqlStr);
         }
 

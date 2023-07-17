@@ -30,10 +30,10 @@ namespace EasyBuy.SecondPage
 
         public MfaCreate(string username)
         {
-             this.username = username;
+            this.username = username;
         }
 
-#region 窗口移动
+        #region 窗口移动
 
 
         private Point mouseOffset;
@@ -113,7 +113,7 @@ namespace EasyBuy.SecondPage
             Bitmap qrCodeBitmap = qrCodeWriter.Write(otpUri);
             //图片绑定
             pictureBox1.Image = qrCodeBitmap;
-            
+
             //模型绑定
             MfaModel model = new MfaModel();
             model.CreateTime = DateTime.Now.ToString();
@@ -131,14 +131,6 @@ namespace EasyBuy.SecondPage
 
 
         }
-    
-
-
-
-
-
-
-
 
 
         private void Exit_Click(object sender, EventArgs e)

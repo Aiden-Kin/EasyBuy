@@ -1,5 +1,6 @@
 ﻿using CampusTradingSystemofNEPU.AdminForms.OrderFormEditForm;
 using DevExpress.Charts.Native;
+using DevExpress.DashboardWin;
 using DevExpress.Office.Utils;
 using DevExpress.Persistent.Base;
 using DevExpress.Utils.Design;
@@ -1182,7 +1183,7 @@ namespace EasyBuy
             new StfInformationManager().GetStaffInformationList(condition,search);
         }
 
-
+        #region 统计表界面
         public void refreshchare()
         {
             chartControl1.Series.Clear();
@@ -1221,6 +1222,12 @@ namespace EasyBuy
             }
         }
 
+        #endregion
+
+
+
+
+
         private void gInfom_Search_Click(object sender, EventArgs e)
         {
 
@@ -1228,9 +1235,76 @@ namespace EasyBuy
 
         private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            MfaCreate mfac = new MfaCreate(userInform.UserName);
+            MfaCreateForm mfac = new MfaCreateForm(userInform.UserName);
             mfac.Show();
         }
+
+
+
+        #region 员工信息统计图
+
+
+
+        public void refreshStaffMark()
+        {
+
+            chartControlstaff.Series.Clear();
+            List<StaffMarkList> marks = new List<StaffMarkList>();
+            marks = new StaffMarkListManager().GetStaffMarkList();
+
+
+            Dictionary<string, int> nameCount = new Dictionary<string, int>();
+            foreach (StaffMarkList staffMark in marks)
+            {
+                if (nameCount.ContainsKey(staffMark.StaffUserID))
+                {
+                    nameCount[staffMark.StaffUserID]++;
+                }
+                else
+                {
+                    nameCount[staffMark.StaffUserID] = 1;
+                }
+            }
+
+            // 创建饼状图
+
+            // 配置数据绑定
+            Series series = new Series("Data", ViewType.Pie);
+            series.ArgumentDataMember = "StaffUserID";
+            series.ValueDataMembers.AddRange("Count");
+            series.DataSource = nameCount.Select(x => new { StaffUserID = x.Key, Count = x.Value }).ToList();
+
+            // 配置饼状图显示样式
+            series.Label.TextPattern = "{A}: {V}";
+
+            // 添加系列到图表
+
+            chartControlstaff.Series.Add(series);
+
+
+        }
+
+
+
+
+
+
+        private void xtraTabStaffMark_VisibleChanged(object sender, EventArgs e)
+        {
+            if (xtraTabStaffMark.Visible)
+            {
+                refreshStaffMark();
+            }
+
+        }
+
+
+
+
+
+
+        #endregion
+
     }
 
 }

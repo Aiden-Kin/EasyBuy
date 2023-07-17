@@ -27,6 +27,7 @@ namespace EasyBuy.SecondPage.S_GoodsInfom
 
         public MfaCreateForm(string username)
         {
+            InitializeComponent();
             this.username = username;
         }
 
