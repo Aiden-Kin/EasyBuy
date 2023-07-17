@@ -1150,7 +1150,7 @@ namespace EasyBuy
             string ts = Ginfom_tbSearch.Text;
             List < OrderList > list = new List < OrderList >();
             list = new OrderListManager().GetList(gInfom_cbsearch.Text, ts);
-            gInfom_dategridview.DataSource = list;
+            OrderL_dataGridView.DataSource = list;
         }
 
         private void stfInfo_btSearch_Click(object sender, EventArgs e)

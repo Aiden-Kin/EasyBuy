@@ -1828,7 +1828,7 @@
             this.gInfom_dategridview.RowHeadersVisible = false;
             this.gInfom_dategridview.RowTemplate.Height = 23;
             this.gInfom_dategridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gInfom_dategridview.Size = new System.Drawing.Size(1341, 411);
+            this.gInfom_dategridview.Size = new System.Drawing.Size(1340, 411);
             this.gInfom_dategridview.TabIndex = 5;
             // 
             // dataGridViewTextBoxColumn25
