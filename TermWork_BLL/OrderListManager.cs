@@ -17,7 +17,25 @@ namespace EasyBuy_BLL
 
         public List<OrderList> GetList(string condition = "", string find = "")
         {
-
+            switch (condition)
+            {
+                case "顾客姓名":
+                    condition = "OCustom";
+                    break;
+                case "顾客联系电话":
+                    condition = "OCPhone";
+                    break;
+                case "顾客联系地址":
+                    condition = "OCAddress";
+                    break;
+                case "商品名称":
+                    condition = "OGoodsName";
+                    break;
+                case "不筛选":
+                default:
+                    condition = "";
+                    break;
+            }
             return new OrderListServer().GetList(condition, find);
         }
 

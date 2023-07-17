@@ -238,6 +238,7 @@
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.xtp_OrderControl = new DevExpress.XtraTab.XtraTabPage();
             this.panelControl8 = new DevExpress.XtraEditors.PanelControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.gInfom_cbsearch = new DevExpress.XtraEditors.ComboBoxEdit();
             this.OrderL_SelectOrder = new DevExpress.XtraEditors.SimpleButton();
             this.Ginfom_tbSearch = new DevExpress.XtraEditors.TextEdit();
@@ -388,7 +389,6 @@
             this.galleryDropDown1 = new DevExpress.XtraBars.Ribbon.GalleryDropDown(this.components);
             this.workspaceManager1 = new DevExpress.Utils.WorkspaceManager(this.components);
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateTimeOffsetEdit1)).BeginInit();
@@ -1163,7 +1163,7 @@
             this.gClass_datagridview.RowHeadersVisible = false;
             this.gClass_datagridview.RowTemplate.Height = 23;
             this.gClass_datagridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gClass_datagridview.Size = new System.Drawing.Size(994, 317);
+            this.gClass_datagridview.Size = new System.Drawing.Size(972, 317);
             this.gClass_datagridview.TabIndex = 5;
             this.gClass_datagridview.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gClass_datagridview_CellClick);
             // 
@@ -1356,7 +1356,7 @@
             this.SInfo_dategridview.RowHeadersVisible = false;
             this.SInfo_dategridview.RowTemplate.Height = 23;
             this.SInfo_dategridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.SInfo_dategridview.Size = new System.Drawing.Size(1358, 414);
+            this.SInfo_dategridview.Size = new System.Drawing.Size(1329, 414);
             this.SInfo_dategridview.TabIndex = 3;
             // 
             // Column1
@@ -1438,6 +1438,18 @@
             this.panelControl8.Name = "panelControl8";
             this.panelControl8.Size = new System.Drawing.Size(1343, 67);
             this.panelControl8.TabIndex = 27;
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
+            this.simpleButton1.Appearance.Options.UseFont = true;
+            this.simpleButton1.Location = new System.Drawing.Point(37, 15);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(125, 37);
+            this.simpleButton1.TabIndex = 29;
+            this.simpleButton1.Text = "查询全部";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // gInfom_cbsearch
             // 
@@ -1816,7 +1828,7 @@
             this.gInfom_dategridview.RowHeadersVisible = false;
             this.gInfom_dategridview.RowTemplate.Height = 23;
             this.gInfom_dategridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gInfom_dategridview.Size = new System.Drawing.Size(1340, 411);
+            this.gInfom_dategridview.Size = new System.Drawing.Size(1341, 411);
             this.gInfom_dategridview.TabIndex = 5;
             // 
             // dataGridViewTextBoxColumn25
@@ -2269,7 +2281,7 @@
             this.xtp_ControlUserSuper.Controls.Add(this.cbs_SuperUserDataGrid);
             this.xtp_ControlUserSuper.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_ControlUserSuper.Name = "xtp_ControlUserSuper";
-            this.xtp_ControlUserSuper.Size = new System.Drawing.Size(1367, 555);
+            this.xtp_ControlUserSuper.Size = new System.Drawing.Size(1389, 555);
             this.xtp_ControlUserSuper.Text = "管理员账户";
             this.xtp_ControlUserSuper.VisibleChanged += new System.EventHandler(this.xtp_ControlUserSuper_VisibleChanged);
             // 
@@ -2380,7 +2392,7 @@
             this.cbs_SuperUserDataGrid.RowHeadersVisible = false;
             this.cbs_SuperUserDataGrid.RowTemplate.Height = 23;
             this.cbs_SuperUserDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.cbs_SuperUserDataGrid.Size = new System.Drawing.Size(1350, 450);
+            this.cbs_SuperUserDataGrid.Size = new System.Drawing.Size(1349, 450);
             this.cbs_SuperUserDataGrid.TabIndex = 14;
             this.cbs_SuperUserDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cbs_SuperUserDataGrid_CellContentClick);
             // 
@@ -2432,7 +2444,7 @@
             this.xtp_ControlUserStaff.Controls.Add(this.cStaf_dataGridView);
             this.xtp_ControlUserStaff.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_ControlUserStaff.Name = "xtp_ControlUserStaff";
-            this.xtp_ControlUserStaff.Size = new System.Drawing.Size(1367, 555);
+            this.xtp_ControlUserStaff.Size = new System.Drawing.Size(1389, 555);
             this.xtp_ControlUserStaff.Text = "员工账户";
             this.xtp_ControlUserStaff.VisibleChanged += new System.EventHandler(this.xtp_ControlUserStaff_VisibleChanged);
             // 
@@ -2543,7 +2555,7 @@
             this.cStaf_dataGridView.RowHeadersVisible = false;
             this.cStaf_dataGridView.RowTemplate.Height = 23;
             this.cStaf_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.cStaf_dataGridView.Size = new System.Drawing.Size(1343, 442);
+            this.cStaf_dataGridView.Size = new System.Drawing.Size(1345, 442);
             this.cStaf_dataGridView.TabIndex = 20;
             this.cStaf_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cStaf_dataGridView_CellContentClick);
             // 
@@ -2595,7 +2607,7 @@
             this.xtp_ControlUserCustmer.Controls.Add(this.cCtm_dataGridView);
             this.xtp_ControlUserCustmer.Margin = new System.Windows.Forms.Padding(4);
             this.xtp_ControlUserCustmer.Name = "xtp_ControlUserCustmer";
-            this.xtp_ControlUserCustmer.Size = new System.Drawing.Size(1367, 555);
+            this.xtp_ControlUserCustmer.Size = new System.Drawing.Size(1389, 555);
             this.xtp_ControlUserCustmer.Text = "顾客账户";
             this.xtp_ControlUserCustmer.VisibleChanged += new System.EventHandler(this.xtp_ControlUserCustmer_VisibleChanged);
             // 
@@ -2704,7 +2716,7 @@
             this.cCtm_dataGridView.RowHeadersVisible = false;
             this.cCtm_dataGridView.RowTemplate.Height = 23;
             this.cCtm_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.cCtm_dataGridView.Size = new System.Drawing.Size(1343, 446);
+            this.cCtm_dataGridView.Size = new System.Drawing.Size(1345, 446);
             this.cCtm_dataGridView.TabIndex = 20;
             this.cCtm_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cCtm_dataGridView_CellContentClick);
             // 
@@ -2756,7 +2768,7 @@
             this.xtraTabPage14.Controls.Add(this.chartControl1);
             this.xtraTabPage14.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabPage14.Name = "xtraTabPage14";
-            this.xtraTabPage14.Size = new System.Drawing.Size(1367, 555);
+            this.xtraTabPage14.Size = new System.Drawing.Size(1389, 555);
             this.xtraTabPage14.Text = "商品订单信息统计";
             this.xtraTabPage14.VisibleChanged += new System.EventHandler(this.xtraTabPage14_VisibleChanged);
             // 
@@ -2803,7 +2815,7 @@
             // 
             this.xtraTabStaffMark.Controls.Add(this.chartControlstaff);
             this.xtraTabStaffMark.Name = "xtraTabStaffMark";
-            this.xtraTabStaffMark.Size = new System.Drawing.Size(1367, 555);
+            this.xtraTabStaffMark.Size = new System.Drawing.Size(1389, 555);
             this.xtraTabStaffMark.Text = "员工绩效统计";
             this.xtraTabStaffMark.VisibleChanged += new System.EventHandler(this.xtraTabStaffMark_VisibleChanged);
             // 
@@ -3083,18 +3095,6 @@
             // 
             this.workspaceManager1.TargetControl = this;
             this.workspaceManager1.TransitionType = pushTransition1;
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("小米兰亭", 12F);
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Location = new System.Drawing.Point(37, 15);
-            this.simpleButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(125, 37);
-            this.simpleButton1.TabIndex = 29;
-            this.simpleButton1.Text = "查询全部";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // Control
             // 
