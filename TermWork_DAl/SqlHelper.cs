@@ -22,19 +22,7 @@ namespace EasyBuy_DAL
         /// <param name="sqlstr">要执行的SQL查询语句</param>
         /// <param name="tablename">DataSet中要填充的表名</param>
         /// <returns>返回dataSet类型的执行结果</returns>
-        public static DataSet ExecuteDataSet(string sqlstr, string tablename)
-        {
-            using (SqlConnection sqlCon = new SqlConnection(constr))
-            {
-                using (SqlDataAdapter sqlAdapter = new SqlDataAdapter(sqlstr, sqlCon))
-                {
-                    sqlCon.Open();
-                    DataSet dataSet = new DataSet();
-                    sqlAdapter.Fill(dataSet, tablename);
-                    return dataSet;
-                }
-            }
-        }
+
         public static DataSet ExecuteDataSet(string sqlstr)
         {
             using (SqlConnection sqlCon = new SqlConnection(constr))
@@ -106,27 +94,6 @@ namespace EasyBuy_DAL
                     sqlCon.Open();
                     if (sqlCmd.ExecuteScalar() == null) return false;
                     else return true;
-                }
-            }
-        }
-        #endregion
-
-        #region 输入SQL查询命令，检查数据表中是否有该数据信息，返回满足条件的记录个数
-        /// <summary>
-        /// 输入SQL命令，检查数据表中是否有该数据信息
-        /// </summary>
-        /// <param name="sqlstr">要执行的SQL语句</param>
-        /// <returns>返回数据表中记录总数</returns>
-        public static int GetDataRow(string sqlstr)
-        {
-            using (SqlConnection sqlCon = new SqlConnection(constr))
-            {
-                using (SqlDataAdapter sqlAdapter = new SqlDataAdapter(sqlstr, sqlCon))
-                {
-                    sqlCon.Open();
-                    DataSet dataSet = new DataSet();
-                    sqlAdapter.Fill(dataSet);
-                    return dataSet.Tables[0].Rows.Count; ;
                 }
             }
         }

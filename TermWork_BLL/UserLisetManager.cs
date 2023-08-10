@@ -20,7 +20,6 @@ namespace EasyBuy_BLL
         {
             List<User> userlist = new List<User>();
             userlist = new UserListServer().GetUserList(userGroup,condition,searchData);
-
             return userlist;
         }
 

@@ -71,8 +71,8 @@
             this.labelControl1.Appearance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(369, 176);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.labelControl1.Location = new System.Drawing.Point(370, 176);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(5);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(60, 27);
             this.labelControl1.TabIndex = 0;
@@ -81,14 +81,14 @@
             // tbUser
             // 
             this.tbUser.EditValue = "admin";
-            this.tbUser.Location = new System.Drawing.Point(486, 179);
-            this.tbUser.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbUser.Location = new System.Drawing.Point(487, 179);
+            this.tbUser.Margin = new System.Windows.Forms.Padding(5);
             this.tbUser.Name = "tbUser";
             this.tbUser.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.tbUser.Properties.Appearance.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tbUser.Properties.Appearance.Options.UseBackColor = true;
             this.tbUser.Properties.Appearance.Options.UseFont = true;
-            this.tbUser.Size = new System.Drawing.Size(279, 26);
+            this.tbUser.Size = new System.Drawing.Size(209, 26);
             this.tbUser.TabIndex = 1;
             // 
             // labelControl2
@@ -97,8 +97,8 @@
             this.labelControl2.Appearance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(355, 266);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.labelControl2.Location = new System.Drawing.Point(356, 266);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(5);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(80, 27);
             this.labelControl2.TabIndex = 0;
@@ -113,7 +113,7 @@
             this.btnLogin.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.登陆__1_;
             this.btnLogin.ImageOptions.SvgImageSize = new System.Drawing.Size(35, 35);
             this.btnLogin.Location = new System.Drawing.Point(402, 373);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(5);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(330, 50);
             this.btnLogin.TabIndex = 2;
@@ -129,7 +129,7 @@
             this.btnRegist.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.注册;
             this.btnRegist.ImageOptions.SvgImageSize = new System.Drawing.Size(35, 35);
             this.btnRegist.Location = new System.Drawing.Point(402, 459);
-            this.btnRegist.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnRegist.Margin = new System.Windows.Forms.Padding(5);
             this.btnRegist.Name = "btnRegist";
             this.btnRegist.Size = new System.Drawing.Size(163, 52);
             this.btnRegist.TabIndex = 2;
@@ -139,14 +139,14 @@
             // tbPassword
             // 
             this.tbPassword.EditValue = "123456";
-            this.tbPassword.Location = new System.Drawing.Point(486, 265);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tbPassword.Location = new System.Drawing.Point(487, 265);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(5);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Properties.Appearance.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.tbPassword.Properties.Appearance.Options.UseFont = true;
             this.tbPassword.Properties.PasswordChar = '*';
             this.tbPassword.Properties.UseSystemPasswordChar = true;
-            this.tbPassword.Size = new System.Drawing.Size(279, 26);
+            this.tbPassword.Size = new System.Drawing.Size(209, 26);
             this.tbPassword.TabIndex = 1;
             // 
             // Exit
@@ -156,7 +156,7 @@
             this.Exit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Exit.ImageOptions.SvgImage")));
             this.Exit.ImageOptions.SvgImageSize = new System.Drawing.Size(20, 20);
             this.Exit.Location = new System.Drawing.Point(774, 6);
-            this.Exit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Exit.Margin = new System.Windows.Forms.Padding(5);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(37, 38);
             this.Exit.TabIndex = 3;
@@ -175,7 +175,7 @@
             this.sidePanel1.Controls.Add(this.Exit);
             this.sidePanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.sidePanel1.Location = new System.Drawing.Point(0, 0);
-            this.sidePanel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.sidePanel1.Margin = new System.Windows.Forms.Padding(5);
             this.sidePanel1.Name = "sidePanel1";
             this.sidePanel1.Size = new System.Drawing.Size(820, 52);
             this.sidePanel1.TabIndex = 4;
@@ -189,7 +189,7 @@
             this.labelControl3.Appearance.Font = new System.Drawing.Font("微软雅黑", 10F);
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Location = new System.Drawing.Point(15, 16);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(5);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(140, 20);
             this.labelControl3.TabIndex = 4;
@@ -209,7 +209,7 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(5);
             this.barDockControlTop.Size = new System.Drawing.Size(820, 0);
             // 
             // barDockControlBottom
@@ -218,7 +218,7 @@
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 556);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(5);
             this.barDockControlBottom.Size = new System.Drawing.Size(820, 0);
             // 
             // barDockControlLeft
@@ -227,7 +227,7 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(5);
             this.barDockControlLeft.Size = new System.Drawing.Size(0, 556);
             // 
             // barDockControlRight
@@ -236,7 +236,7 @@
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(820, 0);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(5);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 556);
             // 
             // barManager2
@@ -253,7 +253,7 @@
             this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl1.Location = new System.Drawing.Point(0, 0);
             this.barDockControl1.Manager = this.barManager2;
-            this.barDockControl1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.barDockControl1.Margin = new System.Windows.Forms.Padding(5);
             this.barDockControl1.Size = new System.Drawing.Size(820, 0);
             // 
             // barDockControl2
@@ -262,7 +262,7 @@
             this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControl2.Location = new System.Drawing.Point(0, 556);
             this.barDockControl2.Manager = this.barManager2;
-            this.barDockControl2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.barDockControl2.Margin = new System.Windows.Forms.Padding(5);
             this.barDockControl2.Size = new System.Drawing.Size(820, 0);
             // 
             // barDockControl3
@@ -271,7 +271,7 @@
             this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl3.Location = new System.Drawing.Point(0, 0);
             this.barDockControl3.Manager = this.barManager2;
-            this.barDockControl3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.barDockControl3.Margin = new System.Windows.Forms.Padding(5);
             this.barDockControl3.Size = new System.Drawing.Size(0, 556);
             // 
             // barDockControl4
@@ -280,7 +280,7 @@
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControl4.Location = new System.Drawing.Point(820, 0);
             this.barDockControl4.Manager = this.barManager2;
-            this.barDockControl4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.barDockControl4.Margin = new System.Windows.Forms.Padding(5);
             this.barDockControl4.Size = new System.Drawing.Size(0, 556);
             // 
             // barManager3
@@ -297,7 +297,7 @@
             this.barDockControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl5.Location = new System.Drawing.Point(0, 0);
             this.barDockControl5.Manager = this.barManager3;
-            this.barDockControl5.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.barDockControl5.Margin = new System.Windows.Forms.Padding(5);
             this.barDockControl5.Size = new System.Drawing.Size(820, 0);
             // 
             // barDockControl6
@@ -306,7 +306,7 @@
             this.barDockControl6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControl6.Location = new System.Drawing.Point(0, 556);
             this.barDockControl6.Manager = this.barManager3;
-            this.barDockControl6.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.barDockControl6.Margin = new System.Windows.Forms.Padding(5);
             this.barDockControl6.Size = new System.Drawing.Size(820, 0);
             // 
             // barDockControl7
@@ -315,7 +315,7 @@
             this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl7.Location = new System.Drawing.Point(0, 0);
             this.barDockControl7.Manager = this.barManager3;
-            this.barDockControl7.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.barDockControl7.Margin = new System.Windows.Forms.Padding(5);
             this.barDockControl7.Size = new System.Drawing.Size(0, 556);
             // 
             // barDockControl8
@@ -324,7 +324,7 @@
             this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControl8.Location = new System.Drawing.Point(820, 0);
             this.barDockControl8.Manager = this.barManager3;
-            this.barDockControl8.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.barDockControl8.Margin = new System.Windows.Forms.Padding(5);
             this.barDockControl8.Size = new System.Drawing.Size(0, 556);
             // 
             // btnForgetPass
@@ -336,7 +336,7 @@
             this.btnForgetPass.ImageOptions.SvgImage = global::EasyBuy.Properties.Resources.忘记密码;
             this.btnForgetPass.ImageOptions.SvgImageSize = new System.Drawing.Size(35, 35);
             this.btnForgetPass.Location = new System.Drawing.Point(573, 459);
-            this.btnForgetPass.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnForgetPass.Margin = new System.Windows.Forms.Padding(5);
             this.btnForgetPass.Name = "btnForgetPass";
             this.btnForgetPass.Size = new System.Drawing.Size(159, 52);
             this.btnForgetPass.TabIndex = 2;
@@ -373,7 +373,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IconOptions.Image = global::EasyBuy.Properties.Resources.icon;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "用户密码";

@@ -1356,7 +1356,7 @@
             this.SInfo_dategridview.RowHeadersVisible = false;
             this.SInfo_dategridview.RowTemplate.Height = 23;
             this.SInfo_dategridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.SInfo_dategridview.Size = new System.Drawing.Size(1329, 414);
+            this.SInfo_dategridview.Size = new System.Drawing.Size(1329, 410);
             this.SInfo_dategridview.TabIndex = 3;
             // 
             // Column1
@@ -2072,7 +2072,7 @@
             this.stfInfo_dataGridView.RowHeadersVisible = false;
             this.stfInfo_dataGridView.RowTemplate.Height = 23;
             this.stfInfo_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.stfInfo_dataGridView.Size = new System.Drawing.Size(1314, 379);
+            this.stfInfo_dataGridView.Size = new System.Drawing.Size(1314, 375);
             this.stfInfo_dataGridView.TabIndex = 6;
             this.stfInfo_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.stfInfo_dataGridView_CellContentClick);
             // 
@@ -2189,7 +2189,7 @@
             this.StaffS_datagrid.MainView = this.gridView1;
             this.StaffS_datagrid.MenuManager = this.ribbonControl1;
             this.StaffS_datagrid.Name = "StaffS_datagrid";
-            this.StaffS_datagrid.Size = new System.Drawing.Size(1369, 544);
+            this.StaffS_datagrid.Size = new System.Drawing.Size(1387, 552);
             this.StaffS_datagrid.TabIndex = 1;
             this.StaffS_datagrid.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -2392,7 +2392,7 @@
             this.cbs_SuperUserDataGrid.RowHeadersVisible = false;
             this.cbs_SuperUserDataGrid.RowTemplate.Height = 23;
             this.cbs_SuperUserDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.cbs_SuperUserDataGrid.Size = new System.Drawing.Size(1349, 450);
+            this.cbs_SuperUserDataGrid.Size = new System.Drawing.Size(1351, 450);
             this.cbs_SuperUserDataGrid.TabIndex = 14;
             this.cbs_SuperUserDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cbs_SuperUserDataGrid_CellContentClick);
             // 

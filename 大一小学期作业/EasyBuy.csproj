@@ -134,6 +134,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="格式化.cs" />
     <Compile Include="Common.cs" />
     <Compile Include="LoinForm\ForgetPasswd.cs">
       <SubType>Form</SubType>
@@ -348,7 +349,7 @@
     <EmbeddedResource Include="LoinForm\MFAForm\Mfa.resx">
       <DependentUpon>Mfa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
+    <None Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

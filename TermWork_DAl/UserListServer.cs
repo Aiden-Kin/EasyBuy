@@ -23,9 +23,7 @@ namespace EasyBuy_DAL
                     userInfom = ToModel(dt)[0];
        
                 }
-               
             }
-                
             return userInfom;
         }
         //将数据表转换为用户列
